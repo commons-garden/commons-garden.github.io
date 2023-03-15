@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commons Garden</title>
+    <link>https://praxis.nyc/commons-garden-test/</link>
+    <description>Recent content on Commons Garden</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://praxis.nyc/commons-garden-test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>contact</title>
+      <link>https://praxis.nyc/commons-garden-test/contact/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://praxis.nyc/commons-garden-test/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>donate</title>
+      <link>https://praxis.nyc/commons-garden-test/donate/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://praxis.nyc/commons-garden-test/donate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>press</title>
+      <link>https://praxis.nyc/commons-garden-test/press/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://praxis.nyc/commons-garden-test/press/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>template</title>
+      <link>https://praxis.nyc/commons-garden-test/article/template/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://praxis.nyc/commons-garden-test/article/template/</guid>
+      <description> markdown example template
+ </description>
+    </item>
+    
+    <item>
+      <title>template</title>
+      <link>https://praxis.nyc/commons-garden-test/initiative/template/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://praxis.nyc/commons-garden-test/initiative/template/</guid>
+      <description> markdown example template
+ </description>
+    </item>
+    
+    <item>
+      <title>template</title>
+      <link>https://praxis.nyc/commons-garden-test/note/template/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://praxis.nyc/commons-garden-test/note/template/</guid>
+      <description> markdown example template
+ </description>
+    </item>
+    
+    <item>
+      <title>template</title>
+      <link>https://praxis.nyc/commons-garden-test/organization/template/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://praxis.nyc/commons-garden-test/organization/template/</guid>
+      <description> markdown example template
+ </description>
+    </item>
+    
+    <item>
+      <title>template</title>
+      <link>https://praxis.nyc/commons-garden-test/spec/template/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://praxis.nyc/commons-garden-test/spec/template/</guid>
+      <description> markdown example template
+ </description>
+    </item>
+    
+    <item>
+      <title>template</title>
+      <link>https://praxis.nyc/commons-garden-test/team/template/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://praxis.nyc/commons-garden-test/team/template/</guid>
+      <description> markdown example template
+ </description>
+    </item>
+    
+    <item>
+      <title>template</title>
+      <link>https://praxis.nyc/commons-garden-test/volunteer/template/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://praxis.nyc/commons-garden-test/volunteer/template/</guid>
+      <description> markdown example template
+ </description>
+    </item>
+    
+    <item>
+      <title>template</title>
+      <link>https://praxis.nyc/commons-garden-test/wireframe/template/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://praxis.nyc/commons-garden-test/wireframe/template/</guid>
+      <description> markdown example template
+ </description>
+    </item>
+    
+    <item>
+      <title>why open source?</title>
+      <link>https://praxis.nyc/commons-garden-test/why-open-source/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://praxis.nyc/commons-garden-test/why-open-source/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

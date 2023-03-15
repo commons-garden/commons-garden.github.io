@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{{ partial "html.html" . }}
+{{ partial "head.html" . }}
+<body>
+
+	<article class="main">
+		<header class="header">
+			<h1>{{ .Title }}</h1>
+			<h2>{{ .Description }}</h2>
+		</header>
+		{{ .Content }}
+	</article>
+	{{ partial "scripts.html" . }} 
+</body>
+</html>
+
