@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<link rel="stylesheet" href="https://praxis.nyc/commons-garden-test/css/main.8e4d831d4c93a7d7b7065d0f3b97ef25d79ba54283bf592c0cae1072a820da2a.css">
+<link rel="stylesheet" href="https://commons.garden/css/main.8e4d831d4c93a7d7b7065d0f3b97ef25d79ba54283bf592c0cae1072a820da2a.css">
 
 	<title>Commons Garden</title>
 </head>
@@ -22,34 +22,6 @@
 
 	</article>
 	
-
-<script src="https://praxis.nyc/commons-garden-test/js/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/detectizr/2.2.0/detectizr.min.js" integrity="sha512-nDDw7LfkxLf4hO24ikFLVfx6B8LE0mJqCnVFE7gmpTyJSd5EGs8iw+o64qjlQRIHHMfI2SfzYQEGbKrU2tBTqQ==" crossorigin="anonymous"></script>
-
-<script src="https://praxis.nyc/commons-garden-test/js/popper.min.js"></script>
-
-<script src="https://praxis.nyc/commons-garden-test/js/bootstrap.min.js"></script>
-<script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    });
-    $('[data-toggle="popover"]').popover({ trigger: "manual" , html: true, animation:false, content: ''})
-    .on("mouseenter", function () {
-      var _this = this;
-      $(this).popover("show");
-      $(".popover").on("mouseleave", function () {
-        $(_this).popover('hide');
-      });
-    }).on("mouseleave", function () {
-      var _this = this;
-      setTimeout(function () {
-        if (!$(".popover:hover").length) {
-          $(_this).popover("hide");
-        }
-      }, 300);
-    });
-  </script> 
 </body>
 </html>
 

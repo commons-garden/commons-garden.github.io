@@ -1,6 +1,6 @@
-baseURL = "https://praxis.nyc/commons-garden-test/"
+baseURL = "https://commons.garden/"
 languageCode = "en-us"
 title = "Commons Garden"
 description = "Knowledge Commons"
 publishDir = "docs"
-category = ["article", "initiative", "organization", "spec", "team", "volunteer", "wireframe", "note"]
+category = ["article", "initiative", "spec", "team", "volunteer", "wireframe", "note"]

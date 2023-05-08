@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on Commons Garden</title>
-    <link>https://praxis.nyc/commons-garden-test/article/</link>
+    <link>https://commons.garden/article/</link>
     <description>Recent content in Articles on Commons Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://praxis.nyc/commons-garden-test/article/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://commons.garden/article/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>template</title>
-      <link>https://praxis.nyc/commons-garden-test/article/template/</link>
+      <link>https://commons.garden/article/template/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://praxis.nyc/commons-garden-test/article/template/</guid>
+      <guid>https://commons.garden/article/template/</guid>
       <description> markdown example template
- </description>
+  aaaa asass asas  lorem ipsum dolor </description>
     </item>
     
   </channel>

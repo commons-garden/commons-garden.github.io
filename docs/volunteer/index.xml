@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Volunteers on Commons Garden</title>
-    <link>https://praxis.nyc/commons-garden-test/volunteer/</link>
+    <link>https://commons.garden/volunteer/</link>
     <description>Recent content in Volunteers on Commons Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://praxis.nyc/commons-garden-test/volunteer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://commons.garden/volunteer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>template</title>
-      <link>https://praxis.nyc/commons-garden-test/volunteer/template/</link>
+      <link>https://commons.garden/volunteer/template/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://praxis.nyc/commons-garden-test/volunteer/template/</guid>
+      <guid>https://commons.garden/volunteer/template/</guid>
       <description> markdown example template
  </description>
     </item>

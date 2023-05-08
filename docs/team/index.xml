@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Teams on Commons Garden</title>
-    <link>https://praxis.nyc/commons-garden-test/team/</link>
+    <link>https://commons.garden/team/</link>
     <description>Recent content in Teams on Commons Garden</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://praxis.nyc/commons-garden-test/team/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://commons.garden/team/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>template</title>
-      <link>https://praxis.nyc/commons-garden-test/team/template/</link>
+      <link>https://commons.garden/team/template/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://praxis.nyc/commons-garden-test/team/template/</guid>
+      <guid>https://commons.garden/team/template/</guid>
       <description> markdown example template
  </description>
     </item>

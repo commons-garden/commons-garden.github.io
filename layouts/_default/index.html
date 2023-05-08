@@ -2,28 +2,22 @@
 {{ partial "html.html" . }}
 {{ partial "head.html" . }}
 <body class="home">
-
-
-		
 	
 		<article class="main">
 			<header class="header">
 				<h1>{{ .Site.Title }}</h1>
-				<div class="slogan">
-					<p>{{ .Site.Title }}</p>
-				</div>
 			</header>
 	
 	 <ul>
 	 	 {{ range .Site.RegularPages }}
-       <li> <a href="{{ .RelPermalink }}" class="block">
+       <li> <a href="{{ .RelPermalink }}">
             {{ .RelPermalink }}
         </a></li>
     {{ end }}
 	 </ul>
+	
 		</article>
 			
 	
-	{{ partial "scripts.html" . }} 
 </body>
 </html>
