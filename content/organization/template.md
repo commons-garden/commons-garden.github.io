@@ -1,5 +1,6 @@
 ---
 title: template
+status: draft
 category: organization
 author: mix, nonlinear
 date: 2023-03-07

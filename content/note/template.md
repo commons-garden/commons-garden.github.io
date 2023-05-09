@@ -1,5 +1,6 @@
 ---
 title: template
+status: draft
 category: note
 date: 2023-03-07
 ---

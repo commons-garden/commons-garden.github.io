@@ -1,5 +1,6 @@
 ---
 title: template
+status: draft
 category: spec
 date: 2023-03-07
 ---

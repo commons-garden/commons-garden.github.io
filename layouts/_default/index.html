@@ -10,11 +10,15 @@
 	
 	 <ul>
 	 	 {{ range .Site.RegularPages }}
+	 	 {{ if not (in .Params.status "draft") }}
        <li> <a href="{{ .RelPermalink }}">
             {{ .RelPermalink }}
         </a></li>
     {{ end }}
+    {{ end }}
 	 </ul>
+
+	 
 	
 		</article>
 			
