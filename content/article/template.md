@@ -1,7 +1,6 @@
 ---
 title: template
-status: draft
-status: draft
+show: false
 category: article
 date: 2023-03-07
 ---

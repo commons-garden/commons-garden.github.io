@@ -1,5 +1,5 @@
 ---
 title: press
-status: draft
+show: false
 date: 2023-03-07
 ---

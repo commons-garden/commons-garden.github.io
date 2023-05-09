@@ -1,6 +1,6 @@
 ---
 title: template
-status: draft
+show: false
 category: wireframe
 date: 2023-03-07
 ---

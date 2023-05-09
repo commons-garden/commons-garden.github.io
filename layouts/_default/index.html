@@ -10,7 +10,7 @@
 	
 	 <ul>
 	 	 {{ range .Site.RegularPages }}
-	 	 {{ if not (in .Params.status "draft") }}
+	 	 {{ if not (in .Params.show "false") }}
        <li> <a href="{{ .RelPermalink }}">
             {{ .RelPermalink }}
         </a></li>
