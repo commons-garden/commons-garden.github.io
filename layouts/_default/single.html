@@ -9,6 +9,11 @@
 			<h2>{{ .Description }}</h2>
 		</header>
 		{{ .Content }}
+
+		<footer class="footer">
+			<div class="other">{{ partial "related.html" . }}</div>
+			<div class="about"><a class="btn" href="https://commons.garden">commons.garden</a></div>
+		</footer>
 	</article>
 	
 </body>

@@ -3,25 +3,21 @@
 {{ partial "head.html" . }}
 <body class="home">
 	
-		<article class="main">
-			<header class="header">
-				<h1>{{ .Site.Title }}</h1>
-			</header>
+	<article class="main">
+		<header class="header">
+			<h1>{{ .Site.Title }}</h1>
+		</header>
+		
+		<ul>
+			{{ range .Site.RegularPages }}
+			{{ partial "post-row.html" . }}
+			{{ end }}
+		</ul>
+		{{ partial "index.html" . }}
+		
+		
+	</article>
 	
-	 <ul>
-	 	 {{ range .Site.RegularPages }}
-	 	 {{ if not (in .Params.show "false") }}
-       <li> <a href="{{ .RelPermalink }}">
-            {{ .RelPermalink }}
-        </a></li>
-    {{ end }}
-    {{ end }}
-	 </ul>
-{{ partial "index.html" . }}
-	 
-	
-		</article>
-			
 	
 </body>
 </html>

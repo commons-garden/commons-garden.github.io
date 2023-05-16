@@ -1,6 +1,6 @@
 baseURL = "https://commons.garden/"
 languageCode = "en-us"
 title = "commons.garden"
-description = "Knowledge Commons"
+description = "Enhancing knowledge commons"
 publishDir = "public"
 category = ["article", "initiative", "spec", "team", "volunteer", "wireframe", "note"]

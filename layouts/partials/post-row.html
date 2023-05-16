@@ -1,0 +1,6 @@
+
+      {{ if not (in .Params.show "false") }}
+       <li> <a href="{{ .RelPermalink }}">
+            {{ .Title }}
+        </a></li>
+{{ end }}

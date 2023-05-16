@@ -1,0 +1,29 @@
+
+{{ if (in .Params.category "about") }}
+
+<p>More about us</p>
+{{ range .Site.RegularPages }}
+{{ if (in .Params.category "about") }}
+{{ partial "post-row.html" . }}
+{{ end }}
+{{ end }}
+
+{{ else if (in .Params.category "spec") }}
+
+<p>Other specs</p>
+{{ range .Site.RegularPages }}
+{{ if (in .Params.category "spec") }}
+{{ partial "post-row.html" . }}
+{{ end }}
+{{ end }}
+
+{{ else if (in .Params.category "organization") }}
+
+<p>Other organizations</p>
+{{ range .Site.RegularPages }}
+{{ if (in .Params.category "spec") }}
+{{ partial "post-row.html" . }}
+{{ end }}
+{{ end }}
+
+{{ end }}

@@ -54,3 +54,34 @@ article.main {
 	margin: 0 auto;
 	padding: var(--gap);
 }
+
+hr {
+	border: dashed 1px #cc999c;
+	margin: var(--gap-3) 0;
+	border-bottom: none;
+	
+}
+
+h1 {
+	border-bottom: dashed 1px #cc999c;
+	margin-bottom: var(--gap-3);
+	padding-bottom: var(--gap-3);	
+}
+
+footer.footer {
+	border-top: dashed 1px #cc999c;
+	margin-top: var(--gap-3);
+	padding-top: var(--gap-3);
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: var(--gap-2);
+}
+
+a.btn {
+	padding: var(--gap) var(--gap-3);
+	border: solid 1px #cc999c;
+	@include transition;
+	&:hover {
+		background-color: white;
+	}
+}
