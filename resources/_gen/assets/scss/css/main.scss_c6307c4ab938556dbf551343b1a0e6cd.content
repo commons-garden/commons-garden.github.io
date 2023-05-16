@@ -14886,24 +14886,13 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 :root {
-  --font: Space Grotesk;
-  --color-bg: white;
+  --font: PP Fraktion;
+  --color-bg: #FED1DE;
   --color-fg: black;
-  --color-medium: #999;
-  --color-dark: #666;
-  --color-accent: purple;
-  --color-accent-2: #EDB6D3;
-  --count: 100px;
-  --logo-small: 36px;
-  --pdf: 100vh;
-  --nav: 150px;
-  --container: 700px;
+  --color-accent: #cc999c;
   --transition: 300ms;
-  --lang: 50px;
-  --pdf-ratio: 0.3863636364;
   --delay: 300ms;
-  --gap: 15px;
-  --CTA-size: 130px;
+  --gap: 8px;
   --gap-2: calc(var(--gap) * 2);
   --gap-3: calc(var(--gap) * 3);
   --gap-4: calc(var(--gap) * 4);
@@ -14914,23 +14903,7 @@ a.text-dark:hover, a.text-dark:focus {
   --gap-9: calc(var(--gap) * 9);
   --gap-10: calc(var(--gap) * 10);
   --gap-half: calc(var(--gap) / 2);
-  --gap-quart: calc(var(--gap) / 4);
-  --bg-image: url("https://praxis.nyc/images/dot-bg.svg"); }
-
-:root.dark-mode {
-  --color-bg: #281831;
-  --color-fg: white;
-  --color-medium: white;
-  --color-dark: #999;
-  --color-accent: #EDB6D3;
-  --color-accent-2: purple;
-  --bg-image: url("../images/dot-bg-dark-mode.svg"); }
-
-:root.dark-mode section.session .counter:before {
-  background-color: rgba(255, 255, 255, 0.3); }
-
-:root.dark-mode .cover {
-  display: none; }
+  --gap-quart: calc(var(--gap) / 4); }
 
 @font-face {
   font-family: PP Fraktion;
@@ -15017,39 +14990,58 @@ a.text-dark:hover, a.text-dark:focus {
     src: url("../fonts/PPFraktionMono-RegularItalic.svg#PP Fraktion") format("svg"); } }
 
 body {
-  font-family: PP Fraktion;
-  background-color: #FED1DE; }
+  font-family: var(--font);
+  background-color: var(--color-bg);
+  -color: var(--color-fg); }
 
 p {
   margin-top: var(--gap-2);
-  font-size: 16px; }
+  font-size: var(--gap-2); }
+
+h1 {
+  font-size: var(--gap-6) !important; }
+
+h2 {
+  font-size: var(--gap-4); }
+
+h3 {
+  font-size: var(--gap-3); }
 
 article.main {
   width: 500px;
   margin: 0 auto;
   padding: var(--gap); }
 
+@media (max-width: 500px) {
+  article.main {
+    width: 100%;
+    padding: var(--gap-2); } }
+
 hr {
-  border: dashed 1px #cc999c;
+  border: dashed 1px var(--color-accent);
   margin: var(--gap-3) 0;
   border-bottom: none; }
 
-h1 {
-  border-bottom: dashed 1px #cc999c;
+header.header {
+  border-bottom: dashed 1px var(--color-accent);
   margin-bottom: var(--gap-3);
   padding-bottom: var(--gap-3); }
 
 footer.footer {
-  border-top: dashed 1px #cc999c;
+  border-top: dashed 1px var(--color-accent);
   margin-top: var(--gap-3);
   padding-top: var(--gap-3);
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: var(--gap-2); }
 
+@media (max-width: 500px) {
+  footer.footer {
+    display: block; } }
+
 a.btn {
   padding: var(--gap) var(--gap-3);
-  border: solid 1px #cc999c;
+  border: solid 1px var(--color-accent);
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
   -ms-transition: all 300ms ease-out;

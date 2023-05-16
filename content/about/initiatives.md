@@ -1,5 +1,5 @@
 ---
-title: Open Initiatives
+title: Open initiatives
 show: true
 category: about
 date: 2023-05-16

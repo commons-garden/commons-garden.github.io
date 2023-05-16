@@ -37,49 +37,69 @@
 
 
 body {
-	font-family: PP Fraktion;
-background-color: #FED1DE;
+	font-family: var(--font);
+background-color: var(--color-bg);
+-color: var(--color-fg);
 
 
 }
 
 p {
 	margin-top: var(--gap-2);
-	font-size: 16px;
+	font-size: var(--gap-2);
 }
+
+h1 {
+	font-size: var(--gap-6) !important;
+}
+h2 {
+	font-size: var(--gap-4);
+}
+h3 {
+	font-size: var(--gap-3);
+}
+
 
 
 article.main {
-	width: 500px;
+	width: $bp;
 	margin: 0 auto;
 	padding: var(--gap);
+@media (max-width: $bp) {
+		width: 100%;
+		padding: var(--gap-2);
+}
+
 }
 
 hr {
-	border: dashed 1px #cc999c;
+	border: dashed 1px var(--color-accent);
 	margin: var(--gap-3) 0;
 	border-bottom: none;
 	
 }
 
-h1 {
-	border-bottom: dashed 1px #cc999c;
+header.header {
+	border-bottom: dashed 1px var(--color-accent);
 	margin-bottom: var(--gap-3);
 	padding-bottom: var(--gap-3);	
 }
 
 footer.footer {
-	border-top: dashed 1px #cc999c;
+	border-top: dashed 1px var(--color-accent);
 	margin-top: var(--gap-3);
 	padding-top: var(--gap-3);
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-gap: var(--gap-2);
+	@media (max-width: $bp) {
+		display: block;
+}
 }
 
 a.btn {
 	padding: var(--gap) var(--gap-3);
-	border: solid 1px #cc999c;
+	border: solid 1px var(--color-accent);
 	@include transition;
 	&:hover {
 		background-color: white;

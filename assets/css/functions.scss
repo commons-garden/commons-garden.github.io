@@ -1,23 +1,12 @@
-  $bp: 700px;
+  $bp: 500px;
   :root {
-    --font: Space Grotesk;
-    --color-bg: white;
+    --font: PP Fraktion;
+    --color-bg: #FED1DE;
     --color-fg: black;
-    --color-medium: #999;
-    --color-dark: #666;
-    --color-accent: purple;
-    --color-accent-2: #EDB6D3;
-    --count: 100px;
-    --logo-small: 36px;
-    --pdf: 100vh;
-    --nav: 150px;
-    --container: 700px;
+    --color-accent: #cc999c;
     --transition: 300ms;
-    --lang: 50px;
-    --pdf-ratio: 0.3863636364;
     --delay: 300ms;
-    --gap: 15px;
-    --CTA-size: 130px;
+    --gap: 8px;
     --gap-2: calc(var(--gap) * 2);
     --gap-3: calc(var(--gap) * 3);
     --gap-4: calc(var(--gap) * 4);
@@ -29,22 +18,6 @@
     --gap-10: calc(var(--gap) * 10);
     --gap-half: calc(var(--gap) / 2);
     --gap-quart: calc(var(--gap) / 4);
-    --bg-image: url("https://praxis.nyc/images/dot-bg.svg");
-    &.dark-mode {
-      --color-bg: #281831;
-      --color-fg: white;
-      --color-medium: white;
-      --color-dark: #999;
-      --color-accent: #EDB6D3;
-      --color-accent-2: purple;
-      --bg-image: url("../images/dot-bg-dark-mode.svg");
-      section.session  .counter:before {
-        background-color: rgba(white, .3);
-      }
-      .cover {
-        display: none;
-      }
-    }
   }
 
 
