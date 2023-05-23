@@ -21,6 +21,11 @@ If you have experience managing coalition groups, [we'd love to hear from you](/
 
 Commons Garden is on initial stages, keep informed via our [Open Collective](opencollective.com/commons-garden) page.
 
+## Contact us
+
+1. Via [praxis.nyc@protonmail.com](mailto:praxis.nyc@protonmail.com?subject:commons.garden) email
+1. Via [signal group](https://signal.group/#CjQKIAneWf9J6yoVIAKUjLdLynBTbQxuaTEVHbpaLioQhdL-EhAybesuQH-M_Uy8AvcJkEeW)
+
 ---
 
 #### ⛑️ TODO: 
