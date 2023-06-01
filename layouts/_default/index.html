@@ -5,7 +5,10 @@
 	
 	<article class="main">
 		<header class="header">
-			<h1>{{ .Site.Title }}</h1>
+			<h2>
+			<button type="button" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+{{ .Site.Title }}
+</button>/</h2>
 		</header>
 
 
@@ -19,6 +22,6 @@
 		
 	</article>
 	
-	
+	{{ partial "scripts.html" . }} 
 </body>
 </html>

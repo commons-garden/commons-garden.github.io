@@ -3,19 +3,62 @@
 {{ partial "head.html" . }}
 <body>
 
-	<article class="main">
-		<header class="header">
-			<h1>{{ .Title }}</h1>
+	<div class="container">
+			<header class="header">
+			<h2>
+			<a data-container="body" data-toggle="popover" data-placement="top" data-content="generic about contact here">
+{{ .Site.Title }}
+</a>/<a data-container="body" data-toggle="popover" data-placement="top" data-content="list all catalogs here">
+spec
+</a></h2>
+		<h1>
+		<a data-container="body" data-toggle="popover" data-placement="top" data-content="list other articles from same catalog here">
+{{ .Title }}
+</a></h1>
 			<h2>{{ .Description }}</h2>
 		</header>
-		{{ .Content }}
-
+<div class="divider"></div>
+		<article>
+			<ul class="status">
+<li>
+	<span>status:</span>
+	<a data-container="body" data-toggle="popover" data-placement="top" data-content="present all statuses here">Stable</a>
+</li>
+<li>
+	<span>scope:</span>
+	<a href="/">SSB</a>
+</li>
+<li>
+	<span>license:</span>
+	CC0-1.0
+</li>
+<li>
+	<span>author:</span>
+mix
+</li>
+<li>
+	<span>reviewed by:</span>
+staltz, cel
+</li>
+<li>
+	<span>implemented in:</span>
+patchwork, manyverse, planetary, patchfox
+</li>
+<li>
+	<span>status date:</span>
+2023-03-07
+</li>
+			</ul>
+			<section class="content">
+				{{ .Content }}
+			</section>
+		</article>
+<div class="divider"></div>
 		<footer class="footer">
-			<div class="other">{{ partial "related.html" . }}</div>
-			<div class="about"><a class="btn" href="https://commons.garden">commons.garden</a></div>
+<a class="logo" href="/">commons.garden</a> guards and enhances knowledge commons by sponsoring initiatives through conflict resolution, specs, documentation, consulting.
 		</footer>
-	</article>
-	
+	</div>
+	{{ partial "scripts.html" . }} 
 </body>
 </html>
 
