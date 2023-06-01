@@ -14886,8 +14886,9 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 :root {
-  --font: PP Fraktion;
-  --color-bg: #FED1DE;
+  --text-font: PP Fraktion;
+  --title-font: TINY5x3-160;
+  --color-bg: #FFEDED;
   --color-fg: black;
   --color-accent: #cc999c;
   --transition: 300ms;
@@ -14904,6 +14905,48 @@ a.text-dark:hover, a.text-dark:focus {
   --gap-10: calc(var(--gap) * 10);
   --gap-half: calc(var(--gap) / 2);
   --gap-quart: calc(var(--gap) / 4); }
+
+@font-face {
+  font-family: TINY5x3-160;
+  src: url("../fonts/TINY5x3-160.eot");
+  src: url("../fonts/TINY5x3-160.eot?#iefix") format("embedded-opentype"), url("../fonts/TINY5x3-160.woff") format("woff"), url("../fonts/TINY5x3-160.ttf") format("truetype"), url("../fonts/TINY5x3-160.svg#TINY5x3-160") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: transform; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: TINY5x3-160;
+    src: url("../fonts/TINY5x3-160.svg#TINY5x3-160") format("svg"); } }
+
+@font-face {
+  font-family: Calling Code;
+  src: url("../fonts/calling-code-regular.eot");
+  src: url("../fonts/calling-code-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/calling-code-regular.woff") format("woff"), url("../fonts/calling-code-regular.ttf") format("truetype"), url("../fonts/calling-code-regular.svg#Calling Code") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: transform; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: Calling Code;
+    src: url("../fonts/calling-code-regular.svg#Calling Code") format("svg"); } }
+
+@font-face {
+  font-family: Dot Matrix;
+  src: url("../fonts/dotmatrix.eot");
+  src: url("../fonts/dotmatrix.eot?#iefix") format("embedded-opentype"), url("../fonts/dotmatrix.woff") format("woff"), url("../fonts/dotmatrix.ttf") format("truetype"), url("../fonts/dotmatrix.svg#Dot Matrix") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: transform; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: Dot Matrix;
+    src: url("../fonts/dotmatrix.svg#Dot Matrix") format("svg"); } }
 
 @font-face {
   font-family: PP Fraktion;
@@ -14990,7 +15033,7 @@ a.text-dark:hover, a.text-dark:focus {
     src: url("../fonts/PPFraktionMono-RegularItalic.svg#PP Fraktion") format("svg"); } }
 
 body {
-  font-family: var(--font);
+  font-family: var(--text-font);
   background-color: var(--color-bg);
   -color: var(--color-fg); }
 
@@ -15006,6 +15049,10 @@ h2 {
 
 h3 {
   font-size: var(--gap-3); }
+
+h1, h2, h3 {
+  font-family: var(--title-font);
+  text-transform: uppercase; }
 
 article.main {
   width: 500px;

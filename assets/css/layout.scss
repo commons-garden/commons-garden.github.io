@@ -1,43 +1,8 @@
-@include font-face(PP Fraktion, 
-	$path: "../fonts/", 
-	$file: PPFraktionMono-Bold, 
-	$weight: bold, 
-	$style: normal
-);
-@include font-face(PP Fraktion, 
-	$path: "../fonts/", 
-	$file: PPFraktionMono-BoldItalic, 
-	$weight: bold, 
-	$style: italic
-);
-@include font-face(PP Fraktion, 
-	$path: "../fonts/", 
-	$file: PPFraktionMono-Light, 
-	$weight: lighter, 
-	$style: normal
-);
-@include font-face(PP Fraktion, 
-	$path: "../fonts/", 
-	$file: PPFraktionMono-LightItalic, 
-	$weight: lighter, 
-	$style: italic
-);
-@include font-face(PP Fraktion, 
-	$path: "../fonts/", 
-	$file: PPFraktionMono-Regular, 
-	$weight: normal, 
-	$style: normal
-);
-@include font-face(PP Fraktion, 
-	$path: "../fonts/", 
-	$file: PPFraktionMono-RegularItalic, 
-	$weight: normal, 
-	$style: italic
-);
+
 
 
 body {
-	font-family: var(--font);
+font-family: var(--text-font);
 background-color: var(--color-bg);
 -color: var(--color-fg);
 
@@ -59,6 +24,10 @@ h3 {
 	font-size: var(--gap-3);
 }
 
+h1, h2, h3 {
+	font-family: var(--title-font);
+	text-transform: uppercase;
+}
 
 
 article.main {
