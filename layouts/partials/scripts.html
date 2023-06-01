@@ -28,7 +28,9 @@
         }
       }, 300);
     });
+    
   </script>
+
 {{ if in .Params.Category "slide" }}
 {{ $reveal := resources.Get "js/revealjs/reveal.js" }}
 <script src="{{ $reveal.Permalink }}"></script>

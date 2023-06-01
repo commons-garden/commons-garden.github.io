@@ -6,51 +6,70 @@
 	<div class="container">
 			<header class="header">
 			<h2>
-			<a data-container="body" data-toggle="popover" data-placement="top" data-content="generic about contact here">
+			<a data-toggle="popover" data-placement="top" data-content="generic about contact here">
 {{ .Site.Title }}
-</a>/<a data-container="body" data-toggle="popover" data-placement="top" data-content="list all catalogs here">
+</a>/<a data-toggle="popover" data-placement="top" data-content="list all catalogs here">
 spec
 </a>/</h2>
 		<h1>
-		<a data-container="body" data-toggle="popover" data-placement="top" data-content="list other articles from same catalog here">
+		<a data-toggle="popover" data-html="true" data-placement="top" data-content='{{ partial "related.html" . }}'>
 {{ .Title }}
 </a></h1>
+	
 			<h2>{{ .Description }}</h2>
+		
 		</header>
 <div class="divider"></div>
 		<article>
 			<ul class="status">
-<li>
+				{{ if .Params.Status }}
+<li class="status">
 	<span>status:</span>
-	<a data-container="body" data-toggle="popover" data-placement="top" data-content="present all statuses here">Stable</a>
+	{{ .Params.Status }}
 </li>
+{{ end }}
+{{ if .Params.Scope }}
 <li>
 	<span>scope:</span>
-	<a href="/">SSB</a>
+	{{ .Params.Scope }}
 </li>
+{{ end }}
+{{ if .Params.License }}
 <li>
 	<span>license:</span>
-	CC0-1.0
+	{{ .Params.License }}
 </li>
+{{ end }}
+{{ if .Params.Author }}
 <li>
 	<span>author:</span>
-mix
+{{ .Params.Author }}
 </li>
+{{ end }}
+{{ if .Params.Reviewed }}
 <li>
 	<span>reviewed by:</span>
-staltz, cel
+{{ .Params.Reviewed }}
 </li>
+{{ end }}
+{{ if .Params.Implemented }}
 <li>
 	<span>implemented in:</span>
-patchwork, manyverse, planetary, patchfox
+{{ .Params.Implemented }}
 </li>
+{{ end }}
+{{ if .Params.Date }}
 <li>
 	<span>status date:</span>
-2023-03-07
+{{ .Params.Date }}
 </li>
+{{ end }}
 			</ul>
 			<section class="content">
 				{{ .Content }}
+				{{ if .Params.Status }}
+				<a class="btn" target="_blank" href="{{ .Params.Link }}">View {{ .Params.Category }} {{ if .Params.Status }} on {{ .Params.Platform }}{{ end }}</a>
+				{{ end }}
 			</section>
 		</article>
 <div class="divider"></div>

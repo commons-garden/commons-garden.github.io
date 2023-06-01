@@ -19,7 +19,9 @@ font-size: 15px;
 a {
 	@include transition;
 	word-break: break-all;
-	text-decoration: underline;
+	&:not(.btn) {
+		text-decoration: underline;
+	}
 	color: var(--color-fg);
 }
 a:hover {
@@ -90,6 +92,7 @@ ul.status {
 
 a.btn {
 	text-align: left;
+	text-transform: uppercase;
 	padding: var(--gap) var(--gap-3);
 	@include radius(0, regular);
 	padding: var(--gap) var(--gap-3);
@@ -97,5 +100,7 @@ a.btn {
 	@include transition;
 	&:hover {
 		background-color: white;
+		text-decoration: none;
 	}
+	
 }

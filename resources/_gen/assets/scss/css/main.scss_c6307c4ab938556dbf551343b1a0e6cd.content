@@ -15053,8 +15053,10 @@ a {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   word-break: break-all;
-  text-decoration: underline;
   color: var(--color-fg); }
+
+a:not(.btn) {
+  text-decoration: underline; }
 
 a:hover {
   color: var(--color-accent); }
@@ -15110,6 +15112,7 @@ ul.status span {
 
 a.btn {
   text-align: left;
+  text-transform: uppercase;
   padding: var(--gap) var(--gap-3);
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -15128,7 +15131,8 @@ a.btn {
   transition: all 300ms ease-out; }
 
 a.btn:hover {
-  background-color: white; }
+  background-color: white;
+  text-decoration: none; }
 
 .nav li .active-only {
   display: none;
