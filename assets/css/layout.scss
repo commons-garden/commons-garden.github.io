@@ -40,14 +40,16 @@ h3 {
 	font-size: 25px;
 }
 
-h1, h2, h3, .logo {
+header.header, footer.footer {
+	h1, h2, h3, .logo {
 	word-break: break-all;
 	font-family: var(--title-font);
 	text-transform: uppercase;
 	line-heighT: 65%;
 }
+}
 
-article {
+article.with-status {
 	@media (min-width: $bp) {
 		display: grid;
 		width: 100%;
@@ -103,4 +105,28 @@ a.btn {
 		text-decoration: none;
 	}
 	
+}
+
+code {
+	word-break: keep-all;
+	background-color: var(--color-accent);
+	padding: 0 2px;
+	color: white;
+}
+
+table {
+	tbody tr {
+		border-top: solid 1px var(--color-accent);
+	}
+	td, th {
+		padding: 10px;
+		
+	vertical-align: top;
+		&:first-of-type {
+			padding-left: 0;
+		}
+			&:last-of-type {
+			padding-right: 0;
+		}
+	}
 }

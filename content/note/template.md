@@ -1,6 +1,6 @@
 ---
 title: template
-show: false
+type: hidden
 category: note
 date: 2023-03-07
 ---

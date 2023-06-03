@@ -1,5 +1,5 @@
 
-      {{ if not (in .Params.show "false") }}
+      {{ if (in .Params.type "public") }}
        <li> <a href="{{ .RelPermalink }}">
             {{ .Title }}
         </a></li>

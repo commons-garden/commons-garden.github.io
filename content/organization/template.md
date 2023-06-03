@@ -1,6 +1,6 @@
 ---
 title: template
-show: false
+type: hidden
 category: organization
 author: mix, nonlinear
 date: 2023-03-07

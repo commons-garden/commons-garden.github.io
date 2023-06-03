@@ -9,7 +9,7 @@
 			<a data-toggle="popover" data-placement="top" data-content="generic about contact here">
 {{ .Site.Title }}
 </a>/<a data-toggle="popover" data-placement="top" data-content="list all catalogs here">
-spec
+{{ .Params.Category }}
 </a>/</h2>
 		<h1>
 		<a data-toggle="popover" data-html="true" data-placement="top" data-content='{{ partial "related.html" . }}'>
@@ -20,7 +20,10 @@ spec
 		
 		</header>
 <div class="divider"></div>
-		<article>
+
+{{ if (in .Params.category "spec") }}
+
+<article class="with-status">
 			<ul class="status">
 				{{ if .Params.Status }}
 <li class="status">
@@ -72,6 +75,10 @@ spec
 				{{ end }}
 			</section>
 		</article>
+{{ else }}
+<article>{{ .Content }}</article>
+{{ end }}
+		
 <div class="divider"></div>
 		<footer class="footer">
 <a class="logo" href="/">commons.garden</a> guards and enhances knowledge commons by sponsoring initiatives through conflict resolution, specs, documentation, consulting.

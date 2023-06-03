@@ -15070,14 +15070,14 @@ h2 {
 h3 {
   font-size: 25px; }
 
-h1, h2, h3, .logo {
+header.header h1, header.header h2, header.header h3, header.header .logo, footer.footer h1, footer.footer h2, footer.footer h3, footer.footer .logo {
   word-break: break-all;
   font-family: var(--title-font);
   text-transform: uppercase;
   line-heighT: 65%; }
 
 @media (min-width: 500px) {
-  article {
+  article.with-status {
     display: grid;
     width: 100%;
     grid-gap: var(--gap-2);
@@ -15133,6 +15133,25 @@ a.btn {
 a.btn:hover {
   background-color: white;
   text-decoration: none; }
+
+code {
+  word-break: keep-all;
+  background-color: var(--color-accent);
+  padding: 0 2px;
+  color: white; }
+
+table tbody tr {
+  border-top: solid 1px var(--color-accent); }
+
+table td, table th {
+  padding: 10px;
+  vertical-align: top; }
+
+table td:first-of-type, table th:first-of-type {
+  padding-left: 0; }
+
+table td:last-of-type, table th:last-of-type {
+  padding-right: 0; }
 
 .nav li .active-only {
   display: none;

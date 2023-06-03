@@ -1,6 +1,6 @@
 ---
 title: Policies
-show: true
+type: public
 category: about
 date: 2023-05-16
 ---

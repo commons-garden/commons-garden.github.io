@@ -1,6 +1,6 @@
 ---
 title: Mission statement
-show: true
+type: public
 category: about
 date: 2023-03-07
 ---
