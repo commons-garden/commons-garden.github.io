@@ -15091,7 +15091,7 @@ header.header h1, header.header h2, header.header h3, header.header .logo, foote
   .quarter {
     grid-template-columns: 1fr 3fr; } }
 
-header.header:after, footer.footer:before {
+header.header:after, footer.footer:before, .home footer.footer:after {
   content: "";
   height: 3px;
   display: block;
@@ -15100,8 +15100,11 @@ header.header:after, footer.footer:before {
   background-image: url(../images/divider.svg); }
 
 @media (max-width: 500px) {
-  header.header:after, footer.footer:before {
+  header.header:after, footer.footer:before, .home footer.footer:after {
     margin: var(--gap-3) 0; } }
+
+.home footer.footer:before {
+  display: none; }
 
 header.header:after {
   margin-top: var(--gap-3); }
@@ -15173,13 +15176,11 @@ a[data-toggle="popover"] {
   cursor: context-menu; }
 
 a[data-toggle="popover"]:hover {
-  color: #000000 !important;
-  background: none !important;
-  box-shadow: none !important; }
+  color: #000000 !important; }
 
 a[data-toggle="popover"]:hover:after {
-  color: var(--color-bg);
-  background-color: var(--color-accent); }
+  color: var(--color-fg);
+  border: solid 2px var(--color-fg); }
 
 a[data-toggle="popover"]:after {
   content: "+";
@@ -15212,7 +15213,7 @@ a[data-toggle="popover"]:after {
 
 h1 a[data-toggle="popover"]:after {
   margin-top: 13px;
-  margin-left: -8px;
+  margin-left: 3px;
   line-height: 11px; }
 
 .list a {
@@ -15248,6 +15249,9 @@ h1 a[data-toggle="popover"]:after {
 
 .list a:hover .description {
   text-decoration: underline; }
+
+.popover {
+  margin-top: 15px !important; }
 
 .popover-body {
   -webkit-box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.15);
@@ -15354,31 +15358,6 @@ table.table code {
 .modal-dialog {
   z-index: 3000 !important;
   outline: dashed 1px red; }
-
-a[data-toggle="popover"] {
-  display: inline;
-  background: var(--color-accent-2);
-  box-shadow: 2px 0 0 var(--color-accent-2), -2px 0 0 var(--color-accent-2);
-  position: relative;
-  padding-bottom: 3px;
-  padding-top: 5px;
-  box-decoration-break: clone; }
-
-html.firefox a[data-toggle="popover"] {
-  padding-top: 8px; }
-
-a[data-toggle="popover"]:hover {
-  color: var(--color-bg) !important;
-  display: inline;
-  background: var(--color-accent);
-  box-shadow: 2px 0 0 var(--color-accent), -2px 0 0 var(--color-accent);
-  position: relative;
-  padding-bottom: 3px;
-  padding-top: 5px;
-  box-decoration-break: clone; }
-
-html.firefox a[data-toggle="popover"]:hover {
-  padding-top: 8px; }
 
 .popover {
   -webkit-animation-name: fadeIn;

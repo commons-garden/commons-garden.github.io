@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end }} {{ if .Params.category  }}{{ .Params.category }}{{ end }} {{ if .Params.status  }}{{ .Params.status }}{{ end }}">
+<html lang="en" class="{{ with .File }}{{ .BaseFileName }}{{ end }} {{ if .Params.style  }}{{ .Params.style }}{{ end }} {{ if .Params.category  }}{{ .Params.category }}{{ end }} {{ if .Params.status  }}{{ .Params.status }}{{ end }}">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
 {{ $style := $sass | resources.ToCSS }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-<title>{{ partial "emoji.html" . }} {{ .Site.Title | upper }}/{{ .Params.Category }}/{{ .File.BaseFileName }}</title>
+<title>{{ partial "emoji.html" . }} {{ .Site.Title | upper }}/{{ .Params.Category }}/{{ with .File }}{{ .BaseFileName }}{{ end }}</title>
 </head>
 <body>
 
@@ -28,62 +28,10 @@
 		</header>
 
 
-
-
 {{ if (in .Params.category "spec") }}
-
-<article class="with-status">
-			<ul class="status">
-				{{ if .Params.Status }}
-<li class="status">
-	<span>status:</span>
-	{{ .Params.Status }}
-</li>
-{{ end }}
-{{ if .Params.Scope }}
-<li>
-	<span>scope:</span>
-	{{ .Params.Scope }}
-</li>
-{{ end }}
-{{ if .Params.License }}
-<li>
-	<span>license:</span>
-	{{ .Params.License }}
-</li>
-{{ end }}
-{{ if .Params.Author }}
-<li>
-	<span>author:</span>
-{{ .Params.Author }}
-</li>
-{{ end }}
-{{ if .Params.Reviewed }}
-<li>
-	<span>reviewed by:</span>
-{{ .Params.Reviewed }}
-</li>
-{{ end }}
-{{ if .Params.Implemented }}
-<li>
-	<span>implemented in:</span>
-{{ .Params.Implemented }}
-</li>
-{{ end }}
-{{ if .Params.Date }}
-<li>
-	<span>status date:</span>
-{{ .Params.Date }}
-</li>
-{{ end }}
-			</ul>
-			<section class="content">
-				{{ .Content }}
-				{{ if .Params.Status }}
-				<a class="btn" target="_blank" href="{{ .Params.Link }}">View {{ .Params.Category }} {{ if .Params.Status }} on {{ .Params.Platform }}{{ end }}</a>
-				{{ end }}
-			</section>
-		</article>
+{{ partial "article-sidebar.html" . }}
+{{ else if (in .Params.category "wireframe") }}
+{{ partial "article-sidebar.html" . }}
 {{ else }}
 <article>{{ .Content }}</article>
 {{ end }}

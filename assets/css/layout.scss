@@ -87,7 +87,7 @@ article.main {
 	@extend .third-reverse;
 }
 
-header.header:after, footer.footer:before {
+header.header:after, footer.footer:before, .home footer.footer:after {
 
 		content: "";
 
@@ -101,6 +101,10 @@ header.header:after, footer.footer:before {
 	background-image: url(../images/divider.svg);
 
 	
+}
+
+.home footer.footer:before {
+	display: none;
 }
 
 header.header:after {
@@ -176,15 +180,11 @@ table {
 a[data-toggle="popover"] {
 	margin-right: 17px;
 	cursor: context-menu;
-	&:hover {
-
-
+&:hover {
 		color: #000000 !important;
-		background: none !important;
-		box-shadow: none !important;
 			&:after {
-			color: var(--color-bg);
-			background-color: var(--color-accent);
+			color: var(--color-fg);
+			border: solid 2px var(--color-fg);
 		}
 	}
 	&:after {
@@ -207,10 +207,11 @@ a[data-toggle="popover"] {
 
 		h1 & {
 			margin-top: 13px;
-			margin-left: -8px;
+			margin-left: 3px;
 			line-height: 11px;
 		}
 	}
+		
 }
 
 .list {
@@ -246,6 +247,9 @@ text-decoration: underline;
 			}
 		}
 	}
+}
+.popover {
+	margin-top: 15px !important;
 }
 
 .popover-body {

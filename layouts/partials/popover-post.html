@@ -36,6 +36,24 @@
  {{ end }}
 </div>
 
+{{ else if (in .Params.category "wireframe") }}
+
+<h3>Other wireframes</h3>
+<div class="list post">
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "wireframe") }}
+      {{ if (in .Params.type "public") }}
+      <a href="{{ .RelPermalink }}">
+       
+       <span class="title">{{ .Title }}</span>
+       <span class="description">{{ .Params.Description }}</span>
+       
+ </a>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+</div>
+
 {{ else if (in .Params.category "tutorial") }}
 
 <h3>Other tutorials</h3>
