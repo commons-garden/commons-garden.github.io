@@ -1,7 +1,16 @@
 ---
 title: template
-type: hidden
+type: private
 category: spec
-date: 2023-03-07
+abstract: 
+status: 
+scope: 
+license: 
+author: 
+reviewed: 
+implemented: 
+date: 
+link: 
+platform: 
 ---
 > markdown example template

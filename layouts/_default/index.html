@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-{{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
-{{ $style := $sass | resources.ToCSS }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+	{{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
+	{{ $style := $sass | resources.ToCSS }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
 
 	<title>{{ partial "emoji.html" . }} {{ .Site.Title | upper }}</title>
 </head>
@@ -14,45 +14,45 @@
 		
 		<header class="header">
 			
-		<h1>
-		
-{{ .Site.Title }}
-</h1>
-		
+			<h1>
+				
+				{{ .Site.Title }}
+			</h1>
+			
 		</header>
 		<div class="divider"></div>
 		{{ partial "footer.html" . }}
 		<div class="divider"></div>
-<article class="main">
-		<section><h3>Categories</h3>
-<ul>
-	<li><a href="/initiative">initiative</a>: </li>f
-	<li><a href="/spec">spec</a>: </li>
-	<li><a href="/tutorial">tutorial</a>: how to document correctly</li>
-	<li><a href="/about">about</a></li>
-	<li><a href="/initiative">initiative</a>: </li>
-</ul></section>
+		<article class="main">
+			<section><h3>Categories</h3>
+				<ul>
+					<li><a href="/initiative">initiative</a>: </li>f
+					<li><a href="/spec">spec</a>: </li>
+					<li><a href="/tutorial">tutorial</a>: how to document correctly</li>
+					<li><a href="/about">about</a></li>
+					<li><a href="/initiative">initiative</a>: </li>
+				</ul></section>
 
-<section><h3>New Articles</h3>
-		<ul>
-			{{ range .Site.RegularPages }}
-			 {{ if (in .Params.type "public") }}
-       <li>  {{ .Params.Category }}: <a href="{{ .RelPermalink }}">{{ .Title }}</a> {{if .Params.Status }}(status: {{ .Params.Status }}){{ end }}
-    </li>
-{{ end }}
-			{{ end }}
-		</ul></section>
-		
-		
-		
-	</article>
-	<div class="divider"></div>
-		
-	</div>
-	
+				<section><h3>New Articles</h3>
+					<ul>
+						{{ range .Site.RegularPages }}
+						{{ if (in .Params.type "public") }}
+						<li>  {{ .Params.Category }}: <a href="{{ .RelPermalink }}">{{ .Title }}</a> {{if .Params.Status }}(status: {{ .Params.Status }}){{ end }}
+						</li>
+						{{ end }}
+						{{ end }}
+					</ul></section>
+					
+					
+					
+				</article>
+				<div class="divider"></div>
+				
+			</div>
+			
 
 
-	
-	{{ partial "scripts.html" . }} 
-</body>
-</html>
+			
+			{{ partial "scripts.html" . }} 
+		</body>
+		</html>
