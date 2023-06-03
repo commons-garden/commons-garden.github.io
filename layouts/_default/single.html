@@ -15,20 +15,20 @@
 
 			<header class="header">
 			<h2>
-			<a data-toggle="popover" data-placement="top" data-content="generic about contact here">
-{{ .Site.Title }}
-</a>/<a data-toggle="popover" data-placement="top" data-content="list all catalogs here">
-{{ .Params.Category }}
+			{{ partial "popover-title.html" . }}
+			/
+			{{ partial "popover-categories.html" . }}
+			{{ .Params.Category }}
 </a>/</h2>
 		<h1>
-		<a data-toggle="popover" data-html="true" data-placement="top" data-content='{{ partial "related.html" . }}'>
-{{ .Title }}
-</a></h1>
+		{{ partial "popover-post.html" . }}</h1>
 {{ .Description }}
 	
 		
 		</header>
-<div class="divider"></div>
+
+
+
 
 {{ if (in .Params.category "spec") }}
 
@@ -88,7 +88,7 @@
 <article>{{ .Content }}</article>
 {{ end }}
 		
-<div class="divider"></div>
+
 {{ partial "footer.html" . }}
 	</div>
 	{{ partial "scripts.html" . }} 

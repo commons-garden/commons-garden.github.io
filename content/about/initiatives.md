@@ -1,6 +1,7 @@
 ---
-title: Open initiatives
+title: Initiatives
 type: public
+description: Our open initiatives
 category: about
 date: 2023-05-16
 ---
@@ -26,11 +27,3 @@ date: 2023-05-16
     * collections
     * SSB simulation lab
     * stencil
-
----
-
-#### ⛑️ TODO: 
-
-
-- [ ] move initiatives to its own category
-- [ ] move board from figma

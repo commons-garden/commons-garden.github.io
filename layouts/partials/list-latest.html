@@ -1,0 +1,29 @@
+	<div class="list latest">
+
+
+<ul>
+						{{ range .Site.RegularPages  | first 3 }}
+						{{ if (in .Params.type "public") }}
+						<li>  {{ .Params.Category }}: <a href="{{ .RelPermalink }}">{{ .Title }}</a> {{if .Params.Status }}(status: {{ .Params.Status }}){{ end }}
+						</li>
+						{{ end }}
+						{{ end }}
+					</ul>
+
+					<!-- <a href="/initiative">
+					<span class="title">initiative</span>
+					<span class="description"></span>
+				</a> -->
+				<a href="/spec">
+					<span class="title">spec</span>
+					<span class="description"></span>
+				</a>
+				<a href="/tutorial">
+					<span class="title">tutorial</span>
+					<span class="description"></span>
+				</a>
+				<a href="/about">
+					<span class="title">about</span>
+					<span class="description"></span>
+				</a>
+				</div>

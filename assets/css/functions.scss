@@ -3,7 +3,7 @@
     --text-font: Calling Code;
     --title-font: TINY5x3-160;
     --color-bg: #FFEDED;
-    --color-fg: black;
+    --color-fg: #15141A;;
     --color-accent: #cc999c;
     --transition: 300ms;
     --delay: 300ms;
@@ -19,6 +19,7 @@
     --gap-10: calc(var(--gap) * 10);
     --gap-half: calc(var(--gap) / 2);
     --gap-quart: calc(var(--gap) / 4);
+    --grid-gap: var(--gap-3);
   }
 
 

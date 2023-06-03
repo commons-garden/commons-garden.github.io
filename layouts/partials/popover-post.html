@@ -1,0 +1,79 @@
+<a data-toggle="popover" data-html="true" data-placement="top" data-content='
+
+{{ if (in .Params.category "about") }}
+
+<h3>More about us</h3>
+<div class="list post">
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "about") }}
+      {{ if (in .Params.type "public") }}
+      <a href="{{ .RelPermalink }}">
+       
+       <span class="title">{{ .Title }}</span>
+       <span class="description">{{ .Params.Description }}</span>
+       
+ </a>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+</div>
+
+{{ else if (in .Params.category "spec") }}
+
+<h3>Other specs</h3>
+<div class="list post">
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "spec") }}
+      {{ if (in .Params.type "public") }}
+      <a href="{{ .RelPermalink }}">
+       
+       <span class="title">{{ .Title }}</span>
+       <span class="description">{{ .Params.Description }}{{if .Params.Status }} ({{ .Params.Status }}){{ end }}</span>
+       
+ </a>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+</div>
+
+{{ else if (in .Params.category "tutorial") }}
+
+<h3>Other tutorials</h3>
+<div class="list post">
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "tutorial") }}
+      {{ if (in .Params.type "public") }}
+      <a href="{{ .RelPermalink }}">
+       
+       <span class="title">{{ .Title }}</span>
+       <span class="description">{{ .Params.Description }}</span>
+       
+ </a>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+</div>
+
+{{ else if (in .Params.category "organization") }}
+
+<h3>Other organizations</h3>
+<div class="list post">
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "spec") }}
+      {{ if (in .Params.type "public") }}
+      <a href="{{ .RelPermalink }}">
+       
+       <span class="title">{{ .Title }}</span>
+       <span class="description">{{ .Params.Description }}</span>
+       
+ </a>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+</div>
+
+{{ end }}
+
+		'>
+{{ .Title }}
+</a>

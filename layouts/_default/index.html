@@ -20,34 +20,32 @@
 			</h1>
 			
 		</header>
-		<div class="divider"></div>
+		
 		{{ partial "footer.html" . }}
-		<div class="divider"></div>
+		
 		<article class="main">
 			<section><h3>Categories</h3>
-				<ul>
-					<li><a href="/initiative">initiative</a>: </li>f
-					<li><a href="/spec">spec</a>: </li>
-					<li><a href="/tutorial">tutorial</a>: how to document correctly</li>
-					<li><a href="/about">about</a></li>
-					<li><a href="/initiative">initiative</a>: </li>
-				</ul></section>
+			{{ partial "list-categories.html" . }} 
+			</section>
 
 				<section><h3>New Articles</h3>
-					<ul>
-						{{ range .Site.RegularPages }}
+					<div class="list latest">
+						{{ range .Site.RegularPages  | first 3 }}
 						{{ if (in .Params.type "public") }}
-						<li>  {{ .Params.Category }}: <a href="{{ .RelPermalink }}">{{ .Title }}</a> {{if .Params.Status }}(status: {{ .Params.Status }}){{ end }}
-						</li>
+						<a href="{{ .RelPermalink }}">
+							
+							<span class="title">{{ .Title }}</span>
+							<span class="description">{{ .Params.Category }}{{if .Params.Status }}, {{ .Params.Status }}{{ end }}</span>
+							
+						</a>
 						{{ end }}
 						{{ end }}
-					</ul></section>
+					</div>
+					</section>
 					
 					
 					
 				</article>
-				<div class="divider"></div>
-				
 			</div>
 			
 

@@ -1,0 +1,18 @@
+<a data-toggle="popover" data-placement="top" data-content='
+<div class="list about">
+	<a href="/">
+		<span class="title">Home</span>
+		<span class="description">Return to main page</span>
+	</a>
+	{{ range  where .Site.RegularPages ".Params.category" "about" }}
+	{{ if (in .Params.type "public") }}
+	<a href="{{ .RelPermalink }}">
+		<span class="title">{{ .Title }}</span>
+		<span class="description">{{ .Description }}</span>
+	</a>
+	{{ end }}
+	{{ end }}
+</div>
+			'>
+{{ .Site.Title }}
+</a>

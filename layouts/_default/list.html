@@ -13,32 +13,31 @@
 	<div class="container">
 			<header class="header">
 			<h2>
-			<a data-toggle="popover" data-placement="top" data-content="generic about contact here">
-{{ .Site.Title }}
-</a>/</h2>
-		<h1>
-		<a data-toggle="popover" data-placement="top" data-content="list all catalogs here">
+			{{ partial "popover-title.html" . }}/
+		</h2>
+		<h1>{{ partial "popover-categories.html" . }}
 {{ .Title | singularize }}
 </a></h1>
-	
-			<h2>{{ .Description }}</h2>
+		
 		
 		</header>
-<div class="divider"></div>
-		<article>
 
+		<article class="half">
 
-			<ul>
+			<div class="list post">
 			  {{ range .Pages }}
       {{ if (in .Params.type "public") }}
-       <li><a href="{{ .RelPermalink }}">{{ .Title }}
-       </a></li>
-
+     <a href="{{ .RelPermalink }}">
+							
+							<span class="title">{{ .Title }}</span>
+							<span class="description">{{ .Params.Description }}{{if .Params.Status }}, {{ .Params.Status }}{{ end }}</span>
+							
+						</a>
 {{ end }}
 {{ end }}
-</ul>
+</div>
 		</article>
-<div class="divider"></div>
+
 		<footer class="footer">
 <a class="logo" href="/">commons.garden</a> guards and enhances knowledge commons by sponsoring initiatives through conflict resolution, specs, documentation, consulting.
 		</footer>

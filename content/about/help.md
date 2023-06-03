@@ -1,6 +1,7 @@
 ---
 title: How to help
 type: public
+description: Ways to help us
 category: about
 date: 2023-03-07
 ---
@@ -25,11 +26,3 @@ Commons Garden is on initial stages, keep informed via our [Open Collective](ope
 
 1. Via [praxis.nyc@protonmail.com](mailto:praxis.nyc@protonmail.com?subject:commons.garden) email
 1. Via [signal group](https://signal.group/#CjQKIAneWf9J6yoVIAKUjLdLynBTbQxuaTEVHbpaLioQhdL-EhAybesuQH-M_Uy8AvcJkEeW)
-
----
-
-#### ⛑️ TODO: 
-
-
-- [ ] do we need a donation page?
-- [ ] group approval

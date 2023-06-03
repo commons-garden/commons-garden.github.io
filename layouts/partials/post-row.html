@@ -1,6 +1,9 @@
 
       {{ if (in .Params.type "public") }}
-       <li> <a href="{{ .RelPermalink }}">
-            {{ .Title }}
-        </a></li>
+    <a href="{{ .RelPermalink }}">
+                                   
+                                   <span class="title">{{ .Title }}</span>
+                                   <span class="description">{{ .Params.Category }}{{if .Params.Status }}, {{ .Params.Status }}{{ end }}</span>
+                                   
+                              </a>
 {{ end }}

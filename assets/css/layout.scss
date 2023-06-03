@@ -28,20 +28,19 @@ a:hover {
 	color: var(--color-accent);
 }
 
-
-
-
-header.header, footer.footer {
 	h1 {
 		font-size: 60px !important;
 
 	}
 	h2 {
-		font-size: var(--gap-4);
+		font-size: 30px;
 	}
 	h3 {
-		font-size: 25px;
+		font-size: 20px;
 	}
+
+
+header.header, footer.footer {
 	h1, h2, h3, .logo {
 		word-break: break-all;
 		font-family: var(--title-font);
@@ -52,10 +51,10 @@ header.header, footer.footer {
 
 
 @media (min-width: $bp) {
-	.half, .third, .quarter {
+	.half, .third, .quarter, .third-reverse {
 		display: grid;
 		width: 100%;
-		grid-gap: var(--gap-2);
+		grid-gap: var(--grid-gap);
 	}
 	.half {
 
@@ -66,6 +65,11 @@ header.header, footer.footer {
 	.third {
 
 		grid-template-columns: 1fr 2fr;
+
+	}
+	.third-reverse {
+
+		grid-template-columns: 2fr 1fr;
 
 	}
 
@@ -80,10 +84,13 @@ article.with-status {
 
 }
 article.main {
-	@extend .half;
+	@extend .third-reverse;
 }
 
-.divider {
+header.header:after, footer.footer:before {
+
+		content: "";
+
 	height: 3px;
 	display: block;
 	margin: var(--gap-5) 0;
@@ -92,7 +99,16 @@ article.main {
 	}
 	background-repeat: repeat-x;
 	background-image: url(../images/divider.svg);
+
+	
 }
+
+header.header:after {
+	margin-top: var(--gap-3);
+}
+
+
+
 
 .logo {
 	color: var(--color-fg);
@@ -107,9 +123,10 @@ ul.status {
 	
 	span {
 		text-transform: uppercase;
-		background-color: var(--color-fg);
+		background-image: url(../images/slide-in.png);
 		color: var(--color-bg);
 		padding: 0 2px;
+
 	}
 }
 
@@ -192,6 +209,61 @@ a[data-toggle="popover"] {
 			margin-top: 13px;
 			margin-left: -8px;
 			line-height: 11px;
+		}
+	}
+}
+
+.list {
+	a {
+		padding: var(--gap) 0;
+		border-top: solid 1px var(--color-accent);
+
+
+		&:first-of-type {
+			padding-top: 0;
+			border-top: none;
+		}
+		text-decoration: none;
+		display: block;
+		@include transition;
+		.title {
+			background-image: url(../images/slide-in.png);
+			padding: 0 2px;
+			color: var(--color-bg);
+			text-transform: uppercase;
+		}
+		span {
+			word-break: break-word;
+		}
+		.description {
+			font-size: 80%;
+			display: block;
+		}
+		&:hover {
+			color: var(--color-fg);
+			.description {
+text-decoration: underline;
+			}
+		}
+	}
+}
+
+.popover-body {
+	@include shadow(box, 5px 5px 0px rgba(0, 0, 0, 0.15));
+	overflow: auto;
+	max-height: 300px;
+	width: 200px;
+	font-family: var(--text-font) !important;
+	a {
+		border: 0 !important;
+		background: none !important;
+		span {
+			&.description {
+			color: var(--color-fg);
+		}
+		&.title {
+			color: white;
+		}
 		}
 	}
 }
