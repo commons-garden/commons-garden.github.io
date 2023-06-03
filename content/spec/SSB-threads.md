@@ -2,7 +2,7 @@
 title: SSB threads
 category: spec
 type: public
-abstract: how to post and reply to messages
+description: How to post and reply to messages
 status: stable
 scope: SSB
 license: CC0-1.0

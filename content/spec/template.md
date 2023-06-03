@@ -2,7 +2,7 @@
 title: template
 type: private
 category: spec
-abstract: 
+description: 
 status: 
 scope: 
 license: 
@@ -13,4 +13,5 @@ date:
 link: 
 platform: 
 ---
-> markdown example template
+
+write your markdown-style content here

@@ -2,16 +2,16 @@
 
 
 body {
-font-family: var(--text-font);
-background-color: var(--color-bg);
--color: var(--color-fg);
-font-size: 15px;
+	font-family: var(--text-font);
+	background-color: var(--color-bg);
+	-color: var(--color-fg);
+	font-size: 15px;
 
 }
 .container {
 	max-width: $bp;
 	margin: var(--gap-5) auto;
-		@media (max-width: $bp) {
+	@media (max-width: $bp) {
 		margin: var(--gap-3) auto;
 	}
 
@@ -33,46 +33,46 @@ a:hover {
 
 header.header, footer.footer {
 	h1 {
-	font-size: 60px !important;
-	
-}
-h2 {
-	font-size: var(--gap-4);
-}
-h3 {
-	font-size: 25px;
-}
+		font-size: 60px !important;
+
+	}
+	h2 {
+		font-size: var(--gap-4);
+	}
+	h3 {
+		font-size: 25px;
+	}
 	h1, h2, h3, .logo {
-	word-break: break-all;
-	font-family: var(--title-font);
-	text-transform: uppercase;
-	line-heighT: 65%;
-}
+		word-break: break-all;
+		font-family: var(--title-font);
+		text-transform: uppercase;
+		line-heighT: 65%;
+	}
 }
 
 
 @media (min-width: $bp) {
 	.half, .third, .quarter {
-display: grid;
+		display: grid;
 		width: 100%;
 		grid-gap: var(--gap-2);
 	}
-.half {
-	
-grid-template-columns: 1fr 1fr;
+	.half {
 
-}
+		grid-template-columns: 1fr 1fr;
 
-.third {
-	
-grid-template-columns: 1fr 2fr;
+	}
 
-}
+	.third {
 
-.quarter {
-grid-template-columns: 1fr 3fr;
+		grid-template-columns: 1fr 2fr;
 
-}
+	}
+
+	.quarter {
+		grid-template-columns: 1fr 3fr;
+
+	}
 }
 
 article.with-status {
@@ -95,10 +95,10 @@ article.main {
 }
 
 .logo {
-color: var(--color-fg);
-font-size: 30px;
-margin-righT: 5px;
-margin-bottom: 10px;
+	color: var(--color-fg);
+	font-size: 30px;
+	margin-righT: 5px;
+	margin-bottom: 10px;
 }
 
 ul.status {
@@ -146,12 +146,52 @@ table {
 	td, th {
 		padding: 10px;
 
-	vertical-align: top;
+		vertical-align: top;
 		&:first-of-type {
 			padding-left: 0;
 		}
-			&:last-of-type {
+		&:last-of-type {
 			padding-right: 0;
+		}
+	}
+}
+
+a[data-toggle="popover"] {
+	margin-right: 17px;
+	cursor: context-menu;
+	&:hover {
+
+
+		color: #000000 !important;
+		background: none !important;
+		box-shadow: none !important;
+			&:after {
+			color: var(--color-bg);
+			background-color: var(--color-accent);
+		}
+	}
+	&:after {
+		content: "+";
+		@include transition;
+		font-size: 14px;
+		font-weighT: bold;
+		line-height: 11px;
+		text-align: center;
+		background-color: var(--color-bg);
+		color: var(--color-accent);
+		width: var(--gap-2);
+		height: var(--gap-2);
+		@include radius(50%, regular);
+		border: solid 2px var(--color-accent);
+		font-family: var(--text-font);
+		position: absolute;
+		margin-top: 3px;
+		margin-left: -3px;
+
+		h1 & {
+			margin-top: 13px;
+			margin-left: -8px;
+			line-height: 11px;
 		}
 	}
 }
