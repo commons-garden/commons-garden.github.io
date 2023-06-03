@@ -15145,6 +15145,9 @@ code {
   padding: 0 2px;
   color: black; }
 
+table {
+  width: 100%; }
+
 table tbody tr {
   border-top: solid 0.5px var(--color-accent); }
 

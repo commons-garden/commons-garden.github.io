@@ -11,63 +11,20 @@ File name decides URL, in the `commons.garden/spec/FILENAME` format. Don't chang
 
 Site is hosted on gitlab, [ask to help](/about/help) if you don't have the permissions.
 
-## title
+## Frontmatter criterias
 
-The actual title of the spec
-
-## type
-
-- `hidden`for never to be seen notes
-- `draft` in progress articles
-- `public` visible, published 
-
-## abstract
-
-Article description
-
-## status
-
-> pending: list possible statuses here
-
-## scope
-
-The technologies that use it
-
-## license
-
-> pending: list possible licenses here, or link to where it exists
-
-## author
-
-Who wrote it. 
-
-> pending: user needs to be on `members/` folder
-
-## reviewed
-
-Who reviewed this spec
-
-> pending: user needs to be on `members/` folder
-
-## implemented
-
-Implemented by which organizations
-
-> pending: organization needs to be on `organization/` folder
-
-## category
-
-Use `spec`
-
-## date
-
-Use date of when spec entered latest status. Format is `YYYY-MM-DD`
-## link
-
-Link to spec
-
-## platform
-
-Platform where spec resides
-
-> pending: generalize criterias used by other categories as partials
+| Criteria | Possible values | Req? |
+| -- | -- |-- |
+| `title` | The actual title of the spec | ✅ |
+| `type` | `hidden` for never to be seen notes, `draft` in progress articles or `public` | ✅ |
+| `category` | Use `spec` | ✅ |
+| `abstract` | Article description| ❌ |
+| `status` | pending: list possible statuses here | ❌ |
+| `scope` | The technologies that use it| ❌ |
+| `license` | pending: list possible licenses here, or link to where it exists| ❌ |
+| `author` | Who wrote it. User needs to be on `members/` folder| ❌ |
+| `reviewed` | Who reviewed this spec. User needs to be on `members/` folder| ❌ |
+| `implemented` | Implemented by which organizations. Organization needs to be on `organization/` folder| ❌ |
+| `date` | Use date of when spec entered latest status. Format is `YYYY-MM-DD`| ❌ |
+| `link` | Link to spec| ❌ |
+| `platform` | Platform where spec resides | ❌ |
