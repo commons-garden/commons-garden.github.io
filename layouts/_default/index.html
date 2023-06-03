@@ -2,25 +2,45 @@
 {{ partial "html.html" . }}
 {{ partial "head.html" . }}
 <body class="home">
-	
-	<article class="main">
+	<div class="container">
+		
 		<header class="header">
-			<h2>
-			<button type="button" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+			
+		<h1>
+		
 {{ .Site.Title }}
-</button>/</h2>
+</h1>
+		
 		</header>
+		<div class="divider"></div>
+		{{ partial "footer.html" . }}
+		<div class="divider"></div>
+<article class="main">
+		<section><h3>Categories</h3>
+<ul>
+	<li><a href="/spec">Specs</a></li>
+	<li><a href="/tutorial">Tutorials</a></li>
+	<li><a href="/about">About</a></li>
+</ul></section>
 
-
+<section><h3>New Articles</h3>
 		<ul>
 			{{ range .Site.RegularPages }}
-			{{ partial "post-row.html" . }}
+			 {{ if (in .Params.type "public") }}
+       <li>  {{ .Params.Category }}: <a href="{{ .RelPermalink }}">{{ .Title }}</a> {{if .Params.Status }}(status: {{ .Params.Status }}){{ end }}
+    </li>
+{{ end }}
 			{{ end }}
-		</ul>
-		{{ partial "index.html" . }}
+		</ul></section>
+		
 		
 		
 	</article>
+		
+	</div>
+	
+
+
 	
 	{{ partial "scripts.html" . }} 
 </body>

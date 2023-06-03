@@ -29,7 +29,10 @@ a:hover {
 }
 
 
-h1 {
+
+
+header.header, footer.footer {
+	h1 {
 	font-size: 60px !important;
 	
 }
@@ -39,8 +42,6 @@ h2 {
 h3 {
 	font-size: 25px;
 }
-
-header.header, footer.footer {
 	h1, h2, h3, .logo {
 	word-break: break-all;
 	font-family: var(--title-font);
@@ -49,14 +50,37 @@ header.header, footer.footer {
 }
 }
 
-article.with-status {
-	@media (min-width: $bp) {
-		display: grid;
+
+@media (min-width: $bp) {
+	.half, .third, .quarter {
+display: grid;
 		width: 100%;
 		grid-gap: var(--gap-2);
-grid-template-columns: 1fr 2fr;
+	}
+.half {
+	
+grid-template-columns: 1fr 1fr;
+
 }
 
+.third {
+	
+grid-template-columns: 1fr 2fr;
+
+}
+
+.quarter {
+grid-template-columns: 1fr 3fr;
+
+}
+}
+
+article.with-status {
+	@extend .third;
+
+}
+article.main {
+	@extend .half;
 }
 
 .divider {
@@ -111,16 +135,16 @@ code {
 	word-break: keep-all;
 	background-color: var(--color-accent);
 	padding: 0 2px;
-	color: white;
+	color: black;
 }
 
 table {
 	tbody tr {
-		border-top: solid 1px var(--color-accent);
+		border-top: solid .5px var(--color-accent);
 	}
 	td, th {
 		padding: 10px;
-		
+
 	vertical-align: top;
 		&:first-of-type {
 			padding-left: 0;
