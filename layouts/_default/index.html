@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-{{ partial "html.html" . }}
-{{ partial "head.html" . }}
+<html lang="en" class="{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end }} {{ if .Params.category  }}{{ .Params.category }}{{ end }} {{ if .Params.status  }}{{ .Params.status }}{{ end }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
+{{ $style := $sass | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+	<title>{{ partial "emoji.html" . }} {{ .Site.Title | upper }}</title>
+</head>
 <body class="home">
 	<div class="container">
 		
@@ -18,9 +26,11 @@
 <article class="main">
 		<section><h3>Categories</h3>
 <ul>
-	<li><a href="/spec">Specs</a></li>
-	<li><a href="/tutorial">Tutorials</a></li>
-	<li><a href="/about">About</a></li>
+	<li><a href="/initiative">initiative</a>: </li>f
+	<li><a href="/spec">spec</a>: </li>
+	<li><a href="/tutorial">tutorial</a>: how to document correctly</li>
+	<li><a href="/about">about</a></li>
+	<li><a href="/initiative">initiative</a>: </li>
 </ul></section>
 
 <section><h3>New Articles</h3>
@@ -36,6 +46,7 @@
 		
 		
 	</article>
+	<div class="divider"></div>
 		
 	</div>
 	

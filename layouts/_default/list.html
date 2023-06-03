@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-{{ partial "html.html" . }}
-{{ partial "head.html" . }}
+<html lang="en" class="{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end }} {{ if .Params.category  }}{{ .Params.category }}{{ end }} {{ if .Params.status  }}{{ .Params.status }}{{ end }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
+{{ $style := $sass | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+<title>{{ partial "emoji.html" . }} {{ .Site.Title | upper }}/{{ .Title | singularize }}</title>
+</head>
 <body>
 
 	<div class="container">
@@ -19,12 +26,13 @@
 		</header>
 <div class="divider"></div>
 		<article>
+
+
 			<ul>
 			  {{ range .Pages }}
       {{ if (in .Params.type "public") }}
        <li><a href="{{ .RelPermalink }}">{{ .Title }}
        </a></li>
-
 
 {{ end }}
 {{ end }}

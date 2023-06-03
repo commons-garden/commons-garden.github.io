@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-{{ partial "html.html" . }}
-{{ partial "head.html" . }}
+<html lang="en" class="{{ .File.BaseFileName }} {{ if .Params.style  }}{{ .Params.style }}{{ end }} {{ if .Params.category  }}{{ .Params.category }}{{ end }} {{ if .Params.status  }}{{ .Params.status }}{{ end }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
+{{ $style := $sass | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<title>{{ partial "emoji.html" . }} {{ .Site.Title | upper }}/{{ .Params.Category }}/{{ .File.BaseFileName }}</title>
+</head>
 <body>
 
 	<div class="container">
+		
 			<header class="header">
 			<h2>
 			<a data-toggle="popover" data-placement="top" data-content="generic about contact here">
