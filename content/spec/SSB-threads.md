@@ -7,6 +7,7 @@ status: stable
 scope: SSB
 license: CC0-1.0
 author: mix
+initiative: 
 reviewed: staltz, cel
 implemented: patchwork, manyverse, planetary, patchfox
 date: 2023-03-07
