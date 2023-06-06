@@ -15081,15 +15081,15 @@ header.header h1, header.header h2, header.header h3, header.header .logo, foote
   line-heighT: 65%; }
 
 @media (min-width: 500px) {
-  .half, .third, html:not(.initiative) article.with-status, .quarter, .third-reverse, article.main {
+  .half, article.main, .third, html:not(.initiative) article.with-status, .quarter, .third-reverse {
     display: grid;
     width: 100%;
     grid-gap: var(--grid-gap); }
-  .half {
+  .half, article.main {
     grid-template-columns: 1fr 1fr; }
   .third, html:not(.initiative) article.with-status {
     grid-template-columns: 1fr 2fr; }
-  .third-reverse, article.main {
+  .third-reverse {
     grid-template-columns: 2fr 1fr; }
   .quarter {
     grid-template-columns: 1fr 3fr; } }

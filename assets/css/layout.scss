@@ -94,7 +94,7 @@ html:not(.initiative) article.with-status {
 	@extend .third;
 }
 article.main {
-	@extend .third-reverse;
+	@extend .half;
 }
 
 header.header:after, html.initiative ul.status:after, footer.footer:before, .home footer.footer:after {
