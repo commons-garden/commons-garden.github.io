@@ -64,7 +64,7 @@
 	</ul>
 	<section class="content">
 		{{ .Content }}
-		{{ if .Params.Status }}
+		{{ if .Params.Link }}
 		<a class="btn" target="_blank" href="{{ .Params.Link }}">View {{ .Params.Category }} {{ if .Params.Platform }} on {{ .Params.Platform }}{{ end }}</a>
 		{{ end }}
 	</section>

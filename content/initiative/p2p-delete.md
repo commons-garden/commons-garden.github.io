@@ -5,6 +5,7 @@ status: ongoing
 description: Serverless irretrievable delete
 category: initiative
 date: 2023-03-07
+link: https://hackmd.io/@praxis/p2p-delete
 comm_title: signal group
 comm_link: https://signal.group/#CjQKIGFSis4tbGdzpujg_Xw-UudxHZnnPuxmxPfFjSbzvII7EhAXQHs1aCqWBymiid6TMV78
 note_title: hackmd

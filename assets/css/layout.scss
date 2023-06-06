@@ -44,7 +44,6 @@ article {
 	h1, h2, h3, h4 {
 		&:not(:first-child) {
 			margin-top: var(--gap-5);
-			@include find(red);
 		}
 	}
 }
@@ -91,14 +90,14 @@ header.header, footer.footer {
 	}
 }
 
-article.with-status {
+html:not(.initiative) article.with-status {
 	@extend .third;
 }
 article.main {
 	@extend .third-reverse;
 }
 
-header.header:after, footer.footer:before, .home footer.footer:after {
+header.header:after, html.initiative ul.status:after, footer.footer:before, .home footer.footer:after {
 
 	content: "";
 
@@ -112,6 +111,36 @@ header.header:after, footer.footer:before, .home footer.footer:after {
 	background-image: url(../images/divider.svg);
 
 	
+}
+article {
+
+	counter-reset: blockquote;
+
+	counter-increment: blockquote;
+}
+
+blockquote {
+	padding: var(--gap-2);
+	border: solid 1px #ccc;
+	padding-bottom: 0;
+	display: inline-block;
+	@include transition;
+	background-color: rgba(yellow, .2);
+	&:before {
+	position: absolute;
+		content: counter(section);
+		margin-left: -40px;
+		@include opacity(40);
+	@include transition;
+	}
+	&:hover {
+		@include scale(1.1);
+		@include shadow(box, 4px 4px 0px rgba(0, 0, 0, 0.05));
+		&:before {
+			@include opacity(100);
+		}
+	}
+@include shadow(box, 4px 4px 0px rgba(0, 0, 0, 0.0));
 }
 
 .home footer.footer:before {
