@@ -1,52 +1,71 @@
 <article class="with-status">
-			<ul class="status">
-				{{ if .Params.Status }}
-<li class="status">
-	<span>status:</span>
-	{{ .Params.Status }}
-</li>
-{{ end }}
-{{ if .Params.Scope }}
-<li>
-	<span>scope:</span>
-	{{ .Params.Scope }}
-</li>
-{{ end }}
-{{ if .Params.License }}
-<li>
-	<span>license:</span>
-	{{ .Params.License }}
-</li>
-{{ end }}
-{{ if .Params.Author }}
-<li>
-	<span>author:</span>
-{{ .Params.Author }}
-</li>
-{{ end }}
-{{ if .Params.Reviewed }}
-<li>
-	<span>reviewed by:</span>
-{{ .Params.Reviewed }}
-</li>
-{{ end }}
-{{ if .Params.Implemented }}
-<li>
-	<span>implemented in:</span>
-{{ .Params.Implemented }}
-</li>
-{{ end }}
-{{ if .Params.Date }}
-<li>
-	<span>status date:</span>
-{{ .Params.Date }}
-</li>
-{{ end }}
-			</ul>
-			<section class="content">
-				{{ .Content }}
-				{{ if .Params.Status }}
-				<a class="btn" target="_blank" href="{{ .Params.Link }}">View {{ .Params.Category }} {{ if .Params.Platform }} on {{ .Params.Platform }}{{ end }}</a>
-				{{ end }}
-			</section>
-		</article>
+	<ul class="status">
+		{{ if .Params.Status }}
+		<li class="status">
+			<span>status:</span>
+			{{ .Params.Status }}
+		</li>
+		{{ end }}
+		{{ if .Params.Date }}
+		<li>
+			<span>Date:</span>
+			{{ .Params.Date }}
+		</li>
+		{{ end }}
+		{{ if .Params.Scope }}
+		<li>
+			<span>scope:</span>
+			{{ .Params.Scope }}
+		</li>
+		{{ end }}
+		{{ if .Params.License }}
+		<li>
+			<span>license:</span>
+			{{ .Params.License }}
+		</li>
+		{{ end }}
+		{{ if .Params.Author }}
+		<li>
+			<span>author:</span>
+			{{ .Params.Author }}
+		</li>
+		{{ end }}
+		{{ if .Params.Reviewed }}
+		<li>
+			<span>reviewed by:</span>
+			{{ .Params.Reviewed }}
+		</li>
+		{{ end }}
+		{{ if (in .Params.Category "initiative") }}
+		<li>
+			<span>hashtag:</span>
+			<code>#{{ with .File }}{{ .BaseFileName }}{{ end }}</code>
+		</li>
+		{{ end }}
+		{{ if .Params.Implemented }}
+		<li>
+			<span>implemented in:</span>
+			{{ .Params.Implemented }}
+		</li>
+		{{ end }}
+		{{ if .Params.Comm_link }}
+		<li>
+			<span>Communication:</span>
+			<a href="{{ .Params.Comm_link }}">{{ .Params.Comm_title }}</a>
+		</li>
+		{{ end }}
+		{{ if .Params.Note_link }}
+		<li>
+			<span>Notes:</span>
+			<a href="{{ .Params.Note_link }}">{{ .Params.Note_title }}</a>
+		</li>
+		{{ end }}
+
+	</ul>
+	<section class="content">
+		{{ .Content }}
+		{{ if .Params.Status }}
+		<a class="btn" target="_blank" href="{{ .Params.Link }}">View {{ .Params.Category }} {{ if .Params.Platform }} on {{ .Params.Platform }}{{ end }}</a>
+		{{ end }}
+	</section>
+</article>

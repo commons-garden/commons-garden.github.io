@@ -15071,6 +15071,10 @@ h2 {
 h3 {
   font-size: 20px; }
 
+article h1:not(:first-child), article h2:not(:first-child), article h3:not(:first-child), article h4:not(:first-child) {
+  margin-top: var(--gap-5);
+  outline: dashed 1px red; }
+
 header.header h1, header.header h2, header.header h3, header.header .logo, footer.footer h1, footer.footer h2, footer.footer h3, footer.footer .logo {
   word-break: break-all;
   font-family: var(--title-font);

@@ -32,6 +32,8 @@
 {{ partial "article-sidebar.html" . }}
 {{ else if (in .Params.category "wireframe") }}
 {{ partial "article-sidebar.html" . }}
+{{ else if (in .Params.category "initiative") }}
+{{ partial "article-sidebar.html" . }}
 {{ else }}
 <article>{{ .Content }}</article>
 {{ end }}
