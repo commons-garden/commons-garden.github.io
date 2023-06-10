@@ -22,55 +22,54 @@
 		</header>
 		
 		{{ partial "footer.html" . }}
-		
+
+
 		<article class="main">
-			<section><h3>Categories</h3>
-			<div class="list categories">
-				<a href="/about">
-					<span class="title">about</span>
-					<span class="description">About us</span>
-				</a>
-					<a href="/initiative">
-					<span class="title">initiatives</span>
-					<span class="description">Our discussion topics</span>
-				</a>
-				
-				<a href="/spec">
-					<span class="title">specs</span>
-					<span class="description">Technical deliverables</span>
-				</a>
-				<a href="/wireframe">
-					<span class="title">wireframes</span>
-					<span class="description">Usability deliverables</span>
-				</a>
-				
-				
-			</div>
+			<section>
+				<h3>Categories</h3>
+				<div class="list categories">
+					{{ range $.Site.Data.categories }}
+
+					{{ if (in .status "public") }}
+					<a href="/{{ .title }}">
+						<span class="title">
+							{{ if (in .pluralize "no") }}
+							{{ .title }}
+							{{ else }}
+							{{ .title | pluralize }}
+							{{ end }}
+						</span>
+						<span class="description">{{ .description }}</span>
+					</a>
+
+					{{ end }}
+					{{ end }}
+				</div>
 			</section>
 
-				<section><h3>New Articles</h3>
-					<div class="list latest">
-						{{ range .Site.RegularPages  | first 3 }}
-						{{ if (in .Params.type "public") }}
-						<a href="{{ .RelPermalink }}">
-							
-							<span class="title">{{ .Title }}</span>
-							<span class="description">{{ .Params.Category }}{{if .Params.Status }}, {{ .Params.Status }}{{ end }}</span>
-							
-						</a>
-						{{ end }}
-						{{ end }}
-					</div>
-					</section>
-					
-					
-					
-				</article>
-			</div>
+			<section><h3>New Articles</h3>
+				<div class="list latest">
+					{{ range .Site.RegularPages  | first 3 }}
+					{{ if (in .Params.type "public") }}
+					<a href="{{ .RelPermalink }}">
+						
+						<span class="title">{{ .Title }}</span>
+						<span class="description">{{ .Params.Category }}{{if .Params.Status }} ({{ .Params.Status }}){{ end }}</span>
+						
+					</a>
+					{{ end }}
+					{{ end }}
+				</div>
+			</section>
 			
+			
+			
+		</article>
+	</div>
+	
 
 
-			
-			{{ partial "scripts.html" . }} 
-		</body>
-		</html>
+	
+	{{ partial "scripts.html" . }} 
+</body>
+</html>
