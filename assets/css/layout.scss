@@ -1,4 +1,25 @@
+@include keyframes(status) {
+	  0% {
+	  	background-image: url(../images/slide-in.png);
+	  	background-repeat: no-repeat;
+	background-size: 0px 100%;
+	  }
+	100% {
+		background-image: url(../images/slide-in.png);
+		background-repeat: no-repeat;
+	  	background-size: 100% 100%;
+	}
+}
 
+@mixin status($count: $countDefault, $duration: 300ms, $delay: $delayDefault, $function: linear, $fill: $fillDefault, $visibility: $visibilityDefault) {
+	@include animation-name(status);
+	@include count($count);
+	@include duration($duration);
+	@include delay($delay);
+	@include function($function);
+	@include fill-mode($fill);
+	@include visibility($visibility);
+}
 
 
 body {
@@ -51,7 +72,7 @@ article {
 
 
 
-header.header, footer.footer {
+header.header, .slogan {
 	h1, h2, h3, .logo {
 		word-break: break-all;
 		font-family: var(--title-font);
@@ -97,7 +118,7 @@ article.main {
 	@extend .half;
 }
 
-header.header:after, html.initiative ul.status:after, footer.footer:before, .home footer.footer:after {
+header.header:after, html.initiative ul.status:after, .slogan:before, .home .slogan:after {
 
 	content: "";
 
@@ -143,8 +164,16 @@ blockquote {
 @include shadow(box, 4px 4px 0px rgba(0, 0, 0, 0.0));
 }
 
-.home footer.footer:before {
+.home {
+	.slogan {
+		a.logo {
+			pointer-events: none;
+			text-decoration: none;
+		}
+		&:before {
 	display: none;
+}
+	}
 }
 
 header.header:after {
@@ -157,8 +186,6 @@ header.header:after {
 .logo {
 	color: var(--color-fg);
 	font-size: 30px;
-	margin-righT: 5px;
-	margin-bottom: 10px;
 }
 
 ul.status {
@@ -168,13 +195,61 @@ ul.status {
 	
 	span {
 		text-transform: uppercase;
-		background-image: url(../images/slide-in.png);
+		
 		color: var(--color-bg);
 		padding: 0 2px;
+
 
 	}
 }
 
+ul.status li {
+	&:nth-of-type(1) {
+			span {
+				@include status($delay: calc(var(--delay) * 1));
+			}
+		}
+			&:nth-of-type(2) {
+			span {
+				@include status($delay: calc(var(--delay) * 2));
+			}
+		}
+		&:nth-of-type(3) {
+			span {
+				@include status($delay: calc(var(--delay) * 3));
+			}
+		}
+		&:nth-of-type(4) {
+			span {
+				@include status($delay: calc(var(--delay) * 4));
+			}
+		}
+			&:nth-of-type(5) {
+			span {
+				@include status($delay: calc(var(--delay) * 5));
+			}
+		}
+		&:nth-of-type(6) {
+			span {
+				@include status($delay: calc(var(--delay) * 6));
+			}
+		}
+		&:nth-of-type(7) {
+			span {
+				@include status($delay: calc(var(--delay) * 7));
+			}
+		}
+			&:nth-of-type(8) {
+			span {
+				@include status($delay: calc(var(--delay) * 8));
+			}
+		}
+		&:nth-of-type(9) {
+			span {
+				@include status($delay: calc(var(--delay) * 9));
+			}
+		}
+}
 
 
 

@@ -20,10 +20,7 @@
 			</h1>
 			
 		</header>
-		
-		{{ partial "footer.html" . }}
-
-
+	{{ partial "slogan.html" . }}
 		<article class="main">
 			<section>
 				<h3>Categories</h3>
@@ -52,24 +49,24 @@
 					{{ range .Site.RegularPages  | first 3 }}
 					{{ if (in .Params.type "public") }}
 					<a href="{{ .RelPermalink }}">
-						
+
 						<span class="title">{{ .Title }}</span>
 						<span class="description">{{ .Params.Category }}{{if .Params.Status }} ({{ .Params.Status }}){{ end }}</span>
-						
+
 					</a>
 					{{ end }}
 					{{ end }}
 				</div>
 			</section>
-			
-			
-			
+
+
+
 		</article>
 	</div>
-	
 
 
-	
+
+
 	{{ partial "scripts.html" . }} 
 </body>
 </html>

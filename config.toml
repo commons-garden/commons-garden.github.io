@@ -1,5 +1,6 @@
 baseURL = "https://commons.garden/"
 languageCode = "en-us"
+description = "aims to enhance our knowledge commons by sponsoring initiatives through facilitation, consulting, and documentation"
 title = "commons.garden"
-description = "Enhancing knowledge commons"
+slogan = "Enhancing knowledge commons"
 publishDir = "public"
