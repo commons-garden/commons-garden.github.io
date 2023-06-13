@@ -15565,6 +15565,339 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
+.list a:nth-of-type(1) .title {
+  -webkit-animation-name: status;
+  -moz-animation-name: status;
+  -ms-animation-name: status;
+  -o-animation-name: status;
+  animation-name: status;
+  -webkit-animation-iteration-count: 1s;
+  -moz-animation-iteration-count: 1s;
+  -ms-animation-iteration-count: 1s;
+  -o-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: calc(var(--delay) * 1);
+  -moz-animation-delay: calc(var(--delay) * 1);
+  -ms-animation-delay: calc(var(--delay) * 1);
+  -o-animation-delay: calc(var(--delay) * 1);
+  animation-delay: calc(var(--delay) * 1);
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.list a:nth-of-type(2) .title {
+  -webkit-animation-name: status;
+  -moz-animation-name: status;
+  -ms-animation-name: status;
+  -o-animation-name: status;
+  animation-name: status;
+  -webkit-animation-iteration-count: 1s;
+  -moz-animation-iteration-count: 1s;
+  -ms-animation-iteration-count: 1s;
+  -o-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: calc(var(--delay) * 2);
+  -moz-animation-delay: calc(var(--delay) * 2);
+  -ms-animation-delay: calc(var(--delay) * 2);
+  -o-animation-delay: calc(var(--delay) * 2);
+  animation-delay: calc(var(--delay) * 2);
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.list a:nth-of-type(3) .title {
+  -webkit-animation-name: status;
+  -moz-animation-name: status;
+  -ms-animation-name: status;
+  -o-animation-name: status;
+  animation-name: status;
+  -webkit-animation-iteration-count: 1s;
+  -moz-animation-iteration-count: 1s;
+  -ms-animation-iteration-count: 1s;
+  -o-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: calc(var(--delay) * 3);
+  -moz-animation-delay: calc(var(--delay) * 3);
+  -ms-animation-delay: calc(var(--delay) * 3);
+  -o-animation-delay: calc(var(--delay) * 3);
+  animation-delay: calc(var(--delay) * 3);
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.list a:nth-of-type(4) .title {
+  -webkit-animation-name: status;
+  -moz-animation-name: status;
+  -ms-animation-name: status;
+  -o-animation-name: status;
+  animation-name: status;
+  -webkit-animation-iteration-count: 1s;
+  -moz-animation-iteration-count: 1s;
+  -ms-animation-iteration-count: 1s;
+  -o-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: calc(var(--delay) * 4);
+  -moz-animation-delay: calc(var(--delay) * 4);
+  -ms-animation-delay: calc(var(--delay) * 4);
+  -o-animation-delay: calc(var(--delay) * 4);
+  animation-delay: calc(var(--delay) * 4);
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.list a:nth-of-type(5) .title {
+  -webkit-animation-name: status;
+  -moz-animation-name: status;
+  -ms-animation-name: status;
+  -o-animation-name: status;
+  animation-name: status;
+  -webkit-animation-iteration-count: 1s;
+  -moz-animation-iteration-count: 1s;
+  -ms-animation-iteration-count: 1s;
+  -o-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: calc(var(--delay) * 5);
+  -moz-animation-delay: calc(var(--delay) * 5);
+  -ms-animation-delay: calc(var(--delay) * 5);
+  -o-animation-delay: calc(var(--delay) * 5);
+  animation-delay: calc(var(--delay) * 5);
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.list a:nth-of-type(6) .title {
+  -webkit-animation-name: status;
+  -moz-animation-name: status;
+  -ms-animation-name: status;
+  -o-animation-name: status;
+  animation-name: status;
+  -webkit-animation-iteration-count: 1s;
+  -moz-animation-iteration-count: 1s;
+  -ms-animation-iteration-count: 1s;
+  -o-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: calc(var(--delay) * 6);
+  -moz-animation-delay: calc(var(--delay) * 6);
+  -ms-animation-delay: calc(var(--delay) * 6);
+  -o-animation-delay: calc(var(--delay) * 6);
+  animation-delay: calc(var(--delay) * 6);
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.list a:nth-of-type(7) .title {
+  -webkit-animation-name: status;
+  -moz-animation-name: status;
+  -ms-animation-name: status;
+  -o-animation-name: status;
+  animation-name: status;
+  -webkit-animation-iteration-count: 1s;
+  -moz-animation-iteration-count: 1s;
+  -ms-animation-iteration-count: 1s;
+  -o-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: calc(var(--delay) * 7);
+  -moz-animation-delay: calc(var(--delay) * 7);
+  -ms-animation-delay: calc(var(--delay) * 7);
+  -o-animation-delay: calc(var(--delay) * 7);
+  animation-delay: calc(var(--delay) * 7);
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.list a:nth-of-type(8) .title {
+  -webkit-animation-name: status;
+  -moz-animation-name: status;
+  -ms-animation-name: status;
+  -o-animation-name: status;
+  animation-name: status;
+  -webkit-animation-iteration-count: 1s;
+  -moz-animation-iteration-count: 1s;
+  -ms-animation-iteration-count: 1s;
+  -o-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: calc(var(--delay) * 8);
+  -moz-animation-delay: calc(var(--delay) * 8);
+  -ms-animation-delay: calc(var(--delay) * 8);
+  -o-animation-delay: calc(var(--delay) * 8);
+  animation-delay: calc(var(--delay) * 8);
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.list a:nth-of-type(9) .title {
+  -webkit-animation-name: status;
+  -moz-animation-name: status;
+  -ms-animation-name: status;
+  -o-animation-name: status;
+  animation-name: status;
+  -webkit-animation-iteration-count: 1s;
+  -moz-animation-iteration-count: 1s;
+  -ms-animation-iteration-count: 1s;
+  -o-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 300ms;
+  -moz-animation-duration: 300ms;
+  -ms-animation-duration: 300ms;
+  -o-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -webkit-animation-delay: calc(var(--delay) * 9);
+  -moz-animation-delay: calc(var(--delay) * 9);
+  -ms-animation-delay: calc(var(--delay) * 9);
+  -o-animation-delay: calc(var(--delay) * 9);
+  animation-delay: calc(var(--delay) * 9);
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
 a.btn {
   text-align: left;
   text-transform: uppercase;
@@ -15672,7 +16005,6 @@ h1 a[data-toggle="popover"]:after {
   border-top: none; }
 
 .list a .title {
-  background-image: url(../images/slide-in.png);
   padding: 0 2px;
   color: var(--color-bg);
   text-transform: uppercase; }
