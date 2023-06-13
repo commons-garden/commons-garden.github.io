@@ -251,6 +251,27 @@ ul.status li {
 		}
 }
 
+.list a {
+	&:after {
+		content: "";
+		width: 32px;
+		height: 32px;
+		display: block;
+		float: right;
+		margin-right: 0;
+		margin-top: -32px;
+		margin-right: 5px;
+			background-image: url(../images/arrow.svg);
+	background-repeat: no-repeat;
+	@include opacity(40);
+	@include transition;
+	}
+	&:hover:after {
+		margin-right: 0px;
+		@include opacity(100);
+	}
+}
+
 
 .list a {
 	&:nth-of-type(1) {
@@ -382,13 +403,13 @@ a[data-toggle="popover"] {
 .list {
 	a {
 		padding: var(--gap) 0;
-		border-top: solid 1px var(--color-accent);
-
-
-		&:first-of-type {
-			padding-top: 0;
-			border-top: none;
-		}
+		border-top: solid 1px var(--color-accent-light);
+border-bottom: solid 1px var(--color-accent-light);
+margin-top: -1px;
+&:hover {
+			border-top: solid 1px var(--color-accent);
+border-bottom: solid 1px var(--color-accent);
+}
 		text-decoration: none;
 		display: block;
 		@include transition;
