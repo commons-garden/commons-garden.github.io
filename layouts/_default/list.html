@@ -6,7 +6,7 @@
 {{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
 {{ $style := $sass | resources.ToCSS }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
-<title>{{ partial "emoji.html" . }} {{ .Site.Title | upper }}/{{ .Title | singularize }}</title>
+<title>{{ partial "emoji.html" . }} {{ .Site.Title }}/{{ .Title | singularize }}</title>
 </head>
 <body>
 
@@ -14,7 +14,7 @@
 			<header class="header">
 <nav class="secondary">
 	<select onChange="window.location.href=this.value">
-	<option value="">{{ .Site.Title | upper }}</option>
+	<option value="">{{ .Site.Title }}</option>
 	<option value="/">
 		Home
 	</option>
@@ -23,7 +23,7 @@
 	<option value="{{ .RelPermalink }}">{{ .Title }}</option>
 	{{ end }}
 	{{ end }}
-</select>
+</select>/
 </nav>
 
 
@@ -33,7 +33,7 @@
 		</h2> -->
 	<nav class="primary">
 		<select onChange="window.location.href=this.value">
-	<option>{{ .Title | singularize | upper }}</option>
+	<option>{{ .Title | singularize }}</option>
 					{{ range $.Site.Data.categories }}
 
 					{{ if (in .status "public") }}

@@ -1,0 +1,94 @@
+
+<select onChange="window.location.href=this.value">
+      <option value="">{{ .Title }}</option>
+{{ if (in .Params.category "about") }}
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "about") }}
+      {{ if (in .Params.type "public") }}
+      <option value="{{ .RelPermalink }}">
+       
+       {{ .Title }}
+       
+       
+ </option>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+
+{{ else if (in .Params.category "spec") }}
+
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "spec") }}
+      {{ if (in .Params.type "public") }}
+      <option value="{{ .RelPermalink }}">
+       
+       {{ .Title }}
+       
+       
+ </option>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+
+{{ else if (in .Params.category "wireframe") }}
+
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "wireframe") }}
+      {{ if (in .Params.type "public") }}
+      <option value="{{ .RelPermalink }}">
+       
+       {{ .Title }}
+       
+       
+ </option>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+
+{{ else if (in .Params.category "initiative") }}
+
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "initiative") }}
+      {{ if (in .Params.type "public") }}
+      <option value="{{ .RelPermalink }}">
+       
+       {{ .Title }}
+       
+       
+ </option>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+
+{{ else if (in .Params.category "tutorial") }}
+
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "tutorial") }}
+      {{ if (in .Params.type "public") }}
+      <option value="{{ .RelPermalink }}">
+       
+       {{ .Title }}
+       
+       
+ </option>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+
+{{ else if (in .Params.category "organization") }}
+
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "spec") }}
+      {{ if (in .Params.type "public") }}
+      <option value="{{ .RelPermalink }}">
+       
+       {{ .Title }}
+       
+       
+ </option>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+
+{{ end }}
+</select>
