@@ -12,12 +12,44 @@
 
 	<div class="container">
 			<header class="header">
+<nav class="secondary">
+	<select onChange="window.location.href=this.value">
+	<option value="">{{ .Site.Title | upper }}</option>
+	<option value="/">
+		Home
+	</option>
+	{{ range  where .Site.RegularPages ".Params.category" "about" }}
+	{{ if (in .Params.type "public") }}
+	<option value="{{ .RelPermalink }}">{{ .Title }}</option>
+	{{ end }}
+	{{ end }}
+</select>
+</nav>
+
+
+<!-- 
 			<h2>
 			{{ partial "popover-title.html" . }}/
-		</h2>
-		<h1>{{ partial "popover-categories.html" . }}
-{{ .Title | singularize }}
-</a></h1>
+		</h2> -->
+	<nav class="primary">
+		<select onChange="window.location.href=this.value">
+	<option>{{ .Title | singularize | upper }}</option>
+					{{ range $.Site.Data.categories }}
+
+					{{ if (in .status "public") }}
+					<option value="/{{ .title }}">
+							{{ if (in .pluralize "no") }}
+							{{ .title }}
+							{{ else }}
+							{{ .title | pluralize }}
+							{{ end }}
+					</option>
+
+					{{ end }}
+					{{ end }}
+					</select>
+	</nav>
+				
 		
 		
 		</header>

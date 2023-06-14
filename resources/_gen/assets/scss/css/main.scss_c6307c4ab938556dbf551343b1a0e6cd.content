@@ -16077,6 +16077,9 @@ h1 a[data-toggle="popover"]:after {
 .popover-body a span.title {
   color: white; }
 
+header.header nav {
+  outline: dashed 1px red; }
+
 .nav li .active-only {
   display: none;
   padding-left: var(--gap);
