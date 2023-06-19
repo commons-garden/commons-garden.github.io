@@ -1,3 +1,11 @@
 <div class="slogan">
-<a class="logo" href="/">{{ .Site.Title }}</a> aims to enhance our knowledge commons by sponsoring initiatives through facilitation, consulting, and documentation
-		</div>
+	<div class="bar">
+		{{ range $.Site.Data.slogans | shuffle | first 1 }}
+	<div><span>{{ .option }}</span></div>
+	{{ end }}
+
+	
+
+	<a href="/about/help/">How to help</a>
+	</div>
+</div>

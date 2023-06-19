@@ -23,3 +23,25 @@
     --grid-gap: var(--gap-3);
   }
 
+@include keyframes(status) {
+    0% {
+      background-image: url(../images/slide-in.png);
+      background-repeat: no-repeat;
+  background-size: 0px 100%;
+    }
+  100% {
+    background-image: url(../images/slide-in.png);
+    background-repeat: no-repeat;
+      background-size: 100% 100%;
+  }
+}
+
+@mixin status($count: $countDefault, $duration: 300ms, $delay: $delayDefault, $function: linear, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(status);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}

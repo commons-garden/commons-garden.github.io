@@ -20,9 +20,26 @@
 			</h1>
 			
 		</header>
-	{{ partial "slogan.html" . }}
-		<article class="main">
-			<section>
+	{{ partial "description.html" . }}
+		<article>
+	<div class="half">
+		<section>
+			<h3>Latest articles</h3>
+				<div class="list latest">
+					{{ range .Site.RegularPages  | first 3 }}
+					{{ if (in .Params.type "public") }}
+					<a href="{{ .RelPermalink }}">
+
+						<span class="title">{{ .Title }}</span>
+						<span class="description">{{ .Params.Category }}{{if .Params.Status }} ({{ .Params.Status }}){{ end }}</span>
+
+					</a>
+					{{ end }}
+					{{ end }}
+				</div>
+			
+		</section>
+				<section>
 				<h3>Categories</h3>
 				<div class="list categories">
 					{{ range $.Site.Data.categories }}
@@ -44,22 +61,10 @@
 				</div>
 			</section>
 
-			<section><h3>New Articles</h3>
-				<div class="list latest">
-					{{ range .Site.RegularPages  | first 3 }}
-					{{ if (in .Params.type "public") }}
-					<a href="{{ .RelPermalink }}">
+			
+	</div>
 
-						<span class="title">{{ .Title }}</span>
-						<span class="description">{{ .Params.Category }}{{if .Params.Status }} ({{ .Params.Status }}){{ end }}</span>
-
-					</a>
-					{{ end }}
-					{{ end }}
-				</div>
-			</section>
-
-
+	{{ partial "slogan.html" . }}
 
 		</article>
 	</div>
@@ -67,6 +72,6 @@
 
 
 
-	{{ partial "scripts.html" . }} 
+	
 </body>
 </html>

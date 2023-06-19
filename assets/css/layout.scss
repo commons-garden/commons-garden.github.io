@@ -1,25 +1,4 @@
-@include keyframes(status) {
-	  0% {
-	  	background-image: url(../images/slide-in.png);
-	  	background-repeat: no-repeat;
-	background-size: 0px 100%;
-	  }
-	100% {
-		background-image: url(../images/slide-in.png);
-		background-repeat: no-repeat;
-	  	background-size: 100% 100%;
-	}
-}
 
-@mixin status($count: $countDefault, $duration: 300ms, $delay: $delayDefault, $function: linear, $fill: $fillDefault, $visibility: $visibilityDefault) {
-	@include animation-name(status);
-	@include count($count);
-	@include duration($duration);
-	@include delay($delay);
-	@include function($function);
-	@include fill-mode($fill);
-	@include visibility($visibility);
-}
 
 
 body {
@@ -27,6 +6,7 @@ body {
 	background-color: var(--color-bg);
 	-color: var(--color-fg);
 	font-size: 15px;
+line-height: 1.5;
 
 }
 
@@ -38,6 +18,7 @@ body {
 	}
 
 }
+
 a {
 	@include transition;
 	word-break: break-all;
@@ -50,8 +31,14 @@ a:hover {
 	color: var(--color-accent);
 }
 
+h1, h2, h3, h4 {
+line-height: 1.1;
+font-weight: normal;
+margin-top: 0;
+}
+
 h1 {
-	font-size: 60px !important;
+	font-size: 60px;
 
 }
 h2 {
@@ -72,7 +59,7 @@ article {
 
 
 
-header.header, .slogan {
+header.header, .main.description {
 	h1, h2, h3, .logo {
 		word-break: break-all;
 		font-family: var(--title-font);
@@ -80,7 +67,15 @@ header.header, .slogan {
 		line-heighT: 65%;
 	}
 }
-
+@media (max-width: $bp) {
+	.half, .third, .quarter, .third-reverse {
+		div, section {
+			&:not(:first-of-type) {
+			margin-top: var(--gap-3);
+		}
+		}
+	}
+}
 
 @media (min-width: $bp) {
 	.half, .third, .quarter, .third-reverse {
@@ -100,7 +95,6 @@ header.header, .slogan {
 
 	}
 	.third-reverse {
-
 		grid-template-columns: 2fr 1fr;
 
 	}
@@ -119,8 +113,8 @@ article.main {
 }
 
 header.header:after,
-html.initiative ul.status:after,
-.slogan:before, .home .slogan:after {
+html.initiative ul.status:after, 
+.main.description:before, .home .main.description:after {
 	content: "";
 	height: 3px;
 	display: block;
@@ -165,7 +159,7 @@ blockquote {
 }
 
 .home {
-	.slogan {
+	.main.description {
 		a.logo {
 			pointer-events: none;
 			text-decoration: none;
@@ -202,52 +196,67 @@ ul.status {
 
 	}
 }
+.slogan {
+	.bar {
+		@include status;
+	padding: 0 var(--gap-2);
+	font-size: 90%;
+	}
+margin-top: var(--gap-5);
+	
+	span {
+		text-transform: uppercase;
+		background-color: var(--color-bg);
+		padding: var(--gap-2);
+
+	}
+	a {
+		float: right;
+		margin-top: -18px;
+		text-transform: uppercase;
+		color: var(--color-bg);
+		font-size: 80%;
+	}
+}
+
+
 
 ul.status li {
-	&:nth-of-type(1) {
-			span {
+	&:nth-of-type(1) span {
 				@include status($delay: calc(var(--delay) * 1));
 			}
-		}
-			&:nth-of-type(2) {
-			span {
+		
+			&:nth-of-type(2) span {
 				@include status($delay: calc(var(--delay) * 2));
 			}
-		}
-		&:nth-of-type(3) {
-			span {
+		
+		&:nth-of-type(3) span {
 				@include status($delay: calc(var(--delay) * 3));
 			}
-		}
-		&:nth-of-type(4) {
-			span {
+		
+		&:nth-of-type(4) span {
 				@include status($delay: calc(var(--delay) * 4));
 			}
-		}
-			&:nth-of-type(5) {
-			span {
+		
+			&:nth-of-type(5)  {
 				@include status($delay: calc(var(--delay) * 5));
-			}
+			
 		}
-		&:nth-of-type(6) {
-			span {
+		&:nth-of-type(6)  {
 				@include status($delay: calc(var(--delay) * 6));
-			}
+			
 		}
-		&:nth-of-type(7) {
-			span {
+		&:nth-of-type(7)  {
 				@include status($delay: calc(var(--delay) * 7));
-			}
+			
 		}
-			&:nth-of-type(8) {
-			span {
+			&:nth-of-type(8)  {
 				@include status($delay: calc(var(--delay) * 8));
-			}
+			
 		}
-		&:nth-of-type(9) {
-			span {
+		&:nth-of-type(9)  {
 				@include status($delay: calc(var(--delay) * 9));
-			}
+			
 		}
 }
 
@@ -274,50 +283,69 @@ ul.status li {
 
 
 .list a {
-	&:nth-of-type(1) {
-			.title {
+	&:nth-of-type(1) .title {
 				@include status($delay: calc(var(--delay) * 1));
-			}
+			
 		}
-			&:nth-of-type(2) {
-			.title {
+			&:nth-of-type(2) .title {
 				@include status($delay: calc(var(--delay) * 2));
-			}
+			
 		}
-		&:nth-of-type(3) {
-			.title {
+		&:nth-of-type(3) .title {
 				@include status($delay: calc(var(--delay) * 3));
-			}
+			
 		}
-		&:nth-of-type(4) {
-			.title {
+		&:nth-of-type(4) .title {
 				@include status($delay: calc(var(--delay) * 4));
-			}
+			
 		}
-			&:nth-of-type(5) {
-			.title {
+			&:nth-of-type(5)  {
 				@include status($delay: calc(var(--delay) * 5));
-			}
+		
 		}
-		&:nth-of-type(6) {
-			.title {
+		&:nth-of-type(6) .title {
 				@include status($delay: calc(var(--delay) * 6));
-			}
+			
 		}
-		&:nth-of-type(7) {
-			.title {
+		&:nth-of-type(7) .title {
 				@include status($delay: calc(var(--delay) * 7));
-			}
+			
 		}
-			&:nth-of-type(8) {
-			.title {
+			&:nth-of-type(8) .title {
 				@include status($delay: calc(var(--delay) * 8));
-			}
+			
 		}
-		&:nth-of-type(9) {
-			.title {
+		&:nth-of-type(9) .title {
 				@include status($delay: calc(var(--delay) * 9));
-			}
+			
+		}
+}
+
+.home section:nth-of-type(2) .list a {
+	&:nth-of-type(1) .title {
+				@include status($delay: calc(var(--delay) * 4));
+			
+		}
+		&:nth-of-type(2) .title {
+				@include status($delay: calc(var(--delay) * 5));
+			
+		}
+		&:nth-of-type(3) .title {
+				@include status($delay: calc(var(--delay) * 6));
+			
+		}
+
+		&:nth-of-type(4) .title {
+				@include status($delay: calc(var(--delay) * 7));
+			
+		}
+		&:nth-of-type(5) .title {
+				@include status($delay: calc(var(--delay) * 8));
+			
+		}
+		&:nth-of-type(6) .title {
+				@include status($delay: calc(var(--delay) * 9));
+			
 		}
 }
 
@@ -325,17 +353,23 @@ ul.status li {
 
 a.btn {
 	text-align: left;
+	display: inline-block;
 	text-transform: uppercase;
-	padding: var(--gap) var(--gap-3);
 	@include radius(0, regular);
 	padding: var(--gap) var(--gap-3);
 	border: solid 1px var(--color-accent);
+
+		text-decoration: none;
 	@include transition;
 	&:hover {
 		background-color: white;
-		text-decoration: none;
 	}
+
 	
+}
+.sig {
+	font-size: 90%;
+	margin-top: var(--gap-2);
 }
 
 code {
