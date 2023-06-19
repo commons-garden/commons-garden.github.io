@@ -7,8 +7,8 @@
 - [ ] style dropdown on this style: [Custom Select CSS](https://codepen.io/saleemsemo/pen/YZKwoE) or [Custom Select Styles with Pure CSS](https://moderncss.dev/custom-select-styles-with-pure-css/)
 - [x] categories.yml (title, description, group, criteria)
 - [x] rewrite footer
-- [ ] slogan becomes description. add slogan.
-- [ ] sync status animation on index
+- [x] slogan becomes description. add slogan.
+- [x] sync status animation on index
 - [x] review contact links
 - [x] remove bootstrap
 - [x] create commons garden proton email, change contact
