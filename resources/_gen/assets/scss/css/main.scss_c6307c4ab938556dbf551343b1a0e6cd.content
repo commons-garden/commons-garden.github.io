@@ -8292,10 +8292,17 @@ article h1:not(:first-child), article h2:not(:first-child), article h3:not(:firs
   margin-top: var(--gap-5); }
 
 header.header h1, header.header h2, header.header h3, header.header .logo, .main.description h1, .main.description h2, .main.description h3, .main.description .logo {
-  word-break: break-all;
   font-family: var(--title-font);
   text-transform: uppercase;
   line-heighT: 65%; }
+
+@media (max-width: 500px) {
+  header.header h1, header.header h2, header.header h3, header.header .logo, .main.description h1, .main.description h2, .main.description h3, .main.description .logo {
+    margin-bottom: 0; }
+  header.header h1 span, header.header h2 span, header.header h3 span, header.header .logo span, .main.description h1 span, .main.description h2 span, .main.description h3 span, .main.description .logo span {
+    display: block;
+    font-size: 65px;
+    line-heighT: 65%; } }
 
 @media (max-width: 500px) {
   .half div:not(:first-of-type), article.main div:not(:first-of-type), .half section:not(:first-of-type), article.main section:not(:first-of-type), .third div:not(:first-of-type), html:not(.initiative) article.with-status div:not(:first-of-type), .third section:not(:first-of-type), html:not(.initiative) article.with-status section:not(:first-of-type), .quarter div:not(:first-of-type), .quarter section:not(:first-of-type), .third-reverse div:not(:first-of-type), .third-reverse section:not(:first-of-type) {
@@ -8387,9 +8394,6 @@ blockquote:hover:before {
 .home .main.description:before {
   display: none; }
 
-header.header:after {
-  margin-top: var(--gap-3); }
-
 .logo {
   color: var(--color-fg);
   font-size: 30px; }
@@ -8450,12 +8454,24 @@ ul.status span {
   background-color: var(--color-bg);
   padding: var(--gap-2); }
 
+@media (max-width: 500px) {
+  .slogan span {
+    padding: 0 var(--gap); } }
+
 .slogan a {
-  float: right;
-  margin-top: -18px;
   text-transform: uppercase;
   color: var(--color-bg);
   font-size: 80%; }
+
+@media (min-width: 500px) {
+  .slogan a {
+    float: right;
+    margin-top: -18px; } }
+
+@media (max-width: 500px) {
+  .slogan a {
+    display: block;
+    margin-top: var(--gap); } }
 
 ul.status li:nth-of-type(1) span {
   -webkit-animation-name: status;
@@ -9396,6 +9412,12 @@ a.btn {
 
 a.btn:hover {
   background-color: white; }
+
+@media (max-width: 500px) {
+  a.btn {
+    padding: var(--gap) var(--gap-2); }
+  a.btn:not(:first-of-type) {
+    margin-top: var(--gap); } }
 
 .sig {
   font-size: 90%;

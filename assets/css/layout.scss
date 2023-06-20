@@ -39,7 +39,6 @@ margin-top: 0;
 
 h1 {
 	font-size: 60px;
-
 }
 h2 {
 	font-size: 30px;
@@ -61,10 +60,17 @@ article {
 
 header.header, .main.description {
 	h1, h2, h3, .logo {
-		word-break: break-all;
 		font-family: var(--title-font);
 		text-transform: uppercase;
 		line-heighT: 65%;
+		@media (max-width: $bp) {
+			span {
+				display: block;
+				font-size: 65px;
+				line-heighT: 65%;
+		}
+		margin-bottom: 0;
+	}
 	}
 }
 @media (max-width: $bp) {
@@ -170,9 +176,7 @@ blockquote {
 	}
 }
 
-header.header:after {
-	margin-top: var(--gap-3);
-}
+
 
 
 
@@ -209,10 +213,21 @@ margin-top: var(--gap-5);
 		background-color: var(--color-bg);
 		padding: var(--gap-2);
 
+	@media (max-width: $bp) {
+			padding: 0 var(--gap);
+	}
+
 	}
 	a {
+		@media (min-width: $bp) {
 		float: right;
+
 		margin-top: -18px;
+			}
+					@media (max-width: $bp) {
+						display: block;
+						margin-top: var(--gap);
+					}
 		text-transform: uppercase;
 		color: var(--color-bg);
 		font-size: 80%;
@@ -364,6 +379,14 @@ a.btn {
 	&:hover {
 		background-color: white;
 	}
+			@media (max-width: $bp) {
+			padding: var(--gap) var(--gap-2);
+					&:not(:first-of-type) {
+						margin-top: var(--gap);
+					}
+				
+			
+		}
 
 	
 }
