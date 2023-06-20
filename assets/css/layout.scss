@@ -257,23 +257,23 @@ ul.status li {
 		@include status($delay: calc(var(--delay) * 4));
 	}
 
-	&:nth-of-type(5)  {
+	&:nth-of-type(5) span  {
 		@include status($delay: calc(var(--delay) * 5));
 
 	}
-	&:nth-of-type(6)  {
+	&:nth-of-type(6) span  {
 		@include status($delay: calc(var(--delay) * 6));
 
 	}
-	&:nth-of-type(7)  {
+	&:nth-of-type(7) span  {
 		@include status($delay: calc(var(--delay) * 7));
 
 	}
-	&:nth-of-type(8)  {
+	&:nth-of-type(8) span  {
 		@include status($delay: calc(var(--delay) * 8));
 
 	}
-	&:nth-of-type(9)  {
+	&:nth-of-type(9) span {
 		@include status($delay: calc(var(--delay) * 9));
 
 	}
@@ -523,22 +523,30 @@ a[data-toggle="popover"] {
 
 
 header.header nav {
-	font-family: var(--title-font);
-	font-weight: normal;
 
+@extend h2;
 
 	&.primary select {
 		@extend h1;
+				background-position: right 20px;
+		&:hover, &:focus {
+			background-position: right 23px;
+		}
 	}
 	&.secondary select {
 		@extend h2;
 		margin-bottom: var(--gap-half);
+
+		background-position: right 10px;
+		&:hover, &:focus {
+			background-position: right 13px;
+		}
 	}
 	select {
 		background-image: url(../images/arrow-down.svg);
 		background-repeat: no-repeat;
-		background-position: right center;
 @include transition;
+margin-right: 5px;
 		&:focus, &:hover {
 			background-color: white;
 			background-image: url(../images/arrow-down-hover.svg);
@@ -560,7 +568,7 @@ header.header nav {
 		cursor: pointer;
 		border: solid .5px var(--color-accent);
 		padding: var(--gap);
-		padding-right: var(--gap-3);
+		padding-right: var(--gap-4);
 		outline: none;
 		text-transform: uppercase;
 

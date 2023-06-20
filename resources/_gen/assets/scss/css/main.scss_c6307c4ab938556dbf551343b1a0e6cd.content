@@ -8280,7 +8280,7 @@ a:not(.btn) {
 a:hover {
   color: var(--color-accent); }
 
-h1, header.header nav.primary select, h2, header.header nav.secondary select, h3, h4 {
+h1, header.header nav.primary select, h2, header.header nav.secondary select, header.header nav, h3, h4 {
   line-height: 1.1;
   font-weight: normal;
   margin-top: 0; }
@@ -8288,24 +8288,24 @@ h1, header.header nav.primary select, h2, header.header nav.secondary select, h3
 h1, header.header nav.primary select {
   font-size: 60px; }
 
-h2, header.header nav.secondary select {
+h2, header.header nav.secondary select, header.header nav {
   font-size: 30px; }
 
 h3 {
   font-size: 20px; }
 
-article h1:not(:first-child), article header.header nav.primary select:not(:first-child), header.header nav.primary article select:not(:first-child), article h2:not(:first-child), article header.header nav.secondary select:not(:first-child), header.header nav.secondary article select:not(:first-child), article h3:not(:first-child), article h4:not(:first-child) {
+article h1:not(:first-child), article header.header nav.primary select:not(:first-child), header.header nav.primary article select:not(:first-child), article h2:not(:first-child), article header.header nav.secondary select:not(:first-child), header.header nav.secondary article select:not(:first-child), article header.header nav:not(:first-child), header.header article nav:not(:first-child), article h3:not(:first-child), article h4:not(:first-child) {
   margin-top: var(--gap-5); }
 
-header.header h1, header.header nav.primary select, header.header h2, header.header nav.secondary select, header.header h3, header.header .logo, .main.description h1, .main.description h2, .main.description h3, .main.description .logo {
+header.header h1, header.header nav.primary select, header.header h2, header.header nav.secondary select, header.header nav, header.header h3, header.header .logo, .main.description h1, .main.description h2, .main.description h3, .main.description .logo {
   font-family: var(--title-font);
   text-transform: uppercase;
   line-heighT: 65%; }
 
 @media (max-width: 500px) {
-  header.header h1, header.header nav.primary select, header.header h2, header.header nav.secondary select, header.header h3, header.header .logo, .main.description h1, .main.description h2, .main.description h3, .main.description .logo {
+  header.header h1, header.header nav.primary select, header.header h2, header.header nav.secondary select, header.header nav, header.header h3, header.header .logo, .main.description h1, .main.description h2, .main.description h3, .main.description .logo {
     margin-bottom: 0; }
-  header.header h1 span, header.header nav.primary select span, header.header h2 span, header.header nav.secondary select span, header.header h3 span, header.header .logo span, .main.description h1 span, .main.description h2 span, .main.description h3 span, .main.description .logo span {
+  header.header h1 span, header.header nav.primary select span, header.header h2 span, header.header nav.secondary select span, header.header nav span, header.header h3 span, header.header .logo span, .main.description h1 span, .main.description h2 span, .main.description h3 span, .main.description .logo span {
     display: block;
     font-size: 65px;
     line-heighT: 65%; } }
@@ -8627,7 +8627,7 @@ ul.status li:nth-of-type(4) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-ul.status li:nth-of-type(5) {
+ul.status li:nth-of-type(5) span {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -8664,7 +8664,7 @@ ul.status li:nth-of-type(5) {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-ul.status li:nth-of-type(6) {
+ul.status li:nth-of-type(6) span {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -8701,7 +8701,7 @@ ul.status li:nth-of-type(6) {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-ul.status li:nth-of-type(7) {
+ul.status li:nth-of-type(7) span {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -8738,7 +8738,7 @@ ul.status li:nth-of-type(7) {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-ul.status li:nth-of-type(8) {
+ul.status li:nth-of-type(8) span {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -8775,7 +8775,7 @@ ul.status li:nth-of-type(8) {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-ul.status li:nth-of-type(9) {
+ul.status li:nth-of-type(9) span {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -9555,22 +9555,28 @@ h1 a[data-toggle="popover"]:after, header.header nav.primary select a[data-toggl
 .popover-body a span.title {
   color: white; }
 
-header.header nav {
-  font-family: var(--title-font);
-  font-weight: normal; }
+header.header nav.primary select {
+  background-position: right 20px; }
+
+header.header nav.primary select:hover, header.header nav.primary select:focus {
+  background-position: right 23px; }
 
 header.header nav.secondary select {
-  margin-bottom: var(--gap-half); }
+  margin-bottom: var(--gap-half);
+  background-position: right 10px; }
+
+header.header nav.secondary select:hover, header.header nav.secondary select:focus {
+  background-position: right 13px; }
 
 header.header nav select {
   background-image: url(../images/arrow-down.svg);
   background-repeat: no-repeat;
-  background-position: right center;
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
   -ms-transition: all 300ms ease-out;
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
+  margin-right: 5px;
   appearance: none;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -9586,7 +9592,7 @@ header.header nav select {
   cursor: pointer;
   border: solid 0.5px var(--color-accent);
   padding: var(--gap);
-  padding-right: var(--gap-3);
+  padding-right: var(--gap-4);
   outline: none;
   text-transform: uppercase; }
 
