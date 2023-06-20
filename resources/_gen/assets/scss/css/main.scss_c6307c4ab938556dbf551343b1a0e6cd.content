@@ -8164,7 +8164,10 @@
   --gap-10: calc(var(--gap) * 10);
   --gap-half: calc(var(--gap) / 2);
   --gap-quart: calc(var(--gap) / 4);
-  --grid-gap: var(--gap-3); }
+  --grid-gap: var(--gap-3);
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border); }
 
 @-webkit-keyframes status {
   0% {
@@ -8244,6 +8247,9 @@
     font-family: Calling Code;
     src: url("../fonts/calling-code-regular.svg#Calling Code") format("svg"); } }
 
+*, *::before, *::after {
+  box-sizing: border-box; }
+
 body {
   font-family: var(--text-font);
   background-color: var(--color-bg);
@@ -8274,32 +8280,32 @@ a:not(.btn) {
 a:hover {
   color: var(--color-accent); }
 
-h1, h2, h3, h4 {
+h1, header.header nav.primary select, h2, header.header nav.secondary select, h3, h4 {
   line-height: 1.1;
   font-weight: normal;
   margin-top: 0; }
 
-h1 {
+h1, header.header nav.primary select {
   font-size: 60px; }
 
-h2 {
+h2, header.header nav.secondary select {
   font-size: 30px; }
 
 h3 {
   font-size: 20px; }
 
-article h1:not(:first-child), article h2:not(:first-child), article h3:not(:first-child), article h4:not(:first-child) {
+article h1:not(:first-child), article header.header nav.primary select:not(:first-child), header.header nav.primary article select:not(:first-child), article h2:not(:first-child), article header.header nav.secondary select:not(:first-child), header.header nav.secondary article select:not(:first-child), article h3:not(:first-child), article h4:not(:first-child) {
   margin-top: var(--gap-5); }
 
-header.header h1, header.header h2, header.header h3, header.header .logo, .main.description h1, .main.description h2, .main.description h3, .main.description .logo {
+header.header h1, header.header nav.primary select, header.header h2, header.header nav.secondary select, header.header h3, header.header .logo, .main.description h1, .main.description h2, .main.description h3, .main.description .logo {
   font-family: var(--title-font);
   text-transform: uppercase;
   line-heighT: 65%; }
 
 @media (max-width: 500px) {
-  header.header h1, header.header h2, header.header h3, header.header .logo, .main.description h1, .main.description h2, .main.description h3, .main.description .logo {
+  header.header h1, header.header nav.primary select, header.header h2, header.header nav.secondary select, header.header h3, header.header .logo, .main.description h1, .main.description h2, .main.description h3, .main.description .logo {
     margin-bottom: 0; }
-  header.header h1 span, header.header h2 span, header.header h3 span, header.header .logo span, .main.description h1 span, .main.description h2 span, .main.description h3 span, .main.description .logo span {
+  header.header h1 span, header.header nav.primary select span, header.header h2 span, header.header nav.secondary select span, header.header h3 span, header.header .logo span, .main.description h1 span, .main.description h2 span, .main.description h3 span, .main.description .logo span {
     display: block;
     font-size: 65px;
     line-heighT: 65%; } }
@@ -9485,7 +9491,7 @@ a[data-toggle="popover"]:after {
   margin-top: 3px;
   margin-left: -3px; }
 
-h1 a[data-toggle="popover"]:after {
+h1 a[data-toggle="popover"]:after, header.header nav.primary select a[data-toggle="popover"]:after {
   margin-top: 13px;
   margin-left: 3px;
   line-height: 11px; }
@@ -9548,5 +9554,54 @@ h1 a[data-toggle="popover"]:after {
 
 .popover-body a span.title {
   color: white; }
+
+header.header nav {
+  font-family: var(--title-font);
+  font-weight: normal; }
+
+header.header nav.secondary select {
+  margin-bottom: var(--gap-half); }
+
+header.header nav select {
+  background-image: url(../images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  appearance: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: var(--color-bg);
+  font-weight: normal;
+  font-family: var(--title-font);
+  cursor: pointer;
+  border: solid 0.5px var(--color-accent);
+  padding: var(--gap);
+  padding-right: var(--gap-3);
+  outline: none;
+  text-transform: uppercase; }
+
+header.header nav select:focus, header.header nav select:hover {
+  background-color: white;
+  background-image: url(../images/arrow-down-hover.svg); }
+
+header.header nav select option {
+  font-size: 12px;
+  font-family: var(--text-font); }
+
+header.header nav select option:first-of-type {
+  display: none; }
+
+header.header nav select::-ms-expand {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

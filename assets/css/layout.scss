@@ -1,12 +1,16 @@
 
-
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
 body {
 	font-family: var(--text-font);
 	background-color: var(--color-bg);
 	-color: var(--color-fg);
 	font-size: 15px;
-line-height: 1.5;
+	line-height: 1.5;
 
 }
 
@@ -32,9 +36,9 @@ a:hover {
 }
 
 h1, h2, h3, h4 {
-line-height: 1.1;
-font-weight: normal;
-margin-top: 0;
+	line-height: 1.1;
+	font-weight: normal;
+	margin-top: 0;
 }
 
 h1 {
@@ -68,17 +72,17 @@ header.header, .main.description {
 				display: block;
 				font-size: 65px;
 				line-heighT: 65%;
+			}
+			margin-bottom: 0;
 		}
-		margin-bottom: 0;
-	}
 	}
 }
 @media (max-width: $bp) {
 	.half, .third, .quarter, .third-reverse {
 		div, section {
 			&:not(:first-of-type) {
-			margin-top: var(--gap-3);
-		}
+				margin-top: var(--gap-3);
+			}
 		}
 	}
 }
@@ -148,11 +152,11 @@ blockquote {
 	@include transition;
 	background-color: rgba(yellow, .2);
 	&:before {
-	position: absolute;
+		position: absolute;
 		content: counter(section);
 		margin-left: -40px;
 		@include opacity(40);
-	@include transition;
+		@include transition;
 	}
 	&:hover {
 		@include scale(1.1);
@@ -161,7 +165,7 @@ blockquote {
 			@include opacity(100);
 		}
 	}
-@include shadow(box, 4px 4px 0px rgba(0, 0, 0, 0.0));
+	@include shadow(box, 4px 4px 0px rgba(0, 0, 0, 0.0));
 }
 
 .home {
@@ -171,8 +175,8 @@ blockquote {
 			text-decoration: none;
 		}
 		&:before {
-	display: none;
-}
+			display: none;
+		}
 	}
 }
 
@@ -203,31 +207,31 @@ ul.status {
 .slogan {
 	.bar {
 		@include status;
-	padding: 0 var(--gap-2);
-	font-size: 90%;
+		padding: 0 var(--gap-2);
+		font-size: 90%;
 	}
-margin-top: var(--gap-5);
+	margin-top: var(--gap-5);
 	
 	span {
 		text-transform: uppercase;
 		background-color: var(--color-bg);
 		padding: var(--gap-2);
 
-	@media (max-width: $bp) {
+		@media (max-width: $bp) {
 			padding: 0 var(--gap);
-	}
+		}
 
 	}
 	a {
 		@media (min-width: $bp) {
-		float: right;
+			float: right;
 
-		margin-top: -18px;
-			}
-					@media (max-width: $bp) {
-						display: block;
-						margin-top: var(--gap);
-					}
+			margin-top: -18px;
+		}
+		@media (max-width: $bp) {
+			display: block;
+			margin-top: var(--gap);
+		}
 		text-transform: uppercase;
 		color: var(--color-bg);
 		font-size: 80%;
@@ -238,41 +242,41 @@ margin-top: var(--gap-5);
 
 ul.status li {
 	&:nth-of-type(1) span {
-				@include status($delay: calc(var(--delay) * 1));
-			}
-		
-			&:nth-of-type(2) span {
-				@include status($delay: calc(var(--delay) * 2));
-			}
-		
-		&:nth-of-type(3) span {
-				@include status($delay: calc(var(--delay) * 3));
-			}
-		
-		&:nth-of-type(4) span {
-				@include status($delay: calc(var(--delay) * 4));
-			}
-		
-			&:nth-of-type(5)  {
-				@include status($delay: calc(var(--delay) * 5));
-			
-		}
-		&:nth-of-type(6)  {
-				@include status($delay: calc(var(--delay) * 6));
-			
-		}
-		&:nth-of-type(7)  {
-				@include status($delay: calc(var(--delay) * 7));
-			
-		}
-			&:nth-of-type(8)  {
-				@include status($delay: calc(var(--delay) * 8));
-			
-		}
-		&:nth-of-type(9)  {
-				@include status($delay: calc(var(--delay) * 9));
-			
-		}
+		@include status($delay: calc(var(--delay) * 1));
+	}
+
+	&:nth-of-type(2) span {
+		@include status($delay: calc(var(--delay) * 2));
+	}
+
+	&:nth-of-type(3) span {
+		@include status($delay: calc(var(--delay) * 3));
+	}
+
+	&:nth-of-type(4) span {
+		@include status($delay: calc(var(--delay) * 4));
+	}
+
+	&:nth-of-type(5)  {
+		@include status($delay: calc(var(--delay) * 5));
+
+	}
+	&:nth-of-type(6)  {
+		@include status($delay: calc(var(--delay) * 6));
+
+	}
+	&:nth-of-type(7)  {
+		@include status($delay: calc(var(--delay) * 7));
+
+	}
+	&:nth-of-type(8)  {
+		@include status($delay: calc(var(--delay) * 8));
+
+	}
+	&:nth-of-type(9)  {
+		@include status($delay: calc(var(--delay) * 9));
+
+	}
 }
 
 .list a {
@@ -285,10 +289,10 @@ ul.status li {
 		margin-right: 0;
 		margin-top: -32px;
 		margin-right: 5px;
-			background-image: url(../images/arrow.svg);
-	background-repeat: no-repeat;
-	@include opacity(40);
-	@include transition;
+		background-image: url(../images/arrow.svg);
+		background-repeat: no-repeat;
+		@include opacity(40);
+		@include transition;
 	}
 	&:hover:after {
 		margin-right: 0px;
@@ -299,69 +303,69 @@ ul.status li {
 
 .list a {
 	&:nth-of-type(1) .title {
-				@include status($delay: calc(var(--delay) * 1));
-			
-		}
-			&:nth-of-type(2) .title {
-				@include status($delay: calc(var(--delay) * 2));
-			
-		}
-		&:nth-of-type(3) .title {
-				@include status($delay: calc(var(--delay) * 3));
-			
-		}
-		&:nth-of-type(4) .title {
-				@include status($delay: calc(var(--delay) * 4));
-			
-		}
-			&:nth-of-type(5)  {
-				@include status($delay: calc(var(--delay) * 5));
+		@include status($delay: calc(var(--delay) * 1));
+
+	}
+	&:nth-of-type(2) .title {
+		@include status($delay: calc(var(--delay) * 2));
+
+	}
+	&:nth-of-type(3) .title {
+		@include status($delay: calc(var(--delay) * 3));
+
+	}
+	&:nth-of-type(4) .title {
+		@include status($delay: calc(var(--delay) * 4));
+
+	}
+	&:nth-of-type(5)  {
+		@include status($delay: calc(var(--delay) * 5));
 		
-		}
-		&:nth-of-type(6) .title {
-				@include status($delay: calc(var(--delay) * 6));
-			
-		}
-		&:nth-of-type(7) .title {
-				@include status($delay: calc(var(--delay) * 7));
-			
-		}
-			&:nth-of-type(8) .title {
-				@include status($delay: calc(var(--delay) * 8));
-			
-		}
-		&:nth-of-type(9) .title {
-				@include status($delay: calc(var(--delay) * 9));
-			
-		}
+	}
+	&:nth-of-type(6) .title {
+		@include status($delay: calc(var(--delay) * 6));
+
+	}
+	&:nth-of-type(7) .title {
+		@include status($delay: calc(var(--delay) * 7));
+
+	}
+	&:nth-of-type(8) .title {
+		@include status($delay: calc(var(--delay) * 8));
+
+	}
+	&:nth-of-type(9) .title {
+		@include status($delay: calc(var(--delay) * 9));
+
+	}
 }
 
 .home section:nth-of-type(2) .list a {
 	&:nth-of-type(1) .title {
-				@include status($delay: calc(var(--delay) * 4));
-			
-		}
-		&:nth-of-type(2) .title {
-				@include status($delay: calc(var(--delay) * 5));
-			
-		}
-		&:nth-of-type(3) .title {
-				@include status($delay: calc(var(--delay) * 6));
-			
-		}
+		@include status($delay: calc(var(--delay) * 4));
 
-		&:nth-of-type(4) .title {
-				@include status($delay: calc(var(--delay) * 7));
-			
-		}
-		&:nth-of-type(5) .title {
-				@include status($delay: calc(var(--delay) * 8));
-			
-		}
-		&:nth-of-type(6) .title {
-				@include status($delay: calc(var(--delay) * 9));
-			
-		}
+	}
+	&:nth-of-type(2) .title {
+		@include status($delay: calc(var(--delay) * 5));
+
+	}
+	&:nth-of-type(3) .title {
+		@include status($delay: calc(var(--delay) * 6));
+
+	}
+
+	&:nth-of-type(4) .title {
+		@include status($delay: calc(var(--delay) * 7));
+
+	}
+	&:nth-of-type(5) .title {
+		@include status($delay: calc(var(--delay) * 8));
+
+	}
+	&:nth-of-type(6) .title {
+		@include status($delay: calc(var(--delay) * 9));
+
+	}
 }
 
 
@@ -374,19 +378,19 @@ a.btn {
 	padding: var(--gap) var(--gap-3);
 	border: solid 1px var(--color-accent);
 
-		text-decoration: none;
+	text-decoration: none;
 	@include transition;
 	&:hover {
 		background-color: white;
 	}
-			@media (max-width: $bp) {
-			padding: var(--gap) var(--gap-2);
-					&:not(:first-of-type) {
-						margin-top: var(--gap);
-					}
-				
-			
+	@media (max-width: $bp) {
+		padding: var(--gap) var(--gap-2);
+		&:not(:first-of-type) {
+			margin-top: var(--gap);
 		}
+
+
+	}
 
 	
 }
@@ -462,18 +466,18 @@ a[data-toggle="popover"] {
 	a {
 		padding: var(--gap) 0;
 		border-top: solid 1px var(--color-accent-light);
-border-bottom: solid 1px var(--color-accent-light);
-margin-top: -1px;
-&:hover {
+		border-bottom: solid 1px var(--color-accent-light);
+		margin-top: -1px;
+		&:hover {
 			border-top: solid 1px var(--color-accent);
-border-bottom: solid 1px var(--color-accent);
-}
+			border-bottom: solid 1px var(--color-accent);
+		}
 
 		text-decoration: none;
 		display: block;
 		@include transition;
 		.title {
-		
+
 			padding: 0 2px;
 			color: var(--color-bg);
 			text-transform: uppercase;
@@ -519,5 +523,49 @@ border-bottom: solid 1px var(--color-accent);
 
 
 header.header nav {
-	
+	font-family: var(--title-font);
+	font-weight: normal;
+
+
+	&.primary select {
+		@extend h1;
+	}
+	&.secondary select {
+		@extend h2;
+		margin-bottom: var(--gap-half);
+	}
+	select {
+		background-image: url(../images/arrow-down.svg);
+		background-repeat: no-repeat;
+		background-position: right center;
+@include transition;
+		&:focus, &:hover {
+			background-color: white;
+			background-image: url(../images/arrow-down-hover.svg);
+		}
+		option {
+			font-size: 12px;
+			font-family: var(--text-font);
+
+			&:first-of-type {
+				display: none;
+			}
+
+		}
+		appearance: none;
+		@include radius(2px);
+		background-color: var(--color-bg);
+		font-weight: normal;
+		font-family: var(--title-font);
+		cursor: pointer;
+		border: solid .5px var(--color-accent);
+		padding: var(--gap);
+		padding-right: var(--gap-3);
+		outline: none;
+		text-transform: uppercase;
+
+		&::-ms-expand {
+			display: none;
+		}
+	}
 }

@@ -1,0 +1,16 @@
+<select onChange="window.location.href=this.value">
+	<option>{{ .Params.Category }}</option>
+					{{ range $.Site.Data.categories }}
+
+					{{ if (in .status "public") }}
+					<option value="/{{ .title }}">
+							{{ if (in .pluralize "no") }}
+							{{ .title | upper }}
+							{{ else }}
+							{{ .title | pluralize | upper }}
+							{{ end }}
+					</option>
+
+					{{ end }}
+					{{ end }}
+					</select>/

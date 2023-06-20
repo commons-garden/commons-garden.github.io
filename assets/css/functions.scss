@@ -21,27 +21,30 @@
     --gap-half: calc(var(--gap) / 2);
     --gap-quart: calc(var(--gap) / 4);
     --grid-gap: var(--gap-3);
+    --select-border: #777;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
   }
 
-@include keyframes(status) {
+  @include keyframes(status) {
     0% {
       background-image: url(../images/slide-in.png);
       background-repeat: no-repeat;
-  background-size: 0px 100%;
+      background-size: 0px 100%;
     }
-  100% {
-    background-image: url(../images/slide-in.png);
-    background-repeat: no-repeat;
+    100% {
+      background-image: url(../images/slide-in.png);
+      background-repeat: no-repeat;
       background-size: 100% 100%;
+    }
   }
-}
 
-@mixin status($count: $countDefault, $duration: 300ms, $delay: $delayDefault, $function: linear, $fill: $fillDefault, $visibility: $visibilityDefault) {
-  @include animation-name(status);
-  @include count($count);
-  @include duration($duration);
-  @include delay($delay);
-  @include function($function);
-  @include fill-mode($fill);
-  @include visibility($visibility);
-}
+  @mixin status($count: $countDefault, $duration: 300ms, $delay: $delayDefault, $function: linear, $fill: $fillDefault, $visibility: $visibilityDefault) {
+    @include animation-name(status);
+    @include count($count);
+    @include duration($duration);
+    @include delay($delay);
+    @include function($function);
+    @include fill-mode($fill);
+    @include visibility($visibility);
+  }

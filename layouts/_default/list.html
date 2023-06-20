@@ -13,17 +13,7 @@
 	<div class="container">
 			<header class="header">
 <nav class="secondary">
-	<select onChange="window.location.href=this.value">
-	<option value="">{{ .Site.Title }}</option>
-	<option value="/">
-		Home
-	</option>
-	{{ range  where .Site.RegularPages ".Params.category" "about" }}
-	{{ if (in .Params.type "public") }}
-	<option value="{{ .RelPermalink }}">{{ .Title }}</option>
-	{{ end }}
-	{{ end }}
-</select>/
+{{ partial "nav-root.html" . }}
 </nav>
 
 
@@ -33,15 +23,17 @@
 		</h2> -->
 	<nav class="primary">
 		<select onChange="window.location.href=this.value">
-	<option>{{ .Title | singularize }}</option>
+	<option>
+	{{ if (in .Title "About") }}{{ .Title | singularize | upper }}{{ else }}{{ .Title  | upper }}{{ end }}</option>
+
 					{{ range $.Site.Data.categories }}
 
 					{{ if (in .status "public") }}
 					<option value="/{{ .title }}">
 							{{ if (in .pluralize "no") }}
-							{{ .title }}
+							{{ .title | upper }}
 							{{ else }}
-							{{ .title | pluralize }}
+							{{ .title | pluralize | upper }}
 							{{ end }}
 					</option>
 

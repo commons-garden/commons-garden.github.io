@@ -1,0 +1,12 @@
+	<select onChange="window.location.href=this.value">
+	<option value="">{{ .Site.Title }}</option>
+
+	<option value="/">
+		HOME
+	</option>
+	{{ range  where .Site.RegularPages ".Params.category" "about" }}
+	{{ if (in .Params.type "public") }}
+	<option value="{{ .RelPermalink }}">{{ .Title | upper }}</option>
+	{{ end }}
+	{{ end }}
+</select>/
