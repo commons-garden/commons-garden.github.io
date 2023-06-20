@@ -9555,8 +9555,12 @@ h1 a[data-toggle="popover"]:after, header.header nav.primary select a[data-toggl
 .popover-body a span.title {
   color: white; }
 
+@media (min-width: 500px) {
+  html.single header.header nav.secondary {
+    display: grid;
+    grid-template-columns: 240px 1fr; } }
+
 header.header nav.primary select {
-  width: 100%;
   background-position: right 20px; }
 
 header.header nav.primary select:hover, header.header nav.primary select:focus {
@@ -9566,13 +9570,12 @@ header.header nav.secondary select {
   margin-bottom: -1px;
   background-position: right 10px; }
 
-header.header nav.secondary select.nav-category {
-  margin-left: -7px; }
-
 header.header nav.secondary select:hover, header.header nav.secondary select:focus {
-  background-position: right 13px; }
+  background-position: right 13px;
+  z-index: +1; }
 
 header.header nav select {
+  width: 100%;
   background-image: url(../images/arrow-down.svg);
   background-repeat: no-repeat;
   -webkit-transition: all 300ms ease-out;
@@ -9604,20 +9607,5 @@ header.header nav select option:first-of-type {
 
 header.header nav select::-ms-expand {
   display: none; }
-
-nav.secondary select.nav-root {
-  width: 240px; }
-
-html.spec nav.secondary select.nav-category {
-  width: 90px; }
-
-html.about nav.secondary select.nav-category {
-  width: 125px; }
-
-html.initiative nav.secondary select.nav-category {
-  width: 160px; }
-
-html.wireframe nav.secondary select.nav-category {
-  width: 170px; }
 
 /*# sourceMappingURL=main.css.map */

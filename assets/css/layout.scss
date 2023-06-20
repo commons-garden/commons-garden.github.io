@@ -525,10 +525,14 @@ a[data-toggle="popover"] {
 header.header nav {
 
 	@extend h2;
-
+	@media (min-width: $bp) {
+html.single &.secondary {
+	display: grid;
+	grid-template-columns: 240px 1fr;
+}
+}
 	&.primary {
 		select {
-			width: 100%;
 		@extend h1;
 		background-position: right 20px;
 		&:hover, &:focus {
@@ -540,17 +544,18 @@ header.header nav {
 		select {
 		@extend h2;
 		margin-bottom: -1px;
-		&.nav-category {
-			margin-left: -7px;
-		}
+	
 
 		background-position: right 10px;
 		&:hover, &:focus {
 			background-position: right 13px;
+			z-index: +1;
 		}
 	}
 	}
 	select {
+
+			width: 100%;
 		background-image: url(../images/arrow-down.svg);
 		background-repeat: no-repeat;
 		@include transition;
@@ -585,23 +590,23 @@ header.header nav {
 }
 
 
-nav.secondary {
-	select.nav-root {
-		width: 240px;
-	}
-	select.nav-category {
-		html.spec & {
-			width: 90px;
-		}
-		html.about & {
-			width: 125px;
-		}
-		html.initiative & {
-			width: 160px;
-		}
-			html.wireframe & {
-			width: 170px;
-		}
-	}
-}
+// nav.secondary {
+// 	select.nav-root {
+// 		width: 240px;
+// 	}
+// 	select.nav-category {
+// 		html.spec & {
+// 			width: 90px;
+// 		}
+// 		html.about & {
+// 			width: 125px;
+// 		}
+// 		html.initiative & {
+// 			width: 160px;
+// 		}
+// 			html.wireframe & {
+// 			width: 170px;
+// 		}
+// 	}
+// }
 
