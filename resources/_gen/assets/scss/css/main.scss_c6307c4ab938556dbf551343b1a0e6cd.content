@@ -9634,6 +9634,6 @@ html.initiative nav.primary select.nav-category {
   width: 250px; }
 
 html.wireframe nav.primary select.nav-category {
-  width: 250px; }
+  width: 275px; }
 
 /*# sourceMappingURL=main.css.map */
