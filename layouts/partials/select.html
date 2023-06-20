@@ -1,0 +1,140 @@
+
+<style>
+  body {
+    background: #acbce0;
+  font-family: arial;
+  font-size: 13px;
+}
+ul{
+  padding:0;
+  margin:0
+}
+li{
+  list-style:none;
+}
+
+
+
+.select_wrapper {
+  line-height: 36px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  width: 30%;
+  float: left;
+}
+.select_wrapper span {
+  background: #f5f5f5 url("https://image.flaticon.com/icons/svg/118/118738.svg") no-repeat top 15px right 12px;
+background-size:15px;
+}
+.select_wrapper:hover { background: #fff url("https://image.flaticon.com/icons/svg/118/118738.svg") no-repeat top 15px right 12px; }
+
+.select_wrapper span {
+  display: block;
+  margin: 0;
+      padding: 5px 10px;
+    border-radius: 4px;
+transition:0.4s ease;
+     z-index: 9;
+    position: relative;
+}
+.select_wrapper.openSelect span {
+    display: block;
+    margin: 0;
+    transform: scale(1.04);
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+}
+.select_wrapper .select_inner {
+  background: #fff;
+ 
+  color: #687278;
+  display: none;
+  position: absolute;
+  left: 0;
+     top: 47px;
+    width: 100%;
+ 
+}
+
+.select_wrapper .select_inner li {
+  border-bottom: 1px solid #eee;
+  padding: 5px 15px;
+  
+  transition:0.4s ease;
+}
+.select_wrapper .select_inner li:hover {
+
+    background: #142b82;
+    color: #fff;
+}
+.select_wrapper .select_inner ul {     border-radius: 5px;
+  
+    background: #fff; }
+</style>
+</head>
+
+<body>
+
+<form class="beautify" action='#' method='post'>
+  
+    <select id="demo" name="demo">
+    <option value="Select...">Select...</option>
+      <option value="Html5">Html5</option>
+      <option value="CSS3">CSS3</option>
+      <option value="Javascript">Javascript</option>
+      <option value="Ruby">Ruby</option>
+      <option value="Python">Python</option>
+      <option value="C++">C++</option>
+    </select>
+
+        <select id="demo" name="demo">
+    <option value="Select...">Select...</option>
+      <option value="Html5">Html5</option>
+      <option value="CSS3">CSS3</option>
+      <option value="Javascript">Javascript</option>
+      <option value="Ruby">Ruby</option>
+      <option value="Python">Python</option>
+      <option value="C++">C++</option>
+    </select>
+
+</form>
+</body>
+</html>
+<!-- partial -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script>
+    $(document).ready(function (){
+$('.beautify select').wrap('<div class="select_wrapper"></div>')
+$('.beautify select').parent().prepend('<span>'+ $(this).find(':selected').text() +'</span>');
+
+$('.beautify select').css('display', 'none');         
+$('.beautify select').parent().append('<ul class="select_inner"></ul>');
+$('.beautify select').children().each(function(){
+  var opttext = $(this).text();
+  var optval = $(this).val();
+  $('.beautify select').parent().children('.select_inner').append('<li id="' + optval + '">' + opttext + '</li>');
+});
+
+
+
+$('select').parent().find('li').on('click', function (){
+  var cur = $(this).attr('id');
+  $('select').parent().children('span').text($(this).text());
+  $('select').children().removeAttr('selected');
+  $('select').children('[value="'+cur+'"]').attr('selected','selected');          
+  //console.log($('select').children('[value="'+cur+'"]').text());
+       $('select').parent().removeClass('openSelect');
+
+   $('select').parent().find('ul').hide();
+});
+$('select').parent().find('span').on('click', function (){
+   $('select').parent().find('ul').slideToggle(200);
+  
+     $('select').parent().toggleClass('openSelect');
+
+  
+});
+});
+  </script>
