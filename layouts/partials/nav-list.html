@@ -1,5 +1,7 @@
-<select class="nav-category" onChange="window.location.href=this.value">
-	<option>{{ .Params.Category }} /</option>
+	<select class="nav-category" onChange="window.location.href=this.value">
+	<option>
+	{{ if (in .Title "About") }}{{ .Title | singularize | upper }}{{ else }}{{ .Title  | upper }}{{ end }}</option>
+
 					{{ range $.Site.Data.categories }}
 
 					{{ if (in .status "public") }}

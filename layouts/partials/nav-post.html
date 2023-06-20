@@ -1,5 +1,5 @@
 
-<select onChange="window.location.href=this.value">
+<select class="nav-post" onChange="window.location.href=this.value">
       <option value="">{{ .Title }}</option>
 {{ if (in .Params.category "about") }}
       {{ range .Site.RegularPages }}

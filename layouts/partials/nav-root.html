@@ -1,5 +1,5 @@
-	<select onChange="window.location.href=this.value">
-	<option value="">{{ .Site.Title }}</option>
+	<select class="nav-root" onChange="window.location.href=this.value">
+	<option value="">{{ .Site.Title }} /</option>
 
 	<option value="/">
 		HOME
@@ -9,4 +9,4 @@
 	<option value="{{ .RelPermalink }}">{{ .Title | upper }}</option>
 	{{ end }}
 	{{ end }}
-</select>/
+</select>

@@ -9562,7 +9562,7 @@ header.header nav.primary select:hover, header.header nav.primary select:focus {
   background-position: right 23px; }
 
 header.header nav.secondary select {
-  margin-bottom: var(--gap-half);
+  margin-bottom: var(--gap);
   background-position: right 10px; }
 
 header.header nav.secondary select:hover, header.header nav.secondary select:focus {
@@ -9576,7 +9576,6 @@ header.header nav select {
   -ms-transition: all 300ms ease-out;
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
-  margin-right: 5px;
   appearance: none;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -9609,5 +9608,32 @@ header.header nav select option:first-of-type {
 
 header.header nav select::-ms-expand {
   display: none; }
+
+nav.secondary select.nav-root {
+  width: 240px; }
+
+html.spec nav.secondary select.nav-category {
+  width: 90px; }
+
+html.about nav.secondary select.nav-category {
+  width: 125px; }
+
+html.initiative nav.secondary select.nav-category {
+  width: 160px; }
+
+html.wireframe nav.secondary select.nav-category {
+  width: 170px; }
+
+html.spec nav.primary select.nav-category {
+  width: 160px; }
+
+html.about nav.primary select.nav-category {
+  width: 160px; }
+
+html.initiative nav.primary select.nav-category {
+  width: 250px; }
+
+html.wireframe nav.primary select.nav-category {
+  width: 250px; }
 
 /*# sourceMappingURL=main.css.map */

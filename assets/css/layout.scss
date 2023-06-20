@@ -524,29 +524,32 @@ a[data-toggle="popover"] {
 
 header.header nav {
 
-@extend h2;
+	@extend h2;
 
-	&.primary select {
+	&.primary {
+		select {
 		@extend h1;
-				background-position: right 20px;
+		background-position: right 20px;
 		&:hover, &:focus {
 			background-position: right 23px;
 		}
 	}
-	&.secondary select {
+	}
+	&.secondary {
+		select {
 		@extend h2;
-		margin-bottom: var(--gap-half);
+		margin-bottom: var(--gap);
 
 		background-position: right 10px;
 		&:hover, &:focus {
 			background-position: right 13px;
 		}
 	}
+	}
 	select {
 		background-image: url(../images/arrow-down.svg);
 		background-repeat: no-repeat;
-@include transition;
-margin-right: 5px;
+		@include transition;
 		&:focus, &:hover {
 			background-color: white;
 			background-image: url(../images/arrow-down-hover.svg);
@@ -577,3 +580,42 @@ margin-right: 5px;
 		}
 	}
 }
+
+
+nav.secondary {
+	select.nav-root {
+		width: 240px;
+	}
+	select.nav-category {
+		html.spec & {
+			width: 90px;
+		}
+		html.about & {
+			width: 125px;
+		}
+		html.initiative & {
+			width: 160px;
+		}
+			html.wireframe & {
+			width: 170px;
+		}
+	}
+}
+
+nav.primary {
+	select.nav-category {
+		html.spec & {
+			width: 160px;
+		}
+		html.about & {
+			width: 160px;
+		}
+		html.initiative & {
+			width: 250px;
+		}
+			html.wireframe & {
+			width: 250px;
+		}
+	}
+}
+

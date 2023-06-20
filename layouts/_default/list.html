@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="{{ with .File }}{{ .BaseFileName }}{{ end }} {{ if .Params.style  }}{{ .Params.style }}{{ end }} {{ if .Params.category  }}{{ .Params.category }}{{ end }} {{ if .Params.status  }}{{ .Params.status }}{{ end }}">
+<html lang="en" class="{{ .Title | singularize | lower }}">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,24 +22,7 @@
 			{{ partial "popover-title.html" . }}/
 		</h2> -->
 	<nav class="primary">
-		<select onChange="window.location.href=this.value">
-	<option>
-	{{ if (in .Title "About") }}{{ .Title | singularize | upper }}{{ else }}{{ .Title  | upper }}{{ end }}</option>
-
-					{{ range $.Site.Data.categories }}
-
-					{{ if (in .status "public") }}
-					<option value="/{{ .title }}">
-							{{ if (in .pluralize "no") }}
-							{{ .title | upper }}
-							{{ else }}
-							{{ .title | pluralize | upper }}
-							{{ end }}
-					</option>
-
-					{{ end }}
-					{{ end }}
-					</select>
+	{{ partial "nav-list.html" . }}
 	</nav>
 				
 		
