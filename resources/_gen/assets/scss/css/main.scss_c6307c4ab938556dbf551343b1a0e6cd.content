@@ -8345,9 +8345,8 @@ article {
   counter-increment: blockquote; }
 
 blockquote {
-  padding: var(--gap-2);
+  padding: 0 var(--gap-2);
   border: solid 1px #ccc;
-  padding-bottom: 0;
   display: inline-block;
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
@@ -8395,14 +8394,16 @@ blockquote:hover:before {
 
 .home .main.description a.logo {
   pointer-events: none;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-right: 5px; }
 
 .home .main.description:before {
   display: none; }
 
 .logo {
   color: var(--color-fg);
-  font-size: 30px; }
+  font-size: 30px;
+  margin-right: 5px; }
 
 ul.status {
   padding: 0;
@@ -8812,7 +8813,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.list a:after {
+.list a.item:after {
   content: "";
   width: 32px;
   height: 32px;
@@ -8833,14 +8834,14 @@ ul.status li:nth-of-type(9) span {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out; }
 
-.list a:hover:after {
+.list a.item:hover:after {
   margin-right: 0px;
   opacity: 1;
   filter: "alpha(opacity=100)";
   -khtml-opacity: 1;
   -moz-opacity: 1; }
 
-.list a:nth-of-type(1) .title {
+.list a.item:nth-of-type(1) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -8877,7 +8878,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.list a:nth-of-type(2) .title {
+.list a.item:nth-of-type(2) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -8914,7 +8915,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.list a:nth-of-type(3) .title {
+.list a.item:nth-of-type(3) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -8951,7 +8952,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.list a:nth-of-type(4) .title {
+.list a.item:nth-of-type(4) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -8988,7 +8989,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.list a:nth-of-type(5) {
+.list a.item:nth-of-type(5) {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -9025,7 +9026,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.list a:nth-of-type(6) .title {
+.list a.item:nth-of-type(6) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -9062,7 +9063,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.list a:nth-of-type(7) .title {
+.list a.item:nth-of-type(7) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -9099,7 +9100,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.list a:nth-of-type(8) .title {
+.list a.item:nth-of-type(8) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -9136,7 +9137,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.list a:nth-of-type(9) .title {
+.list a.item:nth-of-type(9) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -9173,7 +9174,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.home section:nth-of-type(2) .list a:nth-of-type(1) .title {
+.home section:nth-of-type(2) .list a.item:nth-of-type(1) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -9210,7 +9211,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.home section:nth-of-type(2) .list a:nth-of-type(2) .title {
+.home section:nth-of-type(2) .list a.item:nth-of-type(2) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -9247,7 +9248,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.home section:nth-of-type(2) .list a:nth-of-type(3) .title {
+.home section:nth-of-type(2) .list a.item:nth-of-type(3) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -9284,7 +9285,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.home section:nth-of-type(2) .list a:nth-of-type(4) .title {
+.home section:nth-of-type(2) .list a.item:nth-of-type(4) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -9321,7 +9322,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.home section:nth-of-type(2) .list a:nth-of-type(5) .title {
+.home section:nth-of-type(2) .list a.item:nth-of-type(5) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -9358,7 +9359,7 @@ ul.status li:nth-of-type(9) span {
   -o-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.home section:nth-of-type(2) .list a:nth-of-type(6) .title {
+.home section:nth-of-type(2) .list a.item:nth-of-type(6) .title {
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -9443,6 +9444,8 @@ table tbody tr {
 
 table td, table th {
   padding: 10px;
+  border-top: solid 0.5px var(--color-accent);
+  text-align: left;
   vertical-align: top; }
 
 table td:first-of-type, table th:first-of-type {
@@ -9451,52 +9454,7 @@ table td:first-of-type, table th:first-of-type {
 table td:last-of-type, table th:last-of-type {
   padding-right: 0; }
 
-a[data-toggle="popover"] {
-  margin-right: 17px;
-  cursor: context-menu; }
-
-a[data-toggle="popover"]:hover {
-  color: #000000 !important; }
-
-a[data-toggle="popover"]:hover:after {
-  color: var(--color-fg);
-  border: solid 2px var(--color-fg); }
-
-a[data-toggle="popover"]:after {
-  content: "+";
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  -ms-transition: all 300ms ease-out;
-  -o-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  font-size: 14px;
-  font-weighT: bold;
-  line-height: 11px;
-  text-align: center;
-  background-color: var(--color-bg);
-  color: var(--color-accent);
-  width: var(--gap-2);
-  height: var(--gap-2);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: solid 2px var(--color-accent);
-  font-family: var(--text-font);
-  position: absolute;
-  margin-top: 3px;
-  margin-left: -3px; }
-
-h1 a[data-toggle="popover"]:after, header.header nav.primary select a[data-toggle="popover"]:after {
-  margin-top: 13px;
-  margin-left: 3px;
-  line-height: 11px; }
-
-.list a {
+.list a.item {
   padding: var(--gap) 0;
   border-top: solid 1px var(--color-accent-light);
   border-bottom: solid 1px var(--color-accent-light);
@@ -9509,26 +9467,26 @@ h1 a[data-toggle="popover"]:after, header.header nav.primary select a[data-toggl
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out; }
 
-.list a:hover {
+.list a.item:hover {
   border-top: solid 1px var(--color-accent);
   border-bottom: solid 1px var(--color-accent); }
 
-.list a .title {
+.list a.item .title {
   padding: 0 2px;
   color: var(--color-bg);
   text-transform: uppercase; }
 
-.list a span {
+.list a.item span {
   word-break: break-word; }
 
-.list a .description {
+.list a.item .description {
   font-size: 80%;
   display: block; }
 
-.list a:hover {
+.list a.item:hover {
   color: var(--color-fg); }
 
-.list a:hover .description {
+.list a.item:hover .description {
   text-decoration: underline; }
 
 .popover {
@@ -9554,6 +9512,11 @@ h1 a[data-toggle="popover"]:after, header.header nav.primary select a[data-toggl
 
 .popover-body a span.title {
   color: white; }
+
+header.header .description {
+  border: solid 0.5px var(--color-accent);
+  margin-top: -1px;
+  padding: var(--gap-half) var(--gap); }
 
 @media (min-width: 500px) {
   html.single header.header nav.secondary {

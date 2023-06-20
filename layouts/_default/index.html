@@ -27,7 +27,7 @@
 				<div class="list latest">
 					{{ range .Site.RegularPages  | first 3 }}
 					{{ if (in .Params.type "public") }}
-					<a href="{{ .RelPermalink }}">
+					<a class="item" href="{{ .RelPermalink }}">
 
 						<span class="title">{{ .Title }}</span>
 						<span class="description">{{ .Params.Category }}{{if .Params.Status }} ({{ .Params.Status }}){{ end }}</span>
@@ -44,7 +44,7 @@
 					{{ range $.Site.Data.categories }}
 
 					{{ if (in .status "public") }}
-					<a href="/{{ .title }}">
+					<a class="item" href="/{{ .title }}">
 						<span class="title">
 							{{ if (in .pluralize "no") }}
 							{{ .title }}

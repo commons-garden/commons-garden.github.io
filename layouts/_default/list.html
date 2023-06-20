@@ -16,16 +16,13 @@
 {{ partial "nav-root.html" . }}
 </nav>
 
-
-<!-- 
-			<h2>
-			{{ partial "popover-title.html" . }}/
-		</h2> -->
 	<nav class="primary">
 	{{ partial "nav-list.html" . }}
 	</nav>
 				
-		
+		<div class="description">
+{{ partial "category-description.html" . }}
+		</div>
 		
 		</header>
 
@@ -34,7 +31,7 @@
 			<div class="list post">
 			  {{ range .Pages }}
       {{ if (in .Params.type "public") }}
-     <a href="{{ .RelPermalink }}">
+     <a class="item" href="{{ .RelPermalink }}">
 							
 							<span class="title">{{ .Title }}</span>
 							<span class="description">{{ .Params.Description }}{{if .Params.Status }}, {{ .Params.Status }}{{ end }}</span>

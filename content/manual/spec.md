@@ -1,7 +1,7 @@
 ---
 title: spec
 type: public
-category: tutorial
+category: manual
 description: How to write proper specs
 date: 2023-06-03
 ---

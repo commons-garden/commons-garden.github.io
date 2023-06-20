@@ -2,7 +2,7 @@
 title: site layout
 type: public
 description: Describing the site layout
-category: tutorial
+category: manual
 date: 2023-06-03
 ---
 
