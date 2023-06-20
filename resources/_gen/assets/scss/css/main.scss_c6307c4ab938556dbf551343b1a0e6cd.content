@@ -9556,14 +9556,18 @@ h1 a[data-toggle="popover"]:after, header.header nav.primary select a[data-toggl
   color: white; }
 
 header.header nav.primary select {
+  width: 100%;
   background-position: right 20px; }
 
 header.header nav.primary select:hover, header.header nav.primary select:focus {
   background-position: right 23px; }
 
 header.header nav.secondary select {
-  margin-bottom: var(--gap);
+  margin-bottom: -1px;
   background-position: right 10px; }
+
+header.header nav.secondary select.nav-category {
+  margin-left: -7px; }
 
 header.header nav.secondary select:hover, header.header nav.secondary select:focus {
   background-position: right 13px; }
@@ -9577,14 +9581,6 @@ header.header nav select {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   appearance: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   background-color: var(--color-bg);
   font-weight: normal;
   font-family: var(--title-font);
@@ -9597,7 +9593,7 @@ header.header nav select {
 
 header.header nav select:focus, header.header nav select:hover {
   background-color: white;
-  background-image: url(../images/arrow-down-hover.svg); }
+  border: solid 0.5px var(--color-fg); }
 
 header.header nav select option {
   font-size: 12px;
@@ -9623,17 +9619,5 @@ html.initiative nav.secondary select.nav-category {
 
 html.wireframe nav.secondary select.nav-category {
   width: 170px; }
-
-html.spec nav.primary select.nav-category {
-  width: 160px; }
-
-html.about nav.primary select.nav-category {
-  width: 160px; }
-
-html.initiative nav.primary select.nav-category {
-  width: 250px; }
-
-html.wireframe nav.primary select.nav-category {
-  width: 275px; }
 
 /*# sourceMappingURL=main.css.map */

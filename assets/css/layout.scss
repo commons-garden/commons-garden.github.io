@@ -528,6 +528,7 @@ header.header nav {
 
 	&.primary {
 		select {
+			width: 100%;
 		@extend h1;
 		background-position: right 20px;
 		&:hover, &:focus {
@@ -538,7 +539,10 @@ header.header nav {
 	&.secondary {
 		select {
 		@extend h2;
-		margin-bottom: var(--gap);
+		margin-bottom: -1px;
+		&.nav-category {
+			margin-left: -7px;
+		}
 
 		background-position: right 10px;
 		&:hover, &:focus {
@@ -552,7 +556,7 @@ header.header nav {
 		@include transition;
 		&:focus, &:hover {
 			background-color: white;
-			background-image: url(../images/arrow-down-hover.svg);
+			border: solid .5px var(--color-fg);
 		}
 		option {
 			font-size: 12px;
@@ -564,7 +568,6 @@ header.header nav {
 
 		}
 		appearance: none;
-		@include radius(2px);
 		background-color: var(--color-bg);
 		font-weight: normal;
 		font-family: var(--title-font);
@@ -598,23 +601,6 @@ nav.secondary {
 		}
 			html.wireframe & {
 			width: 170px;
-		}
-	}
-}
-
-nav.primary {
-	select.nav-category {
-		html.spec & {
-			width: 160px;
-		}
-		html.about & {
-			width: 160px;
-		}
-		html.initiative & {
-			width: 250px;
-		}
-			html.wireframe & {
-			width: 275px;
 		}
 	}
 }
