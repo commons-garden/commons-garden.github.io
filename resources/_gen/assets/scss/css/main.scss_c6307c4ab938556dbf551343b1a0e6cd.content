@@ -8461,7 +8461,7 @@ ul.status span {
   background-color: var(--color-bg);
   padding: var(--gap-2); }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .slogan span {
     padding: 0 var(--gap); } }
 
@@ -8470,12 +8470,12 @@ ul.status span {
   color: var(--color-bg);
   font-size: 80%; }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   .slogan a {
     float: right;
     margin-top: -18px; } }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .slogan a {
     display: block;
     margin-top: var(--gap); } }
@@ -9518,7 +9518,7 @@ header.header .description {
   margin-top: -1px;
   padding: var(--gap-half) var(--gap); }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   html.single header.header nav.secondary {
     display: grid;
     grid-template-columns: 240px 1fr; } }
