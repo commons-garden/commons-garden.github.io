@@ -6,7 +6,7 @@
 }
 
 body {
-	font-family: var(--text-font);
+	font-family: var(--font-text);
 	background-color: var(--color-bg);
 	-color: var(--color-fg);
 	font-size: 15px;
@@ -71,7 +71,7 @@ article {
 
 header.header, .main.description {
 	h1, h2, h3, .logo {
-		font-family: var(--title-font);
+		font-family: var(--font-header);
 		text-transform: uppercase;
 		line-heighT: 65%;
 		@media (max-width: $bp-small) {
@@ -213,38 +213,47 @@ ul.status {
 	}
 }
 .slogan {
+		margin-top: var(--gap-5);
+	text-transform: uppercase;
+		
+		font-size: 90%;
 	.bar {
 		@include status;
 		padding: 0 var(--gap-2);
 		font-size: 90%;
+
 	}
-	margin-top: var(--gap-5);
-	
+
 	span {
 		text-transform: uppercase;
 		background-color: var(--color-bg);
 		padding: var(--gap-2);
-
-		@media (max-width: $bp-medium) {
-			padding: 0 var(--gap);
-		}
-
 	}
 	a {
+		color: var(--color-bg);
 		@media (min-width: $bp-medium) {
 			float: right;
-
 			margin-top: -18px;
 		}
-		@media (max-width: $bp-medium) {
-			display: block;
-			margin-top: var(--gap);
-		}
-		text-transform: uppercase;
-		color: var(--color-bg);
-		font-size: 80%;
+	
+	
 	}
+			@media (max-width: $bp-medium) {
+			.bar {
+				padding: 0;
+			padding-bottom: var(--gap-half);
+			}
+			span {
+				padding: 0 var(--gap);
+
+			}
+			a {
+					display: block;
+			margin: var(--gap);
+			}
+		}
 }
+
 
 
 
@@ -483,7 +492,7 @@ text-align: left;
 	overflow: auto;
 	max-height: 300px;
 	width: 200px;
-	font-family: var(--text-font) !important;
+	font-family: var(--font-text) !important;
 	a {
 		border: 0 !important;
 		background: none !important;
@@ -548,7 +557,7 @@ html.single &.secondary {
 		}
 		option {
 			font-size: 12px;
-			font-family: var(--text-font);
+			font-family: var(--font-text);
 
 			&:first-of-type {
 				display: none;
@@ -558,7 +567,7 @@ html.single &.secondary {
 		appearance: none;
 		background-color: var(--color-bg);
 		font-weight: normal;
-		font-family: var(--title-font);
+		font-family: var(--font-header);
 		cursor: pointer;
 		border: solid .5px var(--color-accent);
 		padding: var(--gap);

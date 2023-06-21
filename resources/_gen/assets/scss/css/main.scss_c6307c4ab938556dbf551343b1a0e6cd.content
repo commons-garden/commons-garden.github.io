@@ -8144,8 +8144,8 @@
     transform-origin: center bottom; } }
 
 :root {
-  --text-font: Calling Code;
-  --title-font: TINY5x3-160;
+  --font-text: Calling Code;
+  --font-header: TINY5x3-160;
   --color-bg: #FFEDED;
   --color-fg: #15141A;
   --color-accent: #cc999c;
@@ -8251,7 +8251,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: var(--text-font);
+  font-family: var(--font-text);
   background-color: var(--color-bg);
   -color: var(--color-fg);
   font-size: 15px;
@@ -8298,7 +8298,7 @@ article h1:not(:first-child), article header.header nav.primary select:not(:firs
   margin-top: var(--gap-5); }
 
 header.header h1, header.header nav.primary select, header.header h2, header.header nav.secondary select, header.header nav, header.header h3, header.header .logo, .main.description h1, .main.description h2, .main.description h3, .main.description .logo {
-  font-family: var(--title-font);
+  font-family: var(--font-header);
   text-transform: uppercase;
   line-heighT: 65%; }
 
@@ -8415,7 +8415,9 @@ ul.status span {
   padding: 0 2px; }
 
 .slogan {
-  margin-top: var(--gap-5); }
+  margin-top: var(--gap-5);
+  text-transform: uppercase;
+  font-size: 90%; }
 
 .slogan .bar {
   -webkit-animation-name: status;
@@ -8461,14 +8463,8 @@ ul.status span {
   background-color: var(--color-bg);
   padding: var(--gap-2); }
 
-@media (max-width: 700px) {
-  .slogan span {
-    padding: 0 var(--gap); } }
-
 .slogan a {
-  text-transform: uppercase;
-  color: var(--color-bg);
-  font-size: 80%; }
+  color: var(--color-bg); }
 
 @media (min-width: 700px) {
   .slogan a {
@@ -8476,9 +8472,14 @@ ul.status span {
     margin-top: -18px; } }
 
 @media (max-width: 700px) {
+  .slogan .bar {
+    padding: 0;
+    padding-bottom: var(--gap-half); }
+  .slogan span {
+    padding: 0 var(--gap); }
   .slogan a {
     display: block;
-    margin-top: var(--gap); } }
+    margin: var(--gap); } }
 
 ul.status li:nth-of-type(1) span {
   -webkit-animation-name: status;
@@ -9501,7 +9502,7 @@ table td:last-of-type, table th:last-of-type {
   overflow: auto;
   max-height: 300px;
   width: 200px;
-  font-family: var(--text-font) !important; }
+  font-family: var(--font-text) !important; }
 
 .popover-body a {
   border: 0 !important;
@@ -9549,7 +9550,7 @@ header.header nav select {
   appearance: none;
   background-color: var(--color-bg);
   font-weight: normal;
-  font-family: var(--title-font);
+  font-family: var(--font-header);
   cursor: pointer;
   border: solid 0.5px var(--color-accent);
   padding: var(--gap);
@@ -9563,7 +9564,7 @@ header.header nav select:focus, header.header nav select:hover {
 
 header.header nav select option {
   font-size: 12px;
-  font-family: var(--text-font); }
+  font-family: var(--font-text); }
 
 header.header nav select option:first-of-type {
   display: none; }
