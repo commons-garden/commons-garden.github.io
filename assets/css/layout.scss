@@ -226,43 +226,27 @@ ul.status {
 .slogan {
 		margin-top: var(--gap-5);
 	text-transform: uppercase;
-		
-		font-size: 90%;
-	.bar {
-		@include status;
-		padding: 0 var(--gap-2);
-		font-size: 90%;
-
-	}
-
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-gap: var(--gap);
+		font-size: 80%;
+	
 	span {
-		text-transform: uppercase;
-		background-color: var(--color-bg);
-		padding: var(--gap-2);
-	}
-	a {
+		padding: 0 var(--gap);
+		align-self: center;
+		@include status;
 		color: var(--color-bg);
-		@media (min-width: $bp-medium) {
-			float: right;
-			margin-top: -18px;
-		}
-	
-	
+		display: inline;
 	}
-			@media (max-width: $bp-medium) {
-			.bar {
-				padding: 0;
-			padding-bottom: var(--gap-half);
-			}
-			span {
-				padding: 0 var(--gap);
+	a.btn {
+		padding: 0 var(--gap-2);
+		@include radius(20px);
+	@include fadeIn($delay: var(--delay));
 
-			}
-			a {
-					display: block;
-			margin: var(--gap);
-			}
-		}
+	}
+	
+	
+	
 }
 
 

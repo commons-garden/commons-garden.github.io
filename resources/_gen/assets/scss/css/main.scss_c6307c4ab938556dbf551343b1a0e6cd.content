@@ -8420,9 +8420,14 @@ ul.status span {
 .slogan {
   margin-top: var(--gap-5);
   text-transform: uppercase;
-  font-size: 90%; }
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: var(--gap);
+  font-size: 80%; }
 
-.slogan .bar {
+.slogan span {
+  padding: 0 var(--gap);
+  align-self: center;
   -webkit-animation-name: status;
   -moz-animation-name: status;
   -ms-animation-name: status;
@@ -8458,31 +8463,54 @@ ul.status span {
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
+  color: var(--color-bg);
+  display: inline; }
+
+.slogan a.btn {
   padding: 0 var(--gap-2);
-  font-size: 90%; }
-
-.slogan span {
-  text-transform: uppercase;
-  background-color: var(--color-bg);
-  padding: var(--gap-2); }
-
-.slogan a {
-  color: var(--color-bg); }
-
-@media (min-width: 700px) {
-  .slogan a {
-    float: right;
-    margin-top: -18px; } }
-
-@media (max-width: 700px) {
-  .slogan .bar {
-    padding: 0;
-    padding-bottom: var(--gap-half); }
-  .slogan span {
-    padding: 0 var(--gap); }
-  .slogan a {
-    display: block;
-    margin: var(--gap); } }
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-iteration-count: 1s;
+  -moz-animation-iteration-count: 1s;
+  -ms-animation-iteration-count: 1s;
+  -o-animation-iteration-count: 1s;
+  animation-iteration-count: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: var(--delay);
+  -moz-animation-delay: var(--delay);
+  -ms-animation-delay: var(--delay);
+  -o-animation-delay: var(--delay);
+  animation-delay: var(--delay);
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
 ul.status li:nth-of-type(1) span {
   -webkit-animation-name: status;

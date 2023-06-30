@@ -1,11 +1,6 @@
 <div class="slogan">
-	<div class="bar">
 		{{ range $.Site.Data.slogans | shuffle | first 1 }}
-	<div><span>{{ .option }}</span></div>
+	<span>{{ .option }}</span>
 	{{ end }}
-
-	
-
-	<a href="/about/help/">How to help</a>
-	</div>
+	<a class="btn" href="/about/help/">How to help</a>
 </div>
