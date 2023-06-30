@@ -38,6 +38,7 @@
 
 ## DONE
 
+- [x] blockquote with counter
 - [x] categories are plural on menus and singular on URL, single post titles
 - [x] transform popover into dropdown
 - [x] style dropdown on this style: [Custom Select CSS](https://codepen.io/saleemsemo/pen/YZKwoE) or [Custom Select Styles with Pure CSS](https://moderncss.dev/custom-select-styles-with-pure-css/)

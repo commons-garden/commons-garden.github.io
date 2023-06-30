@@ -22,8 +22,5 @@ date: 2023-05-16
     * [documentation](https://hackmd.io/@praxis/moderation)
 5.  backlog ([board](https://www.figma.com/file/UIQDqYS48Pkg0ARSY9Rpf4/feature-backlog?node-id=0%3A1&t=uNvxo364L3hzJ2BL-1))
     * multi-device (fusion identity)
-    * P2P analytics
     * dying online
-    * collections
-    * SSB simulation lab
     * stencil

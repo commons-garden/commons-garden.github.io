@@ -68,8 +68,12 @@ article {
 // }
 // }
 
+html:not(.home) .main.description {
+		margin-top: var(--gap-5);
+}
 
 header.header, .main.description {
+	margin-bottom: var(--gap-5);
 	h1, h2, h3, .logo {
 		font-family: var(--font-header);
 		text-transform: uppercase;
@@ -128,30 +132,34 @@ html:not(.initiative) article.with-status {
 article.main {
 	@extend .half;
 }
+.home .main.description:before {
+	@include find(red);
+}
 
-header.header:after,
-html.initiative ul.status:after, 
-.main.description:before, .home .main.description:after {
-	content: "";
-	height: 3px;
-	display: block;
-	margin: var(--gap-5) 0;
-	@media (max-width: $bp-small) {
-		margin: var(--gap-3) 0;
-	}
-	background-repeat: repeat-x;
-	background-image: url(../images/divider.svg);
+// html.initiative ul.status:after, .home header.header:after,
+//  .main.description:before, .home .main.description:after {
+// 	content: "";
+// 	height: 3px;
+// 	display: block;
+// 	margin: var(--gap-5) 0;
+// 	@media (max-width: $bp-small) {
+// 		margin: var(--gap-3) 0;
+// 	}
+// 	background-repeat: repeat-x;
+// 	background-image: url(../images/divider.svg);
 
 	
-}
+// }
 article {
 
-	counter-reset: blockquote;
+	 counter-reset: steps;
 
-	counter-increment: blockquote;
 }
 
 blockquote {
+	&:has(laboratory) {
+		@include find(red);
+	}
 	padding: 0 var(--gap-2);
 	border: solid 1px #ccc;
 	display: inline-block;
@@ -159,8 +167,11 @@ blockquote {
 	background-color: rgba(yellow, .2);
 	&:before {
 		position: absolute;
-		content: counter(section);
-		margin-left: -40px;
+		counter-increment: steps; 
+  content: counter(steps);
+		margin-left: -55px;
+		text-align: right;
+		width: 30px;
 		@include opacity(40);
 		@include transition;
 	}
@@ -201,7 +212,7 @@ blockquote {
 ul.status {
 	padding: 0;
 	list-style-type: none;
-	
+	margin-bottom: var(--gap-5);
 	
 	span {
 		text-transform: uppercase;
@@ -418,7 +429,7 @@ a.btn {
 
 code {
 	word-break: keep-all;
-	background-color: var(--color-accent);
+	background-color: rgba(white, .8);
 	padding: 0 2px;
 	color: black;
 }
@@ -509,13 +520,20 @@ text-align: left;
 
 
 header.header {
+		@media (min-width: $bp-medium) {
+			position: sticky;
+		top: -1px;
+		z-index: 10000;
+		
+	}
+	margin-bottom: var(--gap-5);
 	.description {
 		border: solid .5px var(--color-accent);
+		background-color: var(--color-bg);
 	margin-top: -1px;
 		padding: var(--gap-half) var(--gap);
 	}
 	nav {
-
 	@extend h2;
 	@media (min-width: $bp-medium) {
 html.single &.secondary {

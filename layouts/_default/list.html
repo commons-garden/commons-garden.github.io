@@ -34,7 +34,7 @@
      <a class="item" href="{{ .RelPermalink }}">
 							
 							<span class="title">{{ .Title }}</span>
-							<span class="description">{{ .Params.Description }}{{if .Params.Status }}, {{ .Params.Status }}{{ end }}</span>
+							<span class="description">{{ .Params.Description }}{{if .Params.Status }} ({{ .Params.Status }}){{ end }}</span>
 							
 						</a>
 {{ end }}
