@@ -12,6 +12,8 @@ date: 2023-06-30
 
 Reframing SSB tags as collections
 
+[View hackmd](https://hackmd.io/@praxis/ssb-collections)
+
 >{.aaa} Resurfacing posts outside chronological order, reducing Bias of Now
 
 > Think "mix's book of soup recipes" "nonlinear book of illustration tips" or "rabble book of East Asia travel spots"
@@ -30,3 +32,9 @@ Reframing SSB tags as collections
 > SSB is long form, slow reading, we should honor old posts.
 
 > Posts should have CC licensing, so Books can have licensing too.
+
+> disruptors:
+> - edit
+> - initial order: chronological (per post or per joining book)
+> - groups
+> - licensing
