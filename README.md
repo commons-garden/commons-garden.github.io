@@ -53,3 +53,13 @@
 - [x] rewrite categories description
 - [x] tutorial category, maybe another name?
 - [x] zoom in on category criteria
+
+
+## DEVELOPMENT
+
+1. install Hugo: https://gohugo.io/installation/
+2. clone down this repo
+3. run `hugo server -D`
+4. go to http://localhost:1313
+
+
