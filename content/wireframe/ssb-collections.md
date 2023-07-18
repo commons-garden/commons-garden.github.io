@@ -16,7 +16,7 @@ Reframing SSB tags as collections
 
 >{.aaa} Resurfacing posts outside chronological order, reducing Bias of Now
 
-> Think "mix's book of soup recipes" "nonlinear book of illustration tips" or "rabble book of East Asia travel spots"
+> Think "mixmix's book of soup recipes" "nonlinear book of illustration tips" or "rabble book of East Asia travel spots"
 
 > Some users don't write much, but curate existing content. Collections give them a way to shine.
 

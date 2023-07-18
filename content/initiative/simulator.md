@@ -4,7 +4,7 @@ type: public
 status: draft
 description: network simulator
 category: initiative
-author: nonlinear, cblgh, mix
+author: nonlinear, cblgh, mixmix
 date: 2023-06-30
 ---
 

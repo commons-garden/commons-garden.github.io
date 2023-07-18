@@ -56,9 +56,9 @@
         "criteria": "pending"
     },
     {
-        "title": "member",
+        "title": "person",
         "group": "actors",
-        "description": "pending",
+        "description": "our volunteer",
         "status": "draft",
         "pluralize": "yes",
         "criteria": "pending"
