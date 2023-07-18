@@ -36,6 +36,8 @@
 {{ partial "article-sidebar.html" . }}
 {{ else if (in .Params.category "initiative") }}
 {{ partial "article-sidebar.html" . }}
+{{ else if (in .Params.category "person") }}
+{{ partial "article-sidebar.html" . }}
 {{ else }}
 <article>{{ .Content }}</article>
 {{ end }}

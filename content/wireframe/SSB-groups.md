@@ -5,7 +5,7 @@ description: Private Groups – User Experience
 status: stable
 scope: SSB
 author: nonlinear
-reviewed: staltz, mix, jacob, arj
+reviewed: staltz, mixmix, jacob, arj
 project: ssb-groups
 soon: ahau, manyverse
 category: wireframe

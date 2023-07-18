@@ -2,7 +2,7 @@
 title: P2P Delete
 type: public
 status: ongoing
-facilitator: mix
+facilitator: mixmix
 description: Serverless irretrievable delete
 category: initiative
 date: 2023-03-07
@@ -13,7 +13,7 @@ note_title: hackmd
 note_link: https://hackmd.io/@praxis/p2p-delete
 ---
 
-> we had a very fruitful session at dweb camp 2023. We're still consolidating our notes, the raw notes can be found [here](https://hackmd.io/@mixmix/BJ4lBxcFh)
+> we had a very fruitful session at dweb camp 2023. We're still consolidating our notes, the raw notes can be found [here](https://hackmd.io/@mixmixmixmix/BJ4lBxcFh)
 
 Sometimes we want to make a piece of data irretrievable.
 Given a distributed system subject to intermittent connectivity, partitions, and variable trust,
@@ -28,7 +28,7 @@ the data's metadata can be used in a "Confirmation Of A File Attack" to prove th
 ## Timeline
 
 - ??? (coming next) - MetaGov session
-- July 2023 - dweb camp session space [notes](https://hackmd.io/@mixmix/BJ4lBxcFh)
+- July 2023 - dweb camp session space [notes](https://hackmd.io/@mixmixmixmix/BJ4lBxcFh)
 - January 13th 2023 - first meeting, [notes](https://hackmd.io/@praxis/p2p-delete)
 - January 4th 2023 - p2p-delete [signal group](https://signal.group/#CjQKIGFSis4tbGdzpujg_Xw-UudxHZnnPuxmxPfFjSbzvII7EhAXQHs1aCqWBymiid6TMV78) started
 

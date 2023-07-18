@@ -6,7 +6,7 @@ description: How to post and reply to messages
 status: stable
 scope: SSB
 license: CC0-1.0
-author: mix
+author: mixmix
 initiative: 
 reviewed: staltz, cel
 implemented: patchwork, manyverse, planetary, patchfox

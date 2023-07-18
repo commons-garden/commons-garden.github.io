@@ -6,6 +6,13 @@
 			{{ .Params.Status }}
 		</li>
 		{{ end }}
+		{{ if .Params.Facilitator }}
+		<li>
+			<span>Facilitator:</span>
+			<!-- system should loop thru list (", "): if there's a person post with same name, link to it. if not, just print, no link -->
+			{{ .Params.Facilitator }}
+		</li>
+		{{ end }}
 		{{ if .Params.Date }}
 		<li>
 			<span>Date:</span>
@@ -27,12 +34,14 @@
 		{{ if .Params.Author }}
 		<li>
 			<span>author:</span>
+			<!-- system should loop thru list (", "): if there's a person post with same name, link to it. if not, just print, no link -->
 			{{ .Params.Author }}
 		</li>
 		{{ end }}
 		{{ if .Params.Reviewed }}
 		<li>
 			<span>reviewed by:</span>
+			<!-- system should loop thru list (", "): if there's a person post with same name, link to it. if not, just print, no link -->
 			{{ .Params.Reviewed }}
 		</li>
 		{{ end }}
@@ -45,6 +54,7 @@
 		{{ if .Params.Implemented }}
 		<li>
 			<span>implemented in:</span>
+			<!-- system should loop thru list (", "): if there's an organization post with same name, link to it. if not, just print, no link -->
 			{{ .Params.Implemented }}
 		</li>
 		{{ end }}
