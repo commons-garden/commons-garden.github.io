@@ -6,13 +6,23 @@
 			{{ .Params.Status }}
 		</li>
 		{{ end }}
-		{{ if .Params.Facilitator }}
+
+		{{ with .Params.Facilitator }}
 		<li>
 			<span>Facilitator:</span>
-			<!-- system should loop thru list (", "): if there's a person post with same name, link to it. if not, just print, no link -->
-			{{ .Params.Facilitator }}
+      {{ range (split . ", ") }}
+        {{ if (fileExists (printf "/person/%s.md" .)) -}}
+          <a href="/person/{{.}}">{{.}}</a>
+        {{ else }} {{.}}
+        {{ end }}
+      {{ end }}
+      <!-- 
+        can we use a regex for /,\s?/ 
+        see: https://gohugo.io/functions/replacere/
+      -->
 		</li>
 		{{ end }}
+
 		{{ if .Params.Date }}
 		<li>
 			<span>Date:</span>

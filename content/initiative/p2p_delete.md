@@ -2,7 +2,7 @@
 title: P2P Delete
 type: public
 status: ongoing
-facilitator: mixmix
+facilitator: mixmix, nonlinear
 description: Serverless irretrievable delete
 category: initiative
 date: 2023-03-07
