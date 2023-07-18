@@ -41,39 +41,69 @@
 			{{ .Params.License }}
 		</li>
 		{{ end }}
-		{{ if .Params.Author }}
+
+			{{ with .Params.Author }}
 		<li>
-			<span>author:</span>
-			<!-- system should loop thru list (", "): if there's a person post with same name, link to it. if not, just print, no link -->
-			{{ .Params.Author }}
+			<span>Author:</span>
+      {{ range (split . ", ") }}
+        {{ if (fileExists (printf "/person/%s.md" .)) -}}
+          <a href="/person/{{.}}">{{.}}</a>
+        {{ else }} {{.}}
+        {{ end }}
+      {{ end }}
+      <!-- 
+        can we use a regex for /,\s?/ 
+        see: https://gohugo.io/functions/replacere/
+      -->
 		</li>
 		{{ end }}
-		{{ if .Params.Reviewed }}
+
+				{{ with .Params.Reviewed }}
 		<li>
 			<span>reviewed by:</span>
-			<!-- system should loop thru list (", "): if there's a person post with same name, link to it. if not, just print, no link -->
-			{{ .Params.Reviewed }}
+      {{ range (split . ", ") }}
+        {{ if (fileExists (printf "/person/%s.md" .)) -}}
+          <a href="/person/{{.}}">{{.}}</a>
+        {{ else }} {{.}}
+        {{ end }}
+      {{ end }}
+      <!-- 
+        can we use a regex for /,\s?/ 
+        see: https://gohugo.io/functions/replacere/
+      -->
 		</li>
 		{{ end }}
+
 		{{ if (in .Params.Category "initiative") }}
 		<li>
 			<span>hashtag:</span>
 			<code>#{{ with .File }}{{ .BaseFileName }}{{ end }}</code>
 		</li>
 		{{ end }}
-		{{ if .Params.Implemented }}
+
+				{{ with .Params.Implemented }}
 		<li>
 			<span>implemented in:</span>
-			<!-- system should loop thru list (", "): if there's an organization post with same name, link to it. if not, just print, no link -->
-			{{ .Params.Implemented }}
+      {{ range (split . ", ") }}
+        {{ if (fileExists (printf "/organization/%s.md" .)) -}}
+          <a href="/organization/{{.}}">{{.}}</a>
+        {{ else }} {{.}}
+        {{ end }}
+      {{ end }}
+      <!-- 
+        can we use a regex for /,\s?/ 
+        see: https://gohugo.io/functions/replacere/
+      -->
 		</li>
 		{{ end }}
+
 		{{ if .Params.Comm_link }}
 		<li>
 			<span>Communication:</span>
 			<a href="{{ .Params.Comm_link }}">{{ .Params.Comm_title }}</a>
 		</li>
 		{{ end }}
+
 		{{ if .Params.Note_link }}
 		<li>
 			<span>Notes:</span>

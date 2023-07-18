@@ -8317,17 +8317,17 @@ header.header h1, header.header nav.primary select, header.header h2, header.hea
     line-heighT: 65%; } }
 
 @media (max-width: 500px) {
-  .half div:not(:first-of-type), article.main div:not(:first-of-type), .half section:not(:first-of-type), article.main section:not(:first-of-type), .third div:not(:first-of-type), html:not(.initiative) article.with-status div:not(:first-of-type), .third section:not(:first-of-type), html:not(.initiative) article.with-status section:not(:first-of-type), .quarter div:not(:first-of-type), .quarter section:not(:first-of-type), .third-reverse div:not(:first-of-type), .third-reverse section:not(:first-of-type) {
+  .half div:not(:first-of-type), .half section:not(:first-of-type), .third div:not(:first-of-type), .third section:not(:first-of-type), .quarter div:not(:first-of-type), .quarter section:not(:first-of-type), .third-reverse div:not(:first-of-type), .third-reverse section:not(:first-of-type) {
     margin-top: var(--gap-3); } }
 
 @media (min-width: 500px) {
-  .half, article.main, .third, html:not(.initiative) article.with-status, .quarter, .third-reverse {
+  .half, .third, .quarter, .third-reverse {
     display: grid;
     width: 100%;
     grid-gap: var(--grid-gap); }
-  .half, article.main {
+  .half {
     grid-template-columns: 1fr 1fr; }
-  .third, html:not(.initiative) article.with-status {
+  .third {
     grid-template-columns: 1fr 2fr; }
   .third-reverse {
     grid-template-columns: 2fr 1fr; }

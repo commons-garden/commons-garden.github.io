@@ -126,12 +126,7 @@ header.header, .main.description {
 	}
 }
 
-html:not(.initiative) article.with-status {
-	@extend .third;
-}
-article.main {
-	@extend .half;
-}
+
 .home .main.description:before {
 	@include find(red);
 }
