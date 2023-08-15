@@ -8,8 +8,11 @@ author: nonlinear, cblgh, mixmix
 date: 2023-06-30
 ---
 
+- [shared notes](https://hackmd.io/@praxis/p2p-simulator)
+- [signal group](https://signal.group/#CjQKIM5tco8NGWVYI0BXItiYaxJWBi7A9d8aZ0NiTzSpcsO2EhCPKAqj_0qD7g_rpyFe9Q8I) (announce yourself)
 - [SSB simulator](https://mixmix.gitlab.io/butt-sim/)
 - [ssbc/netsim: secure scuttlebutt network simulator](https://github.com/ssbc/netsim)
+- [Holochain Playground](https://holochainplayground.github.io/)
 
 
 ## Assumptions to validate
