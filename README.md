@@ -4,6 +4,9 @@ served at https://commons.garden
 
 ## TODO
 
+- [ ] page template checkjs if slug has a folder and:
+	- lists all public pages in alphabetical order, into a table of content
+	- folder pages point to original page
 - [ ] redirect template: `p2p-delete` becomes `p2p_delete`
 - [ ] reset select
 - [ ] template inside tutorial (loop from yml file)
