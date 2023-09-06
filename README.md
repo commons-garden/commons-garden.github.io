@@ -18,12 +18,31 @@ served at https://commons.garden
 - [ ] design open graph image
 
 
-## DEVELOPMENT
+## INSTALLATION
 
 1. install Hugo: https://gohugo.io/installation/
-2. clone down this repo
-3. run `hugo server -D`
-4. go to http://localhost:1313
+2. Ask for editing access
+2. Clone down this repo
+
+
+## EDITING
+
+1. On terminal, go to repository folder 
+2. Make sure to update changes with `git pull`
+3. Run hugo locally with `hugo server -D`
+4. Open [your local version](http://localhost:1313/) on the browser
+5. Open your code editing app, edit away
+
+## PUBLISHING
+
+1. Make sure to update changes with `git pull`
+2. Add your changes with `git add -A`
+3. Commit your changes: `git commit -m "comment message here"`
+4. Push your changes: `git push`
+
+Gitlab will run the flag blog again once you push.
+
+---
 
 
 ## Phase 1
