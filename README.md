@@ -22,8 +22,9 @@ served at https://commons.garden
 
 1. install Hugo: https://gohugo.io/installation/
 2. Ask for editing access
-2. Clone down this repo
-
+3. Clone down this repo 
+  - Copy this URL[https://gitlab.com/commons-garden/commons-garden.gitlab.io.git](https://gitlab.com/commons-garden/commons-garden.gitlab.io.git)
+ - In terminal: "git clone COPIEDPATH (Path to the folder you want the files in)"
 
 ## EDITING
 
