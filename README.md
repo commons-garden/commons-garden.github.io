@@ -23,14 +23,14 @@ served at https://commons.garden
 1. install Hugo: https://gohugo.io/installation/
 2. Ask for editing access
 3. Clone down this repo 
-  - Copy this URL[https://gitlab.com/commons-garden/commons-garden.gitlab.io.git](https://gitlab.com/commons-garden/commons-garden.gitlab.io.git)
- - In terminal: "git clone COPIEDPATH (Path to the folder you want the files in)"
+  - Copy this URL [https://gitlab.com/commons-garden/commons-garden.gitlab.io.git](https://gitlab.com/commons-garden/commons-garden.gitlab.io.git)
+ - In terminal: "git clone COPIEDPATH (PATH to the directory you want the files in)"
 
 ## EDITING
 
 1. On terminal, go to repository folder 
 2. Make sure to update changes with `git pull`
-3. Run hugo locally with `hugo server -D`
+3. Run Hugo locally with `hugo server -D`
 4. Open [your local version](http://localhost:1313/) on the browser
 5. Open your code editing app, edit away
 
