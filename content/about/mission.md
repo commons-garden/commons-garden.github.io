@@ -41,7 +41,7 @@ An effort *towards*, not a state of perfection
 - start with community we know (scuttlebutt)
 - no have time to do specs? we can help.
 - we can resource that for you!
-- you can focus on great experiences instead
+- you get to focus on creating great experiences
 - we get it off your plate
 - conflict resolution
 - reaching agreements
