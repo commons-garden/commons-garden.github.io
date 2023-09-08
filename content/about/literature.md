@@ -1,9 +1,9 @@
 ---
 title: Literature
 type: public
-description: Our goals
+description: Our Readings
 category: about
-date: 2023-03-07
+date: 2023-09-06
 ---
 
 ## Literature to Understand and Inspire
