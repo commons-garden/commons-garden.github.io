@@ -1,5 +1,5 @@
 ---
-title: Mission statement
+title: Literature
 type: public
 description: Our goals
 category: about
