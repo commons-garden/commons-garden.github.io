@@ -10,7 +10,7 @@ date: 2023-09-06
 
 ## Literature to Understand and Inspire
 
-- Anarchist Cybernetics
+- [Anarchist Cybernetics](https://anarchiststudies.org/acybernetics/)
 - [Digital Garden Terms of Service](https://www.swyx.io/digital-garden-tos)
 - [Digital Gardeners](https://github.com/MaggieAppleton/digital-gardeners)
 - [What is the IndieWeb?](https://indieweb.org)
@@ -19,4 +19,3 @@ date: 2023-09-06
 ## Digital Gardens We Like
 
 - [Tom Critchlow](https://tomcritchlow.com/wiki/)
--
