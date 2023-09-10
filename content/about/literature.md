@@ -10,11 +10,11 @@ date: 2023-09-06
 
 ## Literature to Understand and Inspire
 
-- [Anarchist Cybernetics](https://anarchiststudies.org/acybernetics/)
-- [Digital Garden Terms of Service](https://www.swyx.io/digital-garden-tos)
-- [Digital Gardeners](https://github.com/MaggieAppleton/digital-gardeners)
-- [What is the IndieWeb?](https://indieweb.org)
-- [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history)
+- Starter guidelines - [Digital Garden Terms of Service](https://www.swyx.io/digital-garden-tos)
+- Tools and Resources - [Digital Gardeners](https://github.com/MaggieAppleton/digital-gardeners)
+- Use What You Make - [What is the IndieWeb?](https://indieweb.org)
+- History - [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history)
+- article on science of self-organization [Anarchist Cybernetics](https://anarchiststudies.org/acybernetics/)
 
 ## Digital Gardens We Like
 
