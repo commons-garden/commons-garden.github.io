@@ -13,8 +13,8 @@ date: 2023-09-06
 - Starter guidelines - [Digital Garden Terms of Service](https://www.swyx.io/digital-garden-tos)
 - Tools and Resources - [Digital Gardeners](https://github.com/MaggieAppleton/digital-gardeners)
 - Use What You Make - [What is the IndieWeb?](https://indieweb.org)
-- History - [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history)
-- article on science of self-organization [Anarchist Cybernetics](https://anarchiststudies.org/acybernetics/)
+- [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history)
+- [Anarchist Cybernetics](https://anarchiststudies.org/acybernetics/)
 
 ## Digital Gardens We Like
 
