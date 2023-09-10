@@ -1,6 +1,9 @@
 # commons.garden
 
-served at https://commons.garden
+- [commons.garden](https://commons.garden)
+- [our mission](https://commons.garden/about/mission)
+- [our TODO](https://commons.garden/about/todo)
+- [our milestones](https://commons.garden/about/phases)
 
 
 ## INSTALLATION
@@ -27,30 +30,3 @@ served at https://commons.garden
 4. Push your changes: `git push`
 
 Gitlab will run the flag blog again once you push.
-
----
-
-
-## Phase 1
-
-- specs category
-- about category
-- initiatives category
-- wireframes category
-
-## Phase 2
-
-- members category
-- organizations category
-- wire categories across
-- manual category (template,s criteria, etc)
-- discuss glossary, living documentation (airtable?)
-- donation platform (open collective?)
-- discuss announcements (newsletter? telegram?)
-
-## Phase 3
-
-- find facilitators
-- facilitate for facilitators
-- volunteer rotation
-

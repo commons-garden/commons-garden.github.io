@@ -1,5 +1,5 @@
 ---
-title: What's left TODO
+title: What to do next
 type: public
 status: ongoing
 description: Our next steps

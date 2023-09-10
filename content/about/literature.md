@@ -2,9 +2,11 @@
 title: Literature
 type: public
 description: Our Readings
+status: ongoing
 category: about
 date: 2023-09-06
 ---
+
 
 ## Literature to Understand and Inspire
 
