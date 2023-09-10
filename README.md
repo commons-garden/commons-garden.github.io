@@ -2,21 +2,6 @@
 
 served at https://commons.garden
 
-## TODO
-
-- [ ] page template checkjs if slug has a folder and:
-	- lists all public pages in alphabetical order, into a table of content
-	- folder pages point to original page
-- [ ] redirect template: `p2p-delete` becomes `p2p_delete`
-- [ ] reset select
-- [ ] template inside tutorial (loop from yml file)
-- [ ] adding categories tutorial: css, nav, json, etc
-- [ ] review category desctiption, pointing to json
-- [ ] review [open collective](https://opencollective.com/commons-garden)
-- [ ] design favicons
-- [ ] design stickers
-- [ ] design open graph image
-
 
 ## INSTALLATION
 
