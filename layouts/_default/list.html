@@ -3,49 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-{{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
-{{ $style := $sass | resources.ToCSS }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
-<title>{{ partial "emoji.html" . }} {{ .Site.Title }}/{{ .Title | singularize }}</title>
+  {{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
+  {{ $style := $sass | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <title>{{ partial "emoji.html" . }} {{ .Site.Title }}/{{ .Title | singularize }}</title>
 </head>
+
 <body>
-
 	<div class="container">
-			<header class="header">
-<nav class="secondary">
-{{ partial "nav-root.html" . }}
-</nav>
+    <header class="header">
+      <nav class="secondary">
+        {{ partial "nav-root.html" . }}
+      </nav>
 
-	<nav class="primary">
-	{{ partial "nav-list.html" . }}
-	</nav>
+      <nav class="primary">
+        {{ partial "nav-list.html" . }}
+      </nav>
 				
-		<div class="description">
-{{ partial "category-description.html" . }}
-		</div>
-		
+      <div class="description">
+        {{ partial "category-description.html" . }}
+      </div>
 		</header>
 
 		<article>
-
 			<div class="list post">
-			  {{ range .Pages }}
-      {{ if (in .Params.type "public") }}
-     <a class="item" href="{{ .RelPermalink }}">
-							
-							<span class="title">{{ .Title }}</span>
-							<span class="description">{{ .Params.Description }}{{if .Params.Status }} ({{ .Params.Status }}){{ end }}</span>
-							
-						</a>
-{{ end }}
-{{ end }}
-</div>
+        {{ range .Pages }}
+          {{ if (in .Params.type "public") }}
+          <a class="item" href="{{ .RelPermalink }}">
+                
+            <span class="title">{{ .Title }}</span>
+            <span class="description">{{ .Params.Description }}{{if .Params.Status }} ({{ .Params.Status }}){{ end }}</span>
+          </a>
+          {{ end }}
+        {{ end }}
+      </div>
 		</article>
 
 		{{ partial "description.html" . }}
-			{{ partial "slogan.html" . }}
+    {{ partial "slogan.html" . }}
 	</div>
-	
 </body>
-</html>
 
+</html>

@@ -3,43 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-{{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
-{{ $style := $sass | resources.ToCSS }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+  {{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
+  {{ $style := $sass | resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-<title>{{ partial "emoji.html" . }} {{ .Site.Title }}/{{ .Params.Category }}/{{ with .File }}{{ .BaseFileName }}{{ end }}</title>
+  <title>{{ partial "emoji.html" . }} {{ .Site.Title }}/{{ .Params.Category }}/{{ with .File }}{{ .BaseFileName }}{{ end }}</title>
 </head>
+
 <body>
-
 	<div class="container">
+    <header class="header">
 
-			<header class="header">
+      <nav class="secondary">
+        {{ partial "nav-root.html" . }}
+        {{ partial "nav-category.html" . }}
+      </nav>
 
-				<nav class="secondary">
-{{ partial "nav-root.html" . }}
-{{ partial "nav-category.html" . }}
-</nav>
+      <nav class="primary">
+        {{ partial "nav-post.html" . }}
+      </nav>
 
-<nav class="primary">
-	{{ partial "nav-post.html" . }}
-</nav>
-
-<div class="description">{{ .Description }}</div>
-	
-		
+      <div class="description">{{ .Description }}</div>
 		</header>
 
 
 {{ if (in .Params.category "spec") }}
-{{ partial "article-sidebar.html" . }}
+  {{ partial "category-template.html" . }}
+
 {{ else if (in .Params.category "wireframe") }}
-{{ partial "article-sidebar.html" . }}
+  {{ partial "category-template.html" . }}
+
 {{ else if (in .Params.category "initiative") }}
-{{ partial "article-sidebar.html" . }}
+  {{ partial "category-template.html" . }}
+
 {{ else if (in .Params.category "person") }}
-{{ partial "article-sidebar.html" . }}
+  {{ partial "person-template.html" . }}
+
 {{ else }}
-<article>{{ .Content }}</article>
+  <article>{{ .Content }}</article>
+
 {{ end }}
 		
 

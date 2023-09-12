@@ -1,0 +1,52 @@
+<article class="with-status">
+  {{ if .Params.imageType }}
+    <img src="/images/person/{{.Params.title}}.{{.Params.imageType}}" />
+    <!-- TODO: try to loop over fileExists to find file -->
+  {{ end }}
+
+	<ul class="status">
+		{{ if .Params.Status }}
+		<li class="status">
+			<span>status:</span> {{ .Params.Status }}
+		</li>
+		{{ end }}
+
+
+    <li>
+      <span>project i facilliteded:</span>
+      <!--
+        look through every initiave (that is public)
+        collect those that have mixmix on them as "facilitor"
+      -->
+      {{ range .Site.AllPages }}
+        {{ if (in .Params.facilitator $.Params.title) }}
+          <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a>
+        {{ end }}
+      {{ end }}
+    </li>
+
+    <li> specs </li>
+    <li> wireframe </li>
+    <li> orginisations </li>
+
+		{{ with .Params.Facilitator }}
+		<li>
+			<span>Facilitator:</span>
+      {{ range (split . ", ") }}
+        {{ if (fileExists (printf "/person/%s.md" .)) -}}
+          <a href="/person/{{.}}">{{.}}</a>
+        {{ else }} {{.}}
+        {{ end }}
+      {{ end }}
+      <!-- 
+        can we use a regex for /,\s?/ 
+        see: https://gohugo.io/functions/replacere/
+      -->
+		</li>
+		{{ end }}
+	</ul>
+
+	<section class="content">
+		{{ .Content }}
+	</section>
+</article>

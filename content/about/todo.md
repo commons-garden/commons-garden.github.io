@@ -36,10 +36,16 @@ How we write and update documentation for our facilitators?
 
 ## Design
 
+- [ ] design open graph image
 - [ ] design favicons
 - [ ] design stickers
 - [ ] bg animation (vector, subtle)
-- [ ] design open graph image
+
+## Person template
+
+- [ ] style person image
+- [ ] loop content on single
+- [ ] manual/tutorial on how to write and edit person
 
 ## Glossary
 

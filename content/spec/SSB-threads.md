@@ -7,6 +7,7 @@ status: stable
 scope: SSB
 license: CC0-1.0
 author: mixmix
+facilitator: mixmix
 initiative: 
 reviewed: staltz, cel
 implemented: patchwork, manyverse, planetary, patchfox

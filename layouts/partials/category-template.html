@@ -2,8 +2,7 @@
 	<ul class="status">
 		{{ if .Params.Status }}
 		<li class="status">
-			<span>status:</span>
-			{{ .Params.Status }}
+			<span>status:</span> {{ .Params.Status }}
 		</li>
 		{{ end }}
 
@@ -25,8 +24,7 @@
 
 		{{ if .Params.Date }}
 		<li>
-			<span>Date:</span>
-			{{ .Params.Date }}
+			<span>Date:</span> {{ .Params.Date }}
 		</li>
 		{{ end }}
 		{{ if .Params.Scope }}
@@ -42,7 +40,7 @@
 		</li>
 		{{ end }}
 
-			{{ with .Params.Author }}
+    {{ with .Params.Author }}
 		<li>
 			<span>Author:</span>
       {{ range (split . ", ") }}
@@ -67,6 +65,7 @@
         {{ else }} {{.}}
         {{ end }}
       {{ end }}
+
       <!-- 
         can we use a regex for /,\s?/ 
         see: https://gohugo.io/functions/replacere/
