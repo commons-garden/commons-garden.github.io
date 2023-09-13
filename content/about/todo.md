@@ -48,7 +48,9 @@ How we write and update documentation for our facilitators?
 - [x] loop only thru public
 - [ ] empty state (no answer)
 - [x] fix person dropdown
-- [ ] "person"? ugh.
+- [ ] from person to team
+- [ ] from manual to tutorial
+- [ ] from about to root
 - [ ] organization wiring
 - [x] style person image
 - [x] loop content on single
