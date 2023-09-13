@@ -8,15 +8,15 @@ author: nonlinear
 date: 2023-09-10
 ---
 
+## Admin
 
-## Hugo & code
+- [ ] review [open collective](https://opencollective.com/commons-garden)
+
+## subpages
 
 - [ ] page template checkjs if slug has a folder and:
 	- lists all public pages in alphabetical order, into a table of content
 	- folder pages point to original page
-- [ ] reset select
-- [ ] review category desctiption, pointing to json
-- [ ] review [open collective](https://opencollective.com/commons-garden)
 
 ## Workflows
 
@@ -40,12 +40,19 @@ How we write and update documentation for our facilitators?
 - [ ] design favicons
 - [ ] design stickers
 - [ ] bg animation (vector, subtle)
+- [x] blockquote, no count, no hover if alone
 
 ## Person template
 
-- [ ] style person image
-- [ ] loop content on single
-- [ ] manual/tutorial on how to write and edit person
+- [x] loop thru facilitator, author, helper
+- [x] loop only thru public
+- [ ] empty state (no answer)
+- [x] fix person dropdown
+- [ ] "person"? ugh.
+- [ ] organization wiring
+- [x] style person image
+- [x] loop content on single
+- [x] manual/tutorial on how to write and edit person
 
 ## Glossary
 
@@ -54,3 +61,10 @@ How we write and update documentation for our facilitators?
 - [ ] term + synonyms + deprecated (use this one instead and why)
 - [ ] how to ensure glossary is being read, consulted?
 - [ ] repackaging content
+
+## Tech Debt
+
+- [ ] categories should point to .json, not category-description
+- [ ] why title? It should point to filename
+- [ ] why category? It should point to folder
+- [ ] reset select

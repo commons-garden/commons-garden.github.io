@@ -78,7 +78,22 @@
 {{ else if (in .Params.category "organization") }}
 
       {{ range .Site.RegularPages }}
-      {{ if (in .Params.category "spec") }}
+      {{ if (in .Params.category "organization") }}
+      {{ if (in .Params.type "public") }}
+      <option value="{{ .RelPermalink }}">
+       
+       {{ .Title | upper }}
+       
+       
+ </option>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+
+{{ else if (in .Params.category "person") }}
+
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "person") }}
       {{ if (in .Params.type "public") }}
       <option value="{{ .RelPermalink }}">
        

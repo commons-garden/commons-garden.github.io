@@ -1,51 +1,58 @@
-<article class="with-status">
+<article>
+    <div class="badge">
   {{ if .Params.imageType }}
-    <img src="/images/person/{{.Params.title}}.{{.Params.imageType}}" />
-    <!-- TODO: try to loop over fileExists to find file -->
+
+    <div class="avatar" style="background-image: url(/images/person/{{.Params.title}}.{{.Params.imageType}})">
+      
+    </div>
   {{ end }}
 
 	<ul class="status">
-		{{ if .Params.Status }}
-		<li class="status">
-			<span>status:</span> {{ .Params.Status }}
-		</li>
-		{{ end }}
+	<li>
+      <span>Organizations I belong:</span> (pending)
+     <!--  {{ range .Site.AllPages }}
+        {{ if (in .Params.helper $.Params.title) }}
+          <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a>
+        {{ end }}
+      {{ end }} -->
+    </li>
 
 
     <li>
-      <span>project i facilliteded:</span>
-      <!--
-        look through every initiave (that is public)
-        collect those that have mixmix on them as "facilitor"
-      -->
+      <span>Facilitator in:</span>
       {{ range .Site.AllPages }}
         {{ if (in .Params.facilitator $.Params.title) }}
-          <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a>
+        {{ if (in .Params.Type "public")  }}
+          <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a> ({{.Params.category}})
         {{ end }}
+         {{ end }}
       {{ end }}
     </li>
 
-    <li> specs </li>
-    <li> wireframe </li>
-    <li> orginisations </li>
-
-		{{ with .Params.Facilitator }}
-		<li>
-			<span>Facilitator:</span>
-      {{ range (split . ", ") }}
-        {{ if (fileExists (printf "/person/%s.md" .)) -}}
-          <a href="/person/{{.}}">{{.}}</a>
-        {{ else }} {{.}}
+    <li>
+      <span>Author in:</span>
+      {{ range .Site.AllPages }}
+        {{ if (in .Params.author $.Params.title)  }}
+         {{ if (in .Params.Type "public")  }}
+          <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a> ({{.Params.category}})
+        {{ end }}
         {{ end }}
       {{ end }}
-      <!-- 
-        can we use a regex for /,\s?/ 
-        see: https://gohugo.io/functions/replacere/
-      -->
-		</li>
-		{{ end }}
-	</ul>
+    </li>
+     <li>
+      <span>Helped in:</span>
+      {{ range .Site.AllPages }}
+        {{ if (in .Params.helper $.Params.title) }}
+          {{ if (in .Params.Type "public")  }}
+          <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a> ({{.Params.category}})
+        {{ end }}
+{{ end }}
+      {{ end }}
+    </li>
 
+    
+	</ul>
+</div>
 	<section class="content">
 		{{ .Content }}
 	</section>

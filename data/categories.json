@@ -58,8 +58,8 @@
     {
         "title": "person",
         "group": "actors",
-        "description": "our volunteer",
-        "status": "draft",
+        "description": "our volunteers",
+        "status": "public",
         "pluralize": "yes",
         "criteria": "pending"
     }
