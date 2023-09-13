@@ -173,9 +173,7 @@ header.header, .main.description {
 	
 // }
 article {
-
 	 counter-reset: steps;
-
 }
 
 blockquote {
@@ -237,17 +235,16 @@ ul.status {
 		
 		color: var(--color-bg);
 		padding: 0 2px;
-
-
 	}
 }
+
 .slogan {
-		margin-top: var(--gap-5);
+	margin-top: var(--gap-5);
 	text-transform: uppercase;
 	display: grid;
 	grid-template-columns: 1fr auto;
 	grid-gap: var(--gap);
-		font-size: 80%;
+	font-size: 80%;
 	
 	span {
 		padding: 0 var(--gap);
@@ -259,16 +256,9 @@ ul.status {
 	a.btn {
 		padding: 0 var(--gap-2);
 		@include radius(20px);
-	@include fadeIn($delay: var(--delay));
-
+    @include fadeIn($delay: var(--delay));
 	}
-	
-	
-	
 }
-
-
-
 
 ul.status li {
 	&:nth-of-type(1) span {
@@ -419,11 +409,9 @@ a.btn {
 			margin-top: var(--gap);
 		}
 
-
 	}
-
-	
 }
+
 .sig {
 	font-size: 90%;
 	margin-top: var(--gap-2);
@@ -446,7 +434,7 @@ table {
 		padding: 10px;
 		border-top: solid .5px var(--color-accent);
 	
-text-align: left;
+    text-align: left;
 
 		vertical-align: top;
 		&:first-of-type {
@@ -457,9 +445,6 @@ text-align: left;
 		}
 	}
 }
-
-
-
 
 .list {
 	a.item {
@@ -496,6 +481,7 @@ text-align: left;
 		}
 	}
 }
+
 .popover {
 	margin-top: 15px !important;
 }
@@ -522,84 +508,83 @@ text-align: left;
 
 
 header.header {
-		@media (min-width: $bp-medium) {
-			position: sticky;
+  @media (min-width: $bp-medium) {
+    position: sticky;
 		top: -1px;
 		z-index: 10000;
-		
 	}
+
 	margin-bottom: var(--gap-5);
 	.description {
 		border: solid .5px var(--color-accent);
 		background-color: var(--color-bg);
-	margin-top: -1px;
+    margin-top: -1px;
 		padding: var(--gap-half) var(--gap);
 	}
 	nav {
-	@extend h2;
-	@media (min-width: $bp-medium) {
-html.single &.secondary {
-	display: grid;
-	grid-template-columns: 240px 1fr;
-}
-}
-	&.primary {
-		select {
-		@extend h1;
-		background-position: right 20px;
-		&:hover, &:focus {
-			background-position: right 23px;
-		}
-	}
-	}
-	&.secondary {
-		select {
-		@extend h2;
-		margin-bottom: -1px;
-	
+    @extend h2;
+    @media (min-width: $bp-medium) {
 
-		background-position: right 10px;
-		&:hover, &:focus {
-			background-position: right 13px;
-			z-index: +1;
-		}
-	}
-	}
-	select {
+      // mix: this looks like a mistake
+      html.single &.secondary {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+      }
+    }
+    &.primary {
+      select {
+        @extend h1;
+        background-position: right 20px;
+        &:hover, &:focus {
+          background-position: right 23px;
+        }
+      }
+    }
+    &.secondary {
+      select {
+        @extend h2;
+        margin-bottom: -1px;
 
-			width: 100%;
-		background-image: url(../images/arrow-down.svg);
-		background-repeat: no-repeat;
-		@include transition;
-		&:focus, &:hover {
-			background-color: white;
-			border: solid .5px var(--color-fg);
-		}
-		option {
-			font-size: 12px;
-			font-family: var(--font-text);
+        background-position: right 10px;
+        &:hover, &:focus {
+          background-position: right 13px;
+          z-index: +1;
+        }
+      }
+    }
+    select {
+      width: 100%;
+      background-image: url(../images/arrow-down.svg);
+      background-repeat: no-repeat;
+      @include transition;
+      &:focus, &:hover {
+        background-color: white;
+        border: solid .5px var(--color-fg);
+      }
+      option {
+        font-size: 12px;
+        font-family: var(--font-text);
 
-			&:first-of-type {
-				display: none;
-			}
+        &:first-of-type {
+          display: none;
+        }
+      }
+      appearance: none;
+      background-color: var(--color-bg);
+      font-weight: normal;
+      font-family: var(--font-header);
+      cursor: pointer;
+      border: solid .5px var(--color-accent);
+      padding: var(--gap);
+      padding-right: var(--gap-4);
+      outline: none;
+      text-transform: uppercase;
 
-		}
-		appearance: none;
-		background-color: var(--color-bg);
-		font-weight: normal;
-		font-family: var(--font-header);
-		cursor: pointer;
-		border: solid .5px var(--color-accent);
-		padding: var(--gap);
-		padding-right: var(--gap-4);
-		outline: none;
-		text-transform: uppercase;
-
-		&::-ms-expand {
-			display: none;
-		}
-	}
-}
+      &::-ms-expand {
+        display: none;
+      }
+    }
+  }
 }
 
 
@@ -622,3 +607,7 @@ html.single &.secondary {
 // 		}
 // 	}
 // }
+
+figure {
+  margin: 0;
+}
