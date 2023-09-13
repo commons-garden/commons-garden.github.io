@@ -14,6 +14,33 @@ body {
 
 }
 
+.person .badge {
+	@media (min-width: $bp-small) {
+		display: grid;
+		width: 100%;
+		grid-gap: var(--grid-gap);
+		grid-template-columns: var(--avatar) 1fr;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	@media (max-width: $bp-small) {
+		--avatar: 100px;
+	}
+	padding-bottom: var(--gap-4);
+	margin-bottom: var(--gap-4);
+	border-bottom: solid 1px var(--color-accent);
+}
+
+.avatar {
+	background-size: cover;
+	width: var(--avatar);
+	margin-right: var(--gap-3);
+	height: var(--avatar);
+	@include radius(50%);
+}
+
 .container {
 	max-width: $bp-small;
 	margin: var(--gap-5) auto;
@@ -152,15 +179,12 @@ article {
 }
 
 blockquote {
-	&:has(laboratory) {
-		@include find(red);
-	}
 	padding: 0 var(--gap-2);
 	border: solid 1px #ccc;
 	display: inline-block;
 	@include transition;
 	background-color: rgba(yellow, .2);
-	&:before {
+	&:not(:only-of-type):before {
 		position: absolute;
 		counter-increment: steps; 
   content: counter(steps);
@@ -170,14 +194,13 @@ blockquote {
 		@include opacity(40);
 		@include transition;
 	}
-	&:hover {
+	&:not(:only-of-type):hover {
 		@include scale(1.1);
 		@include shadow(box, 4px 4px 0px rgba(0, 0, 0, 0.05));
 		&:before {
 			@include opacity(100);
 		}
 	}
-	@include shadow(box, 4px 4px 0px rgba(0, 0, 0, 0.0));
 }
 
 .home {

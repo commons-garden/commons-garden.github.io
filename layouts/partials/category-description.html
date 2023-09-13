@@ -1,17 +1,15 @@
 {{ if (in .Title "About")}}
+About us
+{{ else if (in .Title "Initiatives")}}
+Our discussion topics
+{{ else if (in .Title "People")}}
+Our volunteers
+{{ else if (in .Title "Specs")}}
+Technical deliverables
+{{ else if (in .Title "Wireframes")}}
+Design deliverables
+{{ else if (in .Title "Manual")}}
+How to write documentation
+{{ else }}
 
-
-			
-			
-							About us
-							{{ else if (in .Title "Initiatives")}}
-							Our discussion topics
-							{{ else if (in .Title "Specs")}}
-							Technical deliverables
-								{{ else if (in .Title "Wireframes")}}
-							Design deliverables
-							{{ else if (in .Title "Manual")}}
-							How to write documentation
-							{{ else }}
-						
-					{{ end }}
+{{ end }}
