@@ -1,7 +1,9 @@
 <article class="with-status">
-  {{ if .Params.imageType }}
-    <img src="/images/person/{{.Params.title}}.{{.Params.imageType}}" />
-    <!-- TODO: try to loop over fileExists to find file -->
+  {{ range (slice "jpg" "jpeg" "png" "svg") }}
+    {{ $img_src := (printf "/images/person/%s.%s" $.Params.title .) }}
+    {{ if (fileExists (add "static" $img_src)) }}
+      <img src="{{$img_src}}" />
+    {{ end }}
   {{ end }}
 
 	<ul class="status">
