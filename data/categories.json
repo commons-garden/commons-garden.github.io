@@ -32,7 +32,7 @@
         "criteria": "pending"
     },
     {
-        "title": "manual",
+        "title": "tutorial",
         "group": "staff",
         "description": "How to write documentation",
         "status": "hidden",

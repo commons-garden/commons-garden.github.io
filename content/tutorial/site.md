@@ -2,7 +2,7 @@
 title: How to help
 type: public
 description: Ways to help us
-category: manual
+category: tutorial
 date: 2023-03-07
 ---
 This site uses hugo and is hosted on gitlab.

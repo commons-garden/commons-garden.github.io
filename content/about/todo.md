@@ -50,8 +50,8 @@ How we write and update documentation for our facilitators?
 - [x] loop only thru public
 - [ ] empty state (no answer)
 - [x] fix person dropdown
-- [ ] from person to team
-- [ ] from manual to tutorial
+- [x] from person to team
+- [x] from manual to tutorial
 - [ ] from about to root
 - [ ] organization wiring
 - [x] style person image
