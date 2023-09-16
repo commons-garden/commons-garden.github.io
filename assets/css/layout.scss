@@ -27,10 +27,15 @@ body {
 	}
 	@media (max-width: $bp-small) {
 		--avatar: 100px;
+			margin-bottom:  var(--grid-gap);
+			.avatar {
+		margin-bottom:  var(--grid-gap);
 	}
-	padding-bottom: var(--gap-4);
-	margin-bottom: var(--gap-4);
+	}
+	padding-bottom: var(--grid-gap);
+	margin-bottom: var(--grid-gap);
 	border-bottom: solid 1px var(--color-accent);
+
 }
 
 .avatar {
@@ -163,20 +168,7 @@ header.header, .main.description {
 	@include find(red);
 }
 
-// html.initiative ul.status:after, .home header.header:after,
-//  .main.description:before, .home .main.description:after {
-// 	content: "";
-// 	height: 3px;
-// 	display: block;
-// 	margin: var(--gap-5) 0;
-// 	@media (max-width: $bp-small) {
-// 		margin: var(--gap-3) 0;
-// 	}
-// 	background-repeat: repeat-x;
-// 	background-image: url(../images/divider.svg);
 
-	
-// }
 article {
 	 counter-reset: steps;
 }
