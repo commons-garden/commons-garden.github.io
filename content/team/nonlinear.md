@@ -3,7 +3,7 @@ title: nonlinear
 imageType: jpg
 description: the anagram of my name is anarchist fool
 type: public
-category: person
+category: team
 date: 2023-03-07
 ---
 

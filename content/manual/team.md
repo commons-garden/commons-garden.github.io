@@ -1,5 +1,5 @@
 ---
-title: person
+title: team
 type: public
 category: manual
 description: How to write proper specs

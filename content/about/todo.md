@@ -17,6 +17,7 @@ date: 2023-09-10
 - [ ] page template checkjs if slug has a folder and:
 	- lists all public pages in alphabetical order, into a table of content
 	- folder pages point to original page
+- [ ] subgroups should not be listed on list.html (or should? we need at least a new template)
 
 ## Workflows
 
