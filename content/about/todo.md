@@ -1,5 +1,5 @@
 ---
-title: What to do next
+title: TODO
 type: public
 status: ongoing
 description: Our next steps
@@ -41,6 +41,7 @@ How we write and update documentation for our facilitators?
 - [ ] design stickers
 - [ ] bg animation (vector, subtle)
 - [x] blockquote, no count, no hover if alone
+- [x] fix select error on non-firefox browsers
 
 ## Person template
 

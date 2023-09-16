@@ -2,7 +2,7 @@
 title: How to help
 type: public
 description: Ways to help us
-category: about
+category: manual
 date: 2023-03-07
 ---
 This site uses hugo and is hosted on gitlab.
@@ -21,7 +21,7 @@ Hugo uses 3 templates, all under `/templates/_default/`:
 
 ## automatic classes
 
-This iste automatically adds certain classes, on HTML:
+This site automatically adds certain classes on `<HTML>`:
 
 - the template name (index, list, single)
 - the category name (spec, wireframe, etc)
