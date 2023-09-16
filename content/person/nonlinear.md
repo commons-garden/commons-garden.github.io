@@ -15,7 +15,7 @@ date: 2023-03-07
 
 ### Find me on:
 
-- [mastodon](https://mastodon.com.br/@nonlinear) 
+- [mastodon](https://social.praxis.nyc/@nonlinear) 
 - [instapaper](https://www.instapaper.com/p/nonlinear) 
 - [instagram](https://instagram.com/nonlinear) 
 - [savee](https://savee.it/nonlinear)
