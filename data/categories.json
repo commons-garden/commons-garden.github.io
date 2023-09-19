@@ -32,7 +32,7 @@
         "criteria": "pending"
     },
     {
-        "title": "manual",
+        "title": "tutorial",
         "group": "staff",
         "description": "How to write documentation",
         "status": "hidden",
@@ -56,11 +56,11 @@
         "criteria": "pending"
     },
     {
-        "title": "person",
+        "title": "team",
         "group": "actors",
         "description": "our volunteers",
         "status": "public",
-        "pluralize": "yes",
+        "pluralize": "no",
         "criteria": "pending"
     }
 ]

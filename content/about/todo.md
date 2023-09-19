@@ -1,5 +1,5 @@
 ---
-title: What to do next
+title: TODO
 type: public
 status: ongoing
 description: Our next steps
@@ -17,6 +17,7 @@ date: 2023-09-10
 - [ ] page template checkjs if slug has a folder and:
 	- lists all public pages in alphabetical order, into a table of content
 	- folder pages point to original page
+- [ ] subgroups should not be listed on list.html (or should? we need at least a new template)
 
 ## Workflows
 
@@ -41,6 +42,7 @@ How we write and update documentation for our facilitators?
 - [ ] design stickers
 - [ ] bg animation (vector, subtle)
 - [x] blockquote, no count, no hover if alone
+- [x] fix select error on non-firefox browsers
 
 ## Person template
 
@@ -48,8 +50,8 @@ How we write and update documentation for our facilitators?
 - [x] loop only thru public
 - [ ] empty state (no answer)
 - [x] fix person dropdown
-- [ ] from person to team
-- [ ] from manual to tutorial
+- [x] from person to team
+- [x] from manual to tutorial
 - [ ] from about to root
 - [ ] organization wiring
 - [x] style person image

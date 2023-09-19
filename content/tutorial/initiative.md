@@ -1,7 +1,7 @@
 ---
 title: initiative
 type: public
-category: manual
+category: tutorial
 description: How to write proper specs
 date: 2023-06-30
 ---

@@ -3,7 +3,7 @@
 <article>
   <div class="badge">
   {{ range (slice "jpg" "jpeg" "png" "svg") }}
-    {{ $img_src := (printf "/images/person/%s.%s" $name .) }}
+    {{ $img_src := (printf "/images/team/%s.%s" $name .) }}
     {{ if (fileExists (add "static" $img_src)) }}
       <div 
         class="avatar"
