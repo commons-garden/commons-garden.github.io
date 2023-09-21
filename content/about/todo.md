@@ -44,7 +44,7 @@ How we write and update documentation for our facilitators?
 - [x] blockquote, no count, no hover if alone
 - [x] fix select error on non-firefox browsers
 
-## Person template
+## Team template
 
 - [x] loop thru facilitator, author, helper
 - [x] loop only thru public
@@ -57,6 +57,14 @@ How we write and update documentation for our facilitators?
 - [x] style person image
 - [x] loop content on single
 - [x] manual/tutorial on how to write and edit person
+- [ ] fix the markdown container (currently very narrow)
+- [ ] change team to gardener
+    - person
+    - volunteer
+    - contributor
+    - gardener <<<
+    - human
+    - team
 
 ## Glossary
 
