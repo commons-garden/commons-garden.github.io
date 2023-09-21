@@ -66,6 +66,26 @@ How we write and update documentation for our facilitators?
 - [ ] how to ensure glossary is being read, consulted?
 - [ ] repackaging content
 
+## version control
+
+Website is a snapshot of the latest update, but we do have the git commits in the open.
+
+A way to integrate Hugo content with its older versions, maybe a timeline of updates (gitlab updates a json file on build) where user is pointed to the markdown file.
+
+Or if we wanna get fancy, a comparison tool in pare showing what's added, removed by sho and when (we need to connect gardener with gitlab user for that).
+
+This way volunteers can compare what changed since last time they checked, to stay in the loop. 
+
+## publish for non techies
+
+A content-only permission that allows authors to:
+- add page (from template)
+- edit page
+- edit frontmatter criteria (required always on, optional on a menu)
+- edit frontmatter values (limiting choices with autosuggest)
+
+System presents user with URL of changed objects, on commit. 
+
 ## Tech Debt
 
 - [ ] categories should point to .json, not category-description
