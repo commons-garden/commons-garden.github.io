@@ -56,11 +56,11 @@
         "criteria": "pending"
     },
     {
-        "title": "team",
+        "title": "gardener",
         "group": "actors",
         "description": "our volunteers",
         "status": "public",
-        "pluralize": "no",
+        "pluralize": "yes",
         "criteria": "pending"
     }
 ]

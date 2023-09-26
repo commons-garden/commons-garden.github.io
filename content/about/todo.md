@@ -51,6 +51,8 @@ How we write and update documentation for our facilitators?
 - [ ] empty state (no answer)
 - [x] fix person dropdown
 - [x] from person to team
+- [x] from team to gardener
+- [x] fix dropdown
 - [x] from manual to tutorial
 - [ ] from about to root
 - [ ] organization wiring
