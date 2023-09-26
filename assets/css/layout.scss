@@ -532,19 +532,22 @@ header.header {
     &.primary {
       select {
         @extend h1;
+        border-top: none;
         max-height: 60px;
         background-position: right 20px;
         &:hover, &:focus {
           background-position: right 23px;
         }
+        	margin-top: -2px;
+	@-moz-document url-prefix() {
+		margin-top: 0;
+	}
       }
     }
     &.secondary {
       select {
         @extend h2;
         max-height: 40px;
-        margin-bottom: -1px;
-
         background-position: right 10px;
         &:hover, &:focus {
           background-position: right 13px;
@@ -587,6 +590,7 @@ header.header {
     }
   }
 }
+
 
 
 // nav.secondary {
