@@ -4,3 +4,4 @@ description = "aims to enhance our knowledge commons by sponsoring initiatives t
 title = "commons.garden"
 slogan = "Enhancing knowledge commons"
 publishDir = "public"
+enableEmoji = true
