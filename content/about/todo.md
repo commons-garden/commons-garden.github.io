@@ -60,7 +60,7 @@ How we write and update documentation for our facilitators?
 
 - [x] loop thru facilitator, author, helper
 - [x] loop only thru public
-- [ ] empty state (xno answer)
+- [x] empty state
 - [x] fix person dropdown
 - [x] from person to team
 - [x] from team to gardener
@@ -69,14 +69,8 @@ How we write and update documentation for our facilitators?
 - [x] style person image
 - [x] loop content on single
 - [x] manual/tutorial on how to write and edit person
-- [ ] fix the markdown container (currently very narrow)
-- [ ] change team to gardener
-    - person
-    - volunteer
-    - contributor
-    - gardener <<<
-    - human
-    - team
+- [x] fix the markdown container (currently very narrow)
+- [x] change team to gardener
 
 ## Organization template
 
