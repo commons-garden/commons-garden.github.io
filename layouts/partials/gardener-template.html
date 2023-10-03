@@ -26,31 +26,46 @@
 
     <li>
       <span>Facilitator in:</span>
+      {{ $count := 0 }}
       {{ range .Site.AllPages }}
         {{ if (and (in .Params.facilitator $name) (in .Params.Type "public")) }}
           <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a>
           ({{.Params.category}})
+          {{ $count = add $count 1 }}
         {{ end }}
+      {{ end }}
+      {{ if (eq $count 0) }}
+        None
       {{ end }}
     </li>
 
     <li>
       <span>Author in:</span>
+      {{ $count := 0 }}
       {{ range .Site.AllPages }}
         {{ if (and (in .Params.author $name) (in .Params.Type "public")) }}
           <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a>
           ({{.Params.category}})
+          {{ $count = add $count 1 }}
         {{ end }}
+      {{ end }}
+      {{ if (eq $count 0) }}
+        None
       {{ end }}
     </li>
 
     <li>
       <span>Helped in:</span>
+      {{ $count := 0 }}
       {{ range .Site.AllPages }}
         {{ if (and (in .Params.helper $name) (in .Params.Type "public")) }}
           <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a>
           ({{.Params.category}})
+          {{ $count = add $count 1 }}
         {{ end }}
+      {{ end }}
+      {{ if (eq $count 0) }}
+        None
       {{ end }}
     </li>
 	</ul>
