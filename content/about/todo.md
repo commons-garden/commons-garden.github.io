@@ -54,7 +54,7 @@ How we write and update documentation for our facilitators?
 - [x] blockquote, no count, no hover if alone
 - [x] fix select error on non-firefox browsers
 
-## Person template
+## Gardener template
 
 - [x] loop thru facilitator, author, helper
 - [x] loop only thru public
@@ -68,7 +68,7 @@ How we write and update documentation for our facilitators?
 - [x] loop content on single
 - [x] manual/tutorial on how to write and edit person
 
-## Organization
+## Organization template
 
 - [ ] organization wiring
 - [ ] organization template
