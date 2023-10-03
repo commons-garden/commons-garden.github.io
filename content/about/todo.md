@@ -8,10 +8,11 @@ author: nonlinear
 date: 2023-09-10
 ---
 
-## Documentation
+## First
 
 - [ ] document p2p-delete 📌
-- [ ] document knowledge ecology 📌
+- [x] document knowledge ecology 📌
+- [ ] keep working on [category/criteria diagram](https://hackmd.io/@mixmix/rywE-3P1T/edit)
 
 ## Admin
 
@@ -48,6 +49,7 @@ How we write and update documentation for our facilitators?
 - [ ] design open graph image
 - [ ] design favicons
 - [ ] design stickers
+- [ ] reorganize `layout.scss`
 - [ ] bg animation (vector, subtle)
 - [x] blockquote, no count, no hover if alone
 - [x] fix select error on non-firefox browsers
@@ -56,16 +58,20 @@ How we write and update documentation for our facilitators?
 
 - [x] loop thru facilitator, author, helper
 - [x] loop only thru public
-- [ ] empty state (no answer)
+- [ ] empty state (xno answer)
 - [x] fix person dropdown
 - [x] from person to team
 - [x] from team to gardener
 - [x] fix dropdown
 - [x] from manual to tutorial
-- [ ] organization wiring
 - [x] style person image
 - [x] loop content on single
 - [x] manual/tutorial on how to write and edit person
+
+## Organization
+
+- [ ] organization wiring
+- [ ] organization template
 
 ## About 
 
@@ -106,3 +112,5 @@ System presents user with URL of changed objects, on commit.
 - [ ] why title? It should point to filename
 - [ ] why category? It should point to folder
 - [ ] reset select
+- [x] emoji
+- [ ] [mermaid diagrams](https://gohugo.io/content-management/diagrams/)
