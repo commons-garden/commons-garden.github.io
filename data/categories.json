@@ -23,6 +23,14 @@
         "pluralize": "yes",
         "criteria": "pending"
     },
+     {
+        "title": "salon",
+        "group": "deliverables",
+        "description": "Discourse explorations",
+        "status": "public",
+        "pluralize": "yes",
+        "criteria": "pending"
+    },
     {
         "title": "wireframe",
         "group": "deliverables",

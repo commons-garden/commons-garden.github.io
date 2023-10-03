@@ -30,6 +30,21 @@
  {{ end }}
  {{ end }}
 
+ {{ else if (in .Params.category "salon") }}
+
+      {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "salon") }}
+      {{ if (in .Params.type "public") }}
+      <option value="{{ .RelPermalink }}">
+       
+       {{ .Title | upper }}
+       
+       
+ </option>
+ {{ end }}
+ {{ end }}
+ {{ end }}
+
 {{ else if (in .Params.category "wireframe") }}
 
       {{ range .Site.RegularPages }}

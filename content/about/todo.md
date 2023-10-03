@@ -17,6 +17,7 @@ date: 2023-09-10
 
 - [ ] review [open collective](https://opencollective.com/commons-garden)
 - [ ] define gardeners statuses (when a grdener was facilitated by other and then facilitate someone, etc)
+- [ ] what do we call our ongoing discussion groups? other than salon?
 
 ## subpages
 
@@ -101,7 +102,7 @@ System presents user with URL of changed objects, on commit.
 
 ## Tech Debt
 
-- [ ] categories should point to .json, not category-description
+- [ ] categories should point to .json, not category-description or nav-post
 - [ ] why title? It should point to filename
 - [ ] why category? It should point to folder
 - [ ] reset select
