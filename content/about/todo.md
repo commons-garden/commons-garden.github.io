@@ -13,6 +13,7 @@ date: 2023-09-10
 - [ ] document p2p-delete 📌
 - [x] document knowledge ecology 📌
 - [ ] keep working on [category/criteria diagram](https://hackmd.io/@mixmix/rywE-3P1T/edit)
+- [ ] one emoji per category
 
 ## Admin
 
@@ -53,6 +54,7 @@ How we write and update documentation for our facilitators?
 - [ ] bg animation (vector, subtle)
 - [x] blockquote, no count, no hover if alone
 - [x] fix select error on non-firefox browsers
+- [ ] fix text wrap on gardener template (break-word)
 
 ## Gardener template
 

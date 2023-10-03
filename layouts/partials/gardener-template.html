@@ -14,7 +14,7 @@
   </div>
 
 	<ul class="status">
-    <li>
+<!--     <li>
       <span>Organizations I belong:</span> (pending)
       {{ range .Site.AllPages }}
         {{ if (and (in .Params.members $name) (in .Params.Type "public")) }}
@@ -22,7 +22,7 @@
           ({{.Params.category}})
         {{ end }}
       {{ end }}
-    </li>
+    </li> -->
 
     <li>
       <span>Facilitator in:</span>
@@ -35,7 +35,7 @@
         {{ end }}
       {{ end }}
       {{ if (eq $count 0) }}
-        None
+        <em>None yet</em>
       {{ end }}
     </li>
 
@@ -50,7 +50,7 @@
         {{ end }}
       {{ end }}
       {{ if (eq $count 0) }}
-        None
+        <em>None yet</em>
       {{ end }}
     </li>
 
@@ -65,7 +65,7 @@
         {{ end }}
       {{ end }}
       {{ if (eq $count 0) }}
-        None
+        <em>None yet</em>
       {{ end }}
     </li>
 	</ul>
