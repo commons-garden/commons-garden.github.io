@@ -8,9 +8,15 @@ author: nonlinear
 date: 2023-09-10
 ---
 
+## Documentation
+
+- [ ] document p2p-delete 📌
+- [ ] document knowledge ecology 📌
+
 ## Admin
 
 - [ ] review [open collective](https://opencollective.com/commons-garden)
+- [ ] define gardeners statuses (when a grdener was facilitated by other and then facilitate someone, etc)
 
 ## subpages
 
@@ -30,6 +36,7 @@ Discuss how we do things
 
 How we write and update documentation for our facilitators?
 
+- [ ] list inventory of initial tutorials we need
 - [ ] maybe as we pass on knowledge, we write our manuals
 - [ ] checklists. CHECKLISTS!
 - [ ] adding categories tutorial: css, nav, json, etc
@@ -54,11 +61,15 @@ How we write and update documentation for our facilitators?
 - [x] from team to gardener
 - [x] fix dropdown
 - [x] from manual to tutorial
-- [ ] from about to root
 - [ ] organization wiring
 - [x] style person image
 - [x] loop content on single
 - [x] manual/tutorial on how to write and edit person
+
+## About 
+
+- [ ] from about to root
+- [ ] how many root pages we want?
 
 ## Glossary
 
@@ -66,7 +77,7 @@ How we write and update documentation for our facilitators?
 - [ ] glossary vs context
 - [ ] term + synonyms + deprecated (use this one instead and why)
 - [ ] how to ensure glossary is being read, consulted?
-- [ ] repackaging content
+- [ ] repackaging content?
 
 ## version control
 
