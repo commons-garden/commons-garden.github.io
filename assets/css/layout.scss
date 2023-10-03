@@ -14,7 +14,7 @@ body {
 
 }
 
-.team .badge {
+.gardener .badge {
 	@media (min-width: $bp-small) {
 		display: grid;
 		width: 100%;
@@ -88,6 +88,9 @@ article {
 		&:not(:first-child) {
 			margin-top: var(--gap-5);
 		}
+	}
+	img {
+		max-width: 100%;
 	}
 }
 
@@ -163,10 +166,6 @@ header.header, .main.description {
 	}
 }
 
-
-.home .main.description:before {
-	@include find(red);
-}
 
 
 article {
@@ -510,6 +509,13 @@ header.header {
 		top: -1px;
 		z-index: 10000;
 	}
+	.description {
+		border-top: none !important;
+		line-height: 120%;
+		font-size: 90%;
+		padding-top: var(--gap-2) !important;
+		padding-bottom: var(--gap-2) !important;
+	}
 
 	margin-bottom: var(--gap-5);
 	.description {
@@ -529,19 +535,22 @@ header.header {
     &.primary {
       select {
         @extend h1;
+        border-top: none;
         max-height: 60px;
         background-position: right 20px;
         &:hover, &:focus {
           background-position: right 23px;
         }
+        	margin-top: -2px;
+	@-moz-document url-prefix() {
+		margin-top: 0;
+	}
       }
     }
     &.secondary {
       select {
         @extend h2;
         max-height: 40px;
-        margin-bottom: -1px;
-
         background-position: right 10px;
         &:hover, &:focus {
           background-position: right 13px;
@@ -554,6 +563,7 @@ header.header {
       background-image: url(../images/arrow-down.svg);
       background-repeat: no-repeat;
       @include transition;
+      @include radius(0);
       &:focus, &:hover {
         background-color: white;
         border: solid .5px var(--color-fg);
@@ -583,6 +593,7 @@ header.header {
     }
   }
 }
+
 
 
 // nav.secondary {

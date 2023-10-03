@@ -36,8 +36,8 @@
 {{ else if (in .Params.category "initiative") }}
   {{ partial "category-template.html" . }}
 
-{{ else if (in .Params.category "team") }}
-  {{ partial "team-template.html" . }}
+{{ else if (in .Params.category "gardener") }}
+  {{ partial "gardener-template.html" . }}
 
 {{ else }}
   <article>{{ .Content }}</article>
