@@ -1,16 +1,15 @@
 ---
-title: Knowledge Ecology
+title: Pinned comments
 type: public
 status: ongoing
-description: Field coherence discussion
 category: salon
 author: mixmix
+description: best-of signal group
 facilitator: nonlinear
 date: 2023-10-03
 ---
 
-# Knowledge Ecology pinned messages
-
+> From [Knowledge Ecology](/salon/knowledge-ecology/) salon
 
 ---
 
