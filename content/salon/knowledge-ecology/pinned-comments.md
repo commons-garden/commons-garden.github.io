@@ -3,9 +3,9 @@ title: Pinned comments
 type: public
 status: ongoing
 category: salon
-author: mixmix
+author: [mixmix]
 description: best-of signal group
-facilitator: nonlinear
+facilitator: [nonlinear]
 date: 2023-10-03
 ---
 

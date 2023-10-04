@@ -4,7 +4,7 @@ type: public
 status: draft
 description: Analytics + consent
 category: initiative
-author: nonlinear
+author: [nonlinear]
 date: 2023-06-30
 ---
 
