@@ -1,7 +1,7 @@
 ---
 title: show-and-tell
 description: gather to learn, ask questions, get pumped, and cheer on your peers
-facilitator: mixmix
+facilitator: [mixmix]
 type: public
 category: initiative
 ---

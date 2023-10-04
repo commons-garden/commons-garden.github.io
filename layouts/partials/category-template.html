@@ -9,7 +9,7 @@
 		{{ with .Params.Facilitator }}
 		<li>
 			<span>Facilitator:</span>
-      {{ range (split . ", ") }}
+      {{ range . }}
         {{ if (fileExists (printf "/person/%s.md" .)) -}}
           <a href="/person/{{.}}">{{.}}</a>
         {{ else }} {{.}}
@@ -43,7 +43,7 @@
     {{ with .Params.Author }}
 		<li>
 			<span>Author:</span>
-      {{ range (split . ", ") }}
+      {{ range . }}
         {{ if (fileExists (printf "/person/%s.md" .)) -}}
           <a href="/person/{{.}}">{{.}}</a>
         {{ else }} {{.}}
@@ -59,7 +59,7 @@
 				{{ with .Params.Reviewed }}
 		<li>
 			<span>reviewed by:</span>
-      {{ range (split . ", ") }}
+      {{ range . }}
         {{ if (fileExists (printf "/person/%s.md" .)) -}}
           <a href="/person/{{.}}">{{.}}</a>
         {{ else }} {{.}}
@@ -83,7 +83,7 @@
 				{{ with .Params.Implemented }}
 		<li>
 			<span>implemented in:</span>
-      {{ range (split . ", ") }}
+      {{ range . }}
         {{ if (fileExists (printf "/organization/%s.md" .)) -}}
           <a href="/organization/{{.}}">{{.}}</a>
         {{ else }} {{.}}

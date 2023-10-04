@@ -1,8 +1,15 @@
 {{ $name := .Params.title }}
 
+{{ $PublicPages := where .Site.AllPages "Params.Type" "public" }}
+{{ $FacilitatorPages := where $PublicPages "Params.facilitator" "intersect" (slice $name) }}
+{{ $AuthorPages := where $PublicPages ".Params.author" "intersect" (slice $name) }}
+{{ $HelpedPages := where $PublicPages ".Params.helped" "intersect" (slice $name) }}
+
+{{ $ImageTypes := slice "jpg" "jpeg" "png" "svg" }}
+
 <article>
   <div class="badge">
-  {{ range (slice "jpg" "jpeg" "png" "svg") }}
+  {{ range $ImageTypes }}
     {{ $img_src := (printf "/images/gardener/%s.%s" $name .) }}
     {{ if (fileExists (add "static" $img_src)) }}
       <div 
@@ -14,7 +21,8 @@
   </div>
 
 	<ul class="status">
-<!--     <li>
+    <!--
+    <li>
       <span>Organizations I belong:</span> (pending)
       {{ range .Site.AllPages }}
         {{ if (and (in .Params.members $name) (in .Params.Type "public")) }}
@@ -22,49 +30,38 @@
           ({{.Params.category}})
         {{ end }}
       {{ end }}
-    </li> -->
+    </li>
+    -->
 
     <li>
       <span>Facilitator in:</span>
-      {{ $count := 0 }}
-      {{ range .Site.AllPages }}
-        {{ if (and (in .Params.facilitator $name) (in .Params.Type "public")) }}
-          <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a>
-          ({{.Params.category}})
-          {{ $count = add $count 1 }}
-        {{ end }}
+      {{ range $FacilitatorPages }}
+        <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a>
+        ({{.Params.category}})
       {{ end }}
-      {{ if (eq $count 0) }}
+      {{ if len $FacilitatorPages | eq 0 }}
         <em>None yet</em>
       {{ end }}
     </li>
 
     <li>
       <span>Author in:</span>
-      {{ $count := 0 }}
-      {{ range .Site.AllPages }}
-        {{ if (and (in .Params.author $name) (in .Params.Type "public")) }}
-          <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a>
-          ({{.Params.category}})
-          {{ $count = add $count 1 }}
-        {{ end }}
+      {{ range $AuthorPages }}
+        <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a>
+        ({{.Params.category}})
       {{ end }}
-      {{ if (eq $count 0) }}
+      {{ if len $AuthorPages | eq 0 }}
         <em>None yet</em>
       {{ end }}
     </li>
 
     <li>
       <span>Helped in:</span>
-      {{ $count := 0 }}
-      {{ range .Site.AllPages }}
-        {{ if (and (in .Params.helper $name) (in .Params.Type "public")) }}
-          <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a>
-          ({{.Params.category}})
-          {{ $count = add $count 1 }}
-        {{ end }}
+      {{ range $HelpedPages }}
+        <a href="/{{.Params.category}}/{{.File.ContentBaseName}}">{{.Params.title}}</a>
+        ({{.Params.category}})
       {{ end }}
-      {{ if (eq $count 0) }}
+      {{ if len $HelpedPages | eq 0 }}
         <em>None yet</em>
       {{ end }}
     </li>

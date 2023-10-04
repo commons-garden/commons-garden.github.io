@@ -4,7 +4,7 @@ type: public
 description: Private Groups – User Experience
 status: draft
 scope: SSB
-author: nonlinear, staltz
+author: [nonlinear, staltz]
 project: ssb-groups
 category: wireframe
 date: 2023-06-30

@@ -6,11 +6,11 @@ description: How to post and reply to messages
 status: stable
 scope: SSB
 license: CC0-1.0
-author: mixmix
-facilitator: mixmix
+author: [mixmix]
+facilitator: [mixmix]
 initiative: 
-reviewed: staltz, cel
-implemented: patchwork, manyverse, planetary, patchfox
+reviewed: [staltz, cel]
+implemented: [patchwork, manyverse, planetary, patchfox]
 date: 2023-03-07
 link: https://github.com/ssbc/sips/blob/964e9a5cf407f1adf6e26f3b656c0e769f21caf4/010.md
 platform: github

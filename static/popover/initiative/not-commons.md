@@ -4,7 +4,7 @@ type: public
 status: ongoing
 description: Engaging with profiteers
 category: initiative
-author: nonlinear, cblgh
+author: [nonlinear, cblgh]
 date: 2023-06-05
 ---
 

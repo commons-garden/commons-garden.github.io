@@ -4,7 +4,7 @@ type: public
 status: ongoing
 description: Our next steps
 category: about
-author: nonlinear
+author: [nonlinear]
 date: 2023-09-10
 ---
 

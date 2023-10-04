@@ -4,8 +4,8 @@ type: public
 status: ongoing
 description: Field coherence discussion
 category: salon
-author: mixmix
-facilitator: nonlinear
+author: [mixmix]
+facilitator: [nonlinear]
 date: 2023-10-03
 ---
 
