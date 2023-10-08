@@ -50,6 +50,7 @@ How we write and update documentation for our facilitators?
 
 - [ ] design open graph image
 - [ ] design favicons
+- [ ] phase out dropdown menu for accordion + list
 - [ ] design stickers
 - [ ] reorganize `layout.scss`
 - [ ] bg animation (vector, subtle)
@@ -75,6 +76,8 @@ How we write and update documentation for our facilitators?
 
 ## Organization template
 
+- [ ] review [hugo aliases](https://gohugo.io/content-management/urls/#aliases)
+- [ ] review `/template` layout, scale it
 - [ ] organization wiring
 - [ ] organization template
 
