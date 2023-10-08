@@ -3,7 +3,7 @@ title: Knowledge Ecology
 type: public
 status: ongoing
 description: Field coherence discussion
-category: salon
+category: initiative
 author: [mixmix]
 facilitator: [nonlinear]
 date: 2023-10-03

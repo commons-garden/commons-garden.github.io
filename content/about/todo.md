@@ -14,6 +14,7 @@ date: 2023-09-10
 - [x] document knowledge ecology 📌
 - [ ] keep working on [category/criteria diagram](https://hackmd.io/@mixmix/rywE-3P1T/edit)
 - [ ] one emoji per category
+- [x] remove salon, move to initiative
 
 ## Admin
 
