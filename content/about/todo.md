@@ -8,33 +8,39 @@ author: [nonlinear]
 date: 2023-09-10
 ---
 
-## First
+## Content
 
 - [ ] document p2p-delete 📌
-- [x] document knowledge ecology 📌
-- [ ] keep working on [category/criteria diagram](https://hackmd.io/@mixmix/rywE-3P1T/edit)
-- [ ] one emoji per category
-- [x] remove salon, move to initiative
+- [ ] update initiatives Michael wants to facilitate, define needs and next steps
+- [ ] "needs" tags (resources, skillset, etc)
+- [ ] "type" tags (language, wireframe)
+- [ ] 2 emoji per initiative/spec
+- [ ] list volunteer types
+- [ ] redirect policy, template: `p2p-delete` becomes `p2p_delete`
+
+## Hugo
+
+- [ ] mapping category diagram into hugo [category/criteria diagram](https://hackmd.io/@mixmix/rywE-3P1T/edit)
+- [ ] merge wireframe into spec + type
+- [ ] subpages
+	- [ ] page template checkjs if slug has a folder and:
+		- lists all public pages in alphabetical order, into a table of content
+		- folder pages point to original page
+	- [ ] subgroups should not be listed on list.html (or should? we need at least a new template)
+
+## Training gardeners
+
+- [ ] tutorials
+- [ ] statuses
+- [ ] definition of proper training
+- [ ] who can educate others? how to prevent bottleneck?
 
 ## Admin
 
+- [ ] legal fiction, NGO
 - [ ] review [open collective](https://opencollective.com/commons-garden)
-- [ ] define gardeners statuses (when a grdener was facilitated by other and then facilitate someone, etc)
-- [ ] what do we call our ongoing discussion groups? other than salon?
 
-## subpages
 
-- [ ] page template checkjs if slug has a folder and:
-	- lists all public pages in alphabetical order, into a table of content
-	- folder pages point to original page
-- [ ] subgroups should not be listed on list.html (or should? we need at least a new template)
-
-## Workflows
-
-Discuss how we do things
-
-- [ ] redirect template: `p2p-delete` becomes `p2p_delete`
-- [ ] redirect policy
 
 ## Internal documentation
 
@@ -48,7 +54,22 @@ How we write and update documentation for our facilitators?
 
 ## Design
 
+- [ ] redesign on figma
+- [ ] categories have colors:
+	- organization: blue
+	- person: yellow
+	- spec: pink
+	- initiative: green
+	- about: grey
 - [ ] design open graph image
+- [ ] slide design:
+	- title
+	- history
+	- description
+	- pages (how to separate?)
+	- frontmatter badges
+	- needs (with actionables)
+	- credits (people)
 - [ ] design favicons
 - [ ] phase out dropdown menu for accordion + list
 - [ ] design stickers
