@@ -8,6 +8,17 @@ author: [nonlinear]
 date: 2023-09-10
 ---
 
+## Show-and-tell
+
+- [ ] event category
+- [ ] past/upcoming
+- [ ] podcast?
+- [ ] .ics (how to automate)
+- [ ] show time in local area
+- [ ] social media
+	- [ ] mastodon
+	- [ ] youtube?
+
 ## Content
 
 - [ ] document p2p-delete 📌
