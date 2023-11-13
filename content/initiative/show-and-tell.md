@@ -29,22 +29,30 @@ backed by Secure Scuttlebutt
 <iframe width="500" height="315" src="https://www.youtube-nocookie.com/embed/XD74RYm-DIM?si=jdLSUzEpeeb4Mxwg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {{< /rawhtml >}}
 
-Sure, I can simplify the language while keeping it engaging and clear:
 
-1. **Corey's Project**: Corey, a game developer from New York, introduces 'Tilde Friends', his new project. It's a platform for creating and sharing apps using something called Secure Scuttlebutt.
+**Corey's Project**
 
-2. **The Tech Behind It**: 'Tilde Friends' is built using a programming language called C and runs on both Raspberry Pi and Android devices. It features its own web server, a system for users to create accounts, and a safe area for apps to run.
+Corey, a game developer from New York, introduces 'Tilde Friends', his new project. It's a platform for creating and sharing apps using something called Secure Scuttlebutt.
 
-3. **Key Features**: Corey demonstrates how to use 'Tilde Friends' for making an account, posting content, and modifying apps. The platform allows users to share and update apps across a network securely.
+**The Tech Behind It**
 
-4. **User Interface and Experience**: Corey talks about the design and usability of 'Tilde Friends'. He focuses on making the platform easy and enjoyable to use, with features that update in real time.
+'Tilde Friends' is built using a programming language called C and runs on both Raspberry Pi and Android devices. It features its own web server, a system for users to create accounts, and a safe area for apps to run.
 
-5. **Future Plans and Community**: Corey sees 'Tilde Friends' as a project driven by his personal passion. He's excited about adding new features, like building a community around the platform and allowing apps to work together more effectively. He also mentions potential expansion to mobile devices.
+**Key Features**
 
-This summary presents Corey's project in straightforward terms, focusing on its creation, technical aspects, functionalities, user experience, and future development goals.
+Corey demonstrates how to use 'Tilde Friends' for making an account, posting content, and modifying apps. The platform allows users to share and update apps across a network securely.
 
-Links:
-- https://www.tildefriends.net/
+
+**User Interface and Experience**
+
+Corey talks about the design and usability of 'Tilde Friends'. He focuses on making the platform easy and enjoyable to use, with features that update in real time.
+
+
+**Future Plans and Community**
+
+Corey sees 'Tilde Friends' as a project driven by his personal passion. He's excited about adding new features, like building a community around the platform and allowing apps to work together more effectively. He also mentions potential expansion to mobile devices.
+
+[tildefriends](https://www.tildefriends.net/)
 
 
 {{< rawhtml >}}
