@@ -14,6 +14,11 @@ body {
 
 }
 
+.scroll {
+	overflow: auto;
+	width: 100%;
+}
+
 .gardener .badge {
 	@media (min-width: $bp-small) {
 		display: grid;
