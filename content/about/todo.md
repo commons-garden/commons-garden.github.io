@@ -1,6 +1,6 @@
 ---
 title: TODO
-type: public
+display: public
 status: ongoing
 description: Our next steps
 category: about
@@ -8,9 +8,30 @@ author: [nonlinear]
 date: 2023-09-10
 ---
 
+## Platform Agenda
+
+1. How are we feeling? (round)
+2. Review TODO list
+3. Update TODO list
+4. Decide what to tackle
+5. Update TODO list in the end
+
+## Maintenance Agenda
+
+1. How are we feeling? (round)
+2. Do we have any documentation updates? (add to todo, try to resolve live)
+3. Do we have any event that needs push? (add to todo)
+4. Do we have any post mortem/debrief on latest events?
+
+## Category exercise
+
+- [ ] move wireframe as a type of spec
+- [ ] create shadow category "implementation"
+
 ## Show-and-tell
 
 - [ ] event category
+- [ ] a concept of phases? leads, accepted, scheduled, etc.
 - [ ] past/upcoming
 - [ ] podcast?
 - [ ] .ics (how to automate)
