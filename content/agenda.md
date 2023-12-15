@@ -1,9 +1,8 @@
 ---
-title: TODO
-display: public
+title: Agenda
+display: private
 status: ongoing
-description: Our next steps
-category: about
+description: Agenda and TODO
 author: [nonlinear]
 date: 2023-09-10
 ---
