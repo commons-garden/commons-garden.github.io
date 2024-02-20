@@ -1,6 +1,6 @@
 ---
 title: Knowledge Ecology
-type: public
+display: public
 status: ongoing
 description: Field coherence discussion
 category: initiative

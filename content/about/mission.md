@@ -1,6 +1,6 @@
 ---
 title: Mission statement
-type: public
+type: hidden
 description: Our goals
 category: about
 date: 2023-03-07

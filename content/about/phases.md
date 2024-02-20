@@ -1,6 +1,6 @@
 ---
 title: Project phases
-type: public
+display: public
 status: ongoing
 description: Our milestones
 category: about

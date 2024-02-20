@@ -1,6 +1,6 @@
 ---
 title: Not Commons
-type: public
+display: public
 status: ongoing
 description: Engaging with profiteers
 category: initiative

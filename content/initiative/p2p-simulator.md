@@ -1,7 +1,7 @@
 ---
 title: P2P Simulator
-type: public
-status: draft
+display: public
+display: draft
 description: network simulator
 category: initiative
 author: [nonlinear, cblgh, mixmix]

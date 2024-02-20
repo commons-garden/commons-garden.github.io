@@ -1,7 +1,7 @@
 ---
 title: P2P Analytics
-type: public
-status: draft
+display: public
+display: draft
 description: Analytics + consent
 category: initiative
 author: [nonlinear]

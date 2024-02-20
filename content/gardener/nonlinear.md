@@ -2,7 +2,7 @@
 title: nonlinear
 imageType: jpg
 description: the anagram of my name is anarchist fool
-type: public
+display: public
 category: gardener
 date: 2023-03-07
 ---

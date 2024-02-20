@@ -1,6 +1,6 @@
 ---
 title: Literature
-type: public
+display: public
 description: Our Readings
 status: ongoing
 category: about

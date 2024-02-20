@@ -2,7 +2,7 @@
 title: show-and-tell
 description: gather to learn, ask questions, get pumped, and cheer on your peers
 facilitator: [mixmix]
-type: public
+display: public
 category: initiative
 ---
 

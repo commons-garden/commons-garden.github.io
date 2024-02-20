@@ -1,24 +1,19 @@
 ---
 title: Goals
-type: draft
+display: draft
 description: What we want and how we go about it
 category: about
 author: [nonlinear]
 date: 2023-11-01
 ---
 
-> Foster a community of effective an gentle volunteering 
-
-> Making commons projects legible to outsiders, so volunteers can come and go with less friction
-
-> Empower facilitators to document initiatives, meetings and deliverables so we have honest, up-to-date statuses on projects
-
-> Sponsor initiatives to discuss seminal/existential topics
-
-> Reduce learning curve for proper documentation:
+- Foster a community of effective and gentle volunteering
+- Making commons' projects legible to everyone, so collaboration can form with less friction
+	- Empower facilitators to document initiatives, meetings and deliverables so we have honest, up-to-date statuses on projects
+		- Reduce learning curve for proper documentation:
  markdown, git + shared notes, writing standards (naming convention, frontmatter criteria, tags)
-
-> A formalized way to request (needs) and offer help (volunteering)
+- Sponsor initiatives to discuss seminal/existential topics
+- A formalized way to request (needs) and offer help (volunteering)
 
 ## Tools needed:
 

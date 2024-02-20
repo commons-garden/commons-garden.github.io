@@ -1,6 +1,6 @@
 ---
 title: P2P Delete
-type: public
+display: public
 status: ongoing
 facilitator: [mixmix, nonlinear]
 description: Serverless irretrievable delete

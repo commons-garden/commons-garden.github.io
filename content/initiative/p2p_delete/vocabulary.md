@@ -1,6 +1,6 @@
 ---
 title: Vocabulary
-type: public
+display: public
 status: ongoing
 description: Serverless irretrievable delete
 date: 2023-03-07

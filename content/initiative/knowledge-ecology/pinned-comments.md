@@ -1,6 +1,6 @@
 ---
 title: Pinned comments
-type: public
+display: public
 status: ongoing
 category: salon
 author: [mixmix]

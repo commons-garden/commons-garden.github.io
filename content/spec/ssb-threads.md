@@ -1,7 +1,7 @@
 ---
 title: SSB threads
 category: spec
-type: public
+display: public
 description: How to post and reply to messages
 status: stable
 scope: SSB
