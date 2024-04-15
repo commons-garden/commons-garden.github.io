@@ -106,7 +106,7 @@ header {
   }
   &.page {
     text-transform: uppercase;
-       padding: calc(var(--spacing) / 2) var(--spacing);
+    padding: calc(var(--spacing) / 2) var(--spacing);
   }
   &.description {
     padding: calc(var(--spacing) / 2) var(--spacing);
@@ -381,7 +381,7 @@ table {
     .btn {
       padding: var(--gap-half) var(--gap-2);
       margin-right: 5px;
-        @include fadeInLeft;
+      @include fadeInLeft;
     }
     span {
       font-family: var(--font-title);

@@ -4,12 +4,14 @@
 {{ $PublicPages := where .Site.AllPages ".Params.display" "public" }}
 {{ $GardenerPages := where $PublicPages ".Type" "eq" "gardener" }}
 
+
 <!--
 {{ $FacilitatorPages := where $PublicPages "Params.facilitator" "intersect" (slice $name) }}
 {{ $AuthorPages := where $PublicPages ".Params.author" "intersect" (slice $name) }}
 -->
 
 {{ $img_src := partial "get-organization-img.html" $name }}
+
 
 <div class="cover">
   {{ if $img_src }}

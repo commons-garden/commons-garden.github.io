@@ -2,7 +2,7 @@
 
 {{ $emails := slice }}
 {{ range $organizationPage.Params.contacts }}
-  {{ $gardener := $organizationPage.Site.GetPage (printf "/gardener/%s.md" .) }} 
+  {{ $gardener := $organizationPage.Site.GetPage (printf "/gardener/%s.md" .) }}
   {{ $emails = append $gardener.Params.email $emails }}
 {{ end }}
 

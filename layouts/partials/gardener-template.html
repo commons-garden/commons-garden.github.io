@@ -9,11 +9,13 @@
 {{ $AuthorPages := where $PublicPages ".Params.author" "intersect" (slice $name) }}
 {{ $HelpedPages := where $PublicPages ".Params.helpers" "intersect" (slice $name) }}
 
+
 <div class="cover">
   {{ $img_src := partial "get-gardener-img.html" $name }}
   {{ if $img_src }}
     <div class="avatar" style="background-image: url({{ $img_src }})"></div>
   {{ end }}
+
 
   <ul class="status">
     <li>

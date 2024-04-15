@@ -4,6 +4,7 @@
   {{ $emails := partial "get-organization-contacts.html" $page }}
   {{ $emails_delimit := delimit $emails "," }}
 
+
   <div class="needs">
     <h2>Help needed:</h2>
     {{ with .Params.Needs }}
@@ -23,7 +24,7 @@
             ?
           </li>
         {{ end }}
-       </ol>
+      </ol>
     {{ end }}
   </div>
 {{ end }}
