@@ -1,4 +1,4 @@
-{{ $name := .organization }}
+{{ $name := .organizationName }}
 {{ $page := .page }}
 
 {{ $organization := $page.Site.GetPage (printf "/organization/%s.md" $name) }}
@@ -15,14 +15,14 @@
     {{ end }}
     
       <div class='more'>
-        <h2>{{ $name }}</h2>
+        <h2>{{ $organization.Params.Title }}</h2>
         <p>
           {{ $organization.Params.description | truncate 80 }}
         </p>
       </div>
 
     </div>"
-    >{{ $name }}</a
+    >{{ $organization.Params.Title }}</a
   >
 {{ else }}
   {{ $name }}

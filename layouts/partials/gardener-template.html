@@ -1,15 +1,13 @@
-{{ $name := .Params.title }}
+{{ $name := .Page.File.BaseFileName }}
+<!-- NOTE since Gardener.title may has spaces in it, we compare on file name -->
 {{ $page := . }}
 
 {{ $PublicPages := where .Site.AllPages "Params.display" "public" }}
 
-{{ $OrganizationPages := where .Site.AllPages "Type" "eq" "organization" }}
-<!-- $GardenersOrganizationPages := where .Site.AllPages "Params.members" "intersects" (slice $name) -->
-
+{{ $OrganizationPages := where $PublicPages "Type" "eq" "organization" }}
 {{ $FacilitatorPages := where $PublicPages "Params.facilitator" "intersect" (slice $name) }}
 {{ $AuthorPages := where $PublicPages ".Params.author" "intersect" (slice $name) }}
-{{ $HelpedPages := where $PublicPages ".Params.helped" "intersect" (slice $name) }}
-
+{{ $HelpedPages := where $PublicPages ".Params.helpers" "intersect" (slice $name) }}
 
 <div class="cover">
   {{ $img_src := partial "get-gardener-img.html" $name }}
@@ -17,17 +15,16 @@
     <div class="avatar" style="background-image: url({{ $img_src }})"></div>
   {{ end }}
 
-
   <ul class="status">
     <li>
-      <span>Organizations I belong:</span>
+      <span>Organizations:</span>
       <!-- CODE: extract a nicer function like get-gardener-organizations -->
       {{ range $OrganizationPages }}
         {{ $isMember := in .Params.members $name }}
         {{ if $isMember }}
           {{ $ctx := dict
             "page" $page
-            "organization" .Title
+            "organizationName" .File.BaseFileName
           }}
           {{ partial "popover-organization.html" $ctx }}
         {{ end }}

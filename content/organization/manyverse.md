@@ -2,5 +2,6 @@
 title: manyverse
 display: public
 date: 2023-07-18
-members: [staltz, powersource]
+members: [powersource]
+helpers: [staltz]
 ---

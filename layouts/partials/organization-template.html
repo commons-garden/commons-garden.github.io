@@ -1,18 +1,15 @@
-{{ $name := .Params.title }}
+{{ $name := .File.BaseFileName }}
 {{ $page := . }}
 
 {{ $PublicPages := where .Site.AllPages ".Params.display" "public" }}
 {{ $GardenerPages := where $PublicPages ".Type" "eq" "gardener" }}
 
-
 <!--
 {{ $FacilitatorPages := where $PublicPages "Params.facilitator" "intersect" (slice $name) }}
 {{ $AuthorPages := where $PublicPages ".Params.author" "intersect" (slice $name) }}
-{{ $HelpedPages := where $PublicPages ".Params.helped" "intersect" (slice $name) }}
 -->
 
 {{ $img_src := partial "get-organization-img.html" $name }}
-
 
 <div class="cover">
   {{ if $img_src }}
@@ -62,22 +59,19 @@
       <em>None yet</em>
     {{ end }}
     </li>
-
-    <li>
-      <span>Helped in:</span>
-      {{ range $HelpedPages }}
-      <a
-        href="/{{ .Params.category }}/{{ .File.ContentBaseName }}"
-        data-placement="top"
-        data-toggle="popover"
-        data-content="{{ .Params.category }} CODE: some more info"
-        >{{ .Params.title }}</a
-      >
-    {{ end }}
-      {{ if len $HelpedPages | eq 0 }}
-      <em>None yet</em>
-    {{ end }}
-    </li>
     -->
+
+    {{ if .Params.helpers }}
+      <li>
+        <span>Helped:</span>
+        {{ range .Params.helpers }}
+          {{ $ctx := dict
+            "page" $page
+            "gardener" .
+          }}
+          {{ partial "popover-gardener.html" $ctx }}
+        {{ end }}
+      </li>
+    {{ end }}
   </ul>
 </div>

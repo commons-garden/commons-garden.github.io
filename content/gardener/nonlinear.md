@@ -1,7 +1,7 @@
 ---
 title: nonlinear
-description: the anagram of my name is anarchist fool
 display: public
+description: the anagram of my name is anarchist fool
 date: 2023-03-07
 email: info@nicholasfrota.com
 ---
