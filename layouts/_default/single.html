@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
     <title>
-      {{ .Site.Title }}/{{ .Section }}/{{ with .File }}
+      {{ lower .Site.Title }}/{{ .Section }}/{{ with .File }}
         {{ .BaseFileName }}
       {{ end }}
     </title>
@@ -37,8 +37,13 @@
           {{ partial "menu-global.html" . }}
         </div>
       </header>
-<header class="page"><h1>{{ .Title }}</h1></header>
-  <!--     <header class="article">
+
+      <header class="page">
+        <h1>{{ .Title }}</h1>
+      </header>
+
+      <!--  
+      <header class="article">
         <a
           data-toggle="collapse"
           href="#menu-article"
@@ -52,14 +57,15 @@
         <div class="collapse collapse-content menu" id="menu-article">
           {{ partial "menu-article.html" . }}
         </div> -->
-        <!--
+      <!--
         <h2>
           <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>/ <a href="{{ .Site.BaseURL }}/{{ .Params.Category }}">{{ .Params.Category }}</a>
         </h2>
 
         <h1>{{ .Title }}</h1>
-        {{ partial "category.html" . }}  -->
+        {{ partial "category.html" . }}
       </header>
+      -->
 
       {{ if .Description }}
         <header class="description">
