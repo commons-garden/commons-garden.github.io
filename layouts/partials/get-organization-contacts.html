@@ -1,6 +1,9 @@
-{{ $organization := . }}
-{{ $contacts := $organization }}
-<!-- CODE: make this work -->
-{{ return "commons.garden@proton.me" }}
-<!-- $organization := $page.Site.GetPage (printf "/organization/%s.md" $name) -->
+{{ $organizationPage := . }}
 
+{{ $emails := slice }}
+{{ range $organizationPage.Params.contacts }}
+  {{ $gardener := $organizationPage.Site.GetPage (printf "/gardener/%s.md" .) }} 
+  {{ $emails = append $gardener.Params.email $emails }}
+{{ end }}
+
+{{ return $emails }}

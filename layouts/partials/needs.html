@@ -1,7 +1,8 @@
 {{ if .Params.Needs }}
   {{ $page := . }}
 
-  {{ $contact_mail := partial "get-organization-contacts.html" $page }}
+  {{ $emails := partial "get-organization-contacts.html" $page }}
+  {{ $emails_delimit := delimit $emails "," }}
 
   <div class="needs">
     <h2>Help needed:</h2>
@@ -10,7 +11,9 @@
         {{ range . }}
           <li class="need">
             Can you help with
-            <a href="mailto:{{ $contact_mail }}?subject={{ . }} help for {{ $page.Title }}" class="btn"
+            <a
+              href="mailto:{{ $emails_delimit }}?subject={{ . }} help for {{ $page.Title }}"
+              class="btn"
               data-placement="left"
               data-toggle="popover"
               data-content="Email us your availability and we'll connect you with this {{ $page.Section }}"
