@@ -1,0 +1,31 @@
+{{ define "nav/article" }}
+  <!-- set empty by layouts/index.html -->
+{{ end }}
+
+{{ define "main" }}
+  <main aria-role="main">
+    <div class="homepage-content">
+      {{ .Content }} <!-- see content/_index.md -->
+
+      <section>
+        <h2>Latest articles</h2>
+
+        <div class="grid-list">
+          <!-- CODE: we need to ensure just top pages appear here. maybe
+      "if not .IsNode"? for now I made internal pages private -->
+          {{ range first 6 .Site.RegularPages }}
+            {{ if (in .Params.display "public") }}
+              <a class="item" href="{{ .RelPermalink }}">
+                <h2>{{ .Title }}</h2>
+                <div class="badge">{{ .Section }}</div>
+                <p>{{ .Description }}</p>
+              </a>
+            {{ end }}
+          {{ end }}
+
+        </div>
+      </section>
+    </div>
+  </main>
+{{ end }}
+

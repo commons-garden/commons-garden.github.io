@@ -1,7 +1,11 @@
-baseURL = "https://v2-commons-garden-4d5a03b3c028b9a59cfab0781751505cd846b19acfc77.gitlab.io"
-repo = "https://gitlab.com/commons-garden/v2"
+baseURL = "https://commons.garden"
+repo = "https://gitlab.com/commons-garden/commons-garden.gitlab.io"
 languageCode = "en-us"
 description = "Enhancing knowledge commons"
-title = "Commons.Garden"
+title = "commons.garden"
 publishDir = "public"
 enableEmoji = true
+
+[taxonomies]
+  category = "categories"
+

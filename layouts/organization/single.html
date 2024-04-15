@@ -1,0 +1,92 @@
+{{ define "main" }}
+  {{ $name := .File.BaseFileName }}
+  {{ $page := . }}
+
+  {{ $PublicPages := where .Site.AllPages ".Params.display" "public" }}
+  {{ $GardenerPages := where $PublicPages ".Type" "eq" "gardener" }}
+
+
+  <!--
+  {{ $FacilitatorPages := where $PublicPages "Params.facilitator" "intersect" (slice $name) }}
+  {{ $AuthorPages := where $PublicPages ".Params.author" "intersect" (slice $name) }}
+  -->
+
+  {{ $img_src := partial "organization/get-img.html" $name }}
+
+
+  <div class="cover">
+    {{ if $img_src }}
+      <div class="avatar" style="background-image: url({{ $img_src }})"></div>
+    {{ end }}
+
+
+    <ul class="status">
+      <!-- CODE: discuss organization statuses. unify? -->
+      <li>
+        <span>Members:</span>
+        {{ range .Params.members }}
+          {{ $ctx := dict
+            "page" $page
+            "gardener" .
+          }}
+          {{ partial "gardener/popover.html" $ctx }}
+        {{ end }}
+      </li>
+
+      <!--
+      <li>
+        <span>Facilitator in:</span>
+        {{ range $FacilitatorPages }}
+        <a href="/{{ .Params.category }}/{{ .File.ContentBaseName }}"
+          >{{ .Params.title }}</a
+        >
+        ({{ .Params.category }})
+      {{ end }}
+        {{ if len $FacilitatorPages | eq 0 }}
+        <em>None yet</em>
+      {{ end }}
+      </li>
+
+      <li>
+        <span>Author in:</span>
+        {{ range $AuthorPages }}
+        <a
+          href="/{{ .Params.category }}/{{ .File.ContentBaseName }}"
+          data-placement="top"
+          data-toggle="popover"
+          data-content="{{ .Params.category }} CODE: some more info"
+          >{{ .Params.title }}</a
+        >
+      {{ end }}
+        {{ if len $AuthorPages | eq 0 }}
+        <em>None yet</em>
+      {{ end }}
+      </li>
+      -->
+
+      {{ if .Params.helpers }}
+        <li>
+          <span>Helped:</span>
+          {{ range .Params.helpers }}
+            {{ $ctx := dict
+              "page" $page
+              "gardener" .
+            }}
+            {{ partial "gardener/popover.html" $ctx }}
+          {{ end }}
+        </li>
+      {{ end }}
+    </ul>
+
+  </div>
+
+  {{ .Content }}
+
+  {{ if .Params.Link }}
+    <p>
+      <a href="{{ .Params.Link }}" class="btn">Visit {{ .Title }}</a>
+    </p>
+  {{ end }}
+
+  {{ partial "needs.html" . }}
+{{ end }}

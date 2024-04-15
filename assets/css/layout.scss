@@ -207,14 +207,34 @@ h1,
 h2 {
   margin: 0;
 }
-h1 {
-  font-size: 40px;
+
+h1 { font-size: 40px; }
+h2 { font-size: 20px; }
+h3 { font-size: 20px; }
+
+
+html.home header.global,
+html.home header.article,
+html.home header.description {
+  h1 {
+    font-size: 40px;
+  }
 }
-h2 {
-  font-size: 20px;
+
+html.list header.global,
+html.list header.article,
+html.list header.description {
+  h1 { font-size: 20px; }
+  h2 { font-size: 40px; }
+  h3 { font-size: 20px; }
 }
-h3 {
-  font-size: 20px;
+
+html.single header.global,
+html.single header.article,
+html.single header.description {
+  h1 { font-size: 20px; }
+  h2 { font-size: 40px; }
+  h3 { font-size: 20px; }
 }
 
 article {
