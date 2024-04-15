@@ -10,7 +10,7 @@
 {{ $AuthorPages := where $PublicPages ".Params.author" "intersect" (slice $name) }}
 -->
 
-{{ $img_src := partial "get-organization-img.html" $name }}
+{{ $img_src := partial "organization/get-img.html" $name }}
 
 
 <div class="cover">
@@ -28,7 +28,7 @@
           "page" $page
           "gardener" .
         }}
-        {{ partial "popover-gardener.html" $ctx }}
+        {{ partial "gardener/popover.html" $ctx }}
       {{ end }}
     </li>
 
@@ -71,7 +71,7 @@
             "page" $page
             "gardener" .
           }}
-          {{ partial "popover-gardener.html" $ctx }}
+          {{ partial "gardener/popover.html" $ctx }}
         {{ end }}
       </li>
     {{ end }}

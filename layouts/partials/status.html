@@ -28,7 +28,7 @@
           "page" $page
           "gardener" .
         }}
-        {{ partial "popover-gardener.html" $ctx }}
+        {{ partial "gardener/popover.html" $ctx }}
       {{ end }}
     </li>
   {{ end }}
@@ -62,7 +62,7 @@
         "page" $page
         "gardener" .
       }}
-      {{ partial "popover-gardener.html" $ctx }}
+      {{ partial "gardener/popover.html" $ctx }}
     {{ end }}
   </li>
 
@@ -74,7 +74,7 @@
           "page" $page
           "gardener" .
         }}
-        {{ partial "popover-gardener.html" $ctx }}
+        {{ partial "gardener/popover.html" $ctx }}
       {{ end }}
     </li>
   {{ end }}
@@ -93,7 +93,7 @@
         "page" $page
         "organization" .
       }}
-      {{ partial "popover-organization.html" $ctx }}
+      {{ partial "organization/popover.html" $ctx }}
     </li>
   {{ end }}
 </ul>

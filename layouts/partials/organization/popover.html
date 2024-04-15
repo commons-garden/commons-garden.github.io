@@ -2,7 +2,7 @@
 {{ $page := .page }}
 
 {{ $organization := $page.Site.GetPage (printf "/organization/%s.md" $name) }}
-{{ $img_src := partial "get-organization-img.html" $name }}
+{{ $img_src := partial "organization/get-img.html" $name }}
 
 {{ if $organization }}
   <a

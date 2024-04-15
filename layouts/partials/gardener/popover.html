@@ -2,7 +2,7 @@
 {{ $page := .page }}
 
 {{ $gardener := $page.Site.GetPage (printf "/gardener/%s.md" $name) }}
-{{ $img_src := partial "get-gardener-img.html" $name }}
+{{ $img_src := partial "gardener/get-img.html" $name }}
 
 {{ if $gardener }}
   <a

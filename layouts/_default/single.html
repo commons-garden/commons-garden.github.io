@@ -80,9 +80,9 @@
 
         <article>
           {{ if (eq .Type "gardener") }}
-            {{ partial "gardener-template.html" . }}
+            {{ partial "gardener/template.html" . }}
           {{ else if (eq .Type "organization") }}
-            {{ partial "organization-template.html" . }}
+            {{ partial "organization/template.html" . }}
           {{ else }}
             {{ partial "status.html" . }}
           {{ end }}

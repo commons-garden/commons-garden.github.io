@@ -11,7 +11,7 @@
 
 
 <div class="cover">
-  {{ $img_src := partial "get-gardener-img.html" $name }}
+  {{ $img_src := partial "gardener/get-img.html" $name }}
   {{ if $img_src }}
     <div class="avatar" style="background-image: url({{ $img_src }})"></div>
   {{ end }}
@@ -28,7 +28,7 @@
             "page" $page
             "organizationName" .File.BaseFileName
           }}
-          {{ partial "popover-organization.html" $ctx }}
+          {{ partial "organization/popover.html" $ctx }}
         {{ end }}
       {{ end }}
     </li>

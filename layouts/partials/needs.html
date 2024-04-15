@@ -1,7 +1,7 @@
 {{ if .Params.Needs }}
   {{ $page := . }}
 
-  {{ $emails := partial "get-organization-contacts.html" $page }}
+  {{ $emails := partial "organization/get-contacts.html" $page }}
   {{ $emails_delimit := delimit $emails "," }}
 
 
