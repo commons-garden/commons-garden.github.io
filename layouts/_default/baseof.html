@@ -56,9 +56,12 @@
             aria-expanded="false"
             aria-controls="menu-article"
           >
-            <!-- CODE signularize / pluralize dependinng on single / list -->
             <h2>
-              {{ .Title | singularize }}
+              {{ if .IsPage }}
+                {{ .Title }}
+              {{ else }}
+                {{ .Title | singularize }}
+              {{ end }}
             </h2>
             {{ partial "affordance.html" . }}
           </a>
@@ -70,7 +73,13 @@
 
       {{ block "description" . }}
         <header class="description">
-          <h3>Enhancing knowledge commons</h3>
+          <h3>
+            {{ if .Params.description }}
+              {{ .Params.description }}
+            {{ else }}
+              Enhancing knowledge commons
+            {{ end }}
+          </h3>
         </header>
       {{ end }}
 

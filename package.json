@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "dev": "rm -rf public && hugo server",
     "pretty": "prettier . --write"
   },
   "devDependencies": {

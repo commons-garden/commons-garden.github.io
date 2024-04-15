@@ -8,4 +8,7 @@ enableEmoji = true
 
 [taxonomies]
   category = "categories"
+  organization = "organizations"
+  garderner = "gardeners"
+  initiative = "initiatives"
 
