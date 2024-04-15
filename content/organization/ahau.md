@@ -1,12 +1,11 @@
 ---
 title: ahau
-category: organization
+display: public
+description: free community archiving / family tree tool made in New Zealand
 date: 2023-07-18
-members: [mixmix, "ben tairea", "cherese eiripa"]
-contact: [mixmix, "ben tairea"]
-website: ahau.io
-specs_implemented: 
-wireframes_implemented: 
+members: [mixmix, ben_tairea, cherese_eiripa]
+contacts: [mixmix, "ben tairea"]
+scopes: [SSB, Hyper]
+link: https://ahau.io
+needs: [design, maori translation]
 ---
-
-A maori-led organization which builds free for community.

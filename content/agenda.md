@@ -36,8 +36,8 @@ date: 2023-09-10
 - [ ] .ics (how to automate)
 - [ ] show time in local area
 - [ ] social media
-	- [ ] mastodon
-	- [ ] youtube?
+  - [ ] mastodon
+  - [ ] youtube?
 
 ## Content
 
@@ -54,10 +54,10 @@ date: 2023-09-10
 - [ ] mapping category diagram into hugo [category/criteria diagram](https://hackmd.io/@mixmix/rywE-3P1T/edit)
 - [ ] merge wireframe into spec + type
 - [ ] subpages
-	- [ ] page template checkjs if slug has a folder and:
-		- lists all public pages in alphabetical order, into a table of content
-		- folder pages point to original page
-	- [ ] subgroups should not be listed on list.html (or should? we need at least a new template)
+  - [ ] page template checkjs if slug has a folder and:
+    - lists all public pages in alphabetical order, into a table of content
+    - folder pages point to original page
+  - [ ] subgroups should not be listed on list.html (or should? we need at least a new template)
 
 ## Training gardeners
 
@@ -70,8 +70,6 @@ date: 2023-09-10
 
 - [ ] legal fiction, NGO
 - [ ] review [open collective](https://opencollective.com/commons-garden)
-
-
 
 ## Internal documentation
 
@@ -87,20 +85,20 @@ How we write and update documentation for our facilitators?
 
 - [ ] redesign on figma
 - [ ] categories have colors:
-	- organization: blue
-	- person: yellow
-	- spec: pink
-	- initiative: green
-	- about: grey
+  - organization: blue
+  - person: yellow
+  - spec: pink
+  - initiative: green
+  - about: grey
 - [ ] design open graph image
 - [ ] slide design:
-	- title
-	- history
-	- description
-	- pages (how to separate?)
-	- frontmatter badges
-	- needs (with actionables)
-	- credits (people)
+  - title
+  - history
+  - description
+  - pages (how to separate?)
+  - frontmatter badges
+  - needs (with actionables)
+  - credits (people)
 - [ ] design favicons
 - [ ] phase out dropdown menu for accordion + list
 - [ ] design stickers
@@ -133,7 +131,7 @@ How we write and update documentation for our facilitators?
 - [ ] organization wiring
 - [ ] organization template
 
-## About 
+## About
 
 - [ ] from about to root
 - [ ] how many root pages we want?
@@ -154,17 +152,18 @@ A way to integrate Hugo content with its older versions, maybe a timeline of upd
 
 Or if we wanna get fancy, a comparison tool in pare showing what's added, removed by sho and when (we need to connect gardener with gitlab user for that).
 
-This way volunteers can compare what changed since last time they checked, to stay in the loop. 
+This way volunteers can compare what changed since last time they checked, to stay in the loop.
 
 ## publish for non techies
 
 A content-only permission that allows authors to:
+
 - add page (from template)
 - edit page
 - edit frontmatter criteria (required always on, optional on a menu)
 - edit frontmatter values (limiting choices with autosuggest)
 
-System presents user with URL of changed objects, on commit. 
+System presents user with URL of changed objects, on commit.
 
 ## Tech Debt
 

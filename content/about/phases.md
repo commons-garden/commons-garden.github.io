@@ -1,12 +1,12 @@
 ---
 title: Project phases
-display: public
+display: private
 status: ongoing
 description: Our milestones
-category: about
 author: [nonlinear]
 date: 2023-09-10
 ---
+
 ## Phase 1 (complete)
 
 - specs category
@@ -29,4 +29,3 @@ date: 2023-09-10
 - find facilitators
 - facilitate for facilitators
 - volunteer rotation
-

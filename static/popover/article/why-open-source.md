@@ -1,7 +1,6 @@
 ---
 title: Why Open Source?
 type: hidden
-category: article
 date: 2023-03-07
 ---
 

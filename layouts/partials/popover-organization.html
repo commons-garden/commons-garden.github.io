@@ -1,0 +1,29 @@
+{{ $name := .organization }}
+{{ $page := .page }}
+
+{{ $organization := $page.Site.GetPage (printf "/organization/%s.md" $name) }}
+{{ $img_src := partial "get-organization-img.html" $name }}
+
+{{ if $organization }}
+  <a
+    href="/organization/{{ $name }}"
+    data-placement="top"
+    data-toggle="popover"
+    data-content="<div class='actor'>
+      {{ if $img_src }}
+      <img class='avatar' src='{{ $img_src }}' />
+    {{ end }}
+    
+      <div class='more'>
+        <h2>{{ $name }}</h2>
+        <p>
+          {{ $organization.Params.description | truncate 80 }}
+        </p>
+      </div>
+
+    </div>"
+    >{{ $name }}</a
+  >
+{{ else }}
+  {{ $name }}
+{{ end }}

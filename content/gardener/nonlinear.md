@@ -1,21 +1,26 @@
 ---
 title: nonlinear
-imageType: jpg
 description: the anagram of my name is anarchist fool
 display: public
-category: gardener
 date: 2023-03-07
+email: info@nicholasfrota.com
 ---
 
 ### Projects:
 
-- [nonlinear](http://nonlinear.nyc) 
-- [praxis](https://praxis.nyc) 
+- [nonlinear](http://nonlinear.nyc)
+- [praxis](https://praxis.nyc)
 - [commons.garden](https://commons.garden) (this one)
 
-### Find me on:
+### Social:
 
-- [mastodon](https://social.praxis.nyc/@nonlinear) 
-- [instapaper](https://www.instapaper.com/p/nonlinear) 
-- [instagram](https://instagram.com/nonlinear) 
-- [savee](https://savee.it/nonlinear)
+- [mastodon](https://social.praxis.nyc/@nonlinear)
+- [securescuttlebutt](ssb://feed/ed25519/mUNqmOd_uRBGbk9YMOzaUypf_6aPhxYI0lk6-hRyyK4=)
+- [instagram](https://instagram.com/nonlinear)
+
+### Media:
+
+- [Storygraph](https://app.thestorygraph.com/profile/nonlinear)
+- [Soundcloud](https://soundcloud.com/nicholasfrota)
+- [Instapaper](https://www.instapaper.com/p/nonlinear)
+- [Savee](https://savee.it/nonlinear)

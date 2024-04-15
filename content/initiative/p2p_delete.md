@@ -4,7 +4,6 @@ display: public
 status: ongoing
 facilitator: [mixmix, nonlinear]
 description: Serverless irretrievable delete
-category: initiative
 date: 2023-03-07
 link: https://hackmd.io/@praxis/p2p-delete
 comm_title: signal group
@@ -33,12 +32,10 @@ note_link: https://hackmd.io/@praxis/p2p-delete
 
 ## Advocacy
 
-
-
-
 ## Data structures
 
 Are the changes small?
+
 - yes (text)
   - trilemma (in some CRDTs, in realtime) <= seph
     - efficency
@@ -51,20 +48,21 @@ Are the changes small?
 Bengo [ his summary ]
 
 Holochain
+
 - receipts of acknowledgment of making a change
 
 What if every blob sent out was unique to a recipient
 What if we predictably mutate some piece of data every e.g. 10 days
-  - so then we know the "epoch" in which it was leaked
-  - companies already do this by sharing emails with unique punctuation/words
 
+- so then we know the "epoch" in which it was leaked
+- companies already do this by sharing emails with unique punctuation/words
 
 Promising approach:
+
 - byzanine fault tollerant CRDTs (klepan approach)
 
-
-
 exquisite corpse
+
 - eventual possible forgetting
   - the system is not guarenteed deleting, and "forgetting" shifts us from permanence of delete
   - buried till it's hard to find it, obfuscation, garbage collection, long tail
@@ -82,30 +80,27 @@ exquisite corpse
   - a file that hasn't been deleted, but it's relevance/ reliability has expired
   - open source code that's maintenance guarentee has expired and if you still have it and use it, that's on you
 
-
-
 how does GDPR get audited? how does the EU know a company has removed stuff?
 are there legal affordances which say "this info is no longer permissible in court"
-  - e.g. revenge porn protection
-    - what about we all sign that we deleted something, then it 
+
+- e.g. revenge porn protection
+  - what about we all sign that we deleted something, then it
 
 recovery in conversation
-  - opposite/ in tension to deletion
-  - deletion is "the intention to prevent harm"
-    - there are other ways to do this ... e.g. repair
+
+- opposite/ in tension to deletion
+- deletion is "the intention to prevent harm"
+  - there are other ways to do this ... e.g. repair
 
 ### Spectrum of deletion
 
 ### Words to drop
 
-
 ### Purpose for deletion
 
 sometimes your deletion is my censorship
 
-----
-
-
+---
 
 Sometimes we want to make a piece of data irretrievable.
 Given a distributed system subject to intermittent connectivity, partitions, and variable trust,
@@ -150,13 +145,13 @@ to prove that the author once possessed the data.
 ### Disaster scenario
 
 - A) PII: personal identifiable information
-    - biased scientific review
-    - doxxing
-      - yourself
-      - another person
+  - biased scientific review
+  - doxxing
+    - yourself
+    - another person
 - B) Medical data
-    - legality around holding / custodianship of data 
-        - e.g. I move from Doctor A to Doctor B, then it becomes illegal for A to hold my data
+  - legality around holding / custodianship of data
+    - e.g. I move from Doctor A to Doctor B, then it becomes illegal for A to hold my data
 - C) accidentally posted illegal info (illegal number attack)
 - D) Company changes policies and need to reduce confusion
 - E) Bad selfie
@@ -169,39 +164,38 @@ Our solution should:
 
 1. Propagate deletes throughout a network for peers to enact.
 2. Deleted content should not be replicated
-    - we don't want to accidentally re-propogate previously deleted data
-    - implies I may need to *remember* what's been deleted
+   - we don't want to accidentally re-propogate previously deleted data
+   - implies I may need to _remember_ what's been deleted
 3. Must not destroy verification of data structures
-    - e.g. if a particular deleted message was part of a hash-chain, the hash of the content may be preserved while the content no longer exists
+   - e.g. if a particular deleted message was part of a hash-chain, the hash of the content may be preserved while the content no longer exists
 4. Be auditable
-    - we want to find naughty / ignorant peers
-    - test whether peers are following (1-3) ? or have published a "delete receipt"?
+   - we want to find naughty / ignorant peers
+   - test whether peers are following (1-3) ? or have published a "delete receipt"?
 5. Must be able to delete data authored by other peers
-    - this needs a lot more work/ clarification
-    - do we need a hierarchy for deletes
-    - disavowal (you should not hold it/ I'm blocking this message and if you hold it I'll hold you accountable)
+   - this needs a lot more work/ clarification
+   - do we need a hierarchy for deletes
+   - disavowal (you should not hold it/ I'm blocking this message and if you hold it I'll hold you accountable)
 
 ## Questions
 
 1. how do we know the data is "deleted"?
-    - If a peer who is known to have received a deletion responds with the deleted data when asked, it is in violation.
+   - If a peer who is known to have received a deletion responds with the deleted data when asked, it is in violation.
 2. can you delete someone elses content? (needed for doxx)
-    - Delete for who? Can a peer autonomously forget data, or refuse to replicate it?
-4. what happens to *links* to deleted records?
-    - Ex: Signal's "this message was deleted" meta-message.
-6. do we need *reasons* for deletion?
-    - Does this annotation belong at the protocol or application layer?
-8. how does edit relate to delete?
-9. how do I know the "health" deletion?
-10. can I *disavow* data? (demand data become irretrievable and hold noncompliant peers accountable)
+   - Delete for who? Can a peer autonomously forget data, or refuse to replicate it?
+3. what happens to _links_ to deleted records?
+   - Ex: Signal's "this message was deleted" meta-message.
+4. do we need _reasons_ for deletion?
+   - Does this annotation belong at the protocol or application layer?
+5. how does edit relate to delete?
+6. how do I know the "health" deletion?
+7. can I _disavow_ data? (demand data become irretrievable and hold noncompliant peers accountable)
 
 ## Neighbor technologies, solutions
 
 ## Threats to mitigate
 
 1. tombstone spamming
-    - an adversary can take up all your disk space by forcing you to propogate and remember tombstones
-
+   - an adversary can take up all your disk space by forcing you to propogate and remember tombstones
 
 ## state-of conference
 
@@ -214,18 +208,18 @@ A guest on Metagov Seminars (Wednesdays 12-1pm EST), midjuly https://metagov.org
 - [ ] guests
 - [ ] state-of deck (3-5 slides, summarizing what we collectively know so far (hackmd))
 - [x] promotion (define audience to join, pitch, etc)
-    - announcement
-    - drop your questions (where? use kickoff questions to start)
-    - event
-    - initative update
+  - announcement
+  - drop your questions (where? use kickoff questions to start)
+  - event
+  - initative update
 - [x] date event
 - [ ] rules for shared notes
 - [x] code of conduct
 - [ ] kickoff questions
-    - how to deal with bad actors (governance)
-    - how to deal when data is impermanent. is it troubling? is it liberating?
-    - threat models for user personas
-    - how do you deal with information assymetry on p2p. decisions in distributed context
+  - how to deal with bad actors (governance)
+  - how to deal when data is impermanent. is it troubling? is it liberating?
+  - threat models for user personas
+  - how do you deal with information assymetry on p2p. decisions in distributed context
 
 ## TODO
 
@@ -237,5 +231,3 @@ A guest on Metagov Seminars (Wednesdays 12-1pm EST), midjuly https://metagov.org
 - [ ] discuss MetaGov session
 - [ ] agree on glossary
 - [ ] organise show + tell with MetaGov (virtual)
-
-

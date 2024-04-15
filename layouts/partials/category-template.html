@@ -1,120 +1,137 @@
 <article class="with-status">
-	<ul class="status">
-		{{ if .Params.Status }}
-		<li class="status">
-			<span>status:</span> {{ .Params.Status }}
-		</li>
-		{{ end }}
+  <ul class="status">
+    {{ if .Params.Status }}
+      <li class="status">
+        <span>status:</span> {{ .Params.Status }}
+      </li>
+    {{ end }}
 
-		{{ with .Params.Facilitator }}
-		<li>
-			<span>Facilitator:</span>
-      {{ range . }}
-        {{ if (fileExists (printf "/person/%s.md" .)) -}}
-          <a href="/person/{{.}}">{{.}}</a>
-        {{ else }} {{.}}
+    {{ with .Params.Facilitator }}
+      <li>
+        <span>Facilitator:</span>
+        {{ range . }}
+          {{ if (fileExists (printf "/gardener/%s.md" .)) -}}
+            <a href="/gardener/{{ . }}">{{ . }}</a>
+          {{ else }}
+            {{ . }}
+          {{ end }}
         {{ end }}
-      {{ end }}
-      <!-- 
+        <!-- 
         can we use a regex for /,\s?/ 
         see: https://gohugo.io/functions/replacere/
       -->
-		</li>
-		{{ end }}
+      </li>
+    {{ end }}
 
-		{{ if .Params.Date }}
-		<li>
-			<span>Date:</span> {{ .Params.Date }}
-		</li>
-		{{ end }}
-		{{ if .Params.Scope }}
-		<li>
-			<span>scope:</span>
-			{{ .Params.Scope }}
-		</li>
-		{{ end }}
-		{{ if .Params.License }}
-		<li>
-			<span>license:</span>
-			{{ .Params.License }}
-		</li>
-		{{ end }}
+    {{ if .Params.Date }}
+      <li>
+        <span>Date:</span> {{ .Params.Date }}
+      </li>
+    {{ end }}
+    {{ if .Params.Scope }}
+      <li>
+        <span>scope:</span>
+        {{ .Params.Scope }}
+      </li>
+    {{ end }}
+    {{ if .Params.License }}
+      <li>
+        <span>license:</span>
+        {{ .Params.License }}
+      </li>
+    {{ end }}
 
     {{ with .Params.Author }}
-		<li>
-			<span>Author:</span>
-      {{ range . }}
-        {{ if (fileExists (printf "/person/%s.md" .)) -}}
-          <a href="/person/{{.}}">{{.}}</a>
-        {{ else }} {{.}}
+      <li>
+        <span>Author:</span>
+        {{ range . }}
+          {{ if (fileExists (printf "/gardener/%s.md" .)) -}}
+            <a href="/gardener/{{ . }}">{{ . }}</a>
+          {{ else }}
+            {{ . }}
+          {{ end }}
         {{ end }}
-      {{ end }}
-      <!-- 
+        <!-- 
         can we use a regex for /,\s?/ 
         see: https://gohugo.io/functions/replacere/
       -->
-		</li>
-		{{ end }}
+      </li>
+    {{ end }}
 
-				{{ with .Params.Reviewed }}
-		<li>
-			<span>reviewed by:</span>
-      {{ range . }}
-        {{ if (fileExists (printf "/person/%s.md" .)) -}}
-          <a href="/person/{{.}}">{{.}}</a>
-        {{ else }} {{.}}
+    {{ with .Params.Reviewed }}
+      <li>
+        <span>reviewed by:</span>
+        {{ range . }}
+          {{ if (fileExists (printf "/person/%s.md" .)) -}}
+            <a href="/person/{{ . }}">{{ . }}</a>
+          {{ else }}
+            {{ . }}
+          {{ end }}
         {{ end }}
-      {{ end }}
 
-      <!-- 
+
+        <!-- 
         can we use a regex for /,\s?/ 
         see: https://gohugo.io/functions/replacere/
       -->
-		</li>
-		{{ end }}
+      </li>
+    {{ end }}
 
-		{{ if (in .Params.Category "initiative") }}
-		<li>
-			<span>hashtag:</span>
-			<code>#{{ with .File }}{{ .BaseFileName }}{{ end }}</code>
-		</li>
-		{{ end }}
+    {{ if (in .Params.Category "initiative") }}
+      <li>
+        <span>hashtag:</span>
+        <code>#{{ with .File }}{{ .BaseFileName }}{{ end }}</code>
+      </li>
+    {{ end }}
 
-				{{ with .Params.Implemented }}
-		<li>
-			<span>implemented in:</span>
-      {{ range . }}
-        {{ if (fileExists (printf "/organization/%s.md" .)) -}}
-          <a href="/organization/{{.}}">{{.}}</a>
-        {{ else }} {{.}}
+    {{ with .Params.Implemented }}
+      <li>
+        <span>implemented in:</span>
+        {{ range . }}
+          {{ if (fileExists (printf "/organization/%s.md" .)) -}}
+            <a href="/organization/{{ . }}">{{ . }}</a>
+          {{ else }}
+            {{ . }}
+          {{ end }}
         {{ end }}
-      {{ end }}
-      <!-- 
+        <!-- 
         can we use a regex for /,\s?/ 
         see: https://gohugo.io/functions/replacere/
       -->
-		</li>
-		{{ end }}
+      </li>
+    {{ end }}
 
-		{{ if .Params.Comm_link }}
-		<li>
-			<span>Communication:</span>
-			<a href="{{ .Params.Comm_link }}">{{ .Params.Comm_title }}</a>
-		</li>
-		{{ end }}
+    {{ if .Params.Comm_link }}
+      <li>
+        <span>Communication:</span>
+        <a href="{{ .Params.Comm_link }}">{{ .Params.Comm_title }}</a>
+      </li>
+    {{ end }}
 
-		{{ if .Params.Note_link }}
-		<li>
-			<span>Notes:</span>
-			<a href="{{ .Params.Note_link }}">{{ .Params.Note_title }}</a>
-		</li>
-		{{ end }}
+    {{ if .Params.Note_link }}
+      <li>
+        <span>Notes:</span>
+        <a href="{{ .Params.Note_link }}">{{ .Params.Note_title }}</a>
+      </li>
+    {{ end }}
 
-	</ul>
-	<section class="content">
-		{{ .Content }}
-		{{ if .Params.Link }}
-		<a class="btn" target="_blank" href="{{ .Params.Link }}">View {{ .Params.Category }} {{ if .Params.Platform }} on {{ .Params.Platform }}{{ end }}</a>
-		{{ end }}
-	</section>
+  </ul>
+  <section class="content">
+    {{ .Content }}
+    {{ if .Params.Link }}
+      <a class="btn" target="_blank" href="{{ .Params.Link }}">View spec</a>
+    {{ end }}
+
+
+    <div style="padding-top: 1em;">
+      Needs:
+      <ol>
+        {{ with .Params.Needs }}
+          {{ range . }}
+            <li>{{ . }}</li>
+          {{ end }}
+        {{ end }}
+      </ol>
+    </div>
+  </section>
 </article>

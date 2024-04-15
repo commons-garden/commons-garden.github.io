@@ -1,0 +1,15 @@
+<h2>Latest {{ .Section }} articles:</h2>
+
+<!-- CODE: list only from same Section -->
+
+{{ range first 6 .Site.RegularPages }}
+  {{ if (in .Params.display "public") }}
+    <a class="item" href="{{ .RelPermalink }}">
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Description }}</p>
+    </a>
+  {{ end }}
+{{ end }}
+
+
+<a href="/{{ .Section }}" class="btn">All {{ .Section }} articles</a>

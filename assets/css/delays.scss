@@ -1,0 +1,70 @@
+ul.status li {
+  &:nth-of-type(1) span {
+  @include status($delay: calc(var(--delay) * 1));
+}
+
+&:nth-of-type(2) span {
+  @include status($delay: calc(var(--delay) * 2));
+}
+
+&:nth-of-type(3) span {
+  @include status($delay: calc(var(--delay) * 3));
+}
+
+&:nth-of-type(4) span {
+  @include status($delay: calc(var(--delay) * 4));
+}
+
+&:nth-of-type(5) span {
+  @include status($delay: calc(var(--delay) * 5));
+}
+&:nth-of-type(6) span {
+  @include status($delay: calc(var(--delay) * 6));
+}
+&:nth-of-type(7) span {
+  @include status($delay: calc(var(--delay) * 7));
+}
+&:nth-of-type(8) span {
+  @include status($delay: calc(var(--delay) * 8));
+}
+&:nth-of-type(9) span {
+  @include status($delay: calc(var(--delay) * 9));
+}
+}
+
+$initialneed: 4;
+
+.needs .need {
+  &:nth-of-type(1) .btn {
+  @include fadeInLeft($delay: calc(var(--delay) * 1));
+}
+
+&:nth-of-type(2) .btn {
+  @include fadeInLeft($delay: calc(var(--delay) * 3));
+}
+
+&:nth-of-type(3) .btn {
+  @include fadeInLeft($delay: calc(var(--delay) * 5));
+}
+
+&:nth-of-type(4) .btn {
+  @include fadeInLeft($delay: calc(var(--delay) * 7));
+}
+
+&:nth-of-type(5) .btn {
+  @include fadeInLeft($delay: calc(var(--delay) * 9));
+}
+&:nth-of-type(6) .btn {
+  @include fadeInLeft($delay: calc(var(--delay) * 11));
+}
+&:nth-of-type(7) .btn {
+  @include fadeInLeft($delay: calc(var(--delay) * 13));
+}
+&:nth-of-type(8) .btn {
+  @include fadeInLeft($delay: calc(var(--delay) * 15));
+}
+&:nth-of-type(9) .btn {
+  @include fadeInLeft($delay: calc(var(--delay) * 17));
+}
+}
+

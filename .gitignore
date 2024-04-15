@@ -1,3 +1,7 @@
 public
 resources
 .DS_Store
+
+/* Node stuff for Prettier linting */
+node_modules
+package-lock.json

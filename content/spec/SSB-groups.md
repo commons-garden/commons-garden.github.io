@@ -1,16 +1,20 @@
 ---
 title: SSB groups
-display: public
-description: Private Groups – User Experience
+description: Private groups user experience flow
+scope: [SSB, wireframe]
+
 status: stable
-scope: SSB
+display: true
+license: pending
+
 author: [nonlinear]
 reviewed: [staltz, mixmix, jacob, arj]
-project: ssb-groups
-soon: [ahau, manyverse]
-category: wireframe
+
+implemented: [ahau, manyverse]
 date: 2023-05-19
 link: https://www.manyver.se/blog/2023-05-19
+
+needs: [implementations]
 ---
 
 Groups are important because SSB is a cloud-less peer-to-peer platform, where discourse is generally open (like Twitter).

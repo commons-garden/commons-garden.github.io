@@ -1,16 +1,14 @@
 ---
 title: SSB Simulator
 display: public
-display: draft
+status: draft
 description: network simulator
-category: initiative
 author: [nonlinear, cblgh]
 date: 2023-06-30
 ---
 
 - [SSB simulator](https://mixmix.gitlab.io/butt-sim/)
 - [ssbc/netsim: secure scuttlebutt network simulator](https://github.com/ssbc/netsim)
-
 
 ## Assumptions to validate
 

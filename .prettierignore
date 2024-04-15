@@ -1,0 +1,4 @@
+assets/css/vendor
+
+/* these were breaking ... something about "''" */
+layouts/partials/popover*.html

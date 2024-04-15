@@ -1,1 +1,24 @@
+<!doctype html>
+<html
+  lang="en"
+  class="{{ if .Params.layout }}
+    {{ .Params.layout }}
+  {{ end }} {{ if .Params.style }}
+    {{ .Params.style }}
+  {{ end }} {{ if .Params.category }}{{ .Params.category }}{{ end }}"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint }}
+    {{ $style := $sass | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
+    <title>
+      {{ partial "emoji.html" . }}
+      {{ .Site.Title }}/{{ .Params.Category }}/{{ with .File }}
+        {{ .BaseFileName }}
+      {{ end }}
+    </title>
+  </head>
+</html>

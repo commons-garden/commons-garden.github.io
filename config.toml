@@ -1,7 +1,7 @@
-baseURL = "https://commons.garden/"
+baseURL = "https://v2-commons-garden-4d5a03b3c028b9a59cfab0781751505cd846b19acfc77.gitlab.io"
+repo = "https://gitlab.com/commons-garden/v2"
 languageCode = "en-us"
-description = "aims to enhance our knowledge commons by sponsoring initiatives through facilitation, consulting, and documentation"
-title = "commons.garden"
-slogan = "Enhancing knowledge commons"
+description = "Enhancing knowledge commons"
+title = "Commons.Garden"
 publishDir = "public"
 enableEmoji = true

@@ -1,0 +1,26 @@
+{
+  "description": "All commons.garden posts fall under a category, this describes what each category needs",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "appears in the path, must match the folder name",
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "description": "a description of the category type",
+      "type": "boolean",
+      "required": true
+    },
+    "display": {
+      "description": "boolean - should this be displayed on lists? will be rendered, but not linked to. true / false",
+      "type": "boolean",
+      "default": true
+    },
+    "pluralize": {
+      "description": "should the title be pluralized on page",
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

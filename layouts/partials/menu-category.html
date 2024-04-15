@@ -1,0 +1,15 @@
+<h2>All <a href="/">{{ .Site.Title }}</a> categories:</h2>
+<!-- CODE: list all categories -->
+<div class="grid-list">
+  {{ range first 6 .Site.RegularPages }}
+    {{ if (in .Params.display "public") }}
+      <a class="item" href="{{ .RelPermalink }}">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Description }}</p>
+      </a>
+    {{ end }}
+  {{ end }}
+
+</div>
+
+<a href="/" class="btn">Back home</a>

@@ -1,54 +1,106 @@
-<!DOCTYPE html>
-<html lang="en" class="single {{ with .File }}{{ .BaseFileName }}{{ end }} {{ if .Params.style  }}{{ .Params.style }}{{ end }} {{ if .Params.category  }}{{ .Params.category }}{{ end }} {{ if .Params.status  }}{{ .Params.status }}{{ end }}">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint  }}
-  {{ $style := $sass | resources.ToCSS }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
+<!doctype html>
+<html
+  lang="en"
+  class="single {{ if .Params.style }}
+    {{ .Params.style }}
+  {{ end }} {{ .Section }}"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{ $sass := resources.Get "css/main.scss"  | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) | fingerprint }}
+    {{ $style := $sass | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
-  <title>{{ partial "emoji.html" . }} {{ .Site.Title }}/{{ .Params.Category }}/{{ with .File }}{{ .BaseFileName }}{{ end }}</title>
-</head>
+    <title>
+      {{ .Site.Title }}/{{ .Section }}/{{ with .File }}
+        {{ .BaseFileName }}
+      {{ end }}
+    </title>
+  </head>
 
-<body>
-	<div class="container">
-    <header class="header">
+  <body>
+    <div class="container">
+      <header class="global">
+        <a
+          data-toggle="collapse"
+          href="#menu-global"
+          role="button"
+          aria-expanded="false"
+          aria-controls="menu-global"
+        >
+          <h2>{{ .Site.Title }}/{{ .Section }}/</h2>
+          {{ partial "affordance.html" . }}
+        </a>
 
-      <nav class="secondary">
-        {{ partial "nav-root.html" . }}
-        {{ partial "nav-category.html" . }}
-      </nav>
+        <div class="collapse collapse-content menu" id="menu-global">
+          {{ partial "menu-global.html" . }}
+        </div>
+      </header>
+<header class="page"><h1>{{ .Title }}</h1></header>
+  <!--     <header class="article">
+        <a
+          data-toggle="collapse"
+          href="#menu-article"
+          role="button"
+          aria-expanded="false"
+          aria-controls="menu-article"
+        >
+          <h1>{{ .Title }}</h1>
+          {{ partial "affordance.html" . }}
+        </a>
+        <div class="collapse collapse-content menu" id="menu-article">
+          {{ partial "menu-article.html" . }}
+        </div> -->
+        <!--
+        <h2>
+          <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>/ <a href="{{ .Site.BaseURL }}/{{ .Params.Category }}">{{ .Params.Category }}</a>
+        </h2>
 
-      <nav class="primary">
-        {{ partial "nav-post.html" . }}
-      </nav>
+        <h1>{{ .Title }}</h1>
+        {{ partial "category.html" . }}  -->
+      </header>
 
-      <div class="description">{{ .Description }}</div>
-		</header>
+      {{ if .Description }}
+        <header class="description">
+          <h2>{{ .Description }}</h2>
+        </header>
+      {{ end }}
 
 
-{{ if (in .Params.category "spec") }}
-  {{ partial "category-template.html" . }}
+      <!-- <div class="content with-history"> -->
+      <div class="content">
+        <!-- {{ partial "history.html" . }} -->
 
-{{ else if (in .Params.category "wireframe") }}
-  {{ partial "category-template.html" . }}
+        <article>
+          {{ if (eq .Type "gardener") }}
+            {{ partial "gardener-template.html" . }}
+          {{ else if (eq .Type "organization") }}
+            {{ partial "organization-template.html" . }}
+          {{ else }}
+            {{ partial "status.html" . }}
+          {{ end }}
 
-{{ else if (in .Params.category "initiative") }}
-  {{ partial "category-template.html" . }}
+          {{ .Content }}
 
-{{ else if (in .Params.category "gardener") }}
-  {{ partial "gardener-template.html" . }}
+          {{ if .Params.Link }}
+            <p>
+              <a href="{{ .Params.Link }}" class="btn">Visit {{ .Title }}</a>
+            </p>
+          {{ end }}
 
-{{ else }}
-  <article>{{ .Content }}</article>
+          {{ partial "needs.html" . }}
 
-{{ end }}
-		
+          {{ with .GetTerms "contacts" }}
+            {{ range . }}
+              {{ . }}
+              poop
+            {{ end }}
+          {{ end }}
+        </article>
+      </div>
+    </div>
 
-	{{ partial "description.html" . }}
-			{{ partial "slogan.html" . }}
-	</div>
-	
-</body>
+    {{ partial "scripts.html" . }}
+  </body>
 </html>
-

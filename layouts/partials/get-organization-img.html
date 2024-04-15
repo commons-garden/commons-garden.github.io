@@ -1,0 +1,14 @@
+{{ $organizationName := . }}
+{{ $ImageTypes := slice "jpg" "jpeg" "png" "svg" }}
+
+{{ $img_src := false }}
+
+{{ range $ImageTypes }}
+  {{ $candidate := (printf "/images/organization/%s.%s" $organizationName .) }}
+
+  {{ if (fileExists (add "static" $candidate)) }}
+    {{ $img_src = $candidate }}
+  {{ end }}
+{{ end }}
+
+{{ return $img_src }}

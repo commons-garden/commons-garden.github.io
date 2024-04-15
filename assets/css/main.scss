@@ -1,9 +1,12 @@
+// animate gives a lot of basic animation mixins to play with
+
 @import "vendor/animatewithsass/animate.scss";
+@import "vendor/bootstrap/bootstrap.scss";
+@import "reset";
 @import "mixins";
 @import "functions";
-@import "fonts";
-
-
 
 @import "layout";
+@import "popover";
 
+@import "delays";

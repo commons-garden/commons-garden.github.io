@@ -1,0 +1,98 @@
+<!-- CODE: 
+- [ ] add " ," in between objects, except last one
+- [ ] rename this file initiative-template.html ?
+ -->
+
+{{ $page := . }}
+
+
+<ul class="status">
+  {{ if .Params.Status }}
+    <li class="status">
+      <span>status:</span>
+      {{ .Params.Status }}
+<!--  CODE: Simplified for delivery     <a
+        href="#"
+        data-placement="top"
+        data-toggle="popover"
+        data-content="{{ partial "get-status-description.html" $.Params.Status }}"
+        >{{ .Params.Status }}</a
+      > -->
+    </li>
+  {{ end }}
+
+
+  <li>
+      {{ if .Params.Facilitator }}
+    <span>Facilitator:</span>
+    {{ range .Params.Facilitator }}
+      {{ $ctx := dict
+        "page" $page
+        "gardener" .
+      }}
+      {{ partial "popover-gardener.html" $ctx }}
+    {{ end }}
+  </li>
+  {{ end }}
+  {{ if .Params.Scope }}
+    <li>
+      <span>scope:</span>
+      {{ .Params.Scope }}
+    </li>
+  {{ end }}
+  {{ if .Params.License }}
+    <li>
+      <span>license:</span>
+      {{ .Params.License }}
+     <!-- CODE: simplified for delivery <a
+        href="#"
+        data-placement="top"
+        data-toggle="popover"
+        data-content="{{ partial "get-license-description.html" $.Params.License }}"
+        >{{ .Params.License }}</a
+      > -->
+    </li>
+  {{ end }}
+
+
+  <li>
+    <span>Author:</span>
+    {{ range .Params.Author }}
+      {{ $ctx := dict
+        "page" $page
+        "gardener" .
+      }}
+      {{ partial "popover-gardener.html" $ctx }}
+    {{ end }}
+  </li>
+
+  <li>
+    {{ if .Params.Reviewed }}
+    <span>reviewed by:</span>
+    {{ range .Params.Reviewed }}
+      {{ $ctx := dict
+        "page" $page
+        "gardener" .
+      }}
+      {{ partial "popover-gardener.html" $ctx }}
+    {{ end }}
+  </li>
+  {{ end }}
+
+  <!-- 	{{ if (in .Params.Category "initiative") }}
+    <li>
+      <span>hashtag:</span>
+      <code>#{{ with .File }}{{ .BaseFileName }}{{ end }}</code>
+    </li>
+  {{ end }} -->
+  {{ with .Params.Implemented }}
+    <li>
+      <span>implemented in:</span>
+      {{ $ctx := dict
+        "page" $page
+        "organization" .
+      }}
+      {{ partial "popover-organization.html" $ctx }}
+    </li>
+  {{ end }}
+</ul>

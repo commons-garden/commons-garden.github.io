@@ -1,0 +1,99 @@
+<aside class="history">
+  <!-- CODE: this one is cherry on top, if we can't, jsut remove ".with-history" from single.html and we're good.
+
+    If you wanna do it, we need a json report for each file on /content/ folder, with variables:
+    - month, year (one per loop)
+    - how often did file changed said month (per commit), a range. if will be the HEIGHT of pebble
+    - how much did the file changed said month (a percentage from at start and end of month). it will be the OPACITY of the pebble
+    - a link to the file version control for the month (it's gitlab, it's open, why not), syntax is https://gitlab.com/commons-garden/commons-garden.gitlab.io/-/commits/main/content/spec/ssb-threads.md?ref_type=heads
+
+    pebbles should alternate as history-a and -b, randomly, for effect
+
+    Considerations: you can stop on last 6 months. maaaybe we can have an initial month, but it's not really that important methinks.
+
+    One factor is missing: popularity. AS in, how often the page was visited this month. That's analytics and we need to talk about it. It's ok to start without it, but this one closes the loop.
+
+
+
+   -->
+
+  <a
+    href="https://gitlab.com/commons-garden/commons-garden.gitlab.io/-/commits/main/content/spec/ssb-threads.md?ref_type=heads"
+    class="pebble"
+    style="height: {{ index (seq 70 | shuffle) 0 }}px; opacity: {{ index (seq 100 | shuffle) 0 }}%"
+    data-placement="right"
+    data-toggle="popover"
+    data-content="<h2>April 2024</h2>
+     <p>updated {{ index (seq 10 | shuffle) 0 }} times, {{ index (seq 70 | shuffle) 0 }}% change</p>"
+  >
+    {{ partial "history-a.svg" . }}
+  </a>
+
+  <a
+    href="https://gitlab.com/commons-garden/commons-garden.gitlab.io/-/commits/main/content/spec/ssb-threads.md?ref_type=heads"
+    class="pebble"
+    style="height: {{ index (seq 70 | shuffle) 0 }}px; opacity: {{ index (seq 100 | shuffle) 0 }}%"
+    data-placement="right"
+    data-toggle="popover"
+    data-content="<h2>March 2024</h2>
+          <p>updated {{ index (seq 10 | shuffle) 0 }} times, {{ index (seq 70 | shuffle) 0 }}% change</p>"
+  >
+    {{ partial "history-b.svg" . }}
+  </a>
+  <a
+    href="https://gitlab.com/commons-garden/commons-garden.gitlab.io/-/commits/main/content/spec/ssb-threads.md?ref_type=heads"
+    class="pebble"
+    style="height: {{ index (seq 70 | shuffle) 0 }}px; opacity: {{ index (seq 100 | shuffle) 0 }}%"
+    data-placement="right"
+    data-toggle="popover"
+    data-content="<h2>February 2024</h2>
+          <p>updated {{ index (seq 10 | shuffle) 0 }} times, {{ index (seq 70 | shuffle) 0 }}% change</p>"
+  >
+    {{ partial "history-a.svg" . }}
+  </a>
+  <a
+    href="https://gitlab.com/commons-garden/commons-garden.gitlab.io/-/commits/main/content/spec/ssb-threads.md?ref_type=heads"
+    class="pebble"
+    style="height: {{ index (seq 70 | shuffle) 0 }}px; opacity: {{ index (seq 100 | shuffle) 0 }}%"
+    data-placement="right"
+    data-toggle="popover"
+    data-content="<h2>January 2024</h2>
+          <p>updated {{ index (seq 10 | shuffle) 0 }} times, {{ index (seq 70 | shuffle) 0 }}% change</p>"
+  >
+    {{ partial "history-a.svg" . }}
+  </a>
+  <a
+    href="https://gitlab.com/commons-garden/commons-garden.gitlab.io/-/commits/main/content/spec/ssb-threads.md?ref_type=heads"
+    class="pebble"
+    style="height: {{ index (seq 70 | shuffle) 0 }}px; opacity: {{ index (seq 100 | shuffle) 0 }}%"
+    data-placement="right"
+    data-toggle="popover"
+    data-content="<h2>December 2023</h2> 
+          <p>updated {{ index (seq 10 | shuffle) 0 }} times, {{ index (seq 70 | shuffle) 0 }}% change</p>"
+  >
+    {{ partial "history-b.svg" . }}
+  </a>
+
+  <a
+    href="https://gitlab.com/commons-garden/commons-garden.gitlab.io/-/commits/main/content/spec/ssb-threads.md?ref_type=heads"
+    class="pebble"
+    style="height: {{ index (seq 70 | shuffle) 0 }}px; opacity: {{ index (seq 100 | shuffle) 0 }}%"
+    data-placement="right"
+    data-toggle="popover"
+    data-content="<h2>November 2023</h2> 
+     <p>updated {{ index (seq 10 | shuffle) 0 }} times, {{ index (seq 70 | shuffle) 0 }}% change</p>"
+  >
+    {{ partial "history-a.svg" . }}
+  </a>
+  <a
+    href="https://gitlab.com/commons-garden/commons-garden.gitlab.io/-/commits/main/content/spec/ssb-threads.md?ref_type=heads"
+    class="pebble"
+    style="height: {{ index (seq 70 | shuffle) 0 }}px; opacity: calc({{ index (seq 40 | shuffle) 0 }} + 60%)"
+    data-placement="right"
+    data-toggle="popover"
+    data-content="<h2>October 2023</h2>
+          <p>updated {{ index (seq 10 | shuffle) 0 }} times, {{ index (seq 70 | shuffle) 0 }}% change</p>"
+  >
+    {{ partial "history-b.svg" . }}
+  </a>
+</aside>

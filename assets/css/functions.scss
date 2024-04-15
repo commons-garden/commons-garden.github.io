@@ -1,52 +1,163 @@
-  $bp-small: 600px;
-  $bp-medium: 700px;
-  :root {
-    --font-text: Calling Code;
-    --font-header: TINY5x3-160;
-    --color-bg: #FFEDED;
-    --color-fg: #15141A;
-    --color-accent: #cc999c;
-    --color-accent-light: #E0C7C8;
-    --transition: 300ms;
-    --delay: 300ms;
-    --gap: 8px;
-    --avatar: 200px;
-    --gap-2: calc(var(--gap) * 2);
-    --gap-3: calc(var(--gap) * 3);
-    --gap-4: calc(var(--gap) * 4);
-    --gap-5: calc(var(--gap) * 5);
-    --gap-6: calc(var(--gap) * 6);
-    --gap-7: calc(var(--gap) * 7);
-    --gap-8: calc(var(--gap) * 8);
-    --gap-9: calc(var(--gap) * 9);
-    --gap-10: calc(var(--gap) * 10);
-    --gap-half: calc(var(--gap) / 2);
-    --gap-quart: calc(var(--gap) / 4);
-    --grid-gap: var(--gap-3);
-    --select-border: #777;
-    --select-focus: blue;
-    --select-arrow: var(--select-border);
-  }
+// breakpoints (affect entire site)
+$bp-small: 600px;
+$bp-medium: 600px;
 
-  @include keyframes(status) {
-    0% {
-      background-image: url(../images/slide-in.png);
-      background-repeat: no-repeat;
-      background-size: 0px 100%;
-    }
-    100% {
-      background-image: url(../images/slide-in.png);
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-    }
-  }
+// fonts used
 
-  @mixin status($count: $countDefault, $duration: 300ms, $delay: $delayDefault, $function: linear, $fill: $fillDefault, $visibility: $visibilityDefault) {
-    @include animation-name(status);
-    @include count($count);
-    @include duration($duration);
-    @include delay($delay);
-    @include function($function);
-    @include fill-mode($fill);
-    @include visibility($visibility);
+html {
+  --font-text: calling-code;
+  --font-title: MontaguSlab;
+}
+
+@include font-face(MontaguSlab);
+@include font-face(calling-code);
+
+// colors per categories
+
+html {
+  --color: #ffeded;
+  --color-2: #cc999c;
+  --color-text: #15141a;
+  &.spec {
+    --color: #ffeded;
+    --color-2: #cc999c;
   }
+  &.initiative {
+    --color: #f2fff6;
+    --color-2: #699639;
+  }
+  &.organization {
+    --color: #e6f9ff;
+    --color-2: #417ec0;
+  }
+  &.gardener {
+    --color: #fff4cc;
+    --color-2: #a58738;
+  }
+  &.about {
+    --color: #f6f6f6;
+    --color-2: #858585;
+  }
+  &.internal {
+    --color: #ffeefe;
+    --color-2: #a258a8;
+  }
+}
+
+// backgrounds per category
+
+body {
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-position:
+    left top,
+    right bottom;
+}
+
+html.spec body {
+  background-image: url(/images/bgs/left-1.png), url(/images/bgs/right-1.png);
+}
+html.initiative body {
+  background-image: url(/images/bgs/left-2.png), url(/images/bgs/right-4.png);
+}
+html.organization body {
+  background-image: url(/images/bgs/left-3.png), url(/images/bgs/right-4.png);
+  background-position:
+    left bottom,
+    right top;
+}
+html.gardener body {
+  background-image: url(/images/bgs/left-4.png), url(/images/bgs/right-5.png),
+    url(/images/bgs/left-1.png);
+  background-position:
+    left bottom,
+    right top,
+    left top;
+}
+html.about body {
+}
+html.internal body {
+}
+
+html {
+  --transition: 300ms;
+  --delay: 300ms;
+  --gap: 8px;
+  --affordance: 20px;
+  --history: 20px;
+  --gap-2: calc(var(--gap) * 2);
+  --gap-3: calc(var(--gap) * 3);
+  --gap-4: calc(var(--gap) * 4);
+  --gap-5: calc(var(--gap) * 5);
+  --gap-6: calc(var(--gap) * 6);
+  --gap-7: calc(var(--gap) * 7);
+  --gap-8: calc(var(--gap) * 8);
+  --gap-9: calc(var(--gap) * 9);
+  --gap-10: calc(var(--gap) * 10);
+  --gap-half: calc(var(--gap) / 2);
+  --gap-quart: calc(var(--gap) / 4);
+  --grid-gap: var(--gap-3);
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+  --avatar: calc(var(--gap) * 20);
+  --shadow: 0 4px 0px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  --slidein: url(/images/slide-in.png);
+
+  &.about {
+    --slidein: url(/images/color-about.png);
+  }
+  &.gardener {
+    --slidein: url(/images/color-gardener.png);
+  }
+  &.initiative {
+    --slidein: url(/images/color-initiative.png);
+  }
+  &.internal {
+    --slidein: url(/images/color-internal.png);
+  }
+  &.organization {
+    --slidein: url(/images/color-organization.png);
+  }
+  &.spec {
+    --slidein: url(/images/color-spec.png);
+  }
+}
+
+@include keyframes(status) {
+  0% {
+    background-image: var(--slidein);
+    background-repeat: no-repeat;
+    background-size: 0px 100%;
+    color: var(--color);
+  }
+  100% {
+    background-image: var(--slidein);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+  }
+}
+
+@mixin status(
+  $count: $countDefault,
+  $duration: 300ms,
+  $delay: $delayDefault,
+  $function: linear,
+  $fill: $fillDefault,
+  $visibility: $visibilityDefault
+) {
+  @include animation-name(status);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}

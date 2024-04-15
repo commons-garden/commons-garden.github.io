@@ -1,15 +1,14 @@
-{{ if (in .Title "About")}}
-About us
-{{ else if (in .Title "Initiatives")}}
-Our discussion topics
-{{ else if (in .Title "Gardeners")}}
-Our volunteers
-{{ else if (in .Title "Specs")}}
-Technical deliverables
-{{ else if (in .Title "Wireframes")}}
-Design deliverables
-{{ else if (in .Title "Tutorial")}}
-How to write documentation
+{{ if (in .Title "About") }}
+  About us
+{{ else if (in .Title "Initiatives") }}
+  Our discussion topics
+{{ else if (in .Title "Gardeners") }}
+  Our volunteers
+{{ else if (in .Title "Specs") }}
+  Technical deliverables
+{{ else if (in .Title "Wireframes") }}
+  Design deliverables
+{{ else if (in .Title "Tutorial") }}
+  How to write documentation
 {{ else }}
-
 {{ end }}

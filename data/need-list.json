@@ -1,0 +1,21 @@
+{
+  "description": "Defined needs that projects may draw on",
+  "values": [
+    {
+      "value": "translation",
+      "description": ""
+    },
+    {
+      "value": "funding",
+      "description": ""
+    },
+    {
+      "value": "design",
+      "description": ""
+    },
+    {
+      "value": "marketing",
+      "description": ""
+    }
+  ]
+}

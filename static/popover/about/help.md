@@ -1,8 +1,7 @@
 ---
 title: How to help
-type: public
+display: public
 description: Ways to help us
-category: about
 date: 2023-03-07
 ---
 
@@ -10,9 +9,8 @@ date: 2023-03-07
 
 Check the [Open Initiatives](/about/initiatives) list and [reach out](/about/contact) if you...
 
-1. ...have field knowledge on the subject and 
+1. ...have field knowledge on the subject and
 1. ...are willing to participate on discussions
-
 
 ## Overall organization
 

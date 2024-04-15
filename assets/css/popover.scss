@@ -1,0 +1,66 @@
+.bs-popover-right {
+  border: none;
+  .arrow:after {
+    border-right-color: var(--color);
+  }
+}
+
+.bs-popover-left {
+  border: none;
+  .arrow:after {
+    border-left-color: var(--color);
+  }
+}
+
+.bs-popover-top {
+  border: none;
+  .arrow:after {
+    border-top-color: var(--color);
+  }
+}
+
+.bs-popover-bottom {
+  border: none;
+  .arrow:after {
+    border-bottom-color: var(--color);
+  }
+}
+
+.popover {
+  @include radius(0);
+  padding: var(--gap);
+  @include transition(opacity);
+  @include shadow(box, 0px 0px 0px rgba(var(--color-2), 0));
+  @include opacity(0);
+  &.show {
+    @include shadow(box, 0px 0px 20px var(--color-2));
+    @include opacity(100);
+  }
+  background-color: var(--color);
+
+  width: 240px;
+  h2 {
+    margin-bottom: var(--gap-half);
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 13px;
+    line-height: 120%;
+    margin-bottom: 0;
+    margin-top: var(--gap);
+  }
+}
+
+.popover-body {
+  @include flipInX;
+  font-family: var(--font-text) !important;
+  // &:after {
+  //   content: "Click for more";
+  //   display: block;
+  //   margin-top: 16px;
+  //   padding-top: 8px;
+  //   font-family: var(--font-title);
+  //   border-top: solid 1px var(--color-2);
+  //   text-transform: uppercase;
+  // }
+}

@@ -1,0 +1,14 @@
+{{ $gardenerName := . }}
+{{ $ImageTypes := slice "jpg" "jpeg" "png" "svg" }}
+
+{{ $img_src := false }}
+
+{{ range $ImageTypes }}
+  {{ $candidate := (printf "/images/gardener/%s.%s" $gardenerName .) }}
+
+  {{ if (fileExists (add "static" $candidate)) }}
+    {{ $img_src = $candidate }}
+  {{ end }}
+{{ end }}
+
+{{ return $img_src }}

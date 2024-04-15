@@ -1,0 +1,57 @@
+[
+  {
+    "title": "about",
+    "description": "About us",
+    "display": "public",
+    "pluralize": "no"
+  },
+
+  {
+    "title": "initiative",
+    "description": "Our discussion topics",
+    "display": "public",
+    "pluralize": "yes"
+  },
+
+  {
+    "title": "manual",
+    "description": "How to write documentation",
+    "display": "hidden",
+    "pluralize": "yes"
+  },
+
+  {
+    "title": "spec",
+    "description": "Technical deliverables",
+    "display": "public",
+    "pluralize": "yes"
+  },
+
+  {
+    "title": "implementation",
+    "description": "specs implemented by organizations",
+    "display": "hidden",
+    "pluralize": "yes"
+  },
+
+  {
+    "title": "article",
+    "description": "pending",
+    "display": "hidden",
+    "pluralize": "yes"
+  },
+
+  {
+    "title": "organization",
+    "description": "pending",
+    "display": "hidden",
+    "pluralize": "yes"
+  },
+
+  {
+    "title": "gardener",
+    "description": "our volunteers",
+    "display": "public",
+    "pluralize": "yes"
+  }
+]

@@ -1,5 +1,6 @@
 ---
 title: manyverse
-category: organization
+display: public
 date: 2023-07-18
+members: [staltz, powersource]
 ---

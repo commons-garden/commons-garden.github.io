@@ -3,7 +3,6 @@ title: Not Commons
 display: public
 status: ongoing
 description: Engaging with profiteers
-category: initiative
 author: [nonlinear, cblgh]
 facilitator: [nonlinear]
 date: 2023-06-05
@@ -21,32 +20,32 @@ date: 2023-06-05
 2. definition of boundaries in therapy
 3. gentrification
 
-## Intake 
+## Intake
 
 - Definition of done: A healthy immune system
-	- Agreed boundaries
-	- Sanctions
-	- Rewards
+  - Agreed boundaries
+  - Sanctions
+  - Rewards
 - Deliverables
-	- takeaways for public awareness
-	- promotional pieces
+  - takeaways for public awareness
+  - promotional pieces
 - Who should be on the table?
-	- entire SSB community
+  - entire SSB community
 - What skillsets we need?
-	- sociologists
-	- anthropologists
-- Who does it affect? Which groups are affected and not on the table? 
-	- commons other than SSB
-	- mastodon? 
-	- IPFS
-	- Other open source computing languages
+  - sociologists
+  - anthropologists
+- Who does it affect? Which groups are affected and not on the table?
+  - commons other than SSB
+  - mastodon?
+  - IPFS
+  - Other open source computing languages
 - Who benefits?
-	- Future SSB users
-	- Marginalized communities
-	- Good commercial actors
+  - Future SSB users
+  - Marginalized communities
+  - Good commercial actors
 - Post-success opportunities
-	- engaged community
-	- strenghtened diplomatic channels
+  - engaged community
+  - strenghtened diplomatic channels
 
 ## Assumptions to validate
 
@@ -66,11 +65,10 @@ date: 2023-06-05
 
 > Success case stories of commercial on open source environments?
 
-> What do we want (not what we don't want)? 
+> What do we want (not what we don't want)?
 
 > What do we tolerate? What we dont tolerate?
 
 > Failure case stories of commercial on open source environments?
 
 > The gentrification process also drives out the initiators in a similar way in this arena, i feel like. as processes are bureaucratized and financialization enters the frame, some actors either don't want to or can't continue to exist in that space
-

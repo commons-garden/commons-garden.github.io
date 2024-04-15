@@ -1,0 +1,31 @@
+{{ $name := .gardener }}
+{{ $page := .page }}
+
+{{ $gardener := $page.Site.GetPage (printf "/gardener/%s.md" $name) }}
+{{ $img_src := partial "get-gardener-img.html" $name }}
+
+{{ if $gardener }}
+  <a
+    href="/gardener/{{ $name }}"
+    data-placement="top"
+    data-toggle="popover"
+    data-content='
+      <div class="actor">
+        {{ if $img_src }}
+      <img class="avatar" src="{{ $img_src }}" />
+    {{ end }}
+    
+
+        <div class="more">
+          <h2>{{ $gardener.Params.title }}</h2>
+          <p>
+            {{ $gardener.Params.description | truncate 80 }}
+          </p>
+        </div>
+
+      </div>'
+    >{{ $gardener.Params.title }}</a
+  >
+{{ else }}
+  {{ $name }}
+{{ end }}

@@ -1,0 +1,15 @@
+[
+  {
+    "title": "__meta",
+    "description": "How post/category is displayed for visitors"
+  },
+
+  {
+    "title": "hidden",
+    "description": "Can only by found via URL"
+  },
+  {
+    "title": "visible",
+    "description": "Listed and visible to all"
+  }
+]

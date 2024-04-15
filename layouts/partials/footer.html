@@ -1,0 +1,18 @@
+<footer class="footer">
+  <ul class="container">
+    {{ range .Site.RegularPages }}
+      {{ if (in .Params.category "about") }}
+        {{ if (in .Params.display "public") }}
+          <li>
+            <a
+              href="{{ .RelPermalink }}"
+              data-toggle="tooltip"
+              title="{{ .Description }}"
+              >{{ .Title }}</a
+            >
+          </li>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </ul>
+</footer>

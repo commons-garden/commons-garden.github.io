@@ -1,0 +1,25 @@
+{
+  "description": "Possible states of a project",
+  "values": [
+    {
+      "value": "draft",
+      "description": "Project is not ready for primetime"
+    },
+    {
+      "value": "testing",
+      "description": "Project is almost ready"
+    },
+    {
+      "value": "stable",
+      "description": "Project is ready"
+    },
+    {
+      "value": "deprecated",
+      "description": "Project is outdated"
+    },
+    {
+      "value": "archived",
+      "description": "Documentation only"
+    }
+  ]
+}

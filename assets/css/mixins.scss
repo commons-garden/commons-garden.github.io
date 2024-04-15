@@ -6,9 +6,7 @@ $prefixes: webkit moz ms o;
 // https://css-tricks.com/snippets/sass/mixin-prefix-properties/
 
 @mixin prefix($declarations, $prefixes: ()) {
-
-  @each $property,
-  $value in $declarations {
+  @each $property, $value in $declarations {
     @each $prefix in $prefixes {
       #{'-' + $prefix + '-' + $property}: $value;
     }
@@ -20,11 +18,19 @@ $prefixes: webkit moz ms o;
 
 @mixin transition($prop: all, $time: 300ms, $ease: ease-out) {
   @if $prop==disable {
-    @include prefix((transition: none), $prefixes);
-  }
-
-  @else {
-    @include prefix((transition: $prop $time $ease), $prefixes);
+    @include prefix(
+      (
+        transition: none,
+      ),
+      $prefixes
+    );
+  } @else {
+    @include prefix(
+      (
+        transition: $prop $time $ease,
+      ),
+      $prefixes
+    );
   }
 }
 
@@ -33,18 +39,32 @@ $prefixes: webkit moz ms o;
 }
 
 @mixin border-box($mode: border-box) {
-  @include prefix((box-sizing: $mode), $prefixes);
+  @include prefix(
+    (
+      box-sizing: $mode,
+    ),
+    $prefixes
+  );
 }
 
-@mixin radius($radius-1: 5px, $radius-2: 5px, $radius-3: 5px, $radius-4: 5px, $mode: regular) {
+@mixin radius(
+  $radius-1: 5px,
+  $radius-2: 5px,
+  $radius-3: 5px,
+  $radius-4: 5px,
+  $mode: regular
+) {
   @if $mode==regular {
-    @include prefix((border-radius: $radius-1), $prefixes);
+    @include prefix(
+      (
+        border-radius: $radius-1,
+      ),
+      $prefixes
+    );
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-  }
-
-  @else {
+  } @else {
     -webkit-border-top-right-radius: $radius-2;
     -webkit-border-bottom-right-radius: $radius-3;
     -webkit-border-bottom-left-radius: $radius-4;
@@ -62,11 +82,19 @@ $prefixes: webkit moz ms o;
 
 @mixin shadow($mode: box, $shadow: 0 1px 3px rgba(0, 0, 0, 0.25)) {
   @if $mode==text {
-    @include prefix((text-shadow: $shadow), $prefixes);
-  }
-
-  @else {
-    @include prefix((box-shadow: $shadow), $prefixes);
+    @include prefix(
+      (
+        text-shadow: $shadow,
+      ),
+      $prefixes
+    );
+  } @else {
+    @include prefix(
+      (
+        box-shadow: $shadow,
+      ),
+      $prefixes
+    );
   }
 }
 
@@ -80,56 +108,35 @@ $prefixes: webkit moz ms o;
 @mixin reset($type: all) {
   @if $type==margin {
     margin: 0px !important;
-  }
-
-  @else if $type==padding {
+  } @else if $type==padding {
     padding: 0px !important;
-  }
-
-  @else if $type==border {
+  } @else if $type==border {
     border: none;
-  }
-
-  @else if $type==bg {
+  } @else if $type==bg {
     background: transparent;
-  }
-
-  @else if $type==list {
+  } @else if $type==list {
     list-style: none;
-  }
-
-  @else if $type==select {
+  } @else if $type==select {
     -moz-appearance: none;
     -webkit-appearance: none;
-  }
-
-  @else if $type==shadow {
+  } @else if $type==shadow {
     @include shadow(normal, none);
-  }
-
-  @else if $type==outline {
+  } @else if $type==outline {
     outline-width: 0;
     outline: none !important;
     outline-color: transparent;
     outline-style: none;
-  }
-
-  @else if $type==shadow-text {
+  } @else if $type==shadow-text {
     @include shadow(text, none);
-  }
-
-  @else if $type==number {
-
-    &[type=number]::-webkit-inner-spin-button,
-    &[type=number]::-webkit-outer-spin-button {
+  } @else if $type==number {
+    &[type="number"]::-webkit-inner-spin-button,
+    &[type="number"]::-webkit-outer-spin-button {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
       margin: 0;
     }
-  }
-
-  @else {
+  } @else {
     margin: 0px !important;
     padding: 0px !important;
     border: none;
@@ -161,39 +168,68 @@ $prefixes: webkit moz ms o;
 // (`ㅅ`)づ animation mixins
 
 @mixin rotate($rotate: 0) {
-  @include prefix((transform: rotate($rotate + deg)), $prefixes);
+  @include prefix(
+    (
+      transform: rotate($rotate + deg),
+    ),
+    $prefixes
+  );
 }
 
 @mixin scale($scale: 1) {
-  @include prefix((transform: scale($scale)), $prefixes);
+  @include prefix(
+    (
+      transform: scale($scale),
+    ),
+    $prefixes
+  );
 }
 
 @mixin skew($skew: 0) {
-  @include prefix((transform: skew($skew + deg)), $prefixes);
+  @include prefix(
+    (
+      transform: skew($skew + deg),
+    ),
+    $prefixes
+  );
 }
 
 @mixin translate($x: 0, $y: 0, $z: 0, $type: other) {
   @if $type==3d {
-    @include prefix((transform: translate3d($x + px, $y + px, $z + px)), $prefixes);
-  }
-
-  @else {
-    @include prefix((transform: translate($x + px, $y + px)), $prefixes);
+    @include prefix(
+      (
+        transform: translate3d($x + px, $y + px, $z + px),
+      ),
+      $prefixes
+    );
+  } @else {
+    @include prefix(
+      (
+        transform: translate($x + px, $y + px),
+      ),
+      $prefixes
+    );
   }
 }
 
 // (`ㅅ`)づ forms mixins
 
 @mixin disable($type: link) {
-  @if $type=="select" {
-    @include prefix((user-select: none), moz webkit ms);
-  }
-
-  @else if $type=="drag" {
-    @include prefix((user-drag: none), webkit);
-  }
-
-  @else if $type=="link" {
+  @if $type== "select" {
+    @include prefix(
+      (
+        user-select: none,
+      ),
+      moz webkit ms
+    );
+  } @else if $type== "drag" {
+    @include prefix(
+      (
+        user-drag: none,
+      ),
+      webkit
+    );
+  } @else if $type== "link" {
     pointer-events: none;
     cursor: default;
   }
@@ -220,7 +256,7 @@ $prefixes: webkit moz ms o;
     @content;
   }
 
-  @if $animate=="true" {
+  @if $animate== "true" {
     &:focus::-webkit-input-placeholder {
       transition: all 0.5s 0.1s ease;
       text-indent: -50%;
@@ -233,7 +269,12 @@ $prefixes: webkit moz ms o;
 
 @mixin word-wrap {
   word-break: break-word;
-  @include prefix((hyphens: auto), webkit moz);
+  @include prefix(
+    (
+      hyphens: auto,
+    ),
+    webkit moz
+  );
 }
 
 @mixin ellipsis {
@@ -248,14 +289,18 @@ $prefixes: webkit moz ms o;
   color: transparent;
 }
 
-@mixin font-face($title, $path: "../fonts/", $file: $title, $weight: normal, $style: normal, $stretch: normal, $transform: normal) {
+@mixin font-face(
+  $title,
+  $path: "../fonts/",
+  $file: $title,
+  $weight: normal,
+  $style: normal,
+  $stretch: normal,
+  $transform: normal
+) {
   @font-face {
     font-family: #{$title};
-    src: url("#{$path}#{$file}.eot");
-    src: url("#{$path}#{$file}.eot?#iefix") format("embedded-opentype"),
-    url("#{$path}#{$file}.woff") format("woff"),
-    url("#{$path}#{$file}.ttf") format("truetype"),
-    url("#{$path}#{$file}.svg##{$title}") format("svg");
+    src: url("#{$path}#{$file}.woff2") format("woff2");
     font-weight: $weight;
     font-style: $style;
     font-stretch: $stretch;
@@ -278,51 +323,77 @@ $prefixes: webkit moz ms o;
   $convertable-units: deg grad turn rad;
   $conversion-factors: 1 (10grad/9deg) (1turn/360deg) (3.1415926rad/180deg);
 
-  @if index($convertable-units, unit($value)) and index($convertable-units, $unit) {
-    @return $value / nth($conversion-factors, index($convertable-units, unit($value))) * nth($conversion-factors, index($convertable-units, $unit));
+  @if index($convertable-units, unit($value)) and
+    index($convertable-units, $unit)
+  {
+    @return $value /
+      nth($conversion-factors, index($convertable-units, unit($value))) *
+      nth($conversion-factors, index($convertable-units, $unit));
   }
 
   @warn "Cannot convert `#{unit($value)}` to `#{$unit}`.";
 }
 
 @function is-direction($value) {
-  $is-direction: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
-  $is-angle: type-of($value)=='number'and index('deg''grad''turn''rad', unit($value));
+  $is-direction: index(
+    (
+      to top,
+      to top right,
+      to right top,
+      to right,
+      to bottom right,
+      to right bottom,
+      to bottom,
+      to bottom left,
+      to left bottom,
+      to left,
+      to left top,
+      to top left
+    ),
+    $value
+  );
+  $is-angle: type-of($value) == "number" and
+    index("deg" "grad" "turn" "rad", unit($value));
   @return $is-direction or $is-angle;
 }
 
 @function legacy-direction($value) {
-  @if is-direction($value)==false {
+  @if is-direction($value) ==false {
     @warn "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be an angle or a direction";
   }
 
-  $conversion-map: (to top : bottom,
-    to top right : bottom left,
-    to right top : left bottom,
-    to right : left,
-    to bottom right : top left,
-    to right bottom : left top,
-    to bottom : top,
-    to bottom left : top right,
-    to left bottom : right top,
-    to left : right,
-    to left top : right bottom,
-    to top left : bottom right);
+  $conversion-map: (
+    to top: bottom,
+    to top right: bottom left,
+    to right top: left bottom,
+    to right: left,
+    to bottom right: top left,
+    to right bottom: left top,
+    to bottom: top,
+    to bottom left: top right,
+    to left bottom: right top,
+    to left: right,
+    to left top: right bottom,
+    to top left: bottom right
+  );
 
   @if map-has-key($conversion-map, $value) {
     @return map-get($conversion-map, $value);
   }
 
-  @return 90deg - convert-angle($value, 'deg');
+  @return 90deg - convert-angle($value, "deg");
 }
 
 @mixin linear-gradient($direction, $color-stops...) {
-  @if is-direction($direction)==false {
+  @if is-direction($direction) ==false {
     $color-stops: ($direction, $color-stops);
     $direction: 180deg;
   }
 
   background: nth(nth($color-stops, 1), 1);
-  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: -webkit-linear-gradient(
+    legacy-direction($direction),
+    $color-stops
+  );
   background: linear-gradient($direction, $color-stops);
 }

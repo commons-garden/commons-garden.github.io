@@ -1,0 +1,51 @@
+{
+  "description": "A project/ company/ community",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "appears in the path, must match the folder name",
+      "type": "string",
+      "required": true
+    },
+
+    "description": {
+      "description": "brief description about the organization",
+      "type": "string"
+    },
+
+    "date": {
+      "description": "When this document was first written. Format is `YYYY-MM-DD`",
+      "type": "string",
+      "required": true
+    },
+
+    "members": {
+      "description": "members of the organization",
+      "type": "hybrid-list",
+      "items": "gardener"
+    },
+
+    "contacts": {
+      "description": "list of contacts, each must be a gardener, and each must have an email",
+      "type": "list",
+      "items": "gardener",
+      "required": true
+    },
+
+    "scopes": {
+      "description": "scope(s) that the organization are part of",
+      "type": "list",
+      "items": "scope"
+    },
+
+    "link": {
+      "description": "web link for the organization",
+      "type": "string"
+    },
+
+    "needs": {
+      "description": "the kind of help this spec needs to thrive",
+      "type": "hybrid-list"
+    }
+  }
+}

@@ -1,17 +1,17 @@
 ---
 title: Mission statement
-type: public
+display: public
 description: Our goals
-category: about
 date: 2023-03-07
 ---
+
 The Scuttlebutt ecosystem is comprised of informal alliances, projects and organisations. Our mission is to support a diverse and vibrant ecosystem by:
 
 - Supporting **alignment and coordination** among actors
 - Identifying **emergent problems** and tensions
 - Facilitating communication and **dispute resolution**
 - Hosting (or pointing to) existing **specifications**
-- Guiding the **production of new** specifications 
+- Guiding the **production of new** specifications
 - Producing (or pointing to) **comparative** documentation
 - **Mapping** the ecosystem
 
@@ -22,7 +22,7 @@ The Scuttlebutt ecosystem is comprised of informal alliances, projects and organ
 - usability
 - security
 - aligning parallel work
-	- connections
+  - connections
 - conflict resolution
 - coalescing (standards, patterns)
 - code of conduct
@@ -34,7 +34,7 @@ Maintenance never ends, so organization ideas win speed
 
 ## 3. From nouns to verbs
 
-An effort *towards*, not a state of perfection
+An effort _towards_, not a state of perfection
 
 ## 4. We serve the community
 

@@ -1,13 +1,11 @@
 ---
 title: P2P Analytics
 display: public
-display: draft
+status: draft
 description: Analytics + consent
-category: initiative
 author: [nonlinear]
 date: 2023-06-30
 ---
-
 
 > The problem of analytics on open source
 

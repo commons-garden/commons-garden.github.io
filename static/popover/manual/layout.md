@@ -1,8 +1,7 @@
 ---
 title: site layout
-type: public
+display: public
 description: Describing the site layout
-category: tutorial
 date: 2023-06-03
 ---
 

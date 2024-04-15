@@ -1,9 +1,8 @@
 ---
 title: P2P Simulator
 display: public
-display: draft
+status: draft
 description: network simulator
-category: initiative
 author: [nonlinear, cblgh, mixmix]
 date: 2023-06-30
 ---
@@ -13,7 +12,6 @@ date: 2023-06-30
 - [SSB simulator](https://mixmix.gitlab.io/butt-sim/)
 - [ssbc/netsim: secure scuttlebutt network simulator](https://github.com/ssbc/netsim)
 - [Holochain Playground](https://holochainplayground.github.io/)
-
 
 ## Assumptions to validate
 

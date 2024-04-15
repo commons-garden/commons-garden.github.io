@@ -1,0 +1,76 @@
+{
+  "description": "All commons.garden posts fall under a category, this describes what each category needs",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "appears in the path, must match the folder name",
+      "type": "string",
+      "required": true
+    },
+
+    "status": {
+      "description": "where this spec is in it's journey",
+      "type": "string",
+      "required": true
+    },
+
+    "scope": {
+      "description": "the specs / technologies that are related",
+      "type": "hybrid-list",
+      "items": "scope"
+    },
+
+    "description": {
+      "description": "a description of the category type",
+      "type": "boolean"
+    },
+
+    "display": {
+      "description": "boolean - should this be displayed on lists? will be rendered, but not linked to. true / false",
+      "type": "boolean",
+      "default": true
+    },
+
+    "license": {
+      "description": "",
+      "type": "list",
+      "items": "license",
+      "required": true
+    },
+
+    "author": {
+      "description": "who wrote this spec",
+      "type": "hybrid-list",
+      "items": "gardener",
+      "required": true
+    },
+
+    "reviewed": {
+      "description": "who reviewed this spec",
+      "type": "hybrid-list",
+      "items": "gardener"
+    },
+
+    "implemented": {
+      "description": "organizations that implemented this spec",
+      "type": "hybrid-list",
+      "items": "organization"
+    },
+
+    "date": {
+      "description": "When this document was first written. Format is `YYYY-MM-DD`",
+      "type": "string",
+      "required": true
+    },
+
+    "link": {
+      "description": "link for the actual spec",
+      "type": "string"
+    },
+
+    "needs": {
+      "description": "the kind of help this spec needs to thrive",
+      "type": "hybrid-list"
+    }
+  }
+}

@@ -1,6 +1,7 @@
 ---
 title: SSB groups
-type: public
+display: public
+tags: wireframe
 description: Private Groups – User Experience
 status: stable
 scope: SSB
