@@ -3,26 +3,24 @@
 
   {{ $contact_mail := partial "get-organization-contacts.html" $page }}
 
-
   <div class="needs">
     <h2>Help needed:</h2>
-      {{ with .Params.Needs }}
-          <ol class="needs">
+    {{ with .Params.Needs }}
+      <ol class="needs">
         {{ range . }}
           <li class="need">
-            Can you help with <a href="mailto:{{ $contact_mail }}?subject={{ . }} help for {{ $page.Title }}" class="btn"
-             data-placement="left"
-    data-toggle="popover"
-    data-content="Email us your availability and we'll connect you with this {{ $page.Section }}">{{ . }}</a>?
-           
-           </li>
-
-       
-          
+            Can you help with
+            <a href="mailto:{{ $contact_mail }}?subject={{ . }} help for {{ $page.Title }}" class="btn"
+              data-placement="left"
+              data-toggle="popover"
+              data-content="Email us your availability and we'll connect you with this {{ $page.Section }}"
+            >
+              {{ . }}
+            </a>
+            ?
+          </li>
         {{ end }}
-         </ol>
-      {{ end }}
+       </ol>
     {{ end }}
-
   </div>
 {{ end }}
