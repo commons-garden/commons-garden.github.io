@@ -3,7 +3,7 @@ repo = "https://gitlab.com/commons-garden/commons-garden.gitlab.io"
 languageCode = "en-us"
 description = "Enhancing knowledge commons"
 title = "commons.garden"
-publishDir = "public"
+publishDir = "docs"
 enableEmoji = true
 
 [taxonomies]

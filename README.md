@@ -1,5 +1,15 @@
 # commons.garden
 
+> 🤖
+>
+> - [README](README.md) - Our project
+> - [CHANGELOG](CHANGELOG.md) — What we did
+> - [ROADMAP](ROADMAP.md) — What we wanna do
+> - [POLICY](POLICY.md) — How we do it
+> - [HEALTH](HEALTH.md) — What we accept
+>
+> 🤖
+
 - [commons.garden](https://commons.garden)
 - [our mission](https://commons.garden/about/mission)
 - [our TODO](https://commons.garden/about/todo)
