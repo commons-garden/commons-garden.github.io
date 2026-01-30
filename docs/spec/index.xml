@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Specs on commons.garden</title>
-    <link>https://commons.garden/spec/</link>
+    <link>https://commons-garden.github.io/spec/</link>
     <description>Recent content in Specs on commons.garden</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://commons.garden/spec/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://commons-garden.github.io/spec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Invite-driven onboarding</title>
-      <link>https://commons.garden/spec/invitation/</link>
+      <link>https://commons-garden.github.io/spec/invitation/</link>
       <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/spec/invitation/</guid>
-      <description>&lt;p&gt;&#xA;  Invite-driven onboarding allows users to &lt;i&gt;point&lt;/i&gt; to objects and share&#xA;  them with their friends inside or outside SSB platform.&#xA;&lt;/p&gt;&#xA;&#xA;&lt;div class=&#34;scroll&#34;&gt;&#xA;  &lt;img src=&#34;https://commons.garden/images/invite-driven.svg&#34; style=&#34;min-width: 1200px !important;&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2&gt;Possible objects:&lt;/h2&gt;&#xA;&#xA;&lt;ul&gt;&#xA;  &lt;li&gt;post&lt;/li&gt;&#xA;  &lt;li&gt;profile page&lt;/li&gt;&#xA;  &lt;li&gt;tag page *&lt;/li&gt;&#xA;  &lt;li&gt;user collection *&lt;/li&gt;&#xA;  &lt;li&gt;private group&lt;/li&gt;&#xA;  &lt;li&gt;private group with automatic invitation (expires after 1w)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;p&gt;* = future state&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Used on &lt;a href=&#34;https://www.manyver.se/epic/1887&#34;&gt;Manyverse&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>https://commons-garden.github.io/spec/invitation/</guid>
+      <description>&lt;p&gt;&#xA;  Invite-driven onboarding allows users to &lt;i&gt;point&lt;/i&gt; to objects and share&#xA;  them with their friends inside or outside SSB platform.&#xA;&lt;/p&gt;&#xA;&#xA;&lt;div class=&#34;scroll&#34;&gt;&#xA;  &lt;img src=&#34;https://commons-garden.github.io/images/invite-driven.svg&#34; style=&#34;min-width: 1200px !important;&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2&gt;Possible objects:&lt;/h2&gt;&#xA;&#xA;&lt;ul&gt;&#xA;  &lt;li&gt;post&lt;/li&gt;&#xA;  &lt;li&gt;profile page&lt;/li&gt;&#xA;  &lt;li&gt;tag page *&lt;/li&gt;&#xA;  &lt;li&gt;user collection *&lt;/li&gt;&#xA;  &lt;li&gt;private group&lt;/li&gt;&#xA;  &lt;li&gt;private group with automatic invitation (expires after 1w)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;p&gt;* = future state&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Used on &lt;a href=&#34;https://www.manyver.se/epic/1887&#34;&gt;Manyverse&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>SSB collections</title>
-      <link>https://commons.garden/spec/ssb-collections/</link>
+      <link>https://commons-garden.github.io/spec/ssb-collections/</link>
       <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/spec/ssb-collections/</guid>
+      <guid>https://commons-garden.github.io/spec/ssb-collections/</guid>
       <description>&lt;p&gt;Reframing SSB tags as collections&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://hackmd.io/@praxis/ssb-collections&#34;&gt;View hackmd&lt;/a&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;{.aaa} Resurfacing posts outside chronological order, reducing Bias of Now&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Think &amp;ldquo;mixmix&amp;rsquo;s book of soup recipes&amp;rdquo; &amp;ldquo;nonlinear book of illustration tips&amp;rdquo; or &amp;ldquo;rabble book of East Asia travel spots&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Some users don&amp;rsquo;t write much, but curate existing content. Collections give them a way to shine.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Tags were poorly named. Under the hood they behave like a collection, but they don&amp;rsquo;t have order.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SSB groups</title>
-      <link>https://commons.garden/spec/ssb-groups/</link>
+      <link>https://commons-garden.github.io/spec/ssb-groups/</link>
       <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/spec/ssb-groups/</guid>
+      <guid>https://commons-garden.github.io/spec/ssb-groups/</guid>
       <description>&lt;p&gt;Groups are important because SSB is a cloud-less peer-to-peer platform, where discourse is generally open (like Twitter).&lt;/p&gt;&#xA;&lt;p&gt;Adding groups means communities can coordinate, share memories, manage resources, away from prying eyes, protecting their sovereignty.&lt;/p&gt;&#xA;&lt;p&gt;Currently the two apps spearheading the new feature are Manyverse and &lt;a href=&#34;https://ahau.io/&#34;&gt;Āhau&lt;/a&gt; (a data-sovereignty-minded app built by and for indigenous groups) but others will come.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SSB threads</title>
-      <link>https://commons.garden/spec/ssb-threads/</link>
+      <link>https://commons-garden.github.io/spec/ssb-threads/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/spec/ssb-threads/</guid>
+      <guid>https://commons-garden.github.io/spec/ssb-threads/</guid>
       <description>&lt;p&gt;The post message type is the foundational unit for talking with peers on the original scuttlebutt network.&lt;/p&gt;&#xA;&lt;p&gt;Post messages can be used standalone, but are most commonly collected as sets of related messages and formed into a &amp;ldquo;thread&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;During rendering, threads of posts are also further decorated with vote messages (for likes), and about messages (for displaying author details).&lt;/p&gt;</description>
     </item>
   </channel>

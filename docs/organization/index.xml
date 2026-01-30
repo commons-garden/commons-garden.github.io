@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Organizations on commons.garden</title>
-    <link>https://commons.garden/organization/</link>
+    <link>https://commons-garden.github.io/organization/</link>
     <description>Recent content in Organizations on commons.garden</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://commons.garden/organization/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://commons-garden.github.io/organization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>commons.garden</title>
-      <link>https://commons.garden/organization/commons.garden/</link>
+      <link>https://commons-garden.github.io/organization/commons.garden/</link>
       <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/organization/commons.garden/</guid>
+      <guid>https://commons-garden.github.io/organization/commons.garden/</guid>
       <description></description>
     </item>
     <item>
       <title>praxis</title>
-      <link>https://commons.garden/organization/praxis/</link>
+      <link>https://commons-garden.github.io/organization/praxis/</link>
       <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/organization/praxis/</guid>
+      <guid>https://commons-garden.github.io/organization/praxis/</guid>
       <description>&lt;p&gt;Praxis is a small group of thinkers getting together for study groups, salons and soundboards.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Āhau</title>
-      <link>https://commons.garden/organization/ahau/</link>
+      <link>https://commons-garden.github.io/organization/ahau/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/organization/ahau/</guid>
+      <guid>https://commons-garden.github.io/organization/ahau/</guid>
       <description></description>
     </item>
     <item>
       <title>Digital Democracy</title>
-      <link>https://commons.garden/organization/digital_democracy/</link>
+      <link>https://commons-garden.github.io/organization/digital_democracy/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/organization/digital_democracy/</guid>
+      <guid>https://commons-garden.github.io/organization/digital_democracy/</guid>
       <description></description>
     </item>
     <item>
       <title>manyverse</title>
-      <link>https://commons.garden/organization/manyverse/</link>
+      <link>https://commons-garden.github.io/organization/manyverse/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/organization/manyverse/</guid>
+      <guid>https://commons-garden.github.io/organization/manyverse/</guid>
       <description></description>
     </item>
   </channel>

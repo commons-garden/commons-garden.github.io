@@ -1,5 +1,5 @@
-baseURL = "https://commons.garden"
-repo = "https://gitlab.com/commons-garden/commons-garden.gitlab.io"
+baseURL = "https://commons-garden.github.io"
+repo = "https://github.com/commons-garden/commons-garden.github.io"
 languageCode = "en-us"
 description = "Enhancing knowledge commons"
 title = "commons.garden"

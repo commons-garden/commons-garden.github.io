@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Initiatives on commons.garden</title>
-    <link>https://commons.garden/initiatives/</link>
+    <link>https://commons-garden.github.io/initiatives/</link>
     <description>Recent content in Initiatives on commons.garden</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://commons.garden/initiatives/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://commons-garden.github.io/initiatives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,340 +2,340 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>commons.garden</title>
-    <link>https://commons.garden/</link>
+    <link>https://commons-garden.github.io/</link>
     <description>Recent content on commons.garden</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 08 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://commons.garden/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://commons-garden.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Paradox of Empowerment</title>
-      <link>https://commons.garden/initiative/empowerment/</link>
+      <link>https://commons-garden.github.io/initiative/empowerment/</link>
       <pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/empowerment/</guid>
+      <guid>https://commons-garden.github.io/initiative/empowerment/</guid>
       <description>&lt;h2 id=&#34;facilitation-links&#34;&gt;Facilitation Links:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://hackmd.io/@commonsgarden/empowerment&#34;&gt;Shared notes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://signal.group/#CjQKIFMl9PqjcicG1VRxjGyUg3E0aZywtkmK8EMjgIrvfSJ9EhAMp_n8LUohi913hlQypIUf&#34;&gt;Signal group&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;related-links&#34;&gt;Related links:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.partos.nl/publicatie/power-awareness-tool-2-0/&#34;&gt;Power Awareness Tool 2.0&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Ben Tairea</title>
-      <link>https://commons.garden/gardener/ben_tairea/</link>
+      <link>https://commons-garden.github.io/gardener/ben_tairea/</link>
       <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/gardener/ben_tairea/</guid>
+      <guid>https://commons-garden.github.io/gardener/ben_tairea/</guid>
       <description></description>
     </item>
     <item>
       <title>commons.garden</title>
-      <link>https://commons.garden/organization/commons.garden/</link>
+      <link>https://commons-garden.github.io/organization/commons.garden/</link>
       <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/organization/commons.garden/</guid>
+      <guid>https://commons-garden.github.io/organization/commons.garden/</guid>
       <description></description>
     </item>
     <item>
       <title>praxis</title>
-      <link>https://commons.garden/organization/praxis/</link>
+      <link>https://commons-garden.github.io/organization/praxis/</link>
       <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/organization/praxis/</guid>
+      <guid>https://commons-garden.github.io/organization/praxis/</guid>
       <description>&lt;p&gt;Praxis is a small group of thinkers getting together for study groups, salons and soundboards.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Structure</title>
-      <link>https://commons.garden/internal/structure/</link>
+      <link>https://commons-garden.github.io/internal/structure/</link>
       <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/internal/structure/</guid>
+      <guid>https://commons-garden.github.io/internal/structure/</guid>
       <description>&lt;p&gt;Categories have properties&lt;/p&gt;&#xA;&lt;h2 id=&#34;specs&#34;&gt;Specs&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;description&lt;/li&gt;&#xA;&lt;li&gt;type:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;freeform: facilitator can write anything&lt;/li&gt;&#xA;&lt;li&gt;hybrid-list: can be chosen by item, or freeform&lt;/li&gt;&#xA;&lt;li&gt;list: needs to be chosen by item&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;items: specifies the elements that can be chosen if type is hybrid-list or list&lt;/li&gt;&#xA;&lt;li&gt;required: frontmatter criteria needs to be written by facilitator (true or false)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Category</title>
-      <link>https://commons.garden/internal/category/</link>
+      <link>https://commons-garden.github.io/internal/category/</link>
       <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/internal/category/</guid>
-      <description>&lt;h2 id=&#34;todo&#34;&gt;TODO&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; explain categories&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; loop thru 1st item on &lt;code&gt;data/category.json&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; if value is &lt;code&gt;&amp;quot;list&amp;quot;&lt;/code&gt; just add a &amp;ldquo;View list&amp;rdquo; link pointing to &lt;code&gt;tutorial/{key}&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;All commons.garden posts fall under a category&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;title: description&lt;/li&gt;&#xA;&lt;li&gt;group: group category belongs (controlled)&lt;/li&gt;&#xA;&lt;li&gt;display: &lt;a href=&#34;https://commons.garden/manual/display&#34;&gt;View list&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;pluralize: certain category titles can be plurarized, some not&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;(list all categories, with links)&lt;/p&gt;</description>
+      <guid>https://commons-garden.github.io/internal/category/</guid>
+      <description>&lt;h2 id=&#34;todo&#34;&gt;TODO&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; explain categories&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; loop thru 1st item on &lt;code&gt;data/category.json&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; if value is &lt;code&gt;&amp;quot;list&amp;quot;&lt;/code&gt; just add a &amp;ldquo;View list&amp;rdquo; link pointing to &lt;code&gt;tutorial/{key}&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;All commons.garden posts fall under a category&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;title: description&lt;/li&gt;&#xA;&lt;li&gt;group: group category belongs (controlled)&lt;/li&gt;&#xA;&lt;li&gt;display: &lt;a href=&#34;https://commons-garden.github.io/manual/display&#34;&gt;View list&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;pluralize: certain category titles can be plurarized, some not&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;(list all categories, with links)&lt;/p&gt;</description>
     </item>
     <item>
       <title>choosing display</title>
-      <link>https://commons.garden/internal/display/</link>
+      <link>https://commons-garden.github.io/internal/display/</link>
       <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/internal/display/</guid>
+      <guid>https://commons-garden.github.io/internal/display/</guid>
       <description>&lt;h2 id=&#34;draft&#34;&gt;draft&lt;/h2&gt;&#xA;&lt;p&gt;Use it for articles that are nto ready to be published&lt;/p&gt;&#xA;&lt;h2 id=&#34;public&#34;&gt;public&lt;/h2&gt;&#xA;&lt;p&gt;Public articles appear on lists and index&lt;/p&gt;&#xA;&lt;h2 id=&#34;private&#34;&gt;private&lt;/h2&gt;&#xA;&lt;p&gt;Private articles never appear on lists or index&lt;/p&gt;</description>
     </item>
     <item>
       <title>need</title>
-      <link>https://commons.garden/internal/need/</link>
+      <link>https://commons-garden.github.io/internal/need/</link>
       <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/internal/need/</guid>
+      <guid>https://commons-garden.github.io/internal/need/</guid>
       <description>&lt;h2 id=&#34;todo&#34;&gt;TODO&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; explain categories&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; loop thru 1st item on &lt;code&gt;data/need.json&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; if value is &lt;code&gt;&amp;quot;list&amp;quot;&lt;/code&gt; just add a &amp;ldquo;View list&amp;rdquo; link pointing to &lt;code&gt;tutorial/{key}&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>status</title>
-      <link>https://commons.garden/internal/status/</link>
+      <link>https://commons-garden.github.io/internal/status/</link>
       <pubDate>Tue, 28 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/internal/status/</guid>
+      <guid>https://commons-garden.github.io/internal/status/</guid>
       <description>&lt;h2 id=&#34;todo&#34;&gt;TODO&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; explain categories&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; loop thru 1st item on &lt;code&gt;data/status.json&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; if value is &lt;code&gt;&amp;quot;list&amp;quot;&lt;/code&gt; just add a &amp;ldquo;View list&amp;rdquo; link pointing to &lt;code&gt;tutorial/{key}&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Invite-driven onboarding</title>
-      <link>https://commons.garden/spec/invitation/</link>
+      <link>https://commons-garden.github.io/spec/invitation/</link>
       <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/spec/invitation/</guid>
-      <description>&lt;p&gt;&#xA;  Invite-driven onboarding allows users to &lt;i&gt;point&lt;/i&gt; to objects and share&#xA;  them with their friends inside or outside SSB platform.&#xA;&lt;/p&gt;&#xA;&#xA;&lt;div class=&#34;scroll&#34;&gt;&#xA;  &lt;img src=&#34;https://commons.garden/images/invite-driven.svg&#34; style=&#34;min-width: 1200px !important;&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2&gt;Possible objects:&lt;/h2&gt;&#xA;&#xA;&lt;ul&gt;&#xA;  &lt;li&gt;post&lt;/li&gt;&#xA;  &lt;li&gt;profile page&lt;/li&gt;&#xA;  &lt;li&gt;tag page *&lt;/li&gt;&#xA;  &lt;li&gt;user collection *&lt;/li&gt;&#xA;  &lt;li&gt;private group&lt;/li&gt;&#xA;  &lt;li&gt;private group with automatic invitation (expires after 1w)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;p&gt;* = future state&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Used on &lt;a href=&#34;https://www.manyver.se/epic/1887&#34;&gt;Manyverse&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>https://commons-garden.github.io/spec/invitation/</guid>
+      <description>&lt;p&gt;&#xA;  Invite-driven onboarding allows users to &lt;i&gt;point&lt;/i&gt; to objects and share&#xA;  them with their friends inside or outside SSB platform.&#xA;&lt;/p&gt;&#xA;&#xA;&lt;div class=&#34;scroll&#34;&gt;&#xA;  &lt;img src=&#34;https://commons-garden.github.io/images/invite-driven.svg&#34; style=&#34;min-width: 1200px !important;&#34; /&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2&gt;Possible objects:&lt;/h2&gt;&#xA;&#xA;&lt;ul&gt;&#xA;  &lt;li&gt;post&lt;/li&gt;&#xA;  &lt;li&gt;profile page&lt;/li&gt;&#xA;  &lt;li&gt;tag page *&lt;/li&gt;&#xA;  &lt;li&gt;user collection *&lt;/li&gt;&#xA;  &lt;li&gt;private group&lt;/li&gt;&#xA;  &lt;li&gt;private group with automatic invitation (expires after 1w)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;p&gt;* = future state&lt;/p&gt;&#xA;&#xA;&lt;p&gt;Used on &lt;a href=&#34;https://www.manyver.se/epic/1887&#34;&gt;Manyverse&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Knowledge Ecology</title>
-      <link>https://commons.garden/initiative/knowledge-ecology/</link>
+      <link>https://commons-garden.github.io/initiative/knowledge-ecology/</link>
       <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/knowledge-ecology/</guid>
+      <guid>https://commons-garden.github.io/initiative/knowledge-ecology/</guid>
       <description>&lt;h2 id=&#34;welcome&#34;&gt;Welcome!&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;As we exchange, define, refine, and circle back to ideas together, some of us may find knowledge synthesis useful. This document is a starting point for that synthesis. &lt;strong&gt;Distributed processing is much appreciated&lt;/strong&gt; - decentralise labour and power!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;crystal_ball-origin-story&#34;&gt;&amp;#x1f52e; Origin Story&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;The group chat space this document emerged from originated in a small spell.&lt;/em&gt; &amp;#x1f9d9;&lt;/p&gt;&#xA;&lt;p&gt;Once upon a time, a knowledge ecologist met a spell-casting, community-fostering coder&amp;hellip;&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;The code wizard, having not heard the term &lt;strong&gt;&lt;a href=&#34;&#34;&gt;knowledge ecology&lt;/a&gt;&lt;/strong&gt; before (&lt;em&gt;ADD LINK, when ready&lt;/em&gt;), wanted to learn more. But the ecologist, busy with her research, daunted by the prospect and scope of conveying what she was still learning herself, was afraid to start teaching, or even talking much about what she&amp;rsquo;d been percolating on alongside her work. She had thought those ideas about her perspectives and methods of research safe on a back-burner for now, to be stirred later.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pinned comments</title>
-      <link>https://commons.garden/initiative/knowledge-ecology/pinned-comments/</link>
+      <link>https://commons-garden.github.io/initiative/knowledge-ecology/pinned-comments/</link>
       <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/knowledge-ecology/pinned-comments/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;From &lt;a href=&#34;https://commons.garden/salon/knowledge-ecology/&#34;&gt;Knowledge Ecology&lt;/a&gt; salon&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;the transferable knowledge about knowledge systems I want: - toolkit of surfacing questions - health diagnostic suggestions - how to know where you are in the evolution/ growth of a knowledge ecosystem - how to heal a sick system - how to sprout new ecosystems&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;as relates to cells, selves and identities, boundaries, care, and collective intelligences, this summary discussion would be a good ground to start with, though in terms of a standard curriculum, it’s diving in the deep end.&#xA;&lt;a href=&#34;https://mcdn.podbean.com/mf/download/yqri7s/Michael_Levin_Patreon_Only_Finalized783pw.mp3&#34;&gt;https://mcdn.podbean.com/mf/download/yqri7s/Michael_Levin_Patreon_Only_Finalized783pw.mp3&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>https://commons-garden.github.io/initiative/knowledge-ecology/pinned-comments/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;From &lt;a href=&#34;https://commons-garden.github.io/salon/knowledge-ecology/&#34;&gt;Knowledge Ecology&lt;/a&gt; salon&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;the transferable knowledge about knowledge systems I want: - toolkit of surfacing questions - health diagnostic suggestions - how to know where you are in the evolution/ growth of a knowledge ecosystem - how to heal a sick system - how to sprout new ecosystems&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;as relates to cells, selves and identities, boundaries, care, and collective intelligences, this summary discussion would be a good ground to start with, though in terms of a standard curriculum, it’s diving in the deep end.&#xA;&lt;a href=&#34;https://mcdn.podbean.com/mf/download/yqri7s/Michael_Levin_Patreon_Only_Finalized783pw.mp3&#34;&gt;https://mcdn.podbean.com/mf/download/yqri7s/Michael_Levin_Patreon_Only_Finalized783pw.mp3&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>cblgh</title>
-      <link>https://commons.garden/gardener/cblgh/</link>
+      <link>https://commons-garden.github.io/gardener/cblgh/</link>
       <pubDate>Sat, 16 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/gardener/cblgh/</guid>
+      <guid>https://commons-garden.github.io/gardener/cblgh/</guid>
       <description></description>
     </item>
     <item>
       <title>spencer</title>
-      <link>https://commons.garden/gardener/spencer/</link>
+      <link>https://commons-garden.github.io/gardener/spencer/</link>
       <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/gardener/spencer/</guid>
+      <guid>https://commons-garden.github.io/gardener/spencer/</guid>
       <description>&lt;p&gt;Trying to put into action prefigurative anarchy&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agenda</title>
-      <link>https://commons.garden/agenda/</link>
+      <link>https://commons-garden.github.io/agenda/</link>
       <pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/agenda/</guid>
+      <guid>https://commons-garden.github.io/agenda/</guid>
       <description>&lt;h2 id=&#34;platform-agenda&#34;&gt;Platform Agenda&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;How are we feeling? (round)&lt;/li&gt;&#xA;&lt;li&gt;Review TODO list&lt;/li&gt;&#xA;&lt;li&gt;Update TODO list&lt;/li&gt;&#xA;&lt;li&gt;Decide what to tackle&lt;/li&gt;&#xA;&lt;li&gt;Update TODO list in the end&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;maintenance-agenda&#34;&gt;Maintenance Agenda&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;How are we feeling? (round)&lt;/li&gt;&#xA;&lt;li&gt;Do we have any documentation updates? (add to todo, try to resolve live)&lt;/li&gt;&#xA;&lt;li&gt;Do we have any event that needs push? (add to todo)&lt;/li&gt;&#xA;&lt;li&gt;Do we have any post mortem/debrief on latest events?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;category-exercise&#34;&gt;Category exercise&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; move wireframe as a type of spec&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; create shadow category &amp;ldquo;implementation&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;show-and-tell&#34;&gt;Show-and-tell&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; event category&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; a concept of phases? leads, accepted, scheduled, etc.&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; past/upcoming&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; podcast?&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; .ics (how to automate)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; show time in local area&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; social media&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; mastodon&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; youtube?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;content&#34;&gt;Content&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; document p2p-delete 📌&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; update initiatives Michael wants to facilitate, define needs and next steps&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &amp;ldquo;needs&amp;rdquo; tags (resources, skillset, etc)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &amp;ldquo;type&amp;rdquo; tags (language, wireframe)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 2 emoji per initiative/spec&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; list volunteer types&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; redirect policy, template: &lt;code&gt;p2p-delete&lt;/code&gt; becomes &lt;code&gt;p2p_delete&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;hugo&#34;&gt;Hugo&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; mapping category diagram into hugo &lt;a href=&#34;https://hackmd.io/@mixmix/rywE-3P1T/edit&#34;&gt;category/criteria diagram&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; merge wireframe into spec + type&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; subpages&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; page template checkjs if slug has a folder and:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;lists all public pages in alphabetical order, into a table of content&lt;/li&gt;&#xA;&lt;li&gt;folder pages point to original page&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; subgroups should not be listed on list.html (or should? we need at least a new template)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;training-gardeners&#34;&gt;Training gardeners&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; tutorials&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; statuses&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; definition of proper training&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; who can educate others? how to prevent bottleneck?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;admin&#34;&gt;Admin&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; legal fiction, NGO&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; review &lt;a href=&#34;https://opencollective.com/commons-garden&#34;&gt;open collective&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;internal-documentation&#34;&gt;Internal documentation&lt;/h2&gt;&#xA;&lt;p&gt;How we write and update documentation for our facilitators?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Project phases</title>
-      <link>https://commons.garden/about/phases/</link>
+      <link>https://commons-garden.github.io/about/phases/</link>
       <pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/about/phases/</guid>
+      <guid>https://commons-garden.github.io/about/phases/</guid>
       <description>&lt;h2 id=&#34;phase-1-complete&#34;&gt;Phase 1 (complete)&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;specs category&lt;/li&gt;&#xA;&lt;li&gt;about category&lt;/li&gt;&#xA;&lt;li&gt;initiatives category&lt;/li&gt;&#xA;&lt;li&gt;wireframes category&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;phase-2-now&#34;&gt;Phase 2 (now)&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;members category&lt;/li&gt;&#xA;&lt;li&gt;organizations category&lt;/li&gt;&#xA;&lt;li&gt;wire categories across&lt;/li&gt;&#xA;&lt;li&gt;manual category (template,s criteria, etc)&lt;/li&gt;&#xA;&lt;li&gt;discuss glossary, living documentation (airtable?)&lt;/li&gt;&#xA;&lt;li&gt;donation platform (open collective?)&lt;/li&gt;&#xA;&lt;li&gt;discuss announcements (newsletter? telegram?)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;phase-3-next&#34;&gt;Phase 3 (next)&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;find facilitators&lt;/li&gt;&#xA;&lt;li&gt;facilitate for facilitators&lt;/li&gt;&#xA;&lt;li&gt;volunteer rotation&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>TODO</title>
-      <link>https://commons.garden/about/roadmap/</link>
+      <link>https://commons-garden.github.io/about/roadmap/</link>
       <pubDate>Sun, 10 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/about/roadmap/</guid>
+      <guid>https://commons-garden.github.io/about/roadmap/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hackmd.io/@commonsgarden/roadmap&#34;&gt;https://hackmd.io/@commonsgarden/roadmap&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Literature</title>
-      <link>https://commons.garden/about/literature/</link>
+      <link>https://commons-garden.github.io/about/literature/</link>
       <pubDate>Wed, 06 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/about/literature/</guid>
+      <guid>https://commons-garden.github.io/about/literature/</guid>
       <description>&lt;h2 id=&#34;literature-to-understand-and-inspire&#34;&gt;Literature to Understand and Inspire&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Starter guidelines - &lt;a href=&#34;https://www.swyx.io/digital-garden-tos&#34;&gt;Digital Garden Terms of Service&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Tools and Resources - &lt;a href=&#34;https://github.com/MaggieAppleton/digital-gardeners&#34;&gt;Digital Gardeners&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Use What You Make - &lt;a href=&#34;https://indieweb.org&#34;&gt;What is the IndieWeb?&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://maggieappleton.com/garden-history&#34;&gt;A Brief History &amp;amp; Ethos of the Digital Garden&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://anarchiststudies.org/acybernetics/&#34;&gt;Anarchist Cybernetics&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;digital-gardens-we-like&#34;&gt;Digital Gardens We Like&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://tomcritchlow.com/wiki/&#34;&gt;Tom Critchlow&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Āhau</title>
-      <link>https://commons.garden/organization/ahau/</link>
+      <link>https://commons-garden.github.io/organization/ahau/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/organization/ahau/</guid>
+      <guid>https://commons-garden.github.io/organization/ahau/</guid>
       <description></description>
     </item>
     <item>
       <title>Digital Democracy</title>
-      <link>https://commons.garden/organization/digital_democracy/</link>
+      <link>https://commons-garden.github.io/organization/digital_democracy/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/organization/digital_democracy/</guid>
+      <guid>https://commons-garden.github.io/organization/digital_democracy/</guid>
       <description></description>
     </item>
     <item>
       <title>manyverse</title>
-      <link>https://commons.garden/organization/manyverse/</link>
+      <link>https://commons-garden.github.io/organization/manyverse/</link>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/organization/manyverse/</guid>
+      <guid>https://commons-garden.github.io/organization/manyverse/</guid>
       <description></description>
     </item>
     <item>
       <title>Gardeners</title>
-      <link>https://commons.garden/internal/gardener/</link>
+      <link>https://commons-garden.github.io/internal/gardener/</link>
       <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/internal/gardener/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ Site is hosted on gitlab, &lt;a href=&#34;https://commons.garden/about/help&#34;&gt;ask to help&lt;/a&gt; if you don&amp;rsquo;t have the permissions.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;adding-a-gardener&#34;&gt;Adding a gardener&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Duplicate &lt;code&gt;content/gardener/template.md&lt;/code&gt; file&lt;/li&gt;&#xA;&lt;li&gt;Rename with name of gardener (slug: no spaces, no special characters)&lt;/li&gt;&#xA;&lt;li&gt;Edit frontmatter&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Title is same as filename&lt;/li&gt;&#xA;&lt;li&gt;any description&lt;/li&gt;&#xA;&lt;li&gt;change type to public (it will appear on &lt;a href=&#34;https://commons.garden/gardener&#34;&gt;gardener&lt;/a&gt; list)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Write anything (in markdown) after &lt;code&gt;---&lt;/code&gt; and it appears below the list&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;crediting-a-gardener&#34;&gt;Crediting a gardener&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the post you want to credit user, and add gardener title on respective frontmatter (facilitator, author, helper)&lt;/li&gt;&#xA;&lt;li&gt;Same for organizations, as contact or member&lt;/li&gt;&#xA;&lt;li&gt;If gardener has a file, and it&amp;rsquo;s public, it will appear both on gardener page and post it references on&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;adding-image&#34;&gt;Adding image&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Save image with same name of gardener title on &lt;code&gt;/static/images/gardener&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Open gardener post and add a new frontmatter criteria: &lt;code&gt;imageType: VALUE&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;VALUE&lt;/code&gt; is the image type: png, jpg, gif&amp;hellip;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+      <guid>https://commons-garden.github.io/internal/gardener/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ Site is hosted on gitlab, &lt;a href=&#34;https://commons-garden.github.io/about/help&#34;&gt;ask to help&lt;/a&gt; if you don&amp;rsquo;t have the permissions.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;adding-a-gardener&#34;&gt;Adding a gardener&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Duplicate &lt;code&gt;content/gardener/template.md&lt;/code&gt; file&lt;/li&gt;&#xA;&lt;li&gt;Rename with name of gardener (slug: no spaces, no special characters)&lt;/li&gt;&#xA;&lt;li&gt;Edit frontmatter&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Title is same as filename&lt;/li&gt;&#xA;&lt;li&gt;any description&lt;/li&gt;&#xA;&lt;li&gt;change type to public (it will appear on &lt;a href=&#34;https://commons-garden.github.io/gardener&#34;&gt;gardener&lt;/a&gt; list)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Write anything (in markdown) after &lt;code&gt;---&lt;/code&gt; and it appears below the list&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;crediting-a-gardener&#34;&gt;Crediting a gardener&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the post you want to credit user, and add gardener title on respective frontmatter (facilitator, author, helper)&lt;/li&gt;&#xA;&lt;li&gt;Same for organizations, as contact or member&lt;/li&gt;&#xA;&lt;li&gt;If gardener has a file, and it&amp;rsquo;s public, it will appear both on gardener page and post it references on&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;adding-image&#34;&gt;Adding image&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Save image with same name of gardener title on &lt;code&gt;/static/images/gardener&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Open gardener post and add a new frontmatter criteria: &lt;code&gt;imageType: VALUE&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;VALUE&lt;/code&gt; is the image type: png, jpg, gif&amp;hellip;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>initiative</title>
-      <link>https://commons.garden/internal/initiative/</link>
+      <link>https://commons-garden.github.io/internal/initiative/</link>
       <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/internal/initiative/</guid>
-      <description>&lt;h2 id=&#34;writing-a-new-initiative&#34;&gt;Writing a new initiative&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;To publish a new initiative, duplicate &lt;code&gt;template.md&lt;/code&gt; file on &lt;code&gt;content/initative&lt;/code&gt; folder.&lt;/li&gt;&#xA;&lt;li&gt;File name decides URL, in the &lt;code&gt;commons.garden/initiative/FILENAME&lt;/code&gt; format. Don&amp;rsquo;t change filename once published, otherwise it will break our permalink policy (more on redirect later).&lt;/li&gt;&#xA;&lt;li&gt;Site is hosted on gitlab, &lt;a href=&#34;https://commons.garden/about/help&#34;&gt;ask to help&lt;/a&gt; if you don&amp;rsquo;t have the permissions.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;required-frontmatter&#34;&gt;Required frontmatter&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;title:&lt;/code&gt; The actual title of the spec&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;date:&lt;/code&gt; Use date of when spec entered latest status. Format is &lt;code&gt;YYYY-MM-DD&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;type:&lt;/code&gt; &lt;code&gt;hidden&lt;/code&gt; for never to be seen notes, &lt;code&gt;draft&lt;/code&gt; in progress articles or &lt;code&gt;public&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;category:&lt;/code&gt; Use &lt;code&gt;initiative&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;status:&lt;/code&gt; &lt;code&gt;draft&lt;/code&gt;, &lt;code&gt;testing&lt;/code&gt;, &lt;code&gt;stable&lt;/code&gt;, &lt;code&gt;deprecated&lt;/code&gt;, &lt;code&gt;archived&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;scope:&lt;/code&gt; The technologies that use it&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;optional-frontmatter&#34;&gt;Optional frontmatter&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;description:&lt;/code&gt; Article description&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;author:&lt;/code&gt; Who wrote it. User needs to be on &lt;code&gt;member/&lt;/code&gt; folder&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://commons-garden.github.io/internal/initiative/</guid>
+      <description>&lt;h2 id=&#34;writing-a-new-initiative&#34;&gt;Writing a new initiative&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;To publish a new initiative, duplicate &lt;code&gt;template.md&lt;/code&gt; file on &lt;code&gt;content/initative&lt;/code&gt; folder.&lt;/li&gt;&#xA;&lt;li&gt;File name decides URL, in the &lt;code&gt;commons.garden/initiative/FILENAME&lt;/code&gt; format. Don&amp;rsquo;t change filename once published, otherwise it will break our permalink policy (more on redirect later).&lt;/li&gt;&#xA;&lt;li&gt;Site is hosted on gitlab, &lt;a href=&#34;https://commons-garden.github.io/about/help&#34;&gt;ask to help&lt;/a&gt; if you don&amp;rsquo;t have the permissions.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;required-frontmatter&#34;&gt;Required frontmatter&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;title:&lt;/code&gt; The actual title of the spec&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;date:&lt;/code&gt; Use date of when spec entered latest status. Format is &lt;code&gt;YYYY-MM-DD&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;type:&lt;/code&gt; &lt;code&gt;hidden&lt;/code&gt; for never to be seen notes, &lt;code&gt;draft&lt;/code&gt; in progress articles or &lt;code&gt;public&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;category:&lt;/code&gt; Use &lt;code&gt;initiative&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;status:&lt;/code&gt; &lt;code&gt;draft&lt;/code&gt;, &lt;code&gt;testing&lt;/code&gt;, &lt;code&gt;stable&lt;/code&gt;, &lt;code&gt;deprecated&lt;/code&gt;, &lt;code&gt;archived&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;scope:&lt;/code&gt; The technologies that use it&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;optional-frontmatter&#34;&gt;Optional frontmatter&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;description:&lt;/code&gt; Article description&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;author:&lt;/code&gt; Who wrote it. User needs to be on &lt;code&gt;member/&lt;/code&gt; folder&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>P2P Analytics</title>
-      <link>https://commons.garden/initiative/p2p-analytics/</link>
+      <link>https://commons-garden.github.io/initiative/p2p-analytics/</link>
       <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/p2p-analytics/</guid>
+      <guid>https://commons-garden.github.io/initiative/p2p-analytics/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;The problem of analytics on open source&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;how to ethically surveil users?&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;how do we ensure anonymity, privacy?&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;preserving PII&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;where to flag&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;passionate users: how to create a UXR pipeline&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;And if we&amp;rsquo;re aiming for goldilocks (both too much and too little are bad) shouldn&amp;rsquo;t we have an SSB simulator to test how features warp topology?&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;how to gather consent&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;analytics specs, governance&lt;/p&gt;</description>
     </item>
     <item>
       <title>P2P Simulator</title>
-      <link>https://commons.garden/initiative/simulator/</link>
+      <link>https://commons-garden.github.io/initiative/simulator/</link>
       <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/simulator/</guid>
+      <guid>https://commons-garden.github.io/initiative/simulator/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://hackmd.io/@praxis/p2p-simulator&#34;&gt;shared notes&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://signal.group/#CjQKIM5tco8NGWVYI0BXItiYaxJWBi7A9d8aZ0NiTzSpcsO2EhCPKAqj_0qD7g_rpyFe9Q8I&#34;&gt;signal group&lt;/a&gt; (announce yourself)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mixmix.gitlab.io/butt-sim/&#34;&gt;SSB simulator&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/ssbc/netsim&#34;&gt;ssbc/netsim: secure scuttlebutt network simulator&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://holochainplayground.github.io/&#34;&gt;Holochain Playground&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;assumptions-to-validate&#34;&gt;Assumptions to validate&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Simulations as a laboratory, providing data scientists with tools prove shit mathematically&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A tool to validate arguments&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;It also detects attacks way earlier. By reverse engineering strategies and proposing patches. Because we will be attacked. Of course&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Simulations can detect attacks and propose vaccinations&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;How can SSB have a good relationship with data scientists, so researchers can use it for their papers?&lt;/p&gt;</description>
     </item>
     <item>
       <title>SSB collections</title>
-      <link>https://commons.garden/spec/ssb-collections/</link>
+      <link>https://commons-garden.github.io/spec/ssb-collections/</link>
       <pubDate>Fri, 30 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/spec/ssb-collections/</guid>
+      <guid>https://commons-garden.github.io/spec/ssb-collections/</guid>
       <description>&lt;p&gt;Reframing SSB tags as collections&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://hackmd.io/@praxis/ssb-collections&#34;&gt;View hackmd&lt;/a&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;{.aaa} Resurfacing posts outside chronological order, reducing Bias of Now&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Think &amp;ldquo;mixmix&amp;rsquo;s book of soup recipes&amp;rdquo; &amp;ldquo;nonlinear book of illustration tips&amp;rdquo; or &amp;ldquo;rabble book of East Asia travel spots&amp;rdquo;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Some users don&amp;rsquo;t write much, but curate existing content. Collections give them a way to shine.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Tags were poorly named. Under the hood they behave like a collection, but they don&amp;rsquo;t have order.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Identity Recovery</title>
-      <link>https://commons.garden/initiative/identity/</link>
+      <link>https://commons-garden.github.io/initiative/identity/</link>
       <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/identity/</guid>
-      <description>&lt;p&gt;&#xA;  Eventually, user loses device and jumps to another. Because SSB is non-cloud,&#xA;  it can&#39;t re-authenticate easily. And because this is always an accident, users&#xA;  are not prepared for when it happens.&#xA;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&#xA;  &lt;a class=&#34;btn&#34; href=&#34;https://gitlab.com/staltz/manyverse/-/issues/1942&#34;&#xA;    &gt;View issue&lt;/a&#xA;  &gt;&#xA;&#xA;  &lt;a&#xA;    class=&#34;btn&#34;&#xA;    href=&#34;https://www.figma.com/file/Qkei1VgElbho66UinY9MzH/identity-recovery?type=whiteboard&amp;node-id=0%3A1&amp;t=2Pdgp2DTTIScm4b4-1&#34;&#xA;    &gt;View assumption board&lt;/a&#xA;  &gt;&#xA;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&#xA;  Note: &lt;a href=&#34;https://commons.garden/gardener/mixmix&#34;&gt;Mix&lt;/a&gt; worked on&#xA;  &lt;a href=&#34;https://darkcrystal.pw/&#34;&gt;Dark Crystal technology&lt;/a&gt;&#39;s first round&#xA;&lt;/p&gt;</description>
+      <guid>https://commons-garden.github.io/initiative/identity/</guid>
+      <description>&lt;p&gt;&#xA;  Eventually, user loses device and jumps to another. Because SSB is non-cloud,&#xA;  it can&#39;t re-authenticate easily. And because this is always an accident, users&#xA;  are not prepared for when it happens.&#xA;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&#xA;  &lt;a class=&#34;btn&#34; href=&#34;https://gitlab.com/staltz/manyverse/-/issues/1942&#34;&#xA;    &gt;View issue&lt;/a&#xA;  &gt;&#xA;&#xA;  &lt;a&#xA;    class=&#34;btn&#34;&#xA;    href=&#34;https://www.figma.com/file/Qkei1VgElbho66UinY9MzH/identity-recovery?type=whiteboard&amp;node-id=0%3A1&amp;t=2Pdgp2DTTIScm4b4-1&#34;&#xA;    &gt;View assumption board&lt;/a&#xA;  &gt;&#xA;&lt;/p&gt;&#xA;&#xA;&lt;p&gt;&#xA;  Note: &lt;a href=&#34;https://commons-garden.github.io/gardener/mixmix&#34;&gt;Mix&lt;/a&gt; worked on&#xA;  &lt;a href=&#34;https://darkcrystal.pw/&#34;&gt;Dark Crystal technology&lt;/a&gt;&#39;s first round&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Not Commons</title>
-      <link>https://commons.garden/initiative/not-commons/</link>
+      <link>https://commons-garden.github.io/initiative/not-commons/</link>
       <pubDate>Mon, 05 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/not-commons/</guid>
+      <guid>https://commons-garden.github.io/initiative/not-commons/</guid>
       <description>&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Initial discussion: &lt;a href=&#34;https://cblgh.org/p2p-commercialization/&#34;&gt;peer-to-peer commercialization&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.investopedia.com/terms/c/common-pool.asp&#34;&gt;Common-Pool Resource: Definition, How It Works, and Examples&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Against_the_Grain:_A_Deep_History_of_the_Earliest_States?useskin=vector&#34;&gt;Against the Grain: A Deep History of the Earliest States&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;analogies&#34;&gt;Analogies&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;royals vs nomads&lt;/li&gt;&#xA;&lt;li&gt;definition of boundaries in therapy&lt;/li&gt;&#xA;&lt;li&gt;gentrification&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;intake&#34;&gt;Intake&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Definition of done: A healthy immune system&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Agreed boundaries&lt;/li&gt;&#xA;&lt;li&gt;Sanctions&lt;/li&gt;&#xA;&lt;li&gt;Rewards&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Deliverables&#xA;&lt;ul&gt;&#xA;&lt;li&gt;takeaways for public awareness&lt;/li&gt;&#xA;&lt;li&gt;promotional pieces&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Who should be on the table?&#xA;&lt;ul&gt;&#xA;&lt;li&gt;entire SSB community&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;What skillsets we need?&#xA;&lt;ul&gt;&#xA;&lt;li&gt;sociologists&lt;/li&gt;&#xA;&lt;li&gt;anthropologists&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Who does it affect? Which groups are affected and not on the table?&#xA;&lt;ul&gt;&#xA;&lt;li&gt;commons other than SSB&lt;/li&gt;&#xA;&lt;li&gt;mastodon?&lt;/li&gt;&#xA;&lt;li&gt;IPFS&lt;/li&gt;&#xA;&lt;li&gt;Other open source computing languages&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Who benefits?&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Future SSB users&lt;/li&gt;&#xA;&lt;li&gt;Marginalized communities&lt;/li&gt;&#xA;&lt;li&gt;Good commercial actors&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Post-success opportunities&#xA;&lt;ul&gt;&#xA;&lt;li&gt;engaged community&lt;/li&gt;&#xA;&lt;li&gt;strenghtened diplomatic channels&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;assumptions-to-validate&#34;&gt;Assumptions to validate&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;We wont ever SOLVE capitalists squandering commons. we can&amp;rsquo;t win. we can only mitigate.&lt;/p&gt;</description>
     </item>
     <item>
       <title>spec</title>
-      <link>https://commons.garden/internal/spec/</link>
+      <link>https://commons-garden.github.io/internal/spec/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/internal/spec/</guid>
-      <description>&lt;h2 id=&#34;title-&#34;&gt;title 📌&lt;/h2&gt;&#xA;&lt;p&gt;appears in the path, must match the folder name&lt;/p&gt;&#xA;&lt;h2 id=&#34;status-&#34;&gt;status 📌&lt;/h2&gt;&#xA;&lt;p&gt;where this spec is in it&amp;rsquo;s journey&lt;/p&gt;&#xA;&lt;h2 id=&#34;scope&#34;&gt;scope&lt;/h2&gt;&#xA;&lt;p&gt;the specs / technologies that are related&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://commons.garden/internal/scope&#34;&gt;choosing scope&lt;/a&gt; (or write your own)&lt;/p&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;description&lt;/h2&gt;&#xA;&lt;p&gt;a description of the category type&lt;/p&gt;&#xA;&lt;h2 id=&#34;display-&#34;&gt;display 📌&lt;/h2&gt;&#xA;&lt;p&gt;boolean - should this be displayed on lists? will be rendered, but not linked to. true / false&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://commons.garden/internal/display&#34;&gt;choosing display&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;license&#34;&gt;license&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://commons.garden/internal/license&#34;&gt;choosing license&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;author-&#34;&gt;author 📌&lt;/h2&gt;&#xA;&lt;p&gt;who wrote this spec&lt;/p&gt;</description>
+      <guid>https://commons-garden.github.io/internal/spec/</guid>
+      <description>&lt;h2 id=&#34;title-&#34;&gt;title 📌&lt;/h2&gt;&#xA;&lt;p&gt;appears in the path, must match the folder name&lt;/p&gt;&#xA;&lt;h2 id=&#34;status-&#34;&gt;status 📌&lt;/h2&gt;&#xA;&lt;p&gt;where this spec is in it&amp;rsquo;s journey&lt;/p&gt;&#xA;&lt;h2 id=&#34;scope&#34;&gt;scope&lt;/h2&gt;&#xA;&lt;p&gt;the specs / technologies that are related&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://commons-garden.github.io/internal/scope&#34;&gt;choosing scope&lt;/a&gt; (or write your own)&lt;/p&gt;&#xA;&lt;h2 id=&#34;description&#34;&gt;description&lt;/h2&gt;&#xA;&lt;p&gt;a description of the category type&lt;/p&gt;&#xA;&lt;h2 id=&#34;display-&#34;&gt;display 📌&lt;/h2&gt;&#xA;&lt;p&gt;boolean - should this be displayed on lists? will be rendered, but not linked to. true / false&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://commons-garden.github.io/internal/display&#34;&gt;choosing display&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;license&#34;&gt;license&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://commons-garden.github.io/internal/license&#34;&gt;choosing license&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;author-&#34;&gt;author 📌&lt;/h2&gt;&#xA;&lt;p&gt;who wrote this spec&lt;/p&gt;</description>
     </item>
     <item>
       <title>SSB groups</title>
-      <link>https://commons.garden/spec/ssb-groups/</link>
+      <link>https://commons-garden.github.io/spec/ssb-groups/</link>
       <pubDate>Fri, 19 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/spec/ssb-groups/</guid>
+      <guid>https://commons-garden.github.io/spec/ssb-groups/</guid>
       <description>&lt;p&gt;Groups are important because SSB is a cloud-less peer-to-peer platform, where discourse is generally open (like Twitter).&lt;/p&gt;&#xA;&lt;p&gt;Adding groups means communities can coordinate, share memories, manage resources, away from prying eyes, protecting their sovereignty.&lt;/p&gt;&#xA;&lt;p&gt;Currently the two apps spearheading the new feature are Manyverse and &lt;a href=&#34;https://ahau.io/&#34;&gt;Āhau&lt;/a&gt; (a data-sovereignty-minded app built by and for indigenous groups) but others will come.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Initiatives</title>
-      <link>https://commons.garden/about/initiatives/</link>
+      <link>https://commons-garden.github.io/about/initiatives/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/about/initiatives/</guid>
+      <guid>https://commons-garden.github.io/about/initiatives/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;invite-driven onboarding&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.figma.com/file/eG3RjraaGHIdv1nuUp667J/Invite-driven-onboarding?node-id=0%3A1&amp;amp;t=R3PDlUca7gZLo0is-1&#34;&gt;diagram&lt;/a&gt; (figjam)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gitlab.com/staltz/manyverse/-/issues/1887&#34;&gt;documentation&lt;/a&gt; (gitlab)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;p2p delete&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.figma.com/file/a3MVrJ2Z8UDILkHK0NUeYb/p2p-delete?node-id=5%3A311&amp;amp;t=7mcjSfgX1w3FWexU-1&#34;&gt;board&lt;/a&gt; (figjam)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://hackmd.io/@praxis/p2p-delete&#34;&gt;documentation&lt;/a&gt; (hackmd)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://signal.group/#CjQKIGFSis4tbGdzpujg_Xw-UudxHZnnPuxmxPfFjSbzvII7EhAXQHs1aCqWBymiid6TMV78&#34;&gt;conversation&lt;/a&gt; (signal)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;identity recovery&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.figma.com/file/Qkei1VgElbho66UinY9MzH/identity-recovery?node-id=0%3A1&amp;amp;t=X61ec705X2vYRHFz-1&#34;&gt;board&lt;/a&gt; (figjam)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gitlab.com/staltz/manyverse/-/issues/1942&#34;&gt;proposal&lt;/a&gt; (gitlab)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;SSB moderation&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.figma.com/file/C9YFMDwsOIXbmt88QoxL2B/SSB-moderation?node-id=0%3A1&amp;amp;t=F1bQPrqHYAd5pXwu-1&#34;&gt;board&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://signal.group/#CjQKIKbXJYLBlMFQeAj5vSma4LFdEzmFhBnguL3AuOeJEclnEhBx3ApnFdng1LyS7ZR7l836&#34;&gt;conversation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://hackmd.io/@praxis/moderation&#34;&gt;documentation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;backlog (&lt;a href=&#34;https://www.figma.com/file/UIQDqYS48Pkg0ARSY9Rpf4/feature-backlog?node-id=0%3A1&amp;amp;t=uNvxo364L3hzJ2BL-1&#34;&gt;board&lt;/a&gt;)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;multi-device (fusion identity)&lt;/li&gt;&#xA;&lt;li&gt;dying online&lt;/li&gt;&#xA;&lt;li&gt;stencil&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title>powersource</title>
-      <link>https://commons.garden/gardener/powersource/</link>
+      <link>https://commons-garden.github.io/gardener/powersource/</link>
       <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/gardener/powersource/</guid>
+      <guid>https://commons-garden.github.io/gardener/powersource/</guid>
       <description></description>
     </item>
     <item>
       <title>About this site</title>
-      <link>https://commons.garden/internal/site/</link>
+      <link>https://commons-garden.github.io/internal/site/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/internal/site/</guid>
+      <guid>https://commons-garden.github.io/internal/site/</guid>
       <description>&lt;p&gt;This site uses &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt; and is hosted on &lt;a href=&#34;https://gitlab.com/commons-garden/commons-garden.gitlab.io&#34;&gt;gitlab&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;All content lives under &lt;code&gt;/content&lt;/code&gt; folder. All posts are markdown, with specific frontmatter criteria depending on category.&lt;/p&gt;&#xA;&lt;p&gt;Folders are the categories. URLs appear as &lt;code&gt;commons.garden/CATEGORY NAME/FILE NAME&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Take some time to learn different categories frontmatter: It&amp;rsquo;s half of the (documentation) battle.&lt;/p&gt;&#xA;&lt;h2 id=&#34;template&#34;&gt;Template&lt;/h2&gt;&#xA;&lt;p&gt;Hugo uses 3 templates, all under &lt;code&gt;/templates/_default/&lt;/code&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gitlab.com/commons-garden/v2/-/blob/main/layouts/_default/index.html?ref_type=heads&#34;&gt;index&lt;/a&gt; for first page&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gitlab.com/commons-garden/v2/-/blob/main/layouts/_default/list.html?ref_type=heads&#34;&gt;list&lt;/a&gt; for page collections&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gitlab.com/commons-garden/v2/-/blob/main/layouts/_default/singler.html?ref_type=heads&#34;&gt;single&lt;/a&gt; for the post itself&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;automatic-classes&#34;&gt;Automatic classes&lt;/h2&gt;&#xA;&lt;p&gt;This site automatically adds certain classes on &lt;code&gt;&amp;lt;HTML&amp;gt;&lt;/code&gt;:&lt;/p&gt;</description>
     </item>
     <item>
       <title>cel</title>
-      <link>https://commons.garden/gardener/cel/</link>
+      <link>https://commons-garden.github.io/gardener/cel/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/gardener/cel/</guid>
+      <guid>https://commons-garden.github.io/gardener/cel/</guid>
       <description></description>
     </item>
     <item>
       <title>Mission statement</title>
-      <link>https://commons.garden/about/mission/</link>
+      <link>https://commons-garden.github.io/about/mission/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/about/mission/</guid>
+      <guid>https://commons-garden.github.io/about/mission/</guid>
       <description>&lt;p&gt;The Scuttlebutt ecosystem is comprised of informal alliances, projects and organisations. Our mission is to support a diverse and vibrant ecosystem by:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Supporting &lt;strong&gt;alignment and coordination&lt;/strong&gt; among actors&lt;/li&gt;&#xA;&lt;li&gt;Identifying &lt;strong&gt;emergent problems&lt;/strong&gt; and tensions&lt;/li&gt;&#xA;&lt;li&gt;Facilitating communication and &lt;strong&gt;dispute resolution&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Hosting (or pointing to) existing &lt;strong&gt;specifications&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Guiding the &lt;strong&gt;production of new&lt;/strong&gt; specifications&lt;/li&gt;&#xA;&lt;li&gt;Producing (or pointing to) &lt;strong&gt;comparative&lt;/strong&gt; documentation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mapping&lt;/strong&gt; the ecosystem&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;1-guarding-and-enhancing-the-commons&#34;&gt;1. Guarding and enhancing the commons&lt;/h2&gt;&#xA;&lt;p&gt;(what projects have to have for us to sponsor it? why? be explicit)&lt;/p&gt;</description>
     </item>
     <item>
       <title>mixmix</title>
-      <link>https://commons.garden/gardener/mixmix/</link>
+      <link>https://commons-garden.github.io/gardener/mixmix/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/gardener/mixmix/</guid>
+      <guid>https://commons-garden.github.io/gardener/mixmix/</guid>
       <description>&lt;p&gt;Fan of sci-fi, magic the gathering, financial interdependence&lt;/p&gt;</description>
     </item>
     <item>
       <title>nonlinear</title>
-      <link>https://commons.garden/gardener/nonlinear/</link>
+      <link>https://commons-garden.github.io/gardener/nonlinear/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/gardener/nonlinear/</guid>
+      <guid>https://commons-garden.github.io/gardener/nonlinear/</guid>
       <description>&lt;h3 id=&#34;projects&#34;&gt;Projects:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://nonlinear.nyc&#34;&gt;nonlinear&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://praxis.nyc&#34;&gt;praxis&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://commons.garden&#34;&gt;commons.garden&lt;/a&gt; (this one)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;social&#34;&gt;Social:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://social.praxis.nyc/@nonlinear&#34;&gt;mastodon&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;ssb://feed/ed25519/mUNqmOd_uRBGbk9YMOzaUypf_6aPhxYI0lk6-hRyyK4=&#34;&gt;securescuttlebutt&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://instagram.com/nonlinear&#34;&gt;instagram&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;media&#34;&gt;Media:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://app.thestorygraph.com/profile/nonlinear&#34;&gt;Storygraph&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://soundcloud.com/nicholasfrota&#34;&gt;Soundcloud&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.instapaper.com/p/nonlinear&#34;&gt;Instapaper&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://savee.it/nonlinear&#34;&gt;Savee&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>P2P Delete</title>
-      <link>https://commons.garden/initiative/p2p_delete/</link>
+      <link>https://commons-garden.github.io/initiative/p2p_delete/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/p2p_delete/</guid>
+      <guid>https://commons-garden.github.io/initiative/p2p_delete/</guid>
       <description>&lt;h1 id=&#34;second-meeting-notes&#34;&gt;Second meeting notes&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;📌 to consolidate&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;threads-to-explore&#34;&gt;Threads to explore&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;shared language&lt;/li&gt;&#xA;&lt;li&gt;alt deletion&lt;/li&gt;&#xA;&lt;li&gt;making meaning out of deletion&lt;/li&gt;&#xA;&lt;li&gt;owner/ agency/ control&lt;/li&gt;&#xA;&lt;li&gt;delete/ append&lt;/li&gt;&#xA;&lt;li&gt;white-out/ destroy&lt;/li&gt;&#xA;&lt;li&gt;signed intentions/ auditability&lt;/li&gt;&#xA;&lt;li&gt;trinaries/ trade-offs&lt;/li&gt;&#xA;&lt;li&gt;data structures&lt;/li&gt;&#xA;&lt;li&gt;deletion in nature&lt;/li&gt;&#xA;&lt;li&gt;adoption of standards/ advocacy&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;advocacy&#34;&gt;Advocacy&lt;/h2&gt;&#xA;&lt;h2 id=&#34;data-structures&#34;&gt;Data structures&lt;/h2&gt;&#xA;&lt;p&gt;Are the changes small?&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;yes (text)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;trilemma (in some CRDTs, in realtime) &amp;lt;= seph&#xA;&lt;ul&gt;&#xA;&lt;li&gt;efficency&lt;/li&gt;&#xA;&lt;li&gt;byzantian fault tollerance&lt;/li&gt;&#xA;&lt;li&gt;ability to delete&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;use a nonce to every single edit, as this allows you to avoid rainbox tables&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;no:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;don&amp;rsquo;t need nonce because who cares&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Bengo [ his summary ]&lt;/p&gt;</description>
     </item>
     <item>
       <title>P2P Delete Vocabulary</title>
-      <link>https://commons.garden/initiative/p2p_delete/challenge/</link>
+      <link>https://commons-garden.github.io/initiative/p2p_delete/challenge/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/p2p_delete/challenge/</guid>
+      <guid>https://commons-garden.github.io/initiative/p2p_delete/challenge/</guid>
       <description></description>
     </item>
     <item>
       <title>P2P Delete Vocabulary</title>
-      <link>https://commons.garden/initiative/p2p_delete/todo/</link>
+      <link>https://commons-garden.github.io/initiative/p2p_delete/todo/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/p2p_delete/todo/</guid>
+      <guid>https://commons-garden.github.io/initiative/p2p_delete/todo/</guid>
       <description></description>
     </item>
     <item>
       <title>SSB threads</title>
-      <link>https://commons.garden/spec/ssb-threads/</link>
+      <link>https://commons-garden.github.io/spec/ssb-threads/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/spec/ssb-threads/</guid>
+      <guid>https://commons-garden.github.io/spec/ssb-threads/</guid>
       <description>&lt;p&gt;The post message type is the foundational unit for talking with peers on the original scuttlebutt network.&lt;/p&gt;&#xA;&lt;p&gt;Post messages can be used standalone, but are most commonly collected as sets of related messages and formed into a &amp;ldquo;thread&amp;rdquo;.&lt;/p&gt;&#xA;&lt;p&gt;During rendering, threads of posts are also further decorated with vote messages (for likes), and about messages (for displaying author details).&lt;/p&gt;</description>
     </item>
     <item>
       <title>staltz</title>
-      <link>https://commons.garden/gardener/staltz/</link>
+      <link>https://commons-garden.github.io/gardener/staltz/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/gardener/staltz/</guid>
+      <guid>https://commons-garden.github.io/gardener/staltz/</guid>
       <description>&lt;p&gt;Fan of sci-fi, magic the gathering, financial interdependence&lt;/p&gt;</description>
     </item>
     <item>
       <title>Vocabulary</title>
-      <link>https://commons.garden/initiative/p2p_delete/vocabulary/</link>
+      <link>https://commons-garden.github.io/initiative/p2p_delete/vocabulary/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/p2p_delete/vocabulary/</guid>
+      <guid>https://commons-garden.github.io/initiative/p2p_delete/vocabulary/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;builds interfaces, wants to able to convey what&amp;rsquo;s happening to users&lt;/li&gt;&#xA;&lt;li&gt;what are the different meanings of delete, do we need to be more specific&lt;/li&gt;&#xA;&lt;li&gt;values accuracy / precision in communication&lt;/li&gt;&#xA;&lt;li&gt;linguistic literalist, contortionist&lt;/li&gt;&#xA;&lt;li&gt;alignment of practices/ rituals&lt;/li&gt;&#xA;&lt;li&gt;opportunity to shape the words to reflect our desired practice&lt;/li&gt;&#xA;&lt;li&gt;archival versus privacy tensions&lt;/li&gt;&#xA;&lt;li&gt;language is a protocol for how we coordinate&#xA;&lt;ul&gt;&#xA;&lt;li&gt;meaning/ expectation&lt;/li&gt;&#xA;&lt;li&gt;technical&lt;/li&gt;&#xA;&lt;li&gt;forgetting&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Why Open Source?</title>
-      <link>https://commons.garden/article/why-open-source/</link>
+      <link>https://commons-garden.github.io/article/why-open-source/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/article/why-open-source/</guid>
+      <guid>https://commons-garden.github.io/article/why-open-source/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; why is open source worth the fight?&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; why donate your resources?&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; what are other ways to help?&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; commons as umbrella term&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://commons.garden/calendar/</link>
+      <link>https://commons-garden.github.io/calendar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/calendar/</guid>
+      <guid>https://commons-garden.github.io/calendar/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://calendar.google.com/calendar/u/0?cid=M2MxMmY2ZDA5OTI1YTYwNGYxMzY0ZTdiNzJmYmRjMzc3Y2M2OWM3NTFlNGY3ZDk3MTJhNjZmYjNjNzdjNjFkZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&#34;&gt;https://calendar.google.com/calendar/u/0?cid=M2MxMmY2ZDA5OTI1YTYwNGYxMzY0ZTdiNzJmYmRjMzc3Y2M2OWM3NTFlNGY3ZDk3MTJhNjZmYjNjNzdjNjFkZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Knowledge Sharing</title>
-      <link>https://commons.garden/initiative/knowledge-sharing/</link>
+      <link>https://commons-garden.github.io/initiative/knowledge-sharing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/knowledge-sharing/</guid>
+      <guid>https://commons-garden.github.io/initiative/knowledge-sharing/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hackmd.io/IR_mULXtQ_uyo5IN6njtQg&#34;&gt;https://hackmd.io/IR_mULXtQ_uyo5IN6njtQg&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>show-and-tell</title>
-      <link>https://commons.garden/initiative/show-and-tell/</link>
+      <link>https://commons-garden.github.io/initiative/show-and-tell/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://commons.garden/initiative/show-and-tell/</guid>
-      <description>&lt;h2 id=&#34;tilde-friends&#34;&gt;Tilde Friends&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://commons.garden/images/tilde-friends-screenshot.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cory gives a tour of their work on &lt;a href=&#34;https://www.tildefriends.net/&#34;&gt;Tilde Friends&lt;/a&gt; - a p2p app platform&#xA;backed by Secure Scuttlebutt&lt;/p&gt;&#xA;&#xA;&#xA;&lt;iframe width=&#34;500&#34; height=&#34;315&#34; src=&#34;https://www.youtube-nocookie.com/embed/XD74RYm-DIM?si=jdLSUzEpeeb4Mxwg&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Corey&amp;rsquo;s Project&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Corey, a game developer from New York, introduces &amp;lsquo;Tilde Friends&amp;rsquo;, his new project. It&amp;rsquo;s a platform for creating and sharing apps using something called Secure Scuttlebutt.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The Tech Behind It&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;lsquo;Tilde Friends&amp;rsquo; is built using a programming language called C and runs on both Raspberry Pi and Android devices. It features its own web server, a system for users to create accounts, and a safe area for apps to run.&lt;/p&gt;</description>
+      <guid>https://commons-garden.github.io/initiative/show-and-tell/</guid>
+      <description>&lt;h2 id=&#34;tilde-friends&#34;&gt;Tilde Friends&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://commons-garden.github.io/images/tilde-friends-screenshot.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Cory gives a tour of their work on &lt;a href=&#34;https://www.tildefriends.net/&#34;&gt;Tilde Friends&lt;/a&gt; - a p2p app platform&#xA;backed by Secure Scuttlebutt&lt;/p&gt;&#xA;&#xA;&#xA;&lt;iframe width=&#34;500&#34; height=&#34;315&#34; src=&#34;https://www.youtube-nocookie.com/embed/XD74RYm-DIM?si=jdLSUzEpeeb4Mxwg&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen&gt;&lt;/iframe&gt;&#xA;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Corey&amp;rsquo;s Project&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Corey, a game developer from New York, introduces &amp;lsquo;Tilde Friends&amp;rsquo;, his new project. It&amp;rsquo;s a platform for creating and sharing apps using something called Secure Scuttlebutt.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;The Tech Behind It&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;lsquo;Tilde Friends&amp;rsquo; is built using a programming language called C and runs on both Raspberry Pi and Android devices. It features its own web server, a system for users to create accounts, and a safe area for apps to run.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
