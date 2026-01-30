@@ -5,3 +5,4 @@ resources
 /* Node stuff for Prettier linting */
 node_modules
 package-lock.json
+.env
